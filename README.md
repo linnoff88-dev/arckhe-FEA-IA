@@ -1,0 +1,150 @@
+﻿# ðŸš€ Engenharia de Agentes de IA 2.0
+
+<div align="center">
+  <img src="capa/logo.svg" alt="Arckhé AI" height="48" />
+  <p><strong>Arckhé AI</strong></p>
+</div>
+
+
+<div align="center">
+
+![Status](https://img.shields.io/badge/Status-Online-brightgreen)
+![Progresso](https://img.shields.io/badge/Progresso-75%25-green)
+![ConteÃºdo](https://img.shields.io/badge/Conte%C3%BAdo-157k+%20palavras-blue)
+![Site](https://img.shields.io/badge/Site-Live-success)
+![LicenÃ§a](https://img.shields.io/badge/Licen%C3%A7a-MIT-blue)
+![ContribuiÃ§Ãµes](https://img.shields.io/badge/Contribui%C3%A7%C3%B5es-Bem--vindas-brightgreen)
+
+### "VocÃª nÃ£o estÃ¡ aprendendo sobre o futuro. VocÃª estÃ¡ construindo ele."
+
+ðŸ‘‰ **[ACESSE O CURSO ONLINE](https://inematds.github.io/FEA-IA/)**
+
+</div>
+
+---
+
+## ðŸ“¦ Arquivos Importantes do Projeto
+
+| Arquivo | DescriÃ§Ã£o |
+|--------|-----------|
+| **[PLANO-DESENVOLVIMENTO.md](PLANO-DESENVOLVIMENTO.md)** | Plano completo e detalhado de todo o projeto |
+| **[STATUS-RAPIDO.md](STATUS-RAPIDO.md)** | Status atual e prÃ³ximos passos (consulta rÃ¡pida) |
+| **[MÃ³dulo 2 Expandido](modulos/modulo-02/conteudo/)** | Exemplo de mÃ³dulo completo e detalhado |
+
+---
+
+## â“ Por que este curso existe?
+
+Estamos vivendo a maior revoluÃ§Ã£o tecnolÃ³gica desde a internet: a Era dos Agentes de IA.
+NÃ£o estamos falando de chatbots que sÃ³ respondem perguntas. Estamos falando de sistemas inteligentes que agem, decidem e executam â€” automatizando tarefas complexas que antes exigiam equipes inteiras.
+
+A questÃ£o nÃ£o Ã© SE sua empresa/carreira serÃ¡ impactada pela IA. Ã‰ QUANDO â€” e se vocÃª estarÃ¡ preparado.
+
+---
+
+## ðŸ‘¤ Para quem Ã© este curso?
+
+VocÃª deveria estar aqui se:
+
+| Perfil | Por que vocÃª precisa disso |
+|--------|----------------------------|
+| ðŸ’¼ Empreendedor | Automatizar processos, escalar negÃ³cios sem aumentar custos proporcionalmente |
+| ðŸ§‘â€ðŸ’¼ Executivo/Gestor | Entender o impacto estratÃ©gico e liderar a transformaÃ§Ã£o digital com IA |
+| ðŸ§‘â€âš•ï¸ Profissional Liberal | Multiplicar produtividade e manter vantagem competitiva |
+| ðŸ§ª Analista/Consultor | Oferecer soluÃ§Ãµes baseadas em IA para clientes |
+| ðŸ’» Desenvolvedor | Dominar a stack mais quente do mercado tech atual |
+
+Este curso NÃƒO Ã© para vocÃª se:
+- Quer apenas "usar melhor o ChatGPT"
+- Busca soluÃ§Ãµes mÃ¡gicas sem esforÃ§o
+- NÃ£o estÃ¡ disposto a experimentar e testar
+
+---
+
+## ðŸ“š O que vocÃª vai aprender
+
+### 8 mÃ³dulos progressivos (60 horas de conteÃºdo)
+
+1) Fundamentos de IA Generativa (8h)
+- LLMs, Transformer, tokenizaÃ§Ã£o, embeddings, multimodalidade
+- ParÃ¢metros de geraÃ§Ã£o: temperature, top-p, top-k
+- Projeto: Gerador de Ideias Multimodal
+
+2) Engenharia de Prompts AvanÃ§ada (6h)
+- PCFT, Zero/Few-Shot, CoT, Self-Consistency, ToT, ReAct
+- Projeto: Sistema de AnÃ¡lise de Sentimento com CoT
+
+3) Frameworks â€“ LangChain (10h)
+- Chains, RAG, Agents, Memory, Tools, integraÃ§Ãµes
+- Projeto: ChatPDF â€“ Converse com seus documentos
+
+4) Agentes com Agno (5h)
+- Minimalismo, criaÃ§Ã£o rÃ¡pida de agentes, RAG e memÃ³ria
+- Projeto: Assistente Pessoal de Tarefas
+
+5) Sistemas Multi-Agentes com CrewAI (12h)
+- OrquestraÃ§Ã£o de equipes de IA, processos, observabilidade
+- Projeto: AgÃªncia de CriaÃ§Ã£o de ConteÃºdo Automatizada
+
+6) Model Context Protocol (MCP) (8h)
+- PadronizaÃ§Ã£o de ferramentas, servidores MCP, interoperabilidade
+- Projeto: MCP para Gerenciamento de Projetos
+
+7) Deploy e ProduÃ§Ã£o (6h)
+- Arquiteturas de deploy, FastAPI, Docker, nuvem, custos
+- Projeto: Deploy da AgÃªncia na Nuvem
+
+8) Ferramentas e Ecossistema (5h)
+- Hugging Face, modelos open-source, Ollama, fine-tuning
+- Projeto: Ambiente de Desenvolvimento IA Completo
+
+---
+
+## ðŸ§­ Trilhas de aprendizado
+
+- Trilha Executivo (8â€“12h): visÃ£o estratÃ©gica, decisÃµes, lideranÃ§a da transformaÃ§Ã£o
+- Trilha Empreendedor (20â€“30h): automaÃ§Ã£o de processos, criaÃ§Ã£o de soluÃ§Ãµes, geraÃ§Ã£o de valor
+- Trilha TÃ©cnica: foco em cÃ³digo e frameworks
+
+Consulte a pasta `trilhas/` para detalhes.
+
+---
+
+## ðŸŒ Site e SEO
+
+- GitHub Pages online: https://inematds.github.io/FEA-IA/
+- Metatags OG/Twitter, `sitemap.xml`, `robots.txt`, `.nojekyll`
+- Landing page responsiva (`landing-page/`)
+
+---
+
+## ðŸ”§ Como contribuir
+
+- Leia `CONTRIBUTING.md` e `CODE_OF_CONDUCT.md`
+- Abra issues com contexto e passos para reproduzir (quando aplicÃ¡vel)
+- Sugira melhorias de conteÃºdo, correÃ§Ãµes e exemplos prÃ¡ticos
+
+---
+
+## ðŸ“„ LicenÃ§a
+
+MIT â€” veja `LICENSE`.
+
+---
+
+> Nota: Este arquivo Ã© a versÃ£o corrigida (UTFâ€‘8) do README. Caso veja diferenÃ§as em relaÃ§Ã£o ao histÃ³rico anterior, a causa provÃ¡vel Ã© correÃ§Ã£o de caracteres acentuados que estavam corrompidos por encoding.
+
+<!-- inema-backlink:v1 -->
+## Mais no INEMA.CLUB
+
+- [Ficha completa deste curso](https://www.inema.club/cursos/10-fea-ia-engenharia-de-agentes/)
+- [Guia: como aprender inteligÃªncia artificial](https://www.inema.club/aprender-inteligencia-artificial/)
+- [Todos os cursos](https://www.inema.club/cursos/)
+<!-- /inema-backlink:v1 -->
+
+---
+
+<div align="center">
+  <img src="capa/logo.svg" alt="Arckhé AI" height="32" />
+  <p><strong>Arckhé AI</strong></p>
+</div>

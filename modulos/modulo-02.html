@@ -1,0 +1,1599 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Módulo 2: Engenharia de Prompts Avançada - Domine a arte de se comunicar com IA de forma eficaz e estratégica">
+    <title>Módulo 2: Engenharia de Prompts Avançada | FEA-IA 2.0</title>
+
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/topics.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <script defer src="../js/app.js"></script>
+
+    <style>
+        .module-hero {
+            padding: 6rem 0 4rem;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+        }
+
+        .module-breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+
+        .module-breadcrumb a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .module-breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .module-content-area {
+            padding: 4rem 0;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .module-header-info {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .info-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .content-block {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-block h2 {
+            color: #10b981;
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #10b981;
+        }
+
+        .content-block h3 {
+            color: #059669;
+            font-size: 1.375rem;
+            font-weight: 600;
+            margin: 1.5rem 0 1rem 0;
+        }
+
+        .content-block p {
+            line-height: 1.7;
+            color: #374151;
+            margin-bottom: 1rem;
+        }
+
+        .content-block ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .content-block li {
+            line-height: 1.7;
+            color: #374151;
+            margin-bottom: 0.5rem;
+        }
+
+        .insight-box {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            border-left: 4px solid #3b82f6;
+            padding: 1.25rem;
+            border-radius: 0.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .insight-box p {
+            margin: 0;
+        }
+
+        .insight-box strong {
+            color: #1e40af;
+            font-weight: 600;
+        }
+
+        .practice-box {
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+            border-left: 4px solid #10b981;
+            padding: 1.25rem;
+            border-radius: 0.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .practice-box p {
+            margin: 0;
+        }
+
+        .practice-box strong {
+            color: #047857;
+            font-weight: 600;
+        }
+
+        .code-block {
+            background: #1f2937;
+            color: #f3f4f6;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            position: relative;
+        }
+
+        .code-block code {
+            font-family: 'Courier New', monospace;
+            font-size: 0.875rem;
+            line-height: 1.6;
+            white-space: pre-wrap;
+        }
+
+        .quote-block {
+            font-style: italic;
+            font-size: 1.125rem;
+            color: #6b7280;
+            padding: 1rem 1.5rem;
+            border-left: 4px solid #d1d5db;
+            margin: 1.5rem 0;
+        }
+
+        .image-container {
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-caption {
+            font-size: 0.875rem;
+            color: #6b7280;
+            font-style: italic;
+            margin-top: 0.5rem;
+        }
+
+        .project-section {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(5, 150, 105, 0.05) 100%);
+            padding: 2rem;
+            border-radius: 1rem;
+            border: 2px solid #10b981;
+            margin: 2rem 0;
+        }
+
+        .project-section h3 {
+            color: #10b981;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .next-module-cta {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(5, 150, 105, 0.1) 100%);
+            border-radius: 1rem;
+            margin-top: 3rem;
+        }
+
+        .next-module-cta h3 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .next-module-cta p {
+            color: #6b7280;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin: 0 0.5rem;
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(135deg, #059669 0%, #047857 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
+        }
+
+        .cta-button.secondary {
+            background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%);
+        }
+
+        .cta-button.secondary:hover {
+            background: linear-gradient(135deg, #4b5563 0%, #374151 100%);
+            box-shadow: 0 10px 20px rgba(107, 114, 128, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .module-hero {
+                padding: 4rem 0 2rem;
+            }
+
+            .module-content-area {
+                padding: 2rem 1rem;
+            }
+
+            .content-block {
+                padding: 1.5rem;
+            }
+
+            .content-block h2 {
+                font-size: 1.5rem;
+            }
+
+            .content-block h3 {
+                font-size: 1.25rem;
+            }
+
+            .cta-button {
+                margin: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav-logo">
+                <span class="logo-icon">🤖</span>
+                <span class="logo-text">Engenharia de Agentes IA 2.0</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="../index.html#home" class="nav-link">Início</a></li>
+                <li><a href="../index.html#niveis" class="nav-link">Níveis</a></li>
+                <li><a href="../index.html#modulos" class="nav-link">Módulos</a></li>
+                <li><a href="http://inema.club" class="btn-primary" target="_blank" rel="noopener">INEMA.CLUB</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Module Hero -->
+    <section class="module-hero">
+        <div class="container">
+            <div class="module-breadcrumb">
+                <a href="../index.html">Início</a>
+                <span>›</span>
+                <a href="../niveis/fundamentos.html">Nível Fundamentos</a>
+                <span>›</span>
+                <span>Módulo 2</span>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1rem;">
+                <div style="font-size: 4rem;">💬</div>
+                <div>
+                    <h1 style="font-size: 2.5rem; font-weight: 700; margin: 0 0 0.5rem 0;">Módulo 2: Engenharia de Prompts Avançada</h1>
+                    <p style="font-size: 1.125rem; margin: 0; opacity: 0.9;">Palavras são código. Aprenda a programar com linguagem natural.</p>
+                </div>
+            </div>
+
+            <div class="module-header-info">
+                <span class="info-badge">⏱️ 6 horas</span>
+                <span class="info-badge">📝 10k palavras</span>
+                <span class="info-badge">🎯 Iniciante-Intermediário</span>
+                <span class="info-badge">🌟 Nível Fundamentos</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Module Content -->
+    <section class="module-content-area">
+        <div class="container">
+            <!-- Progress Tracker -->
+            <div class="module-progress-container" data-module="modulo-02">
+                <div class="module-progress-header">
+                    <span class="module-progress-label">Progresso do Módulo</span>
+                    <span class="module-progress-text">0/40 tópicos</span>
+                </div>
+                <div class="module-progress-track">
+                    <div class="module-progress-bar"></div>
+                </div>
+            </div>
+
+            <!-- Intro Quote -->
+            <div class="content-block">
+                <blockquote class="quote-block">
+                    "Você entendeu a máquina. Agora, você vai aprender a sua linguagem. Não a linguagem de programação, mas a linguagem do pensamento. A engenharia de prompts é a arte de esculpir a intenção em palavras, guiando a vasta inteligência da IA para um propósito específico."
+                </blockquote>
+                <p style="font-size: 1.125rem; font-weight: 500; color: #10b981; margin-bottom: 1rem;">Ato 1: O Despertar (Continuação)</p>
+                <p>Se o Módulo 1 foi sobre entender o motor, este módulo é sobre aprender a dirigir. Um LLM, por mais poderoso que seja, é um instrumento. A qualidade da música que ele produz depende inteiramente da habilidade do maestro. Aqui, você se tornará esse maestro. Vamos transformar a maneira como você interage com a IA, passando de simples perguntas para instruções complexas e estratégicas que extraem o máximo potencial desses modelos.</p>
+            </div>
+
+            <!-- Chapter 2.1 -->
+            <div class="content-block module-content" data-module="modulo-02">
+                <h2>Capítulo 2.1: Fundamentos de Prompting</h2>
+
+                <ul class="topics-list">
+                    <li class="topic-item" data-topic="m02-t01" data-topic-level="1">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>A Nova Arte da Comunicação</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <p>Engenharia de Prompts é mais do que simplesmente "fazer perguntas à IA". É uma disciplina emergente que combina:</p>
+                            <ul>
+                                <li><strong>Psicologia Cognitiva:</strong> Compreender como estruturar informações para melhor processamento</li>
+                                <li><strong>Design de Interação:</strong> Criar interfaces conversacionais eficazes</li>
+                                <li><strong>Programação Declarativa:</strong> Especificar "o que" você quer, não "como" fazer</li>
+                                <li><strong>Retórica e Persuasão:</strong> Usar linguagem estratégica para guiar o raciocínio</li>
+                            </ul>
+                            <p>A diferença entre um prompt medíocre e um excelente pode significar a diferença entre uma resposta genérica e uma solução transformadora.</p>
+                        </div>
+                    </li>
+
+                    <li class="topic-item" data-topic="m02-t02" data-topic-level="1">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>A Anatomia de um Prompt Perfeito</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <p>Um prompt não é apenas uma pergunta; é um conjunto de instruções, contexto e exemplos que guiam o modelo para a saída desejada. A clareza e a estrutura do seu prompt são os fatores mais importantes para o sucesso.</p>
+                            <p>Um prompt eficaz geralmente contém <strong>quatro componentes principais</strong>:</p>
+                        </div>
+                    </li>
+
+                    <li class="topic-item" data-topic="m02-t03" data-topic-level="2">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>1. Persona (Role)</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <p>Defina quem o LLM deve ser. A persona estabelece:</p>
+                            <ul>
+                                <li>Tom de voz (formal, casual, técnico)</li>
+                                <li>Nível de expertise</li>
+                                <li>Perspectiva e valores</li>
+                                <li>Estilo de comunicação</li>
+                            </ul>
+                            <div class="practice-box">
+                                <p><strong>Exemplos:</strong></p>
+                                <p>"Você é um especialista em marketing digital com 15 anos de experiência..."</p>
+                                <p>"Atue como um professor de física para crianças de 10 anos..."</p>
+                                <p>"Você é um consultor sênior de estratégia empresarial..."</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="topic-item" data-topic="m02-t04" data-topic-level="2">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>2. Contexto (Context)</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <p>Forneça as informações de fundo necessárias para a tarefa. Inclua:</p>
+                            <ul>
+                                <li>Situação atual ou problema</li>
+                                <li>Dados relevantes</li>
+                                <li>Restrições e limitações</li>
+                                <li>Público-alvo</li>
+                                <li>Objetivos de negócio</li>
+                            </ul>
+                            <div class="practice-box">
+                                <p><strong>Exemplo:</strong></p>
+                                <p>"Nossa startup de e-commerce vende produtos sustentáveis. Temos um orçamento limitado de marketing ($5000/mês) e queremos atingir millennials conscientes ambientalmente."</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="topic-item" data-topic="m02-t05" data-topic-level="2">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>3. Tarefa (Task)</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <p>Descreva clara e inequivocamente o que você quer que o modelo faça. Use verbos de ação específicos:</p>
+                            <ul>
+                                <li><strong>Análise:</strong> "Analise", "Avalie", "Compare", "Identifique"</li>
+                                <li><strong>Criação:</strong> "Crie", "Desenvolva", "Gere", "Escreva"</li>
+                                <li><strong>Transformação:</strong> "Traduza", "Resuma", "Simplifique", "Reformule"</li>
+                                <li><strong>Solução:</strong> "Resolva", "Proponha", "Recomende", "Otimize"</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="topic-item" data-topic="m02-t06" data-topic-level="2">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>4. Formato (Format)</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <p>Especifique como a saída deve ser estruturada:</p>
+                            <div class="practice-box">
+                                <p><strong>Exemplos:</strong></p>
+                                <p>"Retorne a resposta em formato JSON"</p>
+                                <p>"Crie uma tabela com 3 colunas: Problema, Causa, Solução"</p>
+                                <p>"Escreva em um tom amigável e profissional, máximo 200 palavras"</p>
+                                <p>"Liste 5 pontos principais usando bullet points"</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="topic-item" data-topic="m02-t07" data-topic-level="1">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>Exemplo Completo de Prompt Estruturado</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <div class="code-block">
+<code>PERSONA:
+Você é um analista de dados especializado em e-commerce com expertise
+em análise de comportamento do consumidor.
+
+CONTEXTO:
+Nossa loja online vendeu 10.000 unidades no último trimestre.
+- Taxa de conversão: 2.5%
+- Taxa de abandono de carrinho: 68%
+- Ticket médio: $45
+- Principal fonte de tráfego: Instagram Ads
+
+TAREFA:
+Analise esses dados e identifique os 3 principais problemas que estão
+limitando nosso crescimento. Para cada problema, sugira 2 ações concretas
+que possamos implementar.
+
+FORMATO:
+Estruture sua resposta como:
+1. Problema identificado
+   - Métrica afetada
+   - Ação 1: [descrição]
+   - Ação 2: [descrição]</code>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="topic-item" data-topic="m02-t08" data-topic-level="1">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>Zero-Shot vs. Few-Shot vs. Many-Shot Prompting</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <p>A quantidade de exemplos que você fornece ao modelo afeta dramaticamente sua performance.</p>
+                        </div>
+                    </li>
+
+                    <li class="topic-item" data-topic="m02-t09" data-topic-level="2">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>Zero-Shot Prompting</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <p>Você pede ao modelo para realizar uma tarefa <strong>sem fornecer nenhum exemplo</strong>.</p>
+                            <p><strong>Quando usar:</strong></p>
+                            <ul>
+                                <li>Tarefas gerais e bem conhecidas</li>
+                                <li>Quando você não tem exemplos disponíveis</li>
+                                <li>Para exploração inicial de capacidades</li>
+                            </ul>
+                            <div class="practice-box">
+                                <p><strong>Exemplo:</strong></p>
+                                <p>Classifique o sentimento do seguinte texto:<br>"Eu amei este produto!"<br>Positivo ou Negativo?</p>
+                            </div>
+                            <p><strong>Limitações:</strong></p>
+                            <ul>
+                                <li>Pode falhar em tarefas de nicho</li>
+                                <li>Interpretação pode variar</li>
+                                <li>Formato de saída imprevisível</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="topic-item" data-topic="m02-t10" data-topic-level="2">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>Few-Shot Prompting</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <p>Você fornece ao modelo <strong>alguns exemplos</strong> (geralmente de 1 a 5) de entradas e saídas desejadas antes de fazer o pedido final.</p>
+                            <p><strong>Quando usar:</strong></p>
+                            <ul>
+                                <li>Tarefas com padrões específicos</li>
+                                <li>Quando você precisa de formato consistente</li>
+                                <li>Para domínios especializados</li>
+                            </ul>
+                            <div class="practice-box">
+                                <p><strong>Exemplo:</strong></p>
+                                <p>Classifique o sentimento dos textos:</p>
+                                <p>Texto: "Este filme foi horrível."<br>Sentimento: Negativo</p>
+                                <p>Texto: "Uma obra-prima do cinema!"<br>Sentimento: Positivo</p>
+                                <p>Texto: "Achei o serviço apenas razoável."<br>Sentimento: Neutro</p>
+                                <p>Texto: "Eu amei este produto!"<br>Sentimento: _____</p>
+                            </div>
+                            <p><strong>Vantagens:</strong></p>
+                            <ul>
+                                <li>Precisão significativamente maior</li>
+                                <li>Controle sobre formato de saída</li>
+                                <li>Não requer fine-tuning do modelo</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="topic-item" data-topic="m02-t11" data-topic-level="2">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>Many-Shot Prompting</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <p>Com modelos de contexto longo (como Claude com 200K tokens), você pode fornecer <strong>dezenas ou centenas</strong> de exemplos.</p>
+                            <p><strong>Quando usar:</strong></p>
+                            <ul>
+                                <li>Tarefas extremamente especializadas</li>
+                                <li>Padrões complexos que precisam de múltiplos exemplos</li>
+                                <li>Substituir fine-tuning sem retreinar o modelo</li>
+                            </ul>
+                            <p><strong>Casos de uso:</strong></p>
+                            <ul>
+                                <li>Tradução de jargão técnico específico</li>
+                                <li>Classificação de tickets de suporte</li>
+                                <li>Análise de contratos legais</li>
+                            </ul>
+                            <div class="insight-box">
+                                <p><strong>💡 INSIGHT:</strong> O Few-Shot Prompting é uma das técnicas mais poderosas para melhorar a precisão e a confiabilidade de um LLM sem a necessidade de fine-tuning (re-treinamento), que é um processo muito mais caro e complexo. É como dar ao modelo um "mini-treinamento" dentro do próprio prompt.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="topic-item" data-topic="m02-t12" data-topic-level="1">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>Técnicas de Formatação Avançada</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <p><strong>Delimitadores Claros:</strong></p>
+                            <p>Use marcadores visuais para separar diferentes partes do prompt:</p>
+                            <div class="code-block">
+<code>###INSTRUÇÃO###
+Resuma o seguinte artigo
+
+###ARTIGO###
+[conteúdo aqui]
+
+###REQUISITOS###
+- Máximo 100 palavras
+- Foco em conclusões práticas</code>
+                            </div>
+                            <p><strong>Estruturas XML/JSON:</strong></p>
+                            <p>Para saídas estruturadas:</p>
+                            <div class="code-block">
+<code>Extraia informações do texto e retorne em formato JSON:
+
+{
+  "nome_produto": "",
+  "preco": 0,
+  "categoria": "",
+  "disponibilidade": true/false
+}
+
+Texto: [...]</code>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Chapter 2.2 -->
+            <div class="content-block module-content" data-module="modulo-02">
+                <h2>Capítulo 2.2: Técnicas Avançadas de Raciocínio</h2>
+
+                <p>Para tarefas que exigem lógica, matemática ou planejamento em várias etapas, um prompt simples não é suficiente. Precisamos ensinar o modelo a <strong>"pensar passo a passo"</strong>.</p>
+
+                <ul class="topics-list">
+                    <li class="topic-item" data-topic="m02-t13" data-topic-level="1">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>Chain of Thought (CoT) - A Revolução do Raciocínio</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <p>A técnica de <strong>Cadeia de Pensamento (Chain of Thought)</strong> é uma das descobertas mais importantes em engenharia de prompts. Publicada por pesquisadores do Google em 2022, ela demonstrou que modelos de linguagem podem melhorar drasticamente em tarefas de raciocínio complexo simplesmente sendo instruídos a externalizar seu processo de pensamento.</p>
+                            <p><strong>Como Funciona:</strong></p>
+                            <p>Ao adicionar instruções como "Pense passo a passo", "Vamos raciocinar sobre isso", ou "Resolva isso etapa por etapa", você força o modelo a:</p>
+                            <ol>
+                                <li><strong>Decompor</strong> o problema em partes menores</li>
+                                <li><strong>Processar</strong> cada parte sequencialmente</li>
+                                <li><strong>Validar</strong> a lógica em cada etapa</li>
+                                <li><strong>Sintetizar</strong> a resposta final</li>
+                            </ol>
+                        </div>
+                    </li>
+
+                    <li class="topic-item" data-topic="m02-t14" data-topic-level="2">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>CoT: Comparação Prática</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <p><strong>❌ Sem CoT:</strong></p>
+                            <div class="code-block">
+<code>Prompt: "João tem 5 maçãs. Ele compra mais 2 caixas de maçãs,
+cada uma com 6 maçãs. Quantas maçãs ele tem agora?"
+
+Resposta: 11 maçãs (INCORRETO!)</code>
+                            </div>
+                            <p><strong>✅ Com CoT:</strong></p>
+                            <div class="code-block">
+<code>Prompt: "João tem 5 maçãs. Ele compra mais 2 caixas de maçãs,
+cada uma com 6 maçãs. Quantas maçãs ele tem agora?
+Pense passo a passo."
+
+Resposta:
+1. Primeiro, vamos calcular quantas maçãs João comprou nas caixas
+2. São 2 caixas com 6 maçãs cada, então 2 × 6 = 12 maçãs
+3. João já tinha 5 maçãs
+4. Somando: 5 + 12 = 17 maçãs
+
+Resposta Final: João tem 17 maçãs. (CORRETO!)</code>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="topic-item" data-topic="m02-t15" data-topic-level="2">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>Aplicações Reais do CoT</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <p><strong>1. Análise de Negócios:</strong></p>
+                            <div class="code-block">
+<code>Analise se devemos expandir para o mercado B.
+Pense passo a passo sobre:
+1. Tamanho do mercado
+2. Competição existente
+3. Custos de entrada
+4. ROI esperado
+5. Riscos principais</code>
+                            </div>
+                            <p><strong>2. Debug de Código:</strong></p>
+                            <div class="code-block">
+<code>O seguinte código tem um bug. Identifique-o pensando passo a passo:
+1. Qual é o comportamento esperado?
+2. Qual é o comportamento atual?
+3. Em que linha está o problema?
+4. Por que está acontecendo?
+5. Como corrigir?</code>
+                            </div>
+                            <p><strong>3. Tomada de Decisão:</strong></p>
+                            <div class="code-block">
+<code>Devo aceitar esta oferta de emprego? Analise passo a passo:
+1. Alinhamento com objetivos de carreira
+2. Compensação total vs. mercado
+3. Cultura e valores da empresa
+4. Oportunidades de crescimento
+5. Impacto no work-life balance</code>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="topic-item" data-topic="m02-t16" data-topic-level="1">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>Self-Consistency: Votação de Múltiplos Caminhos</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <p>Esta técnica leva o CoT um passo adiante. Em vez de gerar uma única cadeia de pensamento, você gera <strong>múltiplas cadeias</strong> e escolhe a resposta que aparece com mais frequência.</p>
+                            <p><strong>Quando Usar Self-Consistency:</strong></p>
+                            <ul>
+                                <li>Problemas matemáticos complexos</li>
+                                <li>Decisões críticas de negócio</li>
+                                <li>Diagnósticos médicos (suporte)</li>
+                                <li>Análise jurídica</li>
+                            </ul>
+                            <p><strong>Vantagem:</strong> Aumenta significativamente a confiabilidade, especialmente em problemas onde um único erro de raciocínio levaria à resposta errada.</p>
+                        </div>
+                    </li>
+
+                    <li class="topic-item" data-topic="m02-t17" data-topic-level="1">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>Tree of Thoughts (ToT): Explorando Possibilidades</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <p><strong>Árvore de Pensamentos</strong> é uma técnica ainda mais avançada onde o modelo explora diferentes caminhos de raciocínio como galhos de uma árvore.</p>
+                            <p>O modelo pode:</p>
+                            <ul>
+                                <li><strong>Explorar</strong> múltiplos caminhos simultaneamente</li>
+                                <li><strong>Avaliar</strong> a qualidade de cada estado intermediário</li>
+                                <li><strong>Retroceder (backtrack)</strong> se um caminho não parece promissor</li>
+                                <li><strong>Escolher</strong> o caminho mais lógico para a solução</li>
+                            </ul>
+                            <div class="practice-box">
+                                <p><strong>Implementação Prática:</strong></p>
+                                <p>Problema: Planejar uma viagem de 7 dias para o Japão com orçamento limitado.</p>
+                                <p>1. GERAR: Liste 3 possíveis abordagens diferentes</p>
+                                <p>2. AVALIAR: Para cada abordagem, dê uma nota de 1-10</p>
+                                <p>3. EXPANDIR: Pegue a abordagem com melhor nota e detalhe</p>
+                                <p>4. VALIDAR: Verifique se está dentro do orçamento em cada etapa</p>
+                            </div>
+                            <p><strong>Aplicações:</strong></p>
+                            <ul>
+                                <li>Planejamento estratégico</li>
+                                <li>Design de sistemas complexos</li>
+                                <li>Resolução de puzzles</li>
+                                <li>Otimização de processos</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="topic-item" data-topic="m02-t18" data-topic-level="1">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>ReAct: Reasoning + Acting</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <p><strong>ReAct</strong> combina <strong>raciocínio</strong> (pensamento) com <strong>ação</strong> (uso de ferramentas).</p>
+                            <p><strong>Padrão ReAct:</strong></p>
+                            <div class="code-block">
+<code>Thought: [O que preciso fazer?]
+Action: [Que ferramenta usar?]
+Action Input: [Parâmetros da ferramenta]
+Observation: [Resultado da ação]
+... (repita até resolver)
+Thought: [Agora sei a resposta final]
+Final Answer: [Resposta]</code>
+                            </div>
+                            <div class="practice-box">
+                                <p><strong>Exemplo Prático:</strong></p>
+                                <p>Pergunta: Qual é a temperatura atual em Tóquio?</p>
+                                <p>Thought: Preciso de informação em tempo real sobre clima<br>
+                                Action: search_weather<br>
+                                Action Input: "Tokyo current temperature"<br>
+                                Observation: 18°C, partly cloudy</p>
+                                <p>Thought: Tenho a informação necessária<br>
+                                Final Answer: A temperatura atual em Tóquio é 18°C com céu parcialmente nublado.</p>
+                            </div>
+                            <p>Este padrão é a base de <strong>agentes autônomos</strong> que veremos nos próximos módulos.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Chapter 2.3 -->
+            <div class="content-block module-content" data-module="modulo-02">
+                <h2>Capítulo 2.3: Prompt Engineering para Agentes de IA</h2>
+
+                <p>Quando passamos de simples prompts para a criação de agentes autônomos, a engenharia de prompts se torna a base da "personalidade" e do comportamento do agente.</p>
+
+                <ul class="topics-list">
+                    <li class="topic-item" data-topic="m02-t19" data-topic-level="1">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>O System Prompt: A Constituição do Agente</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <p>O <strong>System Prompt</strong> é a instrução de mais alto nível que governa todas as interações futuras do agente. É como a "programação" do agente, definindo:</p>
+                            <ul>
+                                <li><strong>Quem ele é</strong> (identidade)</li>
+                                <li><strong>O que ele faz</strong> (capacidades)</li>
+                                <li><strong>Como ele pensa</strong> (processo de raciocínio)</li>
+                                <li><strong>Limites</strong> (restrições éticas e operacionais)</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="topic-item" data-topic="m02-t20" data-topic-level="2">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>Template de System Prompt Profissional</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <div class="code-block">
+<code># IDENTIDADE
+Você é [NOME], um [FUNÇÃO] especializado em [DOMÍNIO].
+Suas principais características são: [TRAÇOS DE PERSONALIDADE].
+
+# MISSÃO
+Seu objetivo principal é [OBJETIVO PRINCIPAL].
+Você deve sempre priorizar [VALORES/PRIORIDADES].
+
+# CAPACIDADES
+Você tem acesso às seguintes ferramentas:
+- [FERRAMENTA 1]: [Descrição e quando usar]
+- [FERRAMENTA 2]: [Descrição e quando usar]
+- [FERRAMENTA 3]: [Descrição e quando usar]
+
+# PROCESSO DE RACIOCÍNIO
+Para cada tarefa, você deve:
+1. Analisar a solicitação do usuário
+2. Identificar qual informação você precisa
+3. Decidir qual ferramenta usar
+4. Executar ações necessárias
+5. Validar resultados
+6. Fornecer resposta clara e acionável
+
+# RESTRIÇÕES
+NUNCA:
+- [Ação proibida 1]
+- [Ação proibida 2]
+- [Ação proibida 3]
+
+SEMPRE:
+- [Comportamento obrigatório 1]
+- [Comportamento obrigatório 2]
+- [Comportamento obrigatório 3]
+
+# TOM E ESTILO
+- Use linguagem [FORMAL/CASUAL]
+- Seja [CARACTERÍSTICA 1] e [CARACTERÍSTICA 2]
+- Explique conceitos técnicos de forma [SIMPLES/DETALHADA]</code>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="topic-item" data-topic="m02-t21" data-topic-level="2">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>Exemplo: Agente de Viagens Personalizado</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <div class="code-block">
+<code># IDENTIDADE
+Você é Sophia, uma agente de viagens virtual especializada em
+experiências personalizadas e sustentáveis. Você é entusiasta,
+detalhista e genuinamente apaixonada por conectar pessoas a
+culturas autênticas.
+
+# MISSÃO
+Seu objetivo é criar itinerários de viagem inesquecíveis que
+equilibrem perfeitamente: experiência cultural autêntica,
+sustentabilidade, segurança e orçamento do viajante.
+
+# CAPACIDADES
+Você tem acesso a:
+- search_flights(origem, destino, data)
+- search_hotels(cidade, check_in, check_out, budget)
+- get_weather(cidade, data)
+- find_attractions(cidade, interesses)
+- calculate_budget(itinerario)
+
+# PROCESSO DE RACIOCÍNIO (ReAct)
+Para cada solicitação de viagem:
+1. ENTENDER: Faça perguntas para entender necessidades
+2. PESQUISAR: Use suas ferramentas para comparar opções
+3. OTIMIZAR: Crie 2-3 opções de itinerário
+4. APRESENTAR: Mostre custo total e detalhes
+5. REFINAR: Baseado no feedback, ajuste
+
+# RESTRIÇÕES
+NUNCA:
+- Recomende destinos ou atividades perigosas
+- Exceda o orçamento declarado
+- Ignore restrições de saúde
+
+SEMPRE:
+- Priorize segurança do viajante
+- Inclua opções sustentáveis
+- Verifique requisitos de visto</code>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="topic-item" data-topic="m02-t22" data-topic-level="1">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>Técnicas de Controle de Comportamento</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <p><strong>1. Guardrails (Barreiras de Segurança):</strong></p>
+                            <div class="code-block">
+<code>REGRAS DE SEGURANÇA:
+Antes de executar QUALQUER ação, verifique:
+✓ A ação está dentro do escopo da tarefa?
+✓ A ação não viola privacidade do usuário?
+✓ A ação não tem riscos de segurança?
+✓ O usuário forneceu consentimento explícito?
+
+Se qualquer resposta for "NÃO", PARE e peça esclarecimento.</code>
+                            </div>
+                            <p><strong>2. Prompt de Validação:</strong></p>
+                            <div class="code-block">
+<code>Após completar a tarefa, SEMPRE:
+1. Revise sua resposta quanto a:
+   - Precisão factual
+   - Clareza da comunicação
+   - Alinhamento com objetivo do usuário
+2. Se encontrar problemas, corrija antes de enviar
+3. Se não tiver certeza, indique explicitamente</code>
+                            </div>
+                            <p><strong>3. Handling de Ambiguidade:</strong></p>
+                            <div class="code-block">
+<code>Se a solicitação do usuário for ambígua:
+1. NÃO faça suposições
+2. Identifique especificamente o que precisa ser esclarecido
+3. Faça perguntas direcionadas
+4. Ofereça opções quando apropriado</code>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="topic-item" data-topic="m02-t23" data-topic-level="1">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>Meta-Prompting: Prompts que Geram Prompts</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <p>Uma técnica poderosa é usar IA para criar prompts melhores.</p>
+                            <div class="code-block">
+<code>Você é um especialista em engenharia de prompts.
+
+Dada a seguinte tarefa: [DESCRIÇÃO DA TAREFA]
+
+Crie um prompt otimizado que:
+1. Defina claramente a persona apropriada
+2. Forneça contexto necessário
+3. Especifique a tarefa de forma precisa
+4. Defina o formato de saída desejado
+5. Inclua exemplos few-shot se apropriado
+
+Retorne o prompt otimizado em um bloco de código markdown.</code>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Chapter 2.4 -->
+            <div class="content-block module-content" data-module="modulo-02">
+                <h2>Capítulo 2.4: Prompting Multimodal</h2>
+
+                <p>Com modelos como GPT-4 Vision, Claude com visão e DALL-E, podemos criar prompts que trabalham com múltiplas modalidades.</p>
+
+                <ul class="topics-list">
+                    <li class="topic-item" data-topic="m02-t24" data-topic-level="1">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>Prompts para Geração de Imagens</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <p><strong>Anatomia de um Prompt de Imagem Eficaz:</strong></p>
+                            <div class="code-block">
+<code>[SUJEITO PRINCIPAL] + [AÇÃO/POSE] + [CONTEXTO/AMBIENTE] +
+[ESTILO ARTÍSTICO] + [ILUMINAÇÃO] + [PERSPECTIVA/ÂNGULO] +
+[QUALIDADE/DETALHES]</code>
+                            </div>
+                            <div class="practice-box">
+                                <p><strong>Exemplo:</strong></p>
+                                <p>Um astronauta solitário [SUJEITO]<br>
+                                contemplando uma paisagem marciana [AÇÃO]<br>
+                                ao pôr do sol, com dois sóis no horizonte [CONTEXTO]<br>
+                                estilo arte conceitual cinematográfica [ESTILO]<br>
+                                iluminação dramática dourada e laranja [ILUMINAÇÃO]<br>
+                                ângulo amplo, composição rule of thirds [PERSPECTIVA]<br>
+                                4K, altamente detalhado, fotorrealista [QUALIDADE]</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="topic-item" data-topic="m02-t25" data-topic-level="1">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>Prompts para Análise de Imagens</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <div class="code-block">
+<code>Analise a imagem fornecida e retorne:
+
+1. DESCRIÇÃO GERAL:
+   - O que você vê?
+   - Qual é o contexto/cenário?
+
+2. ELEMENTOS PRINCIPAIS:
+   - Liste objetos principais
+   - Identifique pessoas (sem identificação facial)
+   - Descreva cores dominantes
+
+3. ANÁLISE TÉCNICA:
+   - Qualidade da imagem
+   - Composição
+   - Iluminação
+
+4. TEXTO EXTRAÍDO:
+   - Transcreva qualquer texto visível
+
+5. INSIGHTS:
+   - Qual parece ser o propósito desta imagem?
+   - Que emoção/mensagem ela transmite?</code>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="topic-item" data-topic="m02-t26" data-topic-level="1">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>Prompts para Áudio</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <div class="code-block">
+<code>Transcreva o áudio fornecido e:
+
+1. TRANSCRIÇÃO:
+   [Texto completo com pontuação]
+
+2. ANÁLISE:
+   - Língua detectada
+   - Número de falantes
+   - Tom/emoção dominante
+   - Contexto (reunião, apresentação, conversa, etc.)
+
+3. RESUMO:
+   - Principais pontos discutidos
+   - Decisões tomadas
+   - Ações a serem realizadas
+
+4. TIMESTAMPS:
+   - Marque momentos importantes com timestamps</code>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Chapter 2.5 -->
+            <div class="content-block module-content" data-module="modulo-02">
+                <h2>Capítulo 2.5: Debugging e Otimização de Prompts</h2>
+
+                <ul class="topics-list">
+                    <li class="topic-item" data-topic="m02-t27" data-topic-level="1">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>Estratégias de Debugging</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <p><strong>1. Teste A/B de Prompts:</strong></p>
+                            <div class="code-block">
+<code>prompts = {
+    "A": "Resuma este artigo",
+    "B": "Resuma este artigo em 3 pontos principais",
+    "C": "Resuma este artigo em 3 pontos. Use bullet points.
+          Cada ponto deve ter no máximo 20 palavras."
+}
+
+# Testar com mesmo conteúdo e comparar resultados</code>
+                            </div>
+                            <p><strong>2. Engenharia Reversa:</strong></p>
+                            <p>Se você tem uma saída ideal, peça à IA para criar o prompt:</p>
+                            <div class="code-block">
+<code>Você gerou esta resposta excelente:
+[RESPOSTA EXCELENTE]
+
+Qual prompt você usaria para gerar consistentemente
+respostas desta qualidade e formato?</code>
+                            </div>
+                            <p><strong>3. Decomposição de Problemas:</strong></p>
+                            <p>Se um prompt complexo não funciona, divida em etapas:</p>
+                            <div class="code-block">
+<code>❌ Prompt único complexo:
+"Analise este dataset, encontre padrões, crie visualizações
+e faça recomendações"
+
+✅ Sequência de prompts:
+1. "Descreva a estrutura deste dataset"
+2. "Identifique 3 padrões mais interessantes"
+3. "Para cada padrão, sugira uma visualização apropriada"
+4. "Baseado nos padrões, liste 5 recomendações acionáveis"</code>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="topic-item" data-topic="m02-t28" data-topic-level="1">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>Métricas de Qualidade de Prompts</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <p>Como avaliar se seu prompt é bom?</p>
+                            <ol>
+                                <li><strong>Consistência:</strong> Gera resultados similares com inputs similares?</li>
+                                <li><strong>Precisão:</strong> As respostas são factualmente corretas?</li>
+                                <li><strong>Relevância:</strong> A saída está alinhada com o objetivo?</li>
+                                <li><strong>Completude:</strong> Todas as partes da tarefa são abordadas?</li>
+                                <li><strong>Eficiência:</strong> O prompt é o mais conciso possível mantendo qualidade?</li>
+                            </ol>
+                        </div>
+                    </li>
+
+                    <li class="topic-item" data-topic="m02-t29" data-topic-level="1">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>Prompt Library: Construindo seu Arsenal</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <p>Mantenha uma biblioteca de prompts testados e otimizados:</p>
+                            <div class="code-block">
+<code>prompts/
+  ├── analysis/
+  │   ├── sentiment-analysis.md
+  │   ├── data-insights.md
+  │   └── competitive-research.md
+  ├── content-creation/
+  │   ├── blog-post.md
+  │   ├── social-media.md
+  │   └── email-campaign.md
+  ├── code/
+  │   ├── code-review.md
+  │   ├── bug-fix.md
+  │   └── documentation.md
+  └── agents/
+      ├── customer-support-agent.md
+      ├── research-agent.md
+      └── code-assistant-agent.md</code>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Summary Section -->
+            <div class="content-block">
+                <h2>📝 Resumo Gráfico do Módulo 2</h2>
+                <ul class="topics-list">
+                    <li class="topic-item" data-topic="m02-t30" data-topic-level="1">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>Conceitos-Chave</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <p><strong>Anatomia do Prompt:</strong></p>
+                            <ul>
+                                <li>✓ Persona (Quem)</li>
+                                <li>✓ Contexto (Situação)</li>
+                                <li>✓ Tarefa (O que fazer)</li>
+                                <li>✓ Formato (Como entregar)</li>
+                            </ul>
+                            <p><strong>Técnicas de Raciocínio:</strong></p>
+                            <ul>
+                                <li><strong>CoT:</strong> Pensamento passo a passo</li>
+                                <li><strong>Self-Consistency:</strong> Múltiplos caminhos</li>
+                                <li><strong>ToT:</strong> Exploração em árvore</li>
+                                <li><strong>ReAct:</strong> Raciocínio + Ação</li>
+                            </ul>
+                            <p><strong>System Prompts:</strong></p>
+                            <ul>
+                                <li>Define comportamento de agentes</li>
+                                <li>Estabelece guardrails</li>
+                                <li>Especifica processo de raciocínio</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="topic-item" data-topic="m02-t31" data-topic-level="1">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>Hierarquia de Complexidade</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <div class="code-block">
+<code>Nível 1: Prompt Simples
+    ↓
+Nível 2: Prompt Estruturado (Persona + Contexto + Tarefa + Formato)
+    ↓
+Nível 3: Few-Shot Prompting
+    ↓
+Nível 4: Chain of Thought
+    ↓
+Nível 5: ReAct (Agentes)
+    ↓
+Nível 6: Multi-Agent Systems</code>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Practical Project -->
+            <div class="project-section">
+                <h3>🚀 Projeto Prático do Módulo 2</h3>
+
+                <ul class="topics-list">
+                    <li class="topic-item" data-topic="m02-t32" data-topic-level="1">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>Desafio: Sistema de Análise de Sentimento com Chain of Thought</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <p><strong>Objetivo:</strong> Desenvolva um sistema robusto de análise de sentimento que use CoT para lidar com textos ambíguos e nuançados.</p>
+                            <p><strong>Funcionalidades:</strong></p>
+                            <ul>
+                                <li>Classificar sentimento: Positivo, Negativo, Neutro, Misto</li>
+                                <li>Explicar o raciocínio (CoT explícito)</li>
+                                <li>Identificar aspectos específicos (produto, serviço, atendimento)</li>
+                                <li>Calcular score de confiança (0-100%)</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="topic-item" data-topic="m02-t33" data-topic-level="2">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>Casos de Teste</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <div class="code-block">
+<code>test_reviews = [
+    # Caso simples
+    "Este produto é incrível! Adorei.",
+
+    # Caso ambíguo
+    "O produto é lindo, mas quebrou no primeiro dia.",
+
+    # Caso complexo
+    "O atendimento foi péssimo, demorou 2 horas. Mas o produto "
+    "em si é excelente, superou minhas expectativas. Vale a pena "
+    "pela qualidade, apesar do transtorno na entrega.",
+
+    # Sarcasmo
+    "Ah, claro, esperar 3 meses por um produto que chegou quebrado "
+    "foi uma experiência maravilhosa!",
+
+    # Neutro
+    "Recebi o produto conforme descrito. Tamanho médio, cor azul."
+]</code>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="topic-item" data-topic="m02-t34" data-topic-level="2">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>Template de Prompt</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <div class="code-block">
+<code>SYSTEM_PROMPT = """
+Você é um especialista em análise de sentimento com profundo
+entendimento de nuances linguísticas, sarcasmo e contexto.
+
+Para cada avaliação, você deve:
+
+1. LER cuidadosamente todo o texto
+2. IDENTIFICAR aspectos mencionados
+3. ANALISAR sentimento de cada aspecto separadamente
+4. DETECTAR sinais de sarcasmo ou ironia
+5. AVALIAR intensidade emocional
+6. CONSOLIDAR em classificação final
+7. EXPLICAR seu raciocínio
+
+FORMATO DE RESPOSTA:
+{
+  "sentimento_geral": "Positivo|Negativo|Neutro|Misto",
+  "confianca": 0-100,
+  "aspectos": [
+    {
+      "aspecto": "nome do aspecto",
+      "sentimento": "Positivo|Negativo|Neutro",
+      "evidencia": "trecho do texto"
+    }
+  ],
+  "raciocinio": "Explicação passo a passo da análise",
+  "flags": ["sarcasmo", "ambiguidade", etc.]
+}
+"""</code>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="topic-item" data-topic="m02-t35" data-topic-level="2">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>Implementação Base</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <div class="code-block">
+<code>import openai
+import json
+
+def analyze_sentiment_with_cot(review_text):
+    """
+    Analisa sentimento usando Chain of Thought
+    """
+
+    prompt = f"""
+{SYSTEM_PROMPT}
+
+TEXTO PARA ANÁLISE:
+\"\"\"{review_text}\"\"\"
+
+Pense passo a passo e forneça sua análise completa.
+"""
+
+    response = openai.ChatCompletion.create(
+        model="gpt-4",
+        messages=[
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": prompt}
+        ],
+        temperature=0.3  # Baixa para consistência
+    )
+
+    return json.loads(response.choices[0].message.content)
+
+
+# Teste
+for review in test_reviews:
+    print(f"\n{'='*60}")
+    print(f"REVIEW: {review[:100]}...")
+
+    analysis = analyze_sentiment_with_cot(review)
+
+    print(f"\nSENTIMENTO: {analysis['sentimento_geral']}")
+    print(f"CONFIANÇA: {analysis['confianca']}%")
+    print(f"\nRACIOCÍNIO:")
+    print(analysis['raciocinio'])</code>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="topic-item" data-topic="m02-t36" data-topic-level="2">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>Extensões Opcionais</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <ul>
+                                <li>☐ Adicionar suporte multilingue</li>
+                                <li>☐ Implementar Self-Consistency (rodar 5x e pegar maioria)</li>
+                                <li>☐ Criar dashboard web com Streamlit</li>
+                                <li>☐ Adicionar análise de tendências temporais</li>
+                                <li>☐ Integrar com reviews reais (API do Amazon, etc.)</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="topic-item" data-topic="m02-t37" data-topic-level="2">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>Critérios de Avaliação</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <p><strong>✅ Excelente (90-100 pontos):</strong></p>
+                            <ul>
+                                <li>Detecta corretamente todos os casos de teste</li>
+                                <li>Identifica sarcasmo e ambiguidade</li>
+                                <li>Raciocínio CoT é claro e lógico</li>
+                                <li>Código bem estruturado e documentado</li>
+                            </ul>
+                            <p><strong>✅ Bom (70-89 pontos):</strong></p>
+                            <ul>
+                                <li>Acerta maioria dos casos</li>
+                                <li>Raciocínio presente mas pode melhorar</li>
+                                <li>Código funcional</li>
+                            </ul>
+                            <p><strong>✅ Satisfatório (50-69 pontos):</strong></p>
+                            <ul>
+                                <li>Funciona em casos simples</li>
+                                <li>Falha em ambiguidades</li>
+                                <li>Implementação básica</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Insights Section -->
+            <div class="content-block">
+                <h2>💡 Insights e Lições Aprendidas</h2>
+                <ul class="topics-list">
+                    <li class="topic-item" data-topic="m02-t38" data-topic-level="1">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>Princípios Fundamentais de Prompt Engineering</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <ol>
+                                <li><strong>Clareza > Concisão:</strong> Um prompt mais longo e claro é melhor que um curto e ambíguo</li>
+                                <li><strong>Exemplos Falam Mais que Instruções:</strong> Um bom exemplo vale mil palavras de explicação</li>
+                                <li><strong>Estrutura Cria Consistência:</strong> Formatos bem definidos geram saídas previsíveis</li>
+                                <li><strong>Iteração é Essencial:</strong> Raramente o primeiro prompt é o melhor</li>
+                                <li><strong>Contexto é Rei:</strong> Quanto mais contexto relevante, melhor a resposta</li>
+                            </ol>
+                        </div>
+                    </li>
+
+                    <li class="topic-item" data-topic="m02-t39" data-topic-level="1">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>Armadilhas Comuns a Evitar</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <p><strong>❌ Prompt Vago:</strong></p>
+                            <div class="code-block">
+<code>"Escreva sobre marketing"</code>
+                            </div>
+                            <p><strong>✅ Prompt Específico:</strong></p>
+                            <div class="code-block">
+<code>"Escreva um artigo de 800 palavras sobre estratégias de
+marketing digital para startups B2B com orçamento limitado,
+focando em táticas orgânicas e de baixo custo. Público-alvo:
+fundadores técnicos sem background em marketing."</code>
+                            </div>
+                            <p><strong>❌ Assumir Conhecimento Implícito:</strong></p>
+                            <div class="code-block">
+<code>"Analise os dados" (que dados? que tipo de análise?)</code>
+                            </div>
+                            <p><strong>✅ Explicitar Tudo:</strong></p>
+                            <div class="code-block">
+<code>"Analise o dataset CSV anexo de vendas mensais (2020-2024).
+Identifique: 1) tendências sazonais, 2) produtos top performers,
+3) regiões de crescimento. Apresente insights em bullet points."</code>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Next Steps -->
+            <div class="content-block">
+                <h2>🎯 Próximos Passos</h2>
+
+                <ul class="topics-list">
+                    <li class="topic-item" data-topic="m02-t40" data-topic-level="1">
+                        <button class="topic-button">
+                            <span class="topic-checkbox"></span>
+                            <span>O Que Vem a Seguir?</span>
+                            <span class="topic-icon">▶</span>
+                        </button>
+                        <div class="topic-explanation nivel-fundamentos hidden">
+                            <p>Você agora domina a arte de se comunicar com IA de forma eficaz e estratégica. Você aprendeu:</p>
+                            <ul>
+                                <li>✓ Como estruturar prompts profissionais</li>
+                                <li>✓ Técnicas avançadas de raciocínio (CoT, ToT, ReAct)</li>
+                                <li>✓ Criar System Prompts para agentes</li>
+                                <li>✓ Debugging e otimização de prompts</li>
+                            </ul>
+                            <p><strong>Mas para construir aplicações verdadeiramente poderosas, precisamos ir além de prompts isolados.</strong></p>
+                            <p>No <strong>Módulo 3</strong>, entraremos no mundo dos <strong>frameworks de desenvolvimento</strong> com <strong>LangChain</strong>, onde aprenderemos a:</p>
+                            <ul>
+                                <li>Dar <strong>memória</strong> aos nossos agentes</li>
+                                <li>Conectá-los a <strong>fontes de dados externas</strong></li>
+                                <li>Criar <strong>cadeias de raciocínio</strong> complexas</li>
+                                <li>Construir <strong>aplicações de IA completas</strong></li>
+                            </ul>
+                            <p>A engenharia de prompts é sua fundação. Agora vamos construir o edifício.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- CTA to Next Module -->
+            <div class="next-module-cta">
+                <h3>Continue sua jornada</h3>
+                <p>Você dominou a engenharia de prompts. Agora é hora de construir aplicações de IA completas!</p>
+                <div>
+                    <a href="modulo-01.html" class="cta-button secondary">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M15.833 10H4.167M10 15.833L4.167 10 10 4.167" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Voltar: Módulo 1</span>
+                    </a>
+                    <a href="modulo-03.html" class="cta-button">
+                        <span>Próximo: Módulo 3 - LangChain</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4.167 10h11.666M10 4.167L15.833 10 10 15.833" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+                <div style="margin-top: 1rem;">
+                    <a href="../niveis/fundamentos.html" style="color: #6b7280; text-decoration: none; font-size: 0.875rem;">← Voltar para Nível Fundamentos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Engenharia de Agentes IA 2.0</h3>
+                    <p class="footer-text">
+                        Curso completo e gratuito de Engenharia de Agentes de IA.
+                        Do zero ao profissional.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html#niveis">Níveis</a></li>
+                        <li><a href="../index.html#modulos">Módulos</a></li>
+                        <li><a href="https://github.com/inematds/FEA-IA" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Contato</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:inematds@gmail.com">inematds@gmail.com</a></li>
+                        <li><a href="https://github.com/inematds" target="_blank">@inematds</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Engenharia de Agentes IA 2.0. Código aberto sob licença MIT.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nível Aplicação - Frameworks modernos e sistemas multi-agente com Agno, CrewAI e MCP">
+    <title>Nível Aplicação | Engenharia de Agentes IA 2.0</title>
+
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/topics.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <script defer src="../js/app.js"></script>
+
+    <style>
+        .nivel-hero {
+            padding: 6rem 0 4rem;
+            background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+            color: white;
+        }
+
+        .nivel-breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+
+        .nivel-breadcrumb a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nivel-breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .nivel-content {
+            padding: 4rem 0;
+        }
+
+        .modules-list {
+            display: grid;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .module-card-detailed {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border-left: 4px solid #8b5cf6;
+        }
+
+        .module-card-detailed:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(139, 92, 246, 0.2);
+        }
+
+        .module-header-detailed {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .module-icon-large {
+            font-size: 3rem;
+            line-height: 1;
+        }
+
+        .module-info-detailed {
+            flex: 1;
+        }
+
+        .module-meta-inline {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 0.875rem;
+            color: #6b7280;
+            margin-top: 0.5rem;
+        }
+
+        .module-description-full {
+            color: #374151;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .module-cta-detailed {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .module-cta-detailed:hover {
+            background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+            transform: translateX(5px);
+        }
+
+        .nivel-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+            padding: 2rem;
+            background: rgba(139, 92, 246, 0.1);
+            border-radius: 1rem;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #5b21b6;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            color: #374151;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav-logo">
+                <span class="logo-icon">🤖</span>
+                <span class="logo-text">Engenharia de Agentes IA 2.0</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="../index.html#home" class="nav-link">Início</a></li>
+                <li><a href="../index.html#niveis" class="nav-link">Níveis</a></li>
+                <li><a href="../index.html#modulos" class="nav-link">Módulos</a></li>
+                <li><a href="http://inema.club" class="btn-primary" target="_blank" rel="noopener">INEMA.CLUB</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Nivel Hero -->
+    <section class="nivel-hero">
+        <div class="container">
+            <div class="nivel-breadcrumb">
+                <a href="../index.html">Início</a>
+                <span>›</span>
+                <a href="../index.html#niveis">Níveis</a>
+                <span>›</span>
+                <span>Aplicação</span>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1rem;">
+                <div style="font-size: 4rem;">⚡</div>
+                <div>
+                    <h1 style="font-size: 3rem; font-weight: 700; margin: 0 0 0.5rem 0;">Nível Aplicação</h1>
+                    <p style="font-size: 1.25rem; margin: 0; opacity: 0.9;">22-27 horas | Intermediário</p>
+                </div>
+            </div>
+
+            <p style="font-size: 1.125rem; line-height: 1.7; max-width: 800px; opacity: 0.95;">
+                Frameworks modernos e sistemas multi-agente. Agno, CrewAI e MCP para aplicações reais.
+            </p>
+
+            <div class="nivel-stats">
+                <div class="stat-item">
+                    <div class="stat-value">3</div>
+                    <div class="stat-label">Módulos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">22-27h</div>
+                    <div class="stat-label">Duração Total</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">59k+</div>
+                    <div class="stat-label">Palavras</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">3</div>
+                    <div class="stat-label">Projetos Práticos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conteúdo dos Módulos -->
+    <section class="nivel-content">
+        <div class="container">
+            <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 1rem;">Módulos do Nível Aplicação</h2>
+            <p style="color: #6b7280; margin-bottom: 2rem;">
+                Complete os 3 módulos abaixo para dominar frameworks modernos e sistemas multi-agente
+            </p>
+
+            <div class="modules-list">
+                <!-- Módulo 4 -->
+                <div class="module-card-detailed">
+                    <div class="module-header-detailed">
+                        <div class="module-icon-large">⚡</div>
+                        <div class="module-info-detailed">
+                            <div style="font-size: 0.875rem; font-weight: 600; color: #8b5cf6; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;">Módulo 04</div>
+                            <h3 style="font-size: 1.75rem; font-weight: 700; margin: 0 0 0.5rem 0; color: #111827;">Agno - Simplicidade e Poder</h3>
+                            <div class="module-meta-inline">
+                                <span>⏱️ 7 horas</span>
+                                <span>📝 17k palavras</span>
+                                <span>🎯 Intermediário</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="module-description-full">
+                        Framework moderno e minimalista para criar agentes poderosos com código limpo.
+                    </p>
+
+                    <div style="background: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 1.5rem;">
+                        <h4 style="font-size: 0.875rem; font-weight: 600; color: #374151; margin: 0 0 0.75rem 0; text-transform: uppercase; letter-spacing: 0.05em;">O que você vai aprender:</h4>
+                        <ul class="topics-list">
+                            <li class="topic-item" data-topic="aplic-m04-t01" data-topic-level="2">
+                                <button class="topic-button">
+                                    <span class="topic-checkbox"></span>
+                                    <span>Filosofia Agno: Simplicidade radical</span>
+                                    <span class="topic-icon">▶</span>
+                                </button>
+                                <div class="topic-explanation nivel-aplicacao hidden">
+                                    <p><strong>O que você aprenderá:</strong></p>
+                                    <p>Entenda a filosofia por trás do Agno:</p>
+                                    <ul>
+                                        <li><strong>Zero boilerplate:</strong> Código limpo sem configurações complexas</li>
+                                        <li><strong>Type-safe:</strong> Pydantic para validação automática</li>
+                                        <li><strong>Multi-model:</strong> Trocar entre GPT-4, Claude, Gemini sem reescrever código</li>
+                                        <li><strong>Production-ready:</strong> Built-in retry, caching, observability</li>
+                                    </ul>
+                                    <p><strong>💡 Diferencial:</strong> Criar agentes poderosos com 10x menos código que frameworks complexos.</p>
+                                </div>
+                            </li>
+                            <li class="topic-item" data-topic="aplic-m04-t02" data-topic-level="2">
+                                <button class="topic-button">
+                                    <span class="topic-checkbox"></span>
+                                    <span>Criando agentes com Agno Agent</span>
+                                    <span class="topic-icon">▶</span>
+                                </button>
+                                <div class="topic-explanation nivel-aplicacao hidden">
+                                    <p><strong>O que você aprenderá:</strong></p>
+                                    <ul>
+                                        <li><strong>Agent class:</strong> Interface simples para criar agentes</li>
+                                        <li><strong>Tools:</strong> Decorador @agent.tool() para adicionar ferramentas</li>
+                                        <li><strong>Streaming:</strong> Respostas em tempo real</li>
+                                        <li><strong>Structured outputs:</strong> Pydantic models como saída</li>
+                                    </ul>
+                                    <p><strong>🔥 Na prática:</strong> Agente completo em 20 linhas de código!</p>
+                                </div>
+                            </li>
+                            <li class="topic-item" data-topic="aplic-m04-t03" data-topic-level="2">
+                                <button class="topic-button">
+                                    <span class="topic-checkbox"></span>
+                                    <span>Tools e structured outputs</span>
+                                    <span class="topic-icon">▶</span>
+                                </button>
+                                <div class="topic-explanation nivel-aplicacao hidden">
+                                    <p><strong>O que você aprenderá:</strong></p>
+                                    <ul>
+                                        <li>Criar ferramentas com type hints automáticos</li>
+                                        <li>Validação de inputs com Pydantic</li>
+                                        <li>Outputs estruturados garantidos (não mais parsing de JSON!)</li>
+                                        <li>Composição de ferramentas complexas</li>
+                                    </ul>
+                                    <p><strong>⚡ Benefício:</strong> Elimina 90% dos erros de parsing e validação.</p>
+                                </div>
+                            </li>
+                            <li class="topic-item" data-topic="aplic-m04-t04" data-topic-level="2">
+                                <button class="topic-button">
+                                    <span class="topic-checkbox"></span>
+                                    <span>Multi-model switching</span>
+                                    <span class="topic-icon">▶</span>
+                                </button>
+                                <div class="topic-explanation nivel-aplicacao hidden">
+                                    <p><strong>O que você aprenderá:</strong></p>
+                                    <ul>
+                                        <li>Usar GPT-4, Claude, Gemini com a mesma interface</li>
+                                        <li>Fallback automático se um modelo falha</li>
+                                        <li>Escolher modelo baseado em custo/latência/qualidade</li>
+                                        <li>A/B testing de diferentes modelos</li>
+                                    </ul>
+                                    <p><strong>💰 Economia:</strong> Use modelo mais barato para tarefas simples, modelo premium para complexas.</p>
+                                </div>
+                            </li>
+                            <li class="topic-item" data-topic="aplic-m04-t05" data-topic-level="2">
+                                <button class="topic-button">
+                                    <span class="topic-checkbox"></span>
+                                    <span>Deployment e boas práticas</span>
+                                    <span class="topic-icon">▶</span>
+                                </button>
+                                <div class="topic-explanation nivel-aplicacao hidden">
+                                    <p><strong>O que você aprenderá:</strong></p>
+                                    <ul>
+                                        <li>Estrutura de projeto profissional</li>
+                                        <li>Environment variables e secrets management</li>
+                                        <li>Logging e debugging</li>
+                                        <li>Testing de agentes</li>
+                                        <li>Deploy em produção (Docker, cloud)</li>
+                                    </ul>
+                                    <p><strong>🏗️ Arquitetura:</strong> Do protótipo ao sistema enterprise-ready.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="../modulos/modulo-04.html" class="module-cta-detailed">
+                        <span>Começar Módulo 4</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4.167 10h11.666M10 4.167L15.833 10 10 15.833" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Módulo 5 -->
+                <div class="module-card-detailed">
+                    <div class="module-header-detailed">
+                        <div class="module-icon-large">👥</div>
+                        <div class="module-info-detailed">
+                            <div style="font-size: 0.875rem; font-weight: 600; color: #8b5cf6; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;">Módulo 05</div>
+                            <h3 style="font-size: 1.75rem; font-weight: 700; margin: 0 0 0.5rem 0; color: #111827;">CrewAI - Sistemas Multi-Agente</h3>
+                            <div class="module-meta-inline">
+                                <span>⏱️ 8 horas</span>
+                                <span>📝 20k palavras</span>
+                                <span>🎯 Intermediário-Avançado</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="module-description-full">
+                        Orquestre equipes de agentes especializados trabalhando em colaboração.
+                    </p>
+
+                    <div style="background: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 1.5rem;">
+                        <h4 style="font-size: 0.875rem; font-weight: 600; color: #374151; margin: 0 0 0.75rem 0; text-transform: uppercase; letter-spacing: 0.05em;">O que você vai aprender:</h4>
+                        <ul class="topics-list">
+                            <li class="topic-item" data-topic="aplic-m05-t01" data-topic-level="2">
+                                <button class="topic-button">
+                                    <span class="topic-checkbox"></span>
+                                    <span>Conceitos de Multi-Agent Systems (MAS)</span>
+                                    <span class="topic-icon">▶</span>
+                                </button>
+                                <div class="topic-explanation nivel-aplicacao hidden">
+                                    <p><strong>O que você aprenderá:</strong></p>
+                                    <ul>
+                                        <li><strong>Por que múltiplos agentes?</strong> Especialização, paralelismo, robustez</li>
+                                        <li><strong>Comunicação:</strong> Como agentes trocam informações</li>
+                                        <li><strong>Coordenação:</strong> Sincronizar ações de múltiplos agentes</li>
+                                        <li><strong>Exemplos reais:</strong> Agência de marketing, consultoria jurídica, dev team</li>
+                                    </ul>
+                                    <p><strong>🎯 Analogia:</strong> Como uma equipe humana, cada agente tem sua expertise.</p>
+                                </div>
+                            </li>
+                            <li class="topic-item" data-topic="aplic-m05-t02" data-topic-level="2">
+                                <button class="topic-button">
+                                    <span class="topic-checkbox"></span>
+                                    <span>Arquitetura CrewAI: Agents, Tasks, Tools</span>
+                                    <span class="topic-icon">▶</span>
+                                </button>
+                                <div class="topic-explanation nivel-aplicacao hidden">
+                                    <p><strong>O que você aprenderá:</strong></p>
+                                    <ul>
+                                        <li><strong>Agents:</strong> Especialistas com role, goal, backstory</li>
+                                        <li><strong>Tasks:</strong> Unidades de trabalho com expected_output</li>
+                                        <li><strong>Tools:</strong> Ferramentas que agentes podem usar</li>
+                                        <li><strong>Crew:</strong> Orquestrador da equipe</li>
+                                        <li><strong>Process:</strong> Sequential vs Hierarchical</li>
+                                    </ul>
+                                    <p><strong>🏗️ Estrutura:</strong> Componentes modulares que se combinam para resolver problemas complexos.</p>
+                                </div>
+                            </li>
+                            <li class="topic-item" data-topic="aplic-m05-t03" data-topic-level="2">
+                                <button class="topic-button">
+                                    <span class="topic-checkbox"></span>
+                                    <span>Processos: Sequential vs Hierarchical</span>
+                                    <span class="topic-icon">▶</span>
+                                </button>
+                                <div class="topic-explanation nivel-aplicacao hidden">
+                                    <p><strong>O que você aprenderá:</strong></p>
+                                    <ul>
+                                        <li><strong>Sequential:</strong> Tarefas executadas em ordem (A → B → C)</li>
+                                        <li><strong>Hierarchical:</strong> Manager agent coordena e delega</li>
+                                        <li><strong>Quando usar cada um:</strong> Trade-offs e casos de uso</li>
+                                        <li><strong>Custom workflows:</strong> Criar processos personalizados</li>
+                                    </ul>
+                                    <p><strong>⚙️ Escolha:</strong> Sequential para workflows simples, Hierarchical para complexidade.</p>
+                                </div>
+                            </li>
+                            <li class="topic-item" data-topic="aplic-m05-t04" data-topic-level="2">
+                                <button class="topic-button">
+                                    <span class="topic-checkbox"></span>
+                                    <span>Delegação e colaboração entre agentes</span>
+                                    <span class="topic-icon">▶</span>
+                                </button>
+                                <div class="topic-explanation nivel-aplicacao hidden">
+                                    <p><strong>O que você aprenderá:</strong></p>
+                                    <ul>
+                                        <li><strong>allow_delegation=True:</strong> Agentes podem pedir ajuda</li>
+                                        <li><strong>Context sharing:</strong> Passar informações entre agentes</li>
+                                        <li><strong>Feedback loops:</strong> Revisão e melhoria iterativa</li>
+                                        <li><strong>Conflict resolution:</strong> Lidar com agentes que discordam</li>
+                                    </ul>
+                                    <p><strong>🤝 Colaboração:</strong> Agentes trabalhando juntos são mais poderosos que sozinhos.</p>
+                                </div>
+                            </li>
+                            <li class="topic-item" data-topic="aplic-m05-t05" data-topic-level="2">
+                                <button class="topic-button">
+                                    <span class="topic-checkbox"></span>
+                                    <span>Casos de uso reais e padrões</span>
+                                    <span class="topic-icon">▶</span>
+                                </button>
+                                <div class="topic-explanation nivel-aplicacao hidden">
+                                    <p><strong>O que você aprenderá:</strong></p>
+                                    <ul>
+                                        <li><strong>Content creation pipeline:</strong> Research → Write → Edit → SEO</li>
+                                        <li><strong>Data analysis team:</strong> Collect → Clean → Analyze → Report</li>
+                                        <li><strong>Customer support:</strong> Classify → Research → Respond → Escalate</li>
+                                        <li><strong>Software development:</strong> Plan → Code → Test → Deploy</li>
+                                    </ul>
+                                    <p><strong>💼 Aplicação:</strong> Padrões reutilizáveis para diferentes domínios.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="../modulos/modulo-05.html" class="module-cta-detailed">
+                        <span>Começar Módulo 5</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4.167 10h11.666M10 4.167L15.833 10 10 15.833" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Módulo 6 -->
+                <div class="module-card-detailed">
+                    <div class="module-header-detailed">
+                        <div class="module-icon-large">🔌</div>
+                        <div class="module-info-detailed">
+                            <div style="font-size: 0.875rem; font-weight: 600; color: #8b5cf6; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;">Módulo 06</div>
+                            <h3 style="font-size: 1.75rem; font-weight: 700; margin: 0 0 0.5rem 0; color: #111827;">Model Context Protocol (MCP)</h3>
+                            <div class="module-meta-inline">
+                                <span>⏱️ 9 horas</span>
+                                <span>📝 22k palavras</span>
+                                <span>🎯 Intermediário-Avançado</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="module-description-full">
+                        Conecte agentes a dados reais e ferramentas externas com o protocolo MCP.
+                    </p>
+
+                    <div style="background: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 1.5rem;">
+                        <h4 style="font-size: 0.875rem; font-weight: 600; color: #374151; margin: 0 0 0.75rem 0; text-transform: uppercase; letter-spacing: 0.05em;">O que você vai aprender:</h4>
+                        <ul class="topics-list">
+                            <li class="topic-item" data-topic="aplic-m06-t01" data-topic-level="2">
+                                <button class="topic-button">
+                                    <span class="topic-checkbox"></span>
+                                    <span>O que é MCP e por que é revolucionário</span>
+                                    <span class="topic-icon">▶</span>
+                                </button>
+                                <div class="topic-explanation nivel-aplicacao hidden">
+                                    <p><strong>O que você aprenderá:</strong></p>
+                                    <ul>
+                                        <li><strong>MCP:</strong> Protocolo aberto da Anthropic para conectar IA a dados</li>
+                                        <li><strong>Problema:</strong> Cada ferramenta tinha integração custom</li>
+                                        <li><strong>Solução:</strong> Interface padronizada para tudo</li>
+                                        <li><strong>Impacto:</strong> IA pode acessar qualquer sistema de forma consistente</li>
+                                    </ul>
+                                    <p><strong>🌐 Visão:</strong> MCP para IA = HTTP para a web.</p>
+                                </div>
+                            </li>
+                            <li class="topic-item" data-topic="aplic-m06-t02" data-topic-level="2">
+                                <button class="topic-button">
+                                    <span class="topic-checkbox"></span>
+                                    <span>Arquitetura: Servers, Clients, Resources, Tools</span>
+                                    <span class="topic-icon">▶</span>
+                                </button>
+                                <div class="topic-explanation nivel-aplicacao hidden">
+                                    <p><strong>O que você aprenderá:</strong></p>
+                                    <ul>
+                                        <li><strong>MCP Server:</strong> Expõe dados e ferramentas via protocolo</li>
+                                        <li><strong>MCP Client:</strong> Aplicação IA que consome servidores</li>
+                                        <li><strong>Resources:</strong> Dados que podem ser lidos (URIs)</li>
+                                        <li><strong>Tools:</strong> Ações que modificam estado</li>
+                                        <li><strong>Prompts:</strong> Templates reutilizáveis</li>
+                                    </ul>
+                                    <p><strong>🔌 Protocolo:</strong> JSON-RPC 2.0 para comunicação cliente-servidor.</p>
+                                </div>
+                            </li>
+                            <li class="topic-item" data-topic="aplic-m06-t03" data-topic-level="2">
+                                <button class="topic-button">
+                                    <span class="topic-checkbox"></span>
+                                    <span>Criando servidores MCP customizados</span>
+                                    <span class="topic-icon">▶</span>
+                                </button>
+                                <div class="topic-explanation nivel-aplicacao hidden">
+                                    <p><strong>O que você aprenderá:</strong></p>
+                                    <ul>
+                                        <li>Implementar MCP Server do zero</li>
+                                        <li>Expor APIs, bancos de dados, arquivos via MCP</li>
+                                        <li>Definir schemas de resources e tools</li>
+                                        <li>Autenticação e autorização</li>
+                                        <li>Deploy e hospedagem de servidores</li>
+                                    </ul>
+                                    <p><strong>🛠️ Poder:</strong> Conectar agentes a QUALQUER sistema que você imaginar!</p>
+                                </div>
+                            </li>
+                            <li class="topic-item" data-topic="aplic-m06-t04" data-topic-level="2">
+                                <button class="topic-button">
+                                    <span class="topic-checkbox"></span>
+                                    <span>Integrando MCP com agentes</span>
+                                    <span class="topic-icon">▶</span>
+                                </button>
+                                <div class="topic-explanation nivel-aplicacao hidden">
+                                    <p><strong>O que você aprenderá:</strong></p>
+                                    <ul>
+                                        <li>Conectar Claude Desktop a servidores MCP</li>
+                                        <li>Usar MCP com LangChain e CrewAI</li>
+                                        <li>Discovery de recursos disponíveis</li>
+                                        <li>Error handling e retry logic</li>
+                                        <li>Caching e performance</li>
+                                    </ul>
+                                    <p><strong>🔗 Integração:</strong> Agentes com superpoderes via MCP.</p>
+                                </div>
+                            </li>
+                            <li class="topic-item" data-topic="aplic-m06-t05" data-topic-level="2">
+                                <button class="topic-button">
+                                    <span class="topic-checkbox"></span>
+                                    <span>Segurança, autenticação e boas práticas</span>
+                                    <span class="topic-icon">▶</span>
+                                </button>
+                                <div class="topic-explanation nivel-aplicacao hidden">
+                                    <p><strong>O que você aprenderá:</strong></p>
+                                    <ul>
+                                        <li><strong>Auth:</strong> API keys, OAuth, JWT</li>
+                                        <li><strong>Permissions:</strong> RBAC e scope control</li>
+                                        <li><strong>Rate limiting:</strong> Prevenir abuso</li>
+                                        <li><strong>Input validation:</strong> Sanitização de dados</li>
+                                        <li><strong>Audit logging:</strong> Rastreabilidade completa</li>
+                                    </ul>
+                                    <p><strong>🔒 Segurança:</strong> Produção-ready com todas as proteções necessárias.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="../modulos/modulo-06.html" class="module-cta-detailed">
+                        <span>Começar Módulo 6</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4.167 10h11.666M10 4.167L15.833 10 10 15.833" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div style="margin-top: 4rem; text-align: center; padding: 3rem; background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(124, 58, 237, 0.1) 100%); border-radius: 1rem;">
+                <h3 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1rem;">Pronto para o Próximo Nível?</h3>
+                <p style="color: #6b7280; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Após completar o Nível Aplicação, continue sua jornada com o Nível Estratégico
+                </p>
+                <a href="estrategico.html" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 1rem 2rem; background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); color: white; text-decoration: none; border-radius: 0.5rem; font-weight: 600;">
+                    <span>👑 Ir para Nível Estratégico</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4.167 10h11.666M10 4.167L15.833 10 10 15.833" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Engenharia de Agentes IA 2.0</h3>
+                    <p class="footer-text">
+                        Curso completo e gratuito de Engenharia de Agentes de IA.
+                        Do zero ao profissional.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html#niveis">Níveis</a></li>
+                        <li><a href="../index.html#modulos">Módulos</a></li>
+                        <li><a href="https://github.com/inematds/FEA-IA" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Contato</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:inematds@gmail.com">inematds@gmail.com</a></li>
+                        <li><a href="https://github.com/inematds" target="_blank">@inematds</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Engenharia de Agentes IA 2.0. Código aberto sob licença MIT.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

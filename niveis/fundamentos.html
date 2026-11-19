@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nível Fundamentos - Base sólida em IA Generativa, Prompts Avançados e LangChain">
+    <title>Nível Fundamentos | Engenharia de Agentes IA 2.0</title>
+
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/topics.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <script defer src="../js/app.js"></script>
+
+    <style>
+        .nivel-hero {
+            padding: 6rem 0 4rem;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+        }
+
+        .nivel-breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+
+        .nivel-breadcrumb a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nivel-breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .nivel-content {
+            padding: 4rem 0;
+        }
+
+        .modules-list {
+            display: grid;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .module-card-detailed {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border-left: 4px solid #10b981;
+        }
+
+        .module-card-detailed:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(16, 185, 129, 0.2);
+        }
+
+        .module-header-detailed {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .module-icon-large {
+            font-size: 3rem;
+            line-height: 1;
+        }
+
+        .module-info-detailed {
+            flex: 1;
+        }
+
+        .module-meta-inline {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 0.875rem;
+            color: #6b7280;
+            margin-top: 0.5rem;
+        }
+
+        .module-description-full {
+            color: #374151;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .module-cta-detailed {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .module-cta-detailed:hover {
+            background: linear-gradient(135deg, #059669 0%, #047857 100%);
+            transform: translateX(5px);
+        }
+
+        .nivel-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+            padding: 2rem;
+            background: rgba(16, 185, 129, 0.1);
+            border-radius: 1rem;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #065f46;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            color: #374151;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav-logo">
+                <span class="logo-icon">🤖</span>
+                <span class="logo-text">Engenharia de Agentes IA 2.0</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="../index.html#home" class="nav-link">Início</a></li>
+                <li><a href="../index.html#niveis" class="nav-link">Níveis</a></li>
+                <li><a href="../index.html#modulos" class="nav-link">Módulos</a></li>
+                <li><a href="http://inema.club" class="btn-primary" target="_blank" rel="noopener">INEMA.CLUB</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Nivel Hero -->
+    <section class="nivel-hero">
+        <div class="container">
+            <div class="nivel-breadcrumb">
+                <a href="../index.html">Início</a>
+                <span>›</span>
+                <a href="../index.html#niveis">Níveis</a>
+                <span>›</span>
+                <span>Fundamentos</span>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1rem;">
+                <div style="font-size: 4rem;">🌟</div>
+                <div>
+                    <h1 style="font-size: 3rem; font-weight: 700; margin: 0 0 0.5rem 0;">Nível Fundamentos</h1>
+                    <p style="font-size: 1.25rem; margin: 0; opacity: 0.9;">20-25 horas | Iniciante</p>
+                </div>
+            </div>
+
+            <p style="font-size: 1.125rem; line-height: 1.7; max-width: 800px; opacity: 0.95;">
+                Base sólida em IA Generativa, Prompts Avançados e LangChain. Perfeito para quem está começando sua jornada no mundo dos agentes de IA.
+            </p>
+
+            <div class="nivel-stats">
+                <div class="stat-item">
+                    <div class="stat-value">3</div>
+                    <div class="stat-label">Módulos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">20-25h</div>
+                    <div class="stat-label">Duração Total</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">43k+</div>
+                    <div class="stat-label">Palavras</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">3</div>
+                    <div class="stat-label">Projetos Práticos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conteúdo dos Módulos -->
+    <section class="nivel-content">
+        <div class="container">
+            <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 1rem;">Módulos do Nível Fundamentos</h2>
+            <p style="color: #6b7280; margin-bottom: 2rem;">
+                Complete os 3 módulos abaixo para dominar os fundamentos de agentes de IA
+            </p>
+
+            <div class="modules-list">
+                <!-- Módulo 1 -->
+                <div class="module-card-detailed">
+                    <div class="module-header-detailed">
+                        <div class="module-icon-large">🧠</div>
+                        <div class="module-info-detailed">
+                            <div style="font-size: 0.875rem; font-weight: 600; color: #10b981; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;">Módulo 01</div>
+                            <h3 style="font-size: 1.75rem; font-weight: 700; margin: 0 0 0.5rem 0; color: #111827;">Fundamentos de IA Generativa</h3>
+                            <div class="module-meta-inline">
+                                <span>⏱️ 6 horas</span>
+                                <span>📝 10k palavras</span>
+                                <span>🎯 Iniciante</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="module-description-full">
+                        Base sólida em LLMs, transformers e conceitos essenciais de IA generativa. Entenda como funcionam os modelos de linguagem, arquitetura Transformer, tokenização, embeddings e multimodalidade.
+                    </p>
+
+                    <div style="background: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 1.5rem;">
+                        <h4 style="font-size: 0.875rem; font-weight: 600; color: #374151; margin: 0 0 0.75rem 0; text-transform: uppercase; letter-spacing: 0.05em;">O que você vai aprender:</h4>
+
+                        <ul class="topics-list" style="margin: 0; padding: 0; list-style: none;">
+                            <li class="topic-item" data-topic="fund-m01-t01" data-topic-level="1">
+                                <button class="topic-button">
+                                    <span class="topic-checkbox"></span>
+                                    <span>Arquitetura Transformer e mecanismos de atenção</span>
+                                    <span class="topic-icon">▶</span>
+                                </button>
+                                <div class="topic-explanation hidden">
+                                    <p><strong>O que você aprenderá:</strong></p>
+                                    <p>Entenda a arquitetura revolucionária que tornou os LLMs possíveis. Você vai dominar:</p>
+                                    <ul>
+                                        <li><strong>Self-Attention:</strong> Como o modelo "presta atenção" em diferentes partes do texto</li>
+                                        <li><strong>Multi-Head Attention:</strong> Por que múltiplas "cabeças" de atenção são importantes</li>
+                                        <li><strong>Encoders vs Decoders:</strong> Diferenças entre BERT, GPT e modelos encoder-decoder</li>
+                                        <li><strong>Positional Encoding:</strong> Como o modelo entende a ordem das palavras</li>
+                                    </ul>
+                                    <p><strong>💡 Exemplo prático:</strong> Você verá como o GPT decide qual palavra vem a seguir analisando todo o contexto anterior usando atenção.</p>
+                                </div>
+                            </li>
+
+                            <li class="topic-item" data-topic="fund-m01-t02" data-topic-level="1">
+                                <button class="topic-button">
+                                    <span class="topic-checkbox"></span>
+                                    <span>Tokenização, embeddings e representações vetoriais</span>
+                                    <span class="topic-icon">▶</span>
+                                </button>
+                                <div class="topic-explanation hidden">
+                                    <p><strong>O que você aprenderá:</strong></p>
+                                    <p>Descubra como texto vira números que a IA entende:</p>
+                                    <ul>
+                                        <li><strong>Tokenização:</strong> Como "Olá mundo" vira [42, 156] para a IA processar</li>
+                                        <li><strong>Vocabulário:</strong> Por que GPT-4 tem 100k+ tokens e o que isso significa</li>
+                                        <li><strong>Embeddings:</strong> Vetores de 768 ou 1536 dimensões que representam significado</li>
+                                        <li><strong>Similaridade semântica:</strong> Como calcular que "rei" - "homem" + "mulher" ≈ "rainha"</li>
+                                    </ul>
+                                    <p><strong>⚡ Você vai fazer:</strong> Calcular embeddings de frases e medir similaridade entre conceitos usando código Python real.</p>
+                                </div>
+                            </li>
+
+                            <li class="topic-item" data-topic="fund-m01-t03" data-topic-level="1">
+                                <button class="topic-button">
+                                    <span class="topic-checkbox"></span>
+                                    <span>Parâmetros de geração (temperature, top-p, top-k)</span>
+                                    <span class="topic-icon">▶</span>
+                                </button>
+                                <div class="topic-explanation hidden">
+                                    <p><strong>O que você aprenderá:</strong></p>
+                                    <p>Domine os controles que mudam completamente o comportamento da IA:</p>
+                                    <ul>
+                                        <li><strong>Temperature (0.0-2.0):</strong> Controla criatividade vs consistência
+                                            <ul>
+                                                <li>0.0 = Determinístico (sempre mesma resposta)</li>
+                                                <li>0.7 = Balanceado (padrão recomendado)</li>
+                                                <li>1.5+ = Criativo/imprevisível</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Top-p (nucleus sampling):</strong> Limita escolhas às mais prováveis</li>
+                                        <li><strong>Top-k:</strong> Considera apenas as k palavras mais prováveis</li>
+                                        <li><strong>Max tokens:</strong> Limita tamanho da resposta</li>
+                                    </ul>
+                                    <p><strong>🎯 Caso real:</strong> Por que chatbots usam temperature=0.7 mas código precisa de 0.0.</p>
+                                </div>
+                            </li>
+
+                            <li class="topic-item" data-topic="fund-m01-t04" data-topic-level="1">
+                                <button class="topic-button">
+                                    <span class="topic-checkbox"></span>
+                                    <span>Modelos multimodais (texto, imagem, áudio, vídeo)</span>
+                                    <span class="topic-icon">▶</span>
+                                </button>
+                                <div class="topic-explanation hidden">
+                                    <p><strong>O que você aprenderá:</strong></p>
+                                    <p>Explore modelos que vão além do texto:</p>
+                                    <ul>
+                                        <li><strong>Visão + Linguagem:</strong> GPT-4 Vision, Claude 3 Sonnet analisando imagens</li>
+                                        <li><strong>Áudio:</strong> Whisper (speech-to-text), modelos text-to-speech</li>
+                                        <li><strong>Vídeo:</strong> Sora (OpenAI), modelos que entendem frames temporais</li>
+                                        <li><strong>Fusion:</strong> Como diferentes modalidades são combinadas em um único modelo</li>
+                                    </ul>
+                                    <p><strong>🔥 Tendência:</strong> Modelos nativamente multimodais serão o padrão. Você aprenderá a trabalhar com eles hoje.</p>
+                                </div>
+                            </li>
+
+                            <li class="topic-item" data-topic="fund-m01-t05" data-topic-level="1">
+                                <button class="topic-button">
+                                    <span class="topic-checkbox"></span>
+                                    <span>História e evolução dos LLMs</span>
+                                    <span class="topic-icon">▶</span>
+                                </button>
+                                <div class="topic-explanation hidden">
+                                    <p><strong>O que você aprenderá:</strong></p>
+                                    <p>Entenda a jornada que nos trouxe até aqui:</p>
+                                    <ul>
+                                        <li><strong>2017:</strong> Transformer original ("Attention is All You Need")</li>
+                                        <li><strong>2018:</strong> BERT e GPT-1 mudam o jogo</li>
+                                        <li><strong>2020:</strong> GPT-3 com 175B parâmetros choca o mundo</li>
+                                        <li><strong>2022:</strong> ChatGPT torna IA mainstream</li>
+                                        <li><strong>2023-2024:</strong> Claude 3, GPT-4, Gemini e a explosão atual</li>
+                                        <li><strong>2025+:</strong> Para onde estamos indo?</li>
+                                    </ul>
+                                    <p><strong>📚 Contexto:</strong> Por que entender a história ajuda você a prever o futuro e tomar melhores decisões técnicas.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="../modulos/modulo-01.html" class="module-cta-detailed">
+                        <span>Começar Módulo 1</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4.167 10h11.666M10 4.167L15.833 10 10 15.833" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Módulo 2 -->
+                <div class="module-card-detailed">
+                    <div class="module-header-detailed">
+                        <div class="module-icon-large">✍️</div>
+                        <div class="module-info-detailed">
+                            <div style="font-size: 0.875rem; font-weight: 600; color: #10b981; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;">Módulo 02</div>
+                            <h3 style="font-size: 1.75rem; font-weight: 700; margin: 0 0 0.5rem 0; color: #111827;">Engenharia de Prompts Avançada</h3>
+                            <div class="module-meta-inline">
+                                <span>⏱️ 7 horas</span>
+                                <span>📝 15k palavras</span>
+                                <span>🎯 Iniciante-Intermediário</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="module-description-full">
+                        Técnicas avançadas: Chain-of-Thought, Self-Consistency, Tree of Thoughts, ReAct e meta-prompting. Aprenda a programar com linguagem natural.
+                    </p>
+
+                    <div style="background: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 1.5rem;">
+                        <h4 style="font-size: 0.875rem; font-weight: 600; color: #374151; margin: 0 0 0.75rem 0; text-transform: uppercase; letter-spacing: 0.05em;">O que você vai aprender:</h4>
+
+                        <ul class="topics-list" style="margin: 0; padding: 0; list-style: none;">
+                            <li class="topic-item" data-topic="fund-m02-t01" data-topic-level="1">
+                                <button class="topic-button">
+                                    <span class="topic-checkbox"></span>
+                                    <span>Anatomia de um prompt perfeito (Persona, Contexto, Tarefa, Formato)</span>
+                                    <span class="topic-icon">▶</span>
+                                </button>
+                                <div class="topic-explanation hidden">
+                                    <p><strong>O que você aprenderá:</strong></p>
+                                    <p>Domine os 4 elementos essenciais de prompts eficazes:</p>
+                                    <ul>
+                                        <li><strong>Persona:</strong> "Você é um especialista em marketing digital com 10 anos de experiência..."</li>
+                                        <li><strong>Contexto:</strong> Forneça informações de background que a IA precisa conhecer</li>
+                                        <li><strong>Tarefa:</strong> Instrução clara e específica do que fazer</li>
+                                        <li><strong>Formato:</strong> Como estruturar a resposta (JSON, tabela, bullet points)</li>
+                                    </ul>
+                                    <p><strong>📐 Framework:</strong> P-C-T-F (Persona-Context-Task-Format) para criar prompts profissionais consistentemente.</p>
+                                </div>
+                            </li>
+
+                            <li class="topic-item" data-topic="fund-m02-t02" data-topic-level="1">
+                                <button class="topic-button">
+                                    <span class="topic-checkbox"></span>
+                                    <span>Zero-Shot, Few-Shot e Chain-of-Thought prompting</span>
+                                    <span class="topic-icon">▶</span>
+                                </button>
+                                <div class="topic-explanation hidden">
+                                    <p><strong>O que você aprenderá:</strong></p>
+                                    <ul>
+                                        <li><strong>Zero-Shot:</strong> Tarefas sem exemplos - "Traduza isso para inglês"</li>
+                                        <li><strong>Few-Shot:</strong> Fornecer 2-5 exemplos para guiar o modelo
+                                            <ul>
+                                                <li>Exemplo 1: Input → Output</li>
+                                                <li>Exemplo 2: Input → Output</li>
+                                                <li>Agora seu input: ?</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Chain-of-Thought (CoT):</strong> "Pense passo a passo" para raciocínio complexo</li>
+                                    </ul>
+                                    <p><strong>🎯 Caso de uso:</strong> CoT aumenta precisão em problemas matemáticos de 20% para 85%+.</p>
+                                </div>
+                            </li>
+
+                            <li class="topic-item" data-topic="fund-m02-t03" data-topic-level="1">
+                                <button class="topic-button">
+                                    <span class="topic-checkbox"></span>
+                                    <span>Técnicas avançadas: Self-Consistency, ToT, ReAct</span>
+                                    <span class="topic-icon">▶</span>
+                                </button>
+                                <div class="topic-explanation hidden">
+                                    <p><strong>O que você aprenderá:</strong></p>
+                                    <ul>
+                                        <li><strong>Self-Consistency:</strong> Gerar múltiplas respostas e escolher a mais comum (voting)</li>
+                                        <li><strong>Tree of Thoughts (ToT):</strong> Explorar múltiplos caminhos de raciocínio simultaneamente</li>
+                                        <li><strong>ReAct (Reasoning + Acting):</strong> Combinar raciocínio com ações (usar ferramentas)
+                                            <ul>
+                                                <li>Thought: "Preciso buscar dados atualizados"</li>
+                                                <li>Action: search("GDP Brasil 2024")</li>
+                                                <li>Observation: "R$ 2.1 trilhões"</li>
+                                                <li>Thought: "Agora posso responder..."</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <p><strong>⚡ Poder:</strong> Essas técnicas transformam LLMs em "pensadores" muito mais sofisticados.</p>
+                                </div>
+                            </li>
+
+                            <li class="topic-item" data-topic="fund-m02-t04" data-topic-level="1">
+                                <button class="topic-button">
+                                    <span class="topic-checkbox"></span>
+                                    <span>Meta-prompting e prompt engineering sistemático</span>
+                                    <span class="topic-icon">▶</span>
+                                </button>
+                                <div class="topic-explanation hidden">
+                                    <p><strong>O que você aprenderá:</strong></p>
+                                    <p><strong>Meta-prompting:</strong> Usar a IA para melhorar seus próprios prompts!</p>
+                                    <ul>
+                                        <li>"Analise este prompt e sugira 5 melhorias específicas"</li>
+                                        <li>"Reescreva este prompt para ser mais claro e eficaz"</li>
+                                        <li>"Identifique ambiguidades neste prompt"</li>
+                                    </ul>
+                                    <p><strong>Engenharia sistemática:</strong></p>
+                                    <ul>
+                                        <li>Medir qualidade de outputs (métricas)</li>
+                                        <li>A/B testing de variações de prompts</li>
+                                        <li>Criar bibliotecas de prompts reutilizáveis</li>
+                                        <li>Versionamento e documentação</li>
+                                    </ul>
+                                    <p><strong>🔧 Ferramentas:</strong> LangSmith, PromptLayer, Weights & Biases para otimização.</p>
+                                </div>
+                            </li>
+
+                            <li class="topic-item" data-topic="fund-m02-t05" data-topic-level="1">
+                                <button class="topic-button">
+                                    <span class="topic-checkbox"></span>
+                                    <span>Debugging e otimização de prompts</span>
+                                    <span class="topic-icon">▶</span>
+                                </button>
+                                <div class="topic-explanation hidden">
+                                    <p><strong>O que você aprenderá:</strong></p>
+                                    <p><strong>Problemas comuns e soluções:</strong></p>
+                                    <ul>
+                                        <li><strong>Output inconsistente?</strong> → Reduza temperature, seja mais específico</li>
+                                        <li><strong>Alucinações (inventa fatos)?</strong> → Adicione "responda apenas com informações fornecidas"</li>
+                                        <li><strong>Formato errado?</strong> → Use exemplos + validação de schema</li>
+                                        <li><strong>Muito verboso?</strong> → "Seja conciso. Máximo 3 frases."</li>
+                                    </ul>
+                                    <p><strong>Técnicas de otimização:</strong></p>
+                                    <ul>
+                                        <li>Iteração: testar → medir → ajustar → repetir</li>
+                                        <li>Simplificação: remover palavras desnecessárias</li>
+                                        <li>Constraints: limites explícitos (tamanho, tom, formato)</li>
+                                    </ul>
+                                    <p><strong>📊 Métricas:</strong> Precisão, tempo de resposta, custo, consistência.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="../modulos/modulo-02.html" class="module-cta-detailed">
+                        <span>Começar Módulo 2</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4.167 10h11.666M10 4.167L15.833 10 10 15.833" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Módulo 3 -->
+                <div class="module-card-detailed">
+                    <div class="module-header-detailed">
+                        <div class="module-icon-large">🔗</div>
+                        <div class="module-info-detailed">
+                            <div style="font-size: 0.875rem; font-weight: 600; color: #10b981; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;">Módulo 03</div>
+                            <h3 style="font-size: 1.75rem; font-weight: 700; margin: 0 0 0.5rem 0; color: #111827;">LangChain para Agentes</h3>
+                            <div class="module-meta-inline">
+                                <span>⏱️ 8 horas</span>
+                                <span>📝 18k palavras</span>
+                                <span>🎯 Intermediário</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="module-description-full">
+                        Domine LangChain: RAG, Agents, Memory, Tools e aplicações práticas completas. O framework essencial para criar agentes inteligentes.
+                    </p>
+
+                    <div style="background: #f9fafb; padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 1.5rem;">
+                        <h4 style="font-size: 0.875rem; font-weight: 600; color: #374151; margin: 0 0 0.75rem 0; text-transform: uppercase; letter-spacing: 0.05em;">O que você vai aprender:</h4>
+
+                        <ul class="topics-list" style="margin: 0; padding: 0; list-style: none;">
+                            <li class="topic-item" data-topic="fund-m03-t01" data-topic-level="1">
+                                <button class="topic-button">
+                                    <span class="topic-checkbox"></span>
+                                    <span>Arquitetura e componentes do LangChain</span>
+                                    <span class="topic-icon">▶</span>
+                                </button>
+                                <div class="topic-explanation hidden">
+                                    <p><strong>O que você aprenderá:</strong></p>
+                                    <p>Entenda a estrutura modular do LangChain:</p>
+                                    <ul>
+                                        <li><strong>Models:</strong> Interface unificada para GPT-4, Claude, Llama, etc</li>
+                                        <li><strong>Prompts:</strong> Templates gerenciáveis e versionáveis</li>
+                                        <li><strong>Chains:</strong> Sequências de operações (LLMChain, SequentialChain)</li>
+                                        <li><strong>Agents:</strong> Sistemas que tomam decisões e usam ferramentas</li>
+                                        <li><strong>Memory:</strong> Armazenamento de conversas e contexto</li>
+                                        <li><strong>Callbacks:</strong> Hooks para logging e monitoramento</li>
+                                    </ul>
+                                    <p><strong>🏗️ Arquitetura:</strong> Design modular que permite compor aplicações complexas de IA.</p>
+                                </div>
+                            </li>
+
+                            <li class="topic-item" data-topic="fund-m03-t02" data-topic-level="1">
+                                <button class="topic-button">
+                                    <span class="topic-checkbox"></span>
+                                    <span>RAG (Retrieval-Augmented Generation) completo</span>
+                                    <span class="topic-icon">▶</span>
+                                </button>
+                                <div class="topic-explanation hidden">
+                                    <p><strong>O que você aprenderá:</strong></p>
+                                    <p>Construa sistemas que respondem com seus próprios dados:</p>
+                                    <ul>
+                                        <li><strong>Document Loaders:</strong> Carregar PDFs, CSVs, websites, APIs</li>
+                                        <li><strong>Text Splitters:</strong> Dividir documentos grandes em chunks inteligentes</li>
+                                        <li><strong>Vector Stores:</strong> Pinecone, Chroma, FAISS para busca semântica</li>
+                                        <li><strong>Retrievers:</strong> Buscar os documentos mais relevantes</li>
+                                        <li><strong>Chain:</strong> Combinar retrieval + LLM para responder com contexto</li>
+                                    </ul>
+                                    <p><strong>🎯 Projeto:</strong> Chatbot que responde perguntas sobre seus documentos privados com 95%+ de precisão.</p>
+                                </div>
+                            </li>
+
+                            <li class="topic-item" data-topic="fund-m03-t03" data-topic-level="1">
+                                <button class="topic-button">
+                                    <span class="topic-checkbox"></span>
+                                    <span>Agentes ReAct e sistemas de memória</span>
+                                    <span class="topic-icon">▶</span>
+                                </button>
+                                <div class="topic-explanation hidden">
+                                    <p><strong>O que você aprenderá:</strong></p>
+                                    <p><strong>Agentes ReAct:</strong></p>
+                                    <ul>
+                                        <li>Ciclo: Observation → Thought → Action → Repeat</li>
+                                        <li>O agente decide quais tools usar dinamicamente</li>
+                                        <li>Pode encadear múltiplas ações para resolver problemas complexos</li>
+                                    </ul>
+                                    <p><strong>Sistemas de Memória:</strong></p>
+                                    <ul>
+                                        <li><strong>ConversationBufferMemory:</strong> Guardar histórico completo</li>
+                                        <li><strong>ConversationSummaryMemory:</strong> Resumir conversas longas</li>
+                                        <li><strong>VectorStoreMemory:</strong> Busca semântica em memórias antigas</li>
+                                        <li><strong>EntityMemory:</strong> Lembrar fatos sobre pessoas/coisas específicas</li>
+                                    </ul>
+                                    <p><strong>💡 Uso:</strong> Chatbots que lembram de conversas anteriores e mantêm contexto.</p>
+                                </div>
+                            </li>
+
+                            <li class="topic-item" data-topic="fund-m03-t04" data-topic-level="1">
+                                <button class="topic-button">
+                                    <span class="topic-checkbox"></span>
+                                    <span>Criação de tools customizadas</span>
+                                    <span class="topic-icon">▶</span>
+                                </button>
+                                <div class="topic-explanation hidden">
+                                    <p><strong>O que você aprenderá:</strong></p>
+                                    <p>Dar superpoderes aos seus agentes com ferramentas customizadas:</p>
+                                    <ul>
+                                        <li><strong>@tool decorator:</strong> Transformar funções Python em ferramentas LangChain</li>
+                                        <li><strong>Descrição clara:</strong> Como o agente entende quando usar a ferramenta</li>
+                                        <li><strong>Validação de entrada:</strong> Pydantic schemas para segurança</li>
+                                        <li><strong>Error handling:</strong> Lidar com falhas gracefully</li>
+                                    </ul>
+                                    <p><strong>Exemplos práticos:</strong></p>
+                                    <ul>
+                                        <li>Tool de cálculo avançado</li>
+                                        <li>Tool de busca em banco de dados</li>
+                                        <li>Tool de envio de emails/notificações</li>
+                                        <li>Tool de geração de gráficos</li>
+                                    </ul>
+                                    <p><strong>🔧 Poder:</strong> Conectar agentes a qualquer API ou sistema que você imaginar!</p>
+                                </div>
+                            </li>
+
+                            <li class="topic-item" data-topic="fund-m03-t05" data-topic-level="1">
+                                <button class="topic-button">
+                                    <span class="topic-checkbox"></span>
+                                    <span>Chains complexas e orquestração</span>
+                                    <span class="topic-icon">▶</span>
+                                </button>
+                                <div class="topic-explanation hidden">
+                                    <p><strong>O que você aprenderá:</strong></p>
+                                    <p><strong>Tipos de Chains:</strong></p>
+                                    <ul>
+                                        <li><strong>SimpleSequentialChain:</strong> Output de uma chain vira input da próxima</li>
+                                        <li><strong>SequentialChain:</strong> Múltiplos inputs/outputs entre chains</li>
+                                        <li><strong>RouterChain:</strong> Escolher qual chain executar baseado no input</li>
+                                        <li><strong>MapReduceChain:</strong> Processar documentos em paralelo e combinar resultados</li>
+                                    </ul>
+                                    <p><strong>Orquestração avançada:</strong></p>
+                                    <ul>
+                                        <li>Criar pipelines multi-step complexos</li>
+                                        <li>Combinar RAG + Agents + Memory</li>
+                                        <li>Paralelização para performance</li>
+                                        <li>Error recovery e retry logic</li>
+                                    </ul>
+                                    <p><strong>🚀 Aplicação:</strong> Sistemas de IA de nível enterprise que orquestram múltiplas operações complexas.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <a href="../modulos/modulo-03.html" class="module-cta-detailed">
+                        <span>Começar Módulo 3</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4.167 10h11.666M10 4.167L15.833 10 10 15.833" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div style="margin-top: 4rem; text-align: center; padding: 3rem; background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(5, 150, 105, 0.1) 100%); border-radius: 1rem;">
+                <h3 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1rem;">Pronto para o Próximo Nível?</h3>
+                <p style="color: #6b7280; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Após completar o Nível Fundamentos, continue sua jornada com o Nível Aplicação
+                </p>
+                <a href="aplicacao.html" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 1rem 2rem; background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); color: white; text-decoration: none; border-radius: 0.5rem; font-weight: 600;">
+                    <span>⚡ Ir para Nível Aplicação</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M4.167 10h11.666M10 4.167L15.833 10 10 15.833" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Engenharia de Agentes IA 2.0</h3>
+                    <p class="footer-text">
+                        Curso completo e gratuito de Engenharia de Agentes de IA.
+                        Do zero ao profissional.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html#niveis">Níveis</a></li>
+                        <li><a href="../index.html#modulos">Módulos</a></li>
+                        <li><a href="https://github.com/inematds/FEA-IA" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Contato</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:inematds@gmail.com">inematds@gmail.com</a></li>
+                        <li><a href="https://github.com/inematds" target="_blank">@inematds</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Engenharia de Agentes IA 2.0. Código aberto sob licença MIT.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
