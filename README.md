@@ -1,4 +1,4 @@
-﻿# ðŸš€ Engenharia de Agentes de IA 2.0
+# ðŸš€ Engenharia de Agentes de IA 2.0
 
 <div align="center">
   <img src="capa/logo.svg" alt="Arckhé AI" height="48" />
@@ -17,7 +17,7 @@
 
 ### "VocÃª nÃ£o estÃ¡ aprendendo sobre o futuro. VocÃª estÃ¡ construindo ele."
 
-ðŸ‘‰ **[ACESSE O CURSO ONLINE](https://inematds.github.io/FEA-IA/)**
+ðŸ‘‰ **[ACESSE O CURSO ONLINE](https://linnoff88-dev.github.io/
 
 </div>
 
@@ -112,7 +112,7 @@ Consulte a pasta `trilhas/` para detalhes.
 
 ## ðŸŒ Site e SEO
 
-- GitHub Pages online: https://inematds.github.io/FEA-IA/
+- GitHub Pages online: https://linnoff88-dev.github.io/
 - Metatags OG/Twitter, `sitemap.xml`, `robots.txt`, `.nojekyll`
 - Landing page responsiva (`landing-page/`)
 
@@ -134,13 +134,13 @@ MIT â€” veja `LICENSE`.
 
 > Nota: Este arquivo Ã© a versÃ£o corrigida (UTFâ€‘8) do README. Caso veja diferenÃ§as em relaÃ§Ã£o ao histÃ³rico anterior, a causa provÃ¡vel Ã© correÃ§Ã£o de caracteres acentuados que estavam corrompidos por encoding.
 
-<!-- inema-backlink:v1 -->
-## Mais no INEMA.CLUB
+<!-- ARCKHÉ-backlink:v1 -->
+## Mais no ARCKHÉ AI
 
-- [Ficha completa deste curso](https://www.inema.club/cursos/10-fea-ia-engenharia-de-agentes/)
-- [Guia: como aprender inteligÃªncia artificial](https://www.inema.club/aprender-inteligencia-artificial/)
-- [Todos os cursos](https://www.inema.club/cursos/)
-<!-- /inema-backlink:v1 -->
+- [Ficha completa deste curso](https://www.ARCKHÉ AI/cursos/10-fea-ia-engenharia-de-agentes/)
+- [Guia: como aprender inteligÃªncia artificial](https://www.ARCKHÉ AI/aprender-inteligencia-artificial/)
+- [Todos os cursos](https://www.ARCKHÉ AI/cursos/)
+<!-- /ARCKHÉ-backlink:v1 -->
 
 ---
 

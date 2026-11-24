@@ -28,11 +28,11 @@ Este guia explica como configurar o GitHub Pages para hospedar a landing page do
 
 - O GitHub vai buildar e fazer deploy automaticamente
 - Leva cerca de 1-2 minutos
-- Você verá uma mensagem: "Your site is live at https://inematds.github.io/FEA-IA/"
+- Você verá uma mensagem: "Your site is live at https://linnoff88-dev.github.io/
 
 ### Passo 3: Acessar o Site
 
-Acesse: `https://inematds.github.io/FEA-IA/`
+Acesse: `https://linnoff88-dev.github.io/
 
 **Pronto! Seu site está no ar! 🎉**
 
@@ -58,7 +58,7 @@ No seu provedor de domínio, adicione os seguintes registros:
 
 **Registro CNAME:**
 ```
-www  →  inematds.github.io
+www  →  linnoff88-dev.github.io
 ```
 
 #### 2. Configurar no GitHub
@@ -98,7 +98,7 @@ Edite `landing-page/index.html` e atualize:
 
 ```html
 <!-- Exemplo de atualização -->
-<a href="https://github.com/inematds/FEA-IA">
+<a href="https://github.com/linnoff88-dev/FEA-IA">
 ```
 
 ### Adicionar Google Analytics (Opcional)
@@ -120,8 +120,8 @@ Edite `landing-page/index.html` e atualize:
 <!-- No <head> do index.html -->
 <meta property="og:title" content="Engenharia de Agentes de IA 2.0">
 <meta property="og:description" content="Curso completo e gratuito de Engenharia de Agentes de IA">
-<meta property="og:image" content="https://inematds.github.io/FEA-IA/assets/og-image.png">
-<meta property="og:url" content="https://inematds.github.io/FEA-IA/">
+<meta property="og:image" content="https://linnoff88-dev.github.io/
+<meta property="og:url" content="https://linnoff88-dev.github.io/
 <meta name="twitter:card" content="summary_large_image">
 ```
 
@@ -212,7 +212,7 @@ Após configurar GitHub Pages:
 - [Documentação GitHub Pages](https://docs.github.com/pt/pages)
 - [Configurar domínio personalizado](https://docs.github.com/pt/pages/configuring-a-custom-domain-for-your-github-pages-site)
 - [Jekyll (gerador estático)](https://jekyllrb.com/)
-- [Verificar status do deploy](https://github.com/inematds/FEA-IA/deployments)
+- [Verificar status do deploy](https://github.com/linnoff88-dev/FEA-IA/deployments)
 
 ---
 
@@ -252,6 +252,6 @@ Crie um arquivo `_redirects` (para Netlify) ou configure no GitHub Pages:
 
 **🎉 Seu curso agora está online e acessível para todo mundo! 🎉**
 
-[Ver Site](https://inematds.github.io/FEA-IA/) | [Ver Código](https://github.com/inematds/FEA-IA)
+[Ver Site](https://linnoff88-dev.github.io/ | [Ver Código](https://github.com/linnoff88-dev/FEA-IA)
 
 </div>

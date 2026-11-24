@@ -71,10 +71,10 @@ Esta trilha é dividida em **4 fases progressivas**:
 - Quando usar (e quando NÃO usar) IA
 
 📚 **Material:**
-- [Módulo 1: Fundamentos de IA Generativa](https://github.com/inematds/FEA-IA/blob/main/modulos/modulo-01/conteudo/Modulo-01-Fundamentos-IA-Generativa.md)
+- [Módulo 1: Fundamentos de IA Generativa](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-01/conteudo/Modulo-01-Fundamentos-IA-Generativa.md)
   - Foque nas seções conceituais
   - Pule partes muito técnicas
-- [Módulo 5: CrewAI - Introdução](https://github.com/inematds/FEA-IA/blob/main/modulos/modulo-05/conteudo/Modulo-05-CrewAI.md)
+- [Módulo 5: CrewAI - Introdução](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-05/conteudo/Modulo-05-CrewAI.md)
   - Leia a introdução sobre multi-agentes
 
 🎯 **Entregável:** Mindmap dos processos do seu negócio que podem ser automatizados
@@ -91,7 +91,7 @@ Esta trilha é dividida em **4 fases progressivas**:
 - Biblioteca de prompts prontos para negócios
 
 📚 **Material:**
-- [Módulo 2: Engenharia de Prompts Avançada](https://github.com/inematds/FEA-IA/blob/main/modulos/modulo-02/conteudo/Modulo-02-Engenharia-Prompts-Avancada.md)
+- [Módulo 2: Engenharia de Prompts Avançada](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-02/conteudo/Modulo-02-Engenharia-Prompts-Avancada.md)
   - Seções 2.1 a 2.4 são fundamentais
 
 🎯 **Entregável:** 5 prompts customizados para tarefas do seu negócio
@@ -136,7 +136,7 @@ Vamos implementar **3 automações** que geram resultados imediatos:
 - Escalação automática para humano quando necessário
 
 📚 **Material:**
-- [Caso de Uso: Atendimento ao Cliente](https://github.com/inematds/FEA-IA/blob/main/casos-uso/atendimento-cliente.md)
+- [Caso de Uso: Atendimento ao Cliente](https://github.com/linnoff88-dev/FEA-IA/blob/main/casos-uso/atendimento-cliente.md)
 
 **Stack No-Code:**
 - ChatGPT API + Zapier + WhatsApp Business
@@ -154,7 +154,7 @@ Vamos implementar **3 automações** que geram resultados imediatos:
 - Ideias de conteúdo baseadas em tendências
 
 📚 **Material:**
-- [Módulo 2: Engenharia de Prompts](https://github.com/inematds/FEA-IA/blob/main/modulos/modulo-02/conteudo/Modulo-02-Engenharia-Prompts-Avancada.md)
+- [Módulo 2: Engenharia de Prompts](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-02/conteudo/Modulo-02-Engenharia-Prompts-Avancada.md)
   - Seção sobre Few-Shot Prompting
 
 **Stack No-Code:**
@@ -190,9 +190,9 @@ Vamos implementar **3 automações** que geram resultados imediatos:
 - Agendamento inteligente de reuniões
 
 📚 **Material:**
-- [Módulo 3: LangChain](https://github.com/inematds/FEA-IA/blob/main/modulos/modulo-03/conteudo/Modulo-03-LangChain.md)
+- [Módulo 3: LangChain](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-03/conteudo/Modulo-03-LangChain.md)
   - Seções sobre Agents e Tools
-- [Módulo 5: CrewAI](https://github.com/inematds/FEA-IA/blob/main/modulos/modulo-05/conteudo/Modulo-05-CrewAI.md)
+- [Módulo 5: CrewAI](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-05/conteudo/Modulo-05-CrewAI.md)
   - Exemplo de Sales Crew
 
 **Opções:**
@@ -212,7 +212,7 @@ Vamos implementar **3 automações** que geram resultados imediatos:
 - Relatório semanal de oportunidades
 
 📚 **Material:**
-- [Módulo 8: Ferramentas e Ecossistema](https://github.com/inematds/FEA-IA/blob/main/modulos/modulo-08/conteudo/Modulo-08-Ferramentas-Ecossistema.md)
+- [Módulo 8: Ferramentas e Ecossistema](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-08/conteudo/Modulo-08-Ferramentas-Ecossistema.md)
   - Seção sobre APIs e integrações
 
 🎯 **Entregável:** Dashboard de inteligência de mercado
@@ -294,10 +294,10 @@ Ao completar esta trilha, você terá:
 
 ## 🔗 Recursos Adicionais
 
-- [Repositório Completo do Curso](https://github.com/inematds/FEA-IA)
-- [Documentação Principal](https://github.com/inematds/FEA-IA#readme)
-- [Discussões da Comunidade](https://github.com/inematds/FEA-IA/discussions)
-- [Issues e Suporte](https://github.com/inematds/FEA-IA/issues)
+- [Repositório Completo do Curso](https://github.com/linnoff88-dev/FEA-IA)
+- [Documentação Principal](https://github.com/linnoff88-dev/FEA-IA#readme)
+- [Discussões da Comunidade](https://github.com/linnoff88-dev/FEA-IA/discussions)
+- [Issues e Suporte](https://github.com/linnoff88-dev/FEA-IA/issues)
 
 ---
 
@@ -321,6 +321,6 @@ Ao completar esta trilha, você terá:
 
 **Pronto para transformar seu negócio com IA?**
 
-[← Voltar para Trilhas](../README.md#escolha-sua-trilha) | [Começar Agora](https://github.com/inematds/FEA-IA/blob/main/modulos/modulo-01/conteudo/Modulo-01-Fundamentos-IA-Generativa.md)
+[← Voltar para Trilhas](../README.md#escolha-sua-trilha) | [Começar Agora](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-01/conteudo/Modulo-01-Fundamentos-IA-Generativa.md)
 
 </div>

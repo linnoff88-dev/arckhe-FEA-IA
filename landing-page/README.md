@@ -4,7 +4,7 @@ Landing page responsiva e moderna para o curso de Engenharia de Agentes de IA.
 
 ## 🚀 URL ao Vivo
 
-**Site:** https://inematds.github.io/FEA-IA/
+**Site:** https://linnoff88-dev.github.io/
 
 ---
 
@@ -79,7 +79,7 @@ Esta landing page está configurada para GitHub Pages.
    - Verificar em Actions
 
 3. **Acessar**
-   - https://inematds.github.io/FEA-IA/
+   - https://linnoff88-dev.github.io/
 
 Ver guia completo: [GITHUB-PAGES-SETUP.md](../GITHUB-PAGES-SETUP.md)
 
@@ -217,9 +217,9 @@ Contribuições são bem-vindas! Ver [CONTRIBUTING.md](../CONTRIBUTING.md)
 
 ## 📞 Contato
 
-- **GitHub**: https://github.com/inematds/FEA-IA
-- **Issues**: https://github.com/inematds/FEA-IA/issues
-- **Email**: inematds@gmail.com
+- **GitHub**: https://github.com/linnoff88-dev/FEA-IA
+- **Issues**: https://github.com/linnoff88-dev/FEA-IA/issues
+- **Email**: linnoff88-dev@gmail.com
 
 ---
 
@@ -227,6 +227,6 @@ Contribuições são bem-vindas! Ver [CONTRIBUTING.md](../CONTRIBUTING.md)
 
 **Feito com ❤️ para a comunidade de IA**
 
-[Ver Site](https://inematds.github.io/FEA-IA/) | [Ver Código](https://github.com/inematds/FEA-IA)
+[Ver Site](https://linnoff88-dev.github.io/ | [Ver Código](https://github.com/linnoff88-dev/FEA-IA)
 
 </div>

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Script para atualizar todos os botões "Acessar Curso" para "INEMA.CLUB"
-e trocar o link para http://inema.club
+Script para atualizar todos os botões "Acessar Curso" para "ARCKHÉ AI"
+e trocar o link para http://ARCKHÉ AI
 """
 import os
 import re
@@ -19,13 +19,13 @@ if sys.platform == 'win32':
 PATTERNS = [
     # Padrão 1: Link do GitHub com texto "Acessar Curso"
     (
-        r'<a href="https://github\.com/inematds/FEA-IA#readme"([^>]*?)>Acessar Curso</a>',
-        r'<a href="http://inema.club"\1>INEMA.CLUB</a>'
+        r'<a href="https://github\.com/linnoff88-dev/FEA-IA#readme"([^>]*?)>Acessar Curso</a>',
+        r'<a href="http://ARCKHÉ AI"\1>ARCKHÉ AI</a>'
     ),
     # Padrão 2: Outros links que possam ter "Acessar Curso"
     (
         r'<a href="[^"]*"([^>]*?)>Acessar Curso</a>',
-        r'<a href="http://inema.club"\1>INEMA.CLUB</a>'
+        r'<a href="http://ARCKHÉ AI"\1>ARCKHÉ AI</a>'
     ),
 ]
 

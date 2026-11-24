@@ -225,7 +225,7 @@ MARCOS ALCANÇADOS:
 ✅ Módulo 8: Ferramentas (24k palavras, 2408 linhas)
 ✅ Landing Page: HTML + CSS + JS (completa e responsiva)
 ✅ GitHub: CONTRIBUTING.md + LICENSE + CODE_OF_CONDUCT.md + .gitignore
-✅ Site Online: https://inematds.github.io/FEA-IA/
+✅ Site Online: https://linnoff88-dev.github.io/
 ✅ SEO Completo: Meta tags, sitemap.xml, robots.txt
 
 ═══════════════════════════════════════════════════════════════════

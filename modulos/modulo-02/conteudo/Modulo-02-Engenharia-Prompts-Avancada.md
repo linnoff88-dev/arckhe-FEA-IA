@@ -148,7 +148,7 @@ Classifique o sentimento dos textos:
 Texto: "Este filme foi horrível."
 Sentimento: Negativo
 
-Texto: "Uma obra-prima do cinema!"
+Texto: "Uma obra-prima do cARCKHÉ!"
 Sentimento: Positivo
 
 Texto: "Achei o serviço apenas razoável."
@@ -628,7 +628,7 @@ Com modelos como GPT-4 Vision, Claude com visão e DALL-E, podemos criar prompts
 Um astronauta solitário [SUJEITO]
 contemplando uma paisagem marciana [AÇÃO]
 ao pôr do sol, com dois sóis no horizonte [CONTEXTO]
-estilo arte conceitual cinematográfica [ESTILO]
+estilo arte conceitual cARCKHÉtográfica [ESTILO]
 iluminação dramática dourada e laranja [ILUMINAÇÃO]
 ângulo amplo, composição rule of thirds [PERSPECTIVA]
 4K, altamente detalhado, fotorrealista [QUALIDADE]

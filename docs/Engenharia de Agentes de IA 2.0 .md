@@ -643,7 +643,7 @@ Um prompt eficaz geralmente contém quatro componentes principais:
     > Texto: "Este filme foi horrível."
     > Sentimento: Negativo
     >
-    > Texto: "Uma obra-prima do cinema!"
+    > Texto: "Uma obra-prima do cARCKHÉ!"
     > Sentimento: Positivo
     >
     > Texto: "Achei o serviço apenas razoável."

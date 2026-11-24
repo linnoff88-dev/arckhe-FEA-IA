@@ -27,8 +27,8 @@ Progresso: 75% ███████████████░░░░░
   - Estrutura de diretórios
   - Todos os 8 módulos completos (~157k palavras)
   - Landing page profissional responsiva
-  - Publicado no GitHub (https://github.com/inematds/FEA-IA)
-  - Site online (https://inematds.github.io/FEA-IA/)
+  - Publicado no GitHub (https://github.com/linnoff88-dev/FEA-IA)
+  - Site online (https://linnoff88-dev.github.io/
   - Trilhas de aprendizado (Executivo, Empreendedor)
   - Todos os links verificados e corrigidos
 
@@ -155,8 +155,8 @@ git push --tags
 
 O curso está **75% completo** e totalmente funcional:
 - ✅ **8 módulos completos** com conteúdo detalhado e projetos práticos
-- ✅ **Landing page online** em https://inematds.github.io/FEA-IA/
-- ✅ **Repositório público** em https://github.com/inematds/FEA-IA
+- ✅ **Landing page online** em https://linnoff88-dev.github.io/
+- ✅ **Repositório público** em https://github.com/linnoff88-dev/FEA-IA
 - ✅ **Trilhas de aprendizado** para diferentes perfis
 
 **Tarefas Opcionais (adiadas conforme solicitado):**

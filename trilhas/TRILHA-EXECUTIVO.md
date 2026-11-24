@@ -68,7 +68,7 @@ Esta trilha é dividida em **3 fases focadas em decisão**:
 - Casos de transformação em diferentes indústrias
 
 📚 **Material:**
-- [Módulo 1: Fundamentos de IA Generativa](https://github.com/inematds/FEA-IA/blob/main/modulos/modulo-01/conteudo/Modulo-01-Fundamentos-IA-Generativa.md)
+- [Módulo 1: Fundamentos de IA Generativa](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-01/conteudo/Modulo-01-Fundamentos-IA-Generativa.md)
   - Leia as seções 1.1 a 1.3 (foco conceitual)
   - Pule código e detalhes técnicos
 
@@ -92,7 +92,7 @@ Esta trilha é dividida em **3 fases focadas em decisão**:
 - Quando usar cada abordagem
 
 📚 **Material:**
-- [Módulo 5: CrewAI - Sistemas Multi-Agentes](https://github.com/inematds/FEA-IA/blob/main/modulos/modulo-05/conteudo/Modulo-05-CrewAI.md)
+- [Módulo 5: CrewAI - Sistemas Multi-Agentes](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-05/conteudo/Modulo-05-CrewAI.md)
   - Leia a introdução e seção 5.1
   - Foque nos conceitos, não no código
 
@@ -128,7 +128,7 @@ Avalie cada processo usando 4 critérios (escala 1-5):
 Processos com score > 20 = Prioridade ALTA
 
 📚 **Referências:**
-- [Caso de Uso: Atendimento ao Cliente](https://github.com/inematds/FEA-IA/blob/main/casos-uso/atendimento-cliente.md)
+- [Caso de Uso: Atendimento ao Cliente](https://github.com/linnoff88-dev/FEA-IA/blob/main/casos-uso/atendimento-cliente.md)
 
 🎯 **Entregável:** Top 3 oportunidades priorizadas com business case básico
 
@@ -184,7 +184,7 @@ Processos com score > 20 = Prioridade ALTA
 - [ ] Canais de feedback estabelecidos
 
 📚 **Material:**
-- [Módulo 7: Deploy e Produção](https://github.com/inematds/FEA-IA/blob/main/modulos/modulo-07/conteudo/Modulo-07-Deploy-Producao.md)
+- [Módulo 7: Deploy e Produção](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-07/conteudo/Modulo-07-Deploy-Producao.md)
   - Seção 7.6: Segurança e Compliance
 
 ---
@@ -251,9 +251,9 @@ Ao completar esta trilha, você terá:
 
 ## 🔗 Recursos Adicionais
 
-- [Repositório Completo do Curso](https://github.com/inematds/FEA-IA)
-- [Documentação Principal](https://github.com/inematds/FEA-IA#readme)
-- [Discussões da Comunidade](https://github.com/inematds/FEA-IA/discussions)
+- [Repositório Completo do Curso](https://github.com/linnoff88-dev/FEA-IA)
+- [Documentação Principal](https://github.com/linnoff88-dev/FEA-IA#readme)
+- [Discussões da Comunidade](https://github.com/linnoff88-dev/FEA-IA/discussions)
 
 ---
 
@@ -267,6 +267,6 @@ Ao completar esta trilha, você terá:
 
 **Pronto para liderar a transformação com IA?**
 
-[← Voltar para Trilhas](../README.md#escolha-sua-trilha) | [Começar Agora](https://github.com/inematds/FEA-IA/blob/main/modulos/modulo-01/conteudo/Modulo-01-Fundamentos-IA-Generativa.md)
+[← Voltar para Trilhas](../README.md#escolha-sua-trilha) | [Começar Agora](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-01/conteudo/Modulo-01-Fundamentos-IA-Generativa.md)
 
 </div>

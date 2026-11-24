@@ -398,9 +398,9 @@ R: Sim! ChatGPT e Claude são excelentes em português.
 
 ## 📚 Conteúdo Relacionado
 
-- [Módulo 3: LangChain - RAG Completo](https://github.com/inematds/FEA-IA/blob/main/modulos/modulo-03/conteudo/Modulo-03-LangChain.md)
-- [Módulo 2: Engenharia de Prompts](https://github.com/inematds/FEA-IA/blob/main/modulos/modulo-02/conteudo/Modulo-02-Engenharia-Prompts-Avancada.md)
-- [Repositório Completo do Curso](https://github.com/inematds/FEA-IA)
+- [Módulo 3: LangChain - RAG Completo](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-03/conteudo/Modulo-03-LangChain.md)
+- [Módulo 2: Engenharia de Prompts](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-02/conteudo/Modulo-02-Engenharia-Prompts-Avancada.md)
+- [Repositório Completo do Curso](https://github.com/linnoff88-dev/FEA-IA)
 
 ---
 
@@ -408,7 +408,7 @@ R: Sim! ChatGPT e Claude são excelentes em português.
 
 **Pronto para implementar?**
 
-[💬 Dúvidas? Pergunte na Comunidade](https://github.com/inematds/FEA-IA/discussions)
+[💬 Dúvidas? Pergunte na Comunidade](https://github.com/linnoff88-dev/FEA-IA/discussions)
 
 [⬅️ Voltar aos Casos de Uso](./README.md)
 

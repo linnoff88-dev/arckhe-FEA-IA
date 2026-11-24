@@ -28,7 +28,7 @@ Total: ~157.000 palavras | 15.847 linhas de conteúdo técnico
 - `README.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `LICENSE`, `.gitignore`, `GITHUB-PAGES-SETUP.md`
 
 ### Site Online + SEO
-- Site: https://inematds.github.io/FEA-IA/
+- Site: https://linnoff88-dev.github.io/
 - Meta tags (OG/Twitter), `sitemap.xml`, `robots.txt`, `.nojekyll`
 - OG image e favicons adicionados
 - Google Analytics configurado (ID aplicado)

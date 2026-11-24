@@ -369,7 +369,7 @@ console.log(`
 %cBem-vindo ao curso mais completo de Engenharia de Agentes!
 
 Interessado em contribuir? Acesse:
-👉 https://github.com/inematds/FEA-IA
+👉 https://github.com/linnoff88-dev/FEA-IA
 
 `,
 'font-size: 24px; font-weight: bold; color: #00D9FF;',

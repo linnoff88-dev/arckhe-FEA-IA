@@ -68,7 +68,7 @@ Ao final deste módulo, você vai:
 ### Conteúdo
 
 📚 **Material Completo:**
-- [Módulo 1: Fundamentos de IA Generativa](https://github.com/inematds/FEA-IA/blob/main/modulos/modulo-01/conteudo/Modulo-01-Fundamentos-IA-Generativa.md)
+- [Módulo 1: Fundamentos de IA Generativa](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-01/conteudo/Modulo-01-Fundamentos-IA-Generativa.md)
   - 🎯 Leia TUDO
   - 💻 Execute todos os exemplos de código
   - 🔬 Experimente variações
@@ -109,7 +109,7 @@ Ao final deste módulo, você vai:
 ### Conteúdo
 
 📚 **Material Completo:**
-- [Módulo 2: Engenharia de Prompts Avançada](https://github.com/inematds/FEA-IA/blob/main/modulos/modulo-02/conteudo/Modulo-02-Engenharia-Prompts-Avancada.md)
+- [Módulo 2: Engenharia de Prompts Avançada](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-02/conteudo/Modulo-02-Engenharia-Prompts-Avancada.md)
   - Framework PCFT (Persona, Contexto, Formato, Tarefa)
   - Todas as técnicas com exemplos práticos
 
@@ -148,7 +148,7 @@ Ao final deste módulo, você vai:
 ### Conteúdo
 
 📚 **Material Completo:**
-- [Módulo 3: LangChain](https://github.com/inematds/FEA-IA/blob/main/modulos/modulo-03/conteudo/Modulo-03-LangChain.md)
+- [Módulo 3: LangChain](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-03/conteudo/Modulo-03-LangChain.md)
   - ~18k palavras de conteúdo técnico
   - Exemplos de todos os componentes
 
@@ -189,7 +189,7 @@ Ao final deste módulo, você vai:
 ### Conteúdo
 
 📚 **Material Completo:**
-- [Módulo 4: Agno](https://github.com/inematds/FEA-IA/blob/main/modulos/modulo-04/conteudo/Modulo-04-Agno.md)
+- [Módulo 4: Agno](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-04/conteudo/Modulo-04-Agno.md)
   - Comparação com LangChain
   - Quando usar cada framework
 
@@ -227,7 +227,7 @@ Ao final deste módulo, você vai:
 ### Conteúdo
 
 📚 **Material Completo:**
-- [Módulo 5: CrewAI](https://github.com/inematds/FEA-IA/blob/main/modulos/modulo-05/conteudo/Modulo-05-CrewAI.md)
+- [Módulo 5: CrewAI](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-05/conteudo/Modulo-05-CrewAI.md)
   - ~18k palavras sobre multi-agentes
   - Exemplos de crews completas
 
@@ -272,7 +272,7 @@ Ao final deste módulo, você vai:
 ### Conteúdo
 
 📚 **Material Completo:**
-- [Módulo 6: MCP](https://github.com/inematds/FEA-IA/blob/main/modulos/modulo-06/conteudo/Modulo-06-MCP.md)
+- [Módulo 6: MCP](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-06/conteudo/Modulo-06-MCP.md)
   - ~34k palavras (maior módulo!)
   - Protocolo completo explicado
 
@@ -319,7 +319,7 @@ Ao final deste módulo, você vai:
 ### Conteúdo
 
 📚 **Material Completo:**
-- [Módulo 7: Deploy e Produção](https://github.com/inematds/FEA-IA/blob/main/modulos/modulo-07/conteudo/Modulo-07-Deploy-Producao.md)
+- [Módulo 7: Deploy e Produção](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-07/conteudo/Modulo-07-Deploy-Producao.md)
   - ~26k palavras sobre produção
   - Exemplos de Dockerfile, K8s, etc
 
@@ -362,7 +362,7 @@ Ao final deste módulo, você vai:
 ### Conteúdo
 
 📚 **Material Completo:**
-- [Módulo 8: Ferramentas e Ecossistema](https://github.com/inematds/FEA-IA/blob/main/modulos/modulo-08/conteudo/Modulo-08-Ferramentas-Ecossistema.md)
+- [Módulo 8: Ferramentas e Ecossistema](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-08/conteudo/Modulo-08-Ferramentas-Ecossistema.md)
   - ~24k palavras sobre o ecossistema
   - Todas as ferramentas principais
 
@@ -443,7 +443,7 @@ Ao final deste módulo, você vai:
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/inematds/FEA-IA.git
+git clone https://github.com/linnoff88-dev/FEA-IA.git
 cd FEA-IA
 
 # 2. Crie ambiente virtual
@@ -530,10 +530,10 @@ Com esta trilha completa, você está qualificado para:
 
 ## 🔗 Recursos Adicionais
 
-- [Repositório Completo](https://github.com/inematds/FEA-IA)
-- [Documentação](https://github.com/inematds/FEA-IA#readme)
-- [Comunidade no GitHub](https://github.com/inematds/FEA-IA/discussions)
-- [Issues e Suporte](https://github.com/inematds/FEA-IA/issues)
+- [Repositório Completo](https://github.com/linnoff88-dev/FEA-IA)
+- [Documentação](https://github.com/linnoff88-dev/FEA-IA#readme)
+- [Comunidade no GitHub](https://github.com/linnoff88-dev/FEA-IA/discussions)
+- [Issues e Suporte](https://github.com/linnoff88-dev/FEA-IA/issues)
 
 ### Comunidades Recomendadas
 
@@ -567,6 +567,6 @@ Com esta trilha completa, você está qualificado para:
 
 **Pronto para dominar Engenharia de Agentes de IA?**
 
-[← Voltar para Trilhas](../README.md#escolha-sua-trilha) | [Começar Agora](https://github.com/inematds/FEA-IA/blob/main/modulos/modulo-01/conteudo/Modulo-01-Fundamentos-IA-Generativa.md)
+[← Voltar para Trilhas](../README.md#escolha-sua-trilha) | [Começar Agora](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-01/conteudo/Modulo-01-Fundamentos-IA-Generativa.md)
 
 </div>

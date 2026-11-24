@@ -70,7 +70,7 @@ git clone https://github.com/seu-usuario/FEA-IA.git
 cd FEA-IA
 
 # Adicione o repositório original como upstream
-git remote add upstream https://github.com/inematds/FEA-IA.git
+git remote add upstream https://github.com/linnoff88-dev/FEA-IA.git
 ```
 
 ### 2. Crie uma Branch
@@ -293,7 +293,7 @@ DATABASE_URL=sqlite:///app.db
 
 ## 🐛 Reportando Bugs
 
-Antes de reportar um bug, verifique se já não existe uma [issue aberta](https://github.com/inematds/FEA-IA/issues) sobre o mesmo problema.
+Antes de reportar um bug, verifique se já não existe uma [issue aberta](https://github.com/linnoff88-dev/FEA-IA/issues) sobre o mesmo problema.
 
 ### Template de Bug Report
 
@@ -408,15 +408,15 @@ Este projeto segue nosso [Código de Conduta](CODE_OF_CONDUCT.md). Ao participar
 
 Se tiver dúvidas sobre como contribuir:
 
-- 💬 Abra uma [Discussion](https://github.com/inematds/FEA-IA/discussions)
-- 📧 Envie um email para inematds@gmail.com
-- 🐛 Crie uma [Issue](https://github.com/inematds/FEA-IA/issues) com a tag `question`
+- 💬 Abra uma [Discussion](https://github.com/linnoff88-dev/FEA-IA/discussions)
+- 📧 Envie um email para linnoff88-dev@gmail.com
+- 🐛 Crie uma [Issue](https://github.com/linnoff88-dev/FEA-IA/issues) com a tag `question`
 
 ---
 
 ## 🙏 Agradecimentos
 
-Todo contribuidor é adicionado automaticamente à nossa [lista de contribuidores](https://github.com/inematds/FEA-IA/graphs/contributors).
+Todo contribuidor é adicionado automaticamente à nossa [lista de contribuidores](https://github.com/linnoff88-dev/FEA-IA/graphs/contributors).
 
 **Obrigado por fazer parte desta comunidade! 🎉**
 
@@ -426,6 +426,6 @@ Todo contribuidor é adicionado automaticamente à nossa [lista de contribuidore
 
 ### 🌟 Não esqueça de dar uma estrela no projeto!
 
-[![Star History Chart](https://api.star-history.com/svg?repos=inematds/FEA-IA&type=Date)](https://star-history.com/#inematds/FEA-IA&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=linnoff88-dev/FEA-IA&type=Date)](https://star-history.com/#linnoff88-dev/FEA-IA&Date)
 
 </div>

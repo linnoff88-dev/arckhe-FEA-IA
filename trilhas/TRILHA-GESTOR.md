@@ -74,10 +74,10 @@ Esta trilha é dividida em **5 fases**:
 - Limitações técnicas que impactam projetos
 
 📚 **Material:**
-- [Módulo 1: Fundamentos de IA Generativa](https://github.com/inematds/FEA-IA/blob/main/modulos/modulo-01/conteudo/Modulo-01-Fundamentos-IA-Generativa.md)
+- [Módulo 1: Fundamentos de IA Generativa](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-01/conteudo/Modulo-01-Fundamentos-IA-Generativa.md)
   - Leia seções 1.1 a 1.5
   - Foque em entender conceitos, não código
-- [Módulo 5: CrewAI - Introdução a Multi-Agentes](https://github.com/inematds/FEA-IA/blob/main/modulos/modulo-05/conteudo/Modulo-05-CrewAI.md)
+- [Módulo 5: CrewAI - Introdução a Multi-Agentes](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-05/conteudo/Modulo-05-CrewAI.md)
   - Entenda como sistemas complexos funcionam
 
 🎯 **Entregável:** Diagrama de arquitetura de alto nível de uma solução de IA
@@ -94,9 +94,9 @@ Esta trilha é dividida em **5 fases**:
 - Ecossistema de ferramentas
 
 📚 **Material:**
-- [Módulo 3: LangChain](https://github.com/inematds/FEA-IA/blob/main/modulos/modulo-03/conteudo/Modulo-03-LangChain.md)
-- [Módulo 4: Agno](https://github.com/inematds/FEA-IA/blob/main/modulos/modulo-04/conteudo/Modulo-04-Agno.md)
-- [Módulo 8: Ferramentas e Ecossistema](https://github.com/inematds/FEA-IA/blob/main/modulos/modulo-08/conteudo/Modulo-08-Ferramentas-Ecossistema.md)
+- [Módulo 3: LangChain](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-03/conteudo/Modulo-03-LangChain.md)
+- [Módulo 4: Agno](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-04/conteudo/Modulo-04-Agno.md)
+- [Módulo 8: Ferramentas e Ecossistema](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-08/conteudo/Modulo-08-Ferramentas-Ecossistema.md)
 
 🎯 **Entregável:** Matriz de decisão de tecnologias (quando usar o quê)
 
@@ -228,7 +228,7 @@ except Exception as e:
 - [ ] Performance é aceitável?
 
 📚 **Material:**
-- [Módulo 7: Deploy e Produção](https://github.com/inematds/FEA-IA/blob/main/modulos/modulo-07/conteudo/Modulo-07-Deploy-Producao.md)
+- [Módulo 7: Deploy e Produção](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-07/conteudo/Modulo-07-Deploy-Producao.md)
   - Seções sobre qualidade de código
 
 🎯 **Entregável:** Checklist de code review customizado
@@ -280,7 +280,7 @@ except Exception as e:
 | **Database** | Conexões diretas | SQL injection, performance |
 
 📚 **Material:**
-- [Módulo 6: Model Context Protocol](https://github.com/inematds/FEA-IA/blob/main/modulos/modulo-06/conteudo/Modulo-06-MCP.md)
+- [Módulo 6: Model Context Protocol](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-06/conteudo/Modulo-06-MCP.md)
   - Padrão de integração moderna
 
 🎯 **Entregável:** Mapa de integrações necessárias
@@ -313,7 +313,7 @@ except Exception as e:
 - Contras: Complexidade, manutenção
 
 📚 **Material:**
-- [Módulo 7: Deploy e Produção](https://github.com/inematds/FEA-IA/blob/main/modulos/modulo-07/conteudo/Modulo-07-Deploy-Producao.md)
+- [Módulo 7: Deploy e Produção](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-07/conteudo/Modulo-07-Deploy-Producao.md)
   - Seções 7.1 a 7.4
 
 🎯 **Entregável:** Decisão de arquitetura de deploy
@@ -381,7 +381,7 @@ except Exception as e:
 - [ ] Canal de feedback ativo
 
 📚 **Material:**
-- [Módulo 7: Deploy e Produção - Seção 7.6](https://github.com/inematds/FEA-IA/blob/main/modulos/modulo-07/conteudo/Modulo-07-Deploy-Producao.md)
+- [Módulo 7: Deploy e Produção - Seção 7.6](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-07/conteudo/Modulo-07-Deploy-Producao.md)
 
 🎯 **Entregável:** Política de governança documentada
 
@@ -444,10 +444,10 @@ Ao completar esta trilha, você terá:
 
 ## 🔗 Recursos Adicionais
 
-- [Repositório Completo do Curso](https://github.com/inematds/FEA-IA)
-- [Documentação Principal](https://github.com/inematds/FEA-IA#readme)
-- [Discussões da Comunidade](https://github.com/inematds/FEA-IA/discussions)
-- [Issues e Suporte](https://github.com/inematds/FEA-IA/issues)
+- [Repositório Completo do Curso](https://github.com/linnoff88-dev/FEA-IA)
+- [Documentação Principal](https://github.com/linnoff88-dev/FEA-IA#readme)
+- [Discussões da Comunidade](https://github.com/linnoff88-dev/FEA-IA/discussions)
+- [Issues e Suporte](https://github.com/linnoff88-dev/FEA-IA/issues)
 
 ---
 
@@ -471,6 +471,6 @@ Ao completar esta trilha, você terá:
 
 **Pronto para liderar projetos de IA de ponta a ponta?**
 
-[← Voltar para Trilhas](../README.md#escolha-sua-trilha) | [Começar Agora](https://github.com/inematds/FEA-IA/blob/main/modulos/modulo-01/conteudo/Modulo-01-Fundamentos-IA-Generativa.md)
+[← Voltar para Trilhas](../README.md#escolha-sua-trilha) | [Começar Agora](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-01/conteudo/Modulo-01-Fundamentos-IA-Generativa.md)
 
 </div>
