@@ -12,20 +12,20 @@ const pairs = [
   ['Come��ar', 'Começar'], ['Come�ar', 'Começar'],
   ['prǭtico', 'prático'], ['prǭticos', 'práticos'],
   ['aplicǭveis', 'aplicáveis'], ['indǧstria', 'indústria'],
-  ['cria��ǜo', 'criação'], ['cria��o', 'criação'],
+  ['cria��ǜo', 'criaçêo'], ['cria��o', 'criaçêo'],
   ['avan��adas', 'avançadas'], ['avan�adas', 'avançadas'],
   ['vocǦ', 'você'], ['VocǦ', 'Você'],
   ['estǭ', 'está'], ['estarǭ', 'estará'],
   ['empresa/carreira serǭ', 'empresa/carreira será'],
-  ['questǜo', 'questão'], ['Nǜo', 'Não'], ['nǜo', 'não'],
+  ['questǜo', 'questêo'], ['Nǜo', 'Nêo'], ['nǜo', 'nêo'],
   ['neg��cios', 'negócios'], ['estratǸgico', 'estratégico'],
   ['tǸcnicas', 'técnicas'], ['tǸcnico', 'técnico'], ['TǸcnico', 'Técnico'],
-  ['dispon��veis', 'disponíveis'], ['execu��ǜo', 'execução'],
+  ['dispon��veis', 'disponíveis'], ['execu��ǜo', 'execuçêo'],
   ['aplica����es', 'aplicações'],
   ['licen��a', 'licença'], ['Licen��a', 'Licença'],
   ['Contribui����es', 'Contribuições'],
-  ['Descri��ǜo', 'Descrição'], ['Descri��o', 'Descrição'],
-  ['Visǜo', 'Visão'], ['dura��ǜo', 'duração'], ['Dura��ǜo', 'Duração'],
+  ['Descri��ǜo', 'Descriçêo'], ['Descri��o', 'Descriçêo'],
+  ['Visǜo', 'Visêo'], ['dura��ǜo', 'duraçêo'], ['Dura��ǜo', 'Duraçêo'],
   ['atǸ', 'até'], [' Ǹ ', ' é '],
   ['�Y�-', '★'], ['�o�', '✓'],
   ['Conteǧdo', 'Conteúdo'], ['M��dulos', 'Módulos'], ['Come��ar Agora', 'Começar Agora'],
@@ -33,8 +33,8 @@ const pairs = [
   ['M�dulos', 'Módulos'], ['M�dulo', 'Módulo'], ['m�dulos', 'módulos'], ['m�dulo', 'módulo'],
   ['Conte�do', 'Conteúdo'], ['conte�do', 'conteúdo'],
   ['T�cnico', 'Técnico'], ['t�cnico', 'técnico'], ['t�cnicas', 'técnicas'],
-  ['Come�ar', 'Começar'], ['In�cio', 'Início'], ['Vis�o', 'Visão'],
-  ['Produ��o', 'Produção'], ['gera��o', 'geração'], ['execu��o', 'execução']
+  ['Come�ar', 'Começar'], ['In�cio', 'Início'], ['Vis�o', 'Visêo'],
+  ['Produ��o', 'Produçêo'], ['gera��o', 'geraçêo'], ['execu��o', 'execuçêo']
 ];
 for (const [bad, good] of pairs) {
   if (bad) html = html.split(bad).join(good);

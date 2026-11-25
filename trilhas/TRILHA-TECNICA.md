@@ -5,7 +5,7 @@
 Você é um **desenvolvedor, engenheiro de software, ou aspirante a AI Engineer** que quer:
 
 ✅ Dominar a stack completa de Engenharia de Agentes
-✅ Construir sistemas de IA em produção
+✅ Construir sistemas de IA em produçêo
 ✅ Entender profundamente como tudo funciona
 ✅ Criar soluções complexas e escaláveis
 ✅ Tornar-se especialista reconhecido em AI Engineering
@@ -14,11 +14,11 @@ Você é um **desenvolvedor, engenheiro de software, ou aspirante a AI Engineer*
 
 ---
 
-## 📊 Visão Geral da Trilha
+## 📊 Visêo Geral da Trilha
 
 | | |
 |---|---|
-| **Duração Total** | 60 horas |
+| **Duraçêo Total** | 60 horas |
 | **Nível Técnico** | 🔴 Avançado |
 | **Investimento** | $100-300/mês em APIs e ferramentas |
 | **Código Necessário** | Intensivo - você vai codificar muito |
@@ -33,13 +33,13 @@ Ao final desta trilha, você será capaz de:
 ✅ **Construir** agentes autônomos que resolvem problemas complexos
 ✅ **Orquestrar** sistemas multi-agentes com CrewAI
 ✅ **Implementar** RAG avançado com LangChain
-✅ **Fazer deploy** de soluções em produção (AWS, GCP, Azure)
+✅ **Fazer deploy** de soluções em produçêo (AWS, GCP, Azure)
 ✅ **Otimizar** custos e performance
 ✅ **Integrar** IA em qualquer stack existente
 ✅ **Dominar** Model Context Protocol (MCP)
 ✅ **Criar** aplicações completas com Streamlit/Gradio
 
-**Meta:** Portfolio com 8 projetos funcionais, código no GitHub, experiência de produção.
+**Meta:** Portfolio com 8 projetos funcionais, código no GitHub, experiência de produçêo.
 
 ---
 
@@ -61,8 +61,8 @@ Esta trilha cobre **TODOS os 8 módulos** do curso em profundidade.
 
 Ao final deste módulo, você vai:
 - Entender arquitetura Transformer em profundidade
-- Saber como funcionam embeddings e tokenização
-- Dominar parâmetros de geração (temperature, top-p, top-k)
+- Saber como funcionam embeddings e tokenizaçêo
+- Dominar parâmetros de geraçêo (temperature, top-p, top-k)
 - Conhecer limitações e capabilities dos principais LLMs
 
 ### Conteúdo
@@ -87,7 +87,7 @@ Ao final deste módulo, você vai:
 - Interface CLI interativa
 - Suporte a múltiplos modelos
 - Ajuste de temperatura e outros parâmetros
-- Comparação lado-a-lado de outputs
+- Comparaçêo lado-a-lado de outputs
 - Export para JSON/Markdown
 
 **Tempo Estimado:** 4-6 horas
@@ -126,7 +126,7 @@ Ao final deste módulo, você vai:
 - Análise com Chain of Thought
 - Few-Shot Learning com exemplos customizáveis
 - Multi-label classification (sentimento + emoções)
-- Explicação do raciocínio
+- Explicaçêo do raciocínio
 - Métricas de confiança
 
 **Tempo Estimado:** 3-4 horas
@@ -154,7 +154,7 @@ Ao final deste módulo, você vai:
 
 ### Projeto Prático: ChatPDF Completo
 
-**Objetivo:** Criar aplicação estilo ChatGPT para conversar com documentos PDF.
+**Objetivo:** Criar aplicaçêo estilo ChatGPT para conversar com documentos PDF.
 
 **Stack:**
 - LangChain
@@ -167,8 +167,8 @@ Ao final deste módulo, você vai:
 - Upload múltiplos PDFs
 - Chunking inteligente
 - Busca semântica
-- Conversação com memória
-- Citação de fontes
+- Conversaçêo com memória
+- Citaçêo de fontes
 - Interface profissional
 
 **Tempo Estimado:** 6-8 horas
@@ -190,12 +190,12 @@ Ao final deste módulo, você vai:
 
 📚 **Material Completo:**
 - [Módulo 4: Agno](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-04/conteudo/Modulo-04-Agno.md)
-  - Comparação com LangChain
+  - Comparaçêo com LangChain
   - Quando usar cada framework
 
 ### Projeto Prático: Assistente Pessoal de Tarefas
 
-**Objetivo:** Sistema de gestão de tarefas com IA.
+**Objetivo:** Sistema de gestêo de tarefas com IA.
 
 **Stack:**
 - Agno
@@ -204,7 +204,7 @@ Ao final deste módulo, você vai:
 
 **Funcionalidades:**
 - Criar/editar/listar tarefas via linguagem natural
-- Priorização automática
+- Priorizaçêo automática
 - Sugestões de próximos passos
 - Relatórios de produtividade
 - Lembretes inteligentes
@@ -231,9 +231,9 @@ Ao final deste módulo, você vai:
   - ~18k palavras sobre multi-agentes
   - Exemplos de crews completas
 
-### Projeto Prático: Agência de Criação de Conteúdo
+### Projeto Prático: Agência de Criaçêo de Conteúdo
 
-**Objetivo:** Sistema que gera artigos de blog completos, com pesquisa, escrita e edição.
+**Objetivo:** Sistema que gera artigos de blog completos, com pesquisa, escrita e ediçêo.
 
 **Stack:**
 - CrewAI
@@ -276,9 +276,9 @@ Ao final deste módulo, você vai:
   - ~34k palavras (maior módulo!)
   - Protocolo completo explicado
 
-### Projeto Prático: Servidor MCP de Gestão de Projetos
+### Projeto Prático: Servidor MCP de Gestêo de Projetos
 
-**Objetivo:** Criar servidor MCP que expõe ferramentas de gestão de projetos.
+**Objetivo:** Criar servidor MCP que expõe ferramentas de gestêo de projetos.
 
 **Stack:**
 - MCP Python SDK
@@ -306,12 +306,12 @@ Ao final deste módulo, você vai:
 
 ---
 
-## 📖 MÓDULO 7: Deploy e Produção (6 horas)
+## 📖 MÓDULO 7: Deploy e Produçêo (6 horas)
 
 ### Objetivos de Aprendizado
 
 - Arquiteturas de deploy escaláveis
-- Containerização com Docker
+- Containerizaçêo com Docker
 - Deploy em clouds (AWS, GCP, Azure)
 - CI/CD para projetos de IA
 - Monitoramento e observabilidade
@@ -319,13 +319,13 @@ Ao final deste módulo, você vai:
 ### Conteúdo
 
 📚 **Material Completo:**
-- [Módulo 7: Deploy e Produção](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-07/conteudo/Modulo-07-Deploy-Producao.md)
-  - ~26k palavras sobre produção
+- [Módulo 7: Deploy e Produçêo](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-07/conteudo/Modulo-07-Deploy-Producao.md)
+  - ~26k palavras sobre produçêo
   - Exemplos de Dockerfile, K8s, etc
 
 ### Projeto Prático: Deploy da Agência CrewAI
 
-**Objetivo:** Fazer deploy do projeto do Módulo 5 em produção.
+**Objetivo:** Fazer deploy do projeto do Módulo 5 em produçêo.
 
 **Stack:**
 - Docker
@@ -379,15 +379,15 @@ Ao final deste módulo, você vai:
 **Funcionalidades:**
 - Tabs para cada projeto
 - Analytics centralizados
-- Comparação de modelos
-- Gestão de API keys
+- Comparaçêo de modelos
+- Gestêo de API keys
 - Histórico de uso
 - Custos por projeto
 - Playground de prompts
 
 **Tempo Estimado:** 3-4 horas
 
-🎯 **Desafio Extra:** Deploy público e adicione autenticação
+🎯 **Desafio Extra:** Deploy público e adicione autenticaçêo
 
 ---
 
@@ -395,36 +395,36 @@ Ao final deste módulo, você vai:
 
 ### Desafio Capstone
 
-**Objetivo:** Criar uma solução completa end-to-end combinando todos os conceitos.
+**Objetivo:** Criar uma soluçêo completa end-to-end combinando todos os conceitos.
 
 **Sugestões de Projeto:**
 
 1. **Plataforma de Customer Success Automatizado**
    - Multi-agentes para diferentes funções
-   - RAG com documentação do produto
-   - Integração com CRM
-   - Deploy em produção
+   - RAG com documentaçêo do produto
+   - Integraçêo com CRM
+   - Deploy em produçêo
    - Dashboard de métricas
 
 2. **Sistema de Análise de Mercado**
    - Pesquisa automatizada de tendências
-   - Geração de relatórios
+   - Geraçêo de relatórios
    - Multi-agentes especializados
-   - Atualização diária automática
+   - Atualizaçêo diária automática
 
 3. **Assistente de Desenvolvimento de Software**
    - Code review automático
-   - Geração de testes
-   - Documentação automática
-   - Integração com GitHub
+   - Geraçêo de testes
+   - Documentaçêo automática
+   - Integraçêo com GitHub
 
 **Requisitos Mínimos:**
 - [ ] Usa pelo menos 3 frameworks diferentes
 - [ ] Tem sistema RAG
-- [ ] Deploy em produção
+- [ ] Deploy em produçêo
 - [ ] Monitoramento implementado
 - [ ] Testes automatizados
-- [ ] Documentação completa
+- [ ] Documentaçêo completa
 - [ ] Código no GitHub
 
 ---
@@ -437,9 +437,9 @@ Ao final deste módulo, você vai:
 - **Python:** 3.10 ou superior
 - **RAM:** Mínimo 8GB (16GB recomendado)
 - **Disco:** 20GB livres
-- **Internet:** Conexão estável para APIs
+- **Internet:** Conexêo estável para APIs
 
-### Instalação Completa
+### Instalaçêo Completa
 
 ```bash
 # 1. Clone o repositório
@@ -463,7 +463,7 @@ cp .env.example .env
 # ANTHROPIC_API_KEY=sk-ant-...
 # GOOGLE_API_KEY=...
 
-# 5. Teste instalação
+# 5. Teste instalaçêo
 python -c "import langchain; print('LangChain OK')"
 python -c "import crewai; print('CrewAI OK')"
 ```
@@ -472,7 +472,7 @@ python -c "import crewai; print('CrewAI OK')"
 
 - **Editor:** VS Code + extensões Python
 - **Git:** Para versionamento
-- **Docker:** Para containerização
+- **Docker:** Para containerizaçêo
 - **Postman/Insomnia:** Para testar APIs
 - **DBeaver:** Para visualizar databases
 
@@ -480,7 +480,7 @@ python -c "import crewai; print('CrewAI OK')"
 
 ## 📊 Cronograma Sugerido
 
-### Opção 1: Intensivo (6 semanas, full-time)
+### Opçêo 1: Intensivo (6 semanas, full-time)
 - Semana 1: Módulos 1-2
 - Semana 2: Módulo 3
 - Semana 3: Módulos 4-5
@@ -488,24 +488,24 @@ python -c "import crewai; print('CrewAI OK')"
 - Semana 5: Módulo 8
 - Semana 6: Projeto Final
 
-### Opção 2: Part-Time (3 meses, 15h/semana)
+### Opçêo 2: Part-Time (3 meses, 15h/semana)
 - Mês 1: Módulos 1-4
 - Mês 2: Módulos 5-6
 - Mês 3: Módulos 7-8 + Projeto Final
 
-### Opção 3: Slow & Steady (6 meses, 10h/semana)
+### Opçêo 3: Slow & Steady (6 meses, 10h/semana)
 - 1 módulo por 3 semanas
 - 2 semanas para projeto final
 
 ---
 
-## 🎓 Certificação de Conclusão
+## 🎓 Certificaçêo de Conclusêo
 
 Ao completar esta trilha, você terá:
 
 ✅ **Portfolio completo** com 8+ projetos no GitHub
 ✅ **Experiência prática** em todos os frameworks principais
-✅ **Código em produção** rodando na nuvem
+✅ **Código em produçêo** rodando na nuvem
 ✅ **Domínio técnico** do zero ao deploy
 ✅ **Credibilidade** para posições de AI Engineer
 
@@ -524,14 +524,14 @@ Com esta trilha completa, você está qualificado para:
 | **Senior AI Engineer** | R$ 18k-25k/mês | $150k-200k/ano |
 | **AI Architect** | R$ 25k-35k/mês | $180k-250k/ano |
 
-**Nota:** Valores variam por região, empresa, e experiência total.
+**Nota:** Valores variam por regiêo, empresa, e experiência total.
 
 ---
 
 ## 🔗 Recursos Adicionais
 
 - [Repositório Completo](https://github.com/linnoff88-dev/FEA-IA)
-- [Documentação](https://github.com/linnoff88-dev/FEA-IA#readme)
+- [Documentaçêo](https://github.com/linnoff88-dev/FEA-IA#readme)
 - [Comunidade no GitHub](https://github.com/linnoff88-dev/FEA-IA/discussions)
 - [Issues e Suporte](https://github.com/linnoff88-dev/FEA-IA/issues)
 
@@ -549,7 +549,7 @@ Com esta trilha completa, você está qualificado para:
 
 1. **Code First:** Codifique antes de entender 100% da teoria
 2. **Build in Public:** Compartilhe projetos no GitHub/Twitter
-3. **Read the Docs:** Sempre consulte documentação oficial
+3. **Read the Docs:** Sempre consulte documentaçêo oficial
 4. **Join Communities:** Networking é crucial
 5. **Teach Others:** Escreva blogs, faça vídeos
 6. **Stay Updated:** IA muda RÁPIDO, acompanhe releases

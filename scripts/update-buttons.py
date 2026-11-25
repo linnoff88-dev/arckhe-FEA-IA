@@ -17,12 +17,12 @@ if sys.platform == 'win32':
 
 # Padrões a buscar e substituir
 PATTERNS = [
-    # Padrão 1: Link do GitHub com texto "Acessar Curso"
+    # Padrêo 1: Link do GitHub com texto "Acessar Curso"
     (
         r'<a href="https://github\.com/linnoff88-dev/FEA-IA#readme"([^>]*?)>Acessar Curso</a>',
         r'<a href="http://ARCKHÉ AI"\1>ARCKHÉ AI</a>'
     ),
-    # Padrão 2: Outros links que possam ter "Acessar Curso"
+    # Padrêo 2: Outros links que possam ter "Acessar Curso"
     (
         r'<a href="[^"]*"([^>]*?)>Acessar Curso</a>',
         r'<a href="http://ARCKHÉ AI"\1>ARCKHÉ AI</a>'
@@ -55,7 +55,7 @@ def update_file(file_path):
         return False
 
 def main():
-    """Função principal"""
+    """Funçêo principal"""
     base_dir = Path(__file__).parent.parent
 
     # Diretórios a processar
@@ -69,11 +69,11 @@ def main():
     updated_count = 0
     total_count = 0
 
-    print("🔄 Iniciando atualização de botões...\n")
+    print("🔄 Iniciando atualizaçêo de botões...\n")
 
     for directory in dirs_to_process:
         if not directory.exists():
-            print(f"⚠️  Diretório não encontrado: {directory}")
+            print(f"⚠️  Diretório nêo encontrado: {directory}")
             continue
 
         print(f"\n📁 Processando: {directory}")

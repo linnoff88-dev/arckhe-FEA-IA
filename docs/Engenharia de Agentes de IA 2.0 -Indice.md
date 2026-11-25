@@ -6,7 +6,7 @@
 
 ## Sobre o Curso
 
-Este é um curso completo e didático sobre Engenharia de Agentes de Inteligência Artificial, projetado para levar você desde os fundamentos dos LLMs até a criação e deploy de sistemas multi-agentes complexos em produção.
+Este é um curso completo e didático sobre Engenharia de Agentes de Inteligência Artificial, projetado para levar você desde os fundamentos dos LLMs até a criaçêo e deploy de sistemas multi-agentes complexos em produçêo.
 
 ### Características
 
@@ -23,7 +23,7 @@ Este é um curso completo e didático sobre Engenharia de Agentes de Inteligênc
 O curso é dividido em 8 módulos principais:
 
 ### Módulo 1: Fundamentos de Inteligência Artificial Generativa (8h)
-Aprenda como funcionam os LLMs, a arquitetura Transformer, tokenização, embeddings e multimodalidade.
+Aprenda como funcionam os LLMs, a arquitetura Transformer, tokenizaçêo, embeddings e multimodalidade.
 
 ### Módulo 2: Engenharia de Prompts Avançada (6h)
 Domine técnicas como Chain of Thought, Self-Consistency, Tree of Thoughts e System Prompts.
@@ -40,8 +40,8 @@ Orquestre equipes de agentes especializados que colaboram para resolver problema
 ### Módulo 6: Model Context Protocol (MCP) (8h)
 Crie servidores e clientes MCP para conectar seus agentes a qualquer ferramenta ou API.
 
-### Módulo 7: Deploy e Produção (6h)
-Aprenda a levar suas aplicações de IA para produção com FastAPI, Docker e serviços de nuvem.
+### Módulo 7: Deploy e Produçêo (6h)
+Aprenda a levar suas aplicações de IA para produçêo com FastAPI, Docker e serviços de nuvem.
 
 ### Módulo 8: Ferramentas e Ecossistema (5h)
 Explore o ecossistema Hugging Face, modelos open-source, Ollama e ferramentas de monitoramento.
@@ -64,7 +64,7 @@ Explore o ecossistema Hugging Face, modelos open-source, Ollama e ferramentas de
 ## Paleta de Cores do Curso
 
 - **Primária:** Azul profundo (#1A1F3A) - Tecnologia e confiança
-- **Secundária:** Ciano elétrico (#00D9FF) - Inovação e energia
+- **Secundária:** Ciano elétrico (#00D9FF) - Inovaçêo e energia
 - **Acento:** Roxo vibrante (#8B5CF6) - Criatividade e IA
 - **Neutro:** Cinza claro (#F5F7FA) - Fundos e espaços
 - **Destaque:** Amarelo néon (#FFD700) - Alertas e insights
@@ -76,23 +76,23 @@ Explore o ecossistema Hugging Face, modelos open-source, Ollama e ferramentas de
 O curso segue uma jornada em três atos:
 
 **Ato 1: O Despertar** (Módulos 1-2)
-> "Você está prestes a dominar a tecnologia que está redefinindo o mundo. Não como usuário, mas como arquiteto."
+> "Você está prestes a dominar a tecnologia que está redefinindo o mundo. Nêo como usuário, mas como arquiteto."
 
-**Ato 2: A Construção** (Módulos 3-4)
-> "Cada agente que você criar é um tijolo na construção do futuro. Você não está apenas aprendendo — está criando."
+**Ato 2: A Construçêo** (Módulos 3-4)
+> "Cada agente que você criar é um tijolo na construçêo do futuro. Você nêo está apenas aprendendo — está criando."
 
 **Ato 3: A Maestria** (Módulos 5-7)
-> "Agora você não programa mais. Você orquestra. Sistemas inteiros dançam ao ritmo da sua visão."
+> "Agora você nêo programa mais. Você orquestra. Sistemas inteiros dançam ao ritmo da sua visêo."
 
 **Epílogo: A Oficina do Engenheiro** (Módulo 8)
-> "Um bom artesão conhece cada ferramenta em sua oficina."
+> "Um bom artesêo conhece cada ferramenta em sua oficina."
 
 ---
 
 ## Pré-requisitos
 
 - Conhecimento básico de Python
-- Familiaridade com conceitos de programação
+- Familiaridade com conceitos de programaçêo
 - Curiosidade e vontade de aprender
 
 ---
@@ -113,7 +113,7 @@ O curso segue uma jornada em três atos:
 2. **Sistema de Análise de Sentimento com CoT** (Módulo 2)
 3. **ChatPDF - Chatbot para Documentos** (Módulo 3)
 4. **Assistente Pessoal de Tarefas** (Módulo 4)
-5. **Agência de Criação de Conteúdo Automatizada** (Módulo 5)
+5. **Agência de Criaçêo de Conteúdo Automatizada** (Módulo 5)
 6. **Servidor MCP para Gerenciamento de Projetos** (Módulo 6)
 7. **Deploy da Agência de Conteúdo na Nuvem** (Módulo 7)
 8. **Ambiente de Desenvolvimento de IA Local Completo** (Módulo 8)
@@ -122,13 +122,13 @@ O curso segue uma jornada em três atos:
 
 ## Frase-Guia do Curso
 
-> **"Você não está aprendendo sobre o futuro. Você está construindo ele."**
+> **"Você nêo está aprendendo sobre o futuro. Você está construindo ele."**
 
 ---
 
 ## Autor
 
-**Manus AI** - Desenvolvido com dedicação para criar um material didático de excelência.
+**Manus AI** - Desenvolvido com dedicaçêo para criar um material didático de excelência.
 
 ---
 

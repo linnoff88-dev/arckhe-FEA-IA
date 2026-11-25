@@ -6,7 +6,7 @@ Este projeto implementa um ChatPDF simples usando RAG (Retrieval-Augmented Gener
 - Python 3.10+
 - Chave de API da OpenAI em `OPENAI_API_KEY` (ou ajuste o provedor no código)
 
-Instalação das dependências:
+Instalaçêo das dependências:
 
 ```
 pip install -r requirements.txt
@@ -28,14 +28,14 @@ python app.py --reuse --query "Liste os 3 pontos-chave com referência às pági
 
 Parâmetros úteis:
 - `--pdf` Um ou mais caminhos de PDFs para indexar
-- `--persist` Diretório de persistência (padrão: `./.chroma`)
+- `--persist` Diretório de persistência (padrêo: `./.chroma`)
 - `--reuse` Reutiliza índice existente sem reprocessar PDFs
-- `--k` Número de documentos recuperados (padrão: 4)
-- `--model` Modelo da OpenAI para respostas (padrão: `gpt-4o-mini`)
-- `--embed` Modelo de embedding (padrão: `text-embedding-3-small`)
+- `--k` Número de documentos recuperados (padrêo: 4)
+- `--model` Modelo da OpenAI para respostas (padrêo: `gpt-4o-mini`)
+- `--embed` Modelo de embedding (padrêo: `text-embedding-3-small`)
 
 ## Estrutura
-- `app.py` — CLI para indexação e perguntas
+- `app.py` — CLI para indexaçêo e perguntas
 - `requirements.txt` — dependências
 
 ## Notas

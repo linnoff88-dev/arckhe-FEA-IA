@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const explanation = topicItem.querySelector('.topic-explanation');
 
             if (explanation) {
-                // Toggle (mostra/esconde) a explicação
+                // Toggle (mostra/esconde) a explicaçêo
                 explanation.classList.toggle('hidden');
 
                 // COMPORTAMENTO ACCORDION: Fecha outras explicações abertas no mesmo módulo
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     });
                 }
 
-                // Atualiza ícone do botão (opcional)
+                // Atualiza ícone do botêo (opcional)
                 const icon = button.querySelector('.topic-icon');
                 if (icon) {
                     icon.textContent = explanation.classList.contains('hidden') ? '▶' : '▼';

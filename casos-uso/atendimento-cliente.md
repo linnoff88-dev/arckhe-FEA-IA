@@ -1,14 +1,14 @@
-# 🎯 Caso de Uso: Automação de Atendimento ao Cliente
+# 🎯 Caso de Uso: Automaçêo de Atendimento ao Cliente
 
-## 📊 Visão Geral
+## 📊 Visêo Geral
 
 | | |
 |---|---|
 | **Problema de Negócio** | Sua empresa recebe 500+ mensagens/dia com dúvidas repetitivas |
-| **Solução** | Agente de IA que responde automaticamente 70-80% das dúvidas |
-| **Tempo de Implementação** | 2-4 horas (versão sem código) |
+| **Soluçêo** | Agente de IA que responde automaticamente 70-80% das dúvidas |
+| **Tempo de Implementaçêo** | 2-4 horas (versêo sem código) |
 | **ROI Estimado** | Economia de 15-25h/semana da equipe |
-| **Nível** | 🟢 Iniciante (versão sem código) |
+| **Nível** | 🟢 Iniciante (versêo sem código) |
 | **Custo** | $0-50/mês dependendo do volume |
 
 ---
@@ -20,9 +20,9 @@ Um sistema que:
 ✅ **Recebe** mensagens de clientes (email, chat, WhatsApp)
 ✅ **Entende** a pergunta usando IA
 ✅ **Busca** a resposta na sua base de conhecimento
-✅ **Responde** automaticamente com precisão
+✅ **Responde** automaticamente com precisêo
 ✅ **Encaminha** casos complexos para humanos
-✅ **Aprende** com cada interação
+✅ **Aprende** com cada interaçêo
 
 ---
 
@@ -33,12 +33,12 @@ Um sistema que:
 | Tempo médio de resposta | 4-8 horas | 30 segundos | 📉 97% |
 | Mensagens respondidas/dia | 150 | 500+ | 📈 233% |
 | Horas da equipe gastas | 25h/semana | 7h/semana | ⏰ 18h economizadas |
-| Satisfação do cliente | 72% | 89% | 😊 +17 pontos |
-| Custo por atendimento | R$ 8,50 | R$ 0,40 | 💰 95% redução |
+| Satisfaçêo do cliente | 72% | 89% | 😊 +17 pontos |
+| Custo por atendimento | R$ 8,50 | R$ 0,40 | 💰 95% reduçêo |
 
 ---
 
-## 🚀 Versão 1: Sem Código (2 horas)
+## 🚀 Versêo 1: Sem Código (2 horas)
 
 ### O Que Você Precisa
 
@@ -49,7 +49,7 @@ Um sistema que:
 ### Passo 1: Preparar Sua Base de Conhecimento (30min)
 
 1. **Liste as 20 perguntas mais frequentes** que seus clientes fazem
-2. **Documente as respostas padrão** para cada uma
+2. **Documente as respostas padrêo** para cada uma
 3. **Crie um documento Google Docs ou Notion** com tudo organizado
 
 **Exemplo de estrutura:**
@@ -67,7 +67,7 @@ R: Para pagar com boleto, siga estes passos:
 4. O boleto será enviado para seu email em até 5 minutos
 
 **P: O boleto pode ser parcelado?**
-R: Não, boleto é sempre à vista. Para parcelamento, use cartão de crédito.
+R: Nêo, boleto é sempre à vista. Para parcelamento, use cartêo de crédito.
 
 [... mais 18 perguntas]
 ```
@@ -85,12 +85,12 @@ R: Não, boleto é sempre à vista. Para parcelamento, use cartão de crédito.
 Você é o assistente de atendimento ao cliente da [SUA EMPRESA].
 
 PAPEL:
-- Responder dúvidas de clientes com educação e profissionalismo
+- Responder dúvidas de clientes com educaçêo e profissionalismo
 - Usar apenas informações da base de conhecimento fornecida
 - Ser claro, objetivo e empático
 
 REGRAS:
-1. NUNCA invente informações. Se não souber, diga: "Vou encaminhar sua dúvida para um especialista"
+1. NUNCA invente informações. Se nêo souber, diga: "Vou encaminhar sua dúvida para um especialista"
 2. Seja sempre cordial, use o nome do cliente quando disponível
 3. Responda em no máximo 3 parágrafos
 4. Se a pergunta for complexa ou exigir acesso a sistemas, encaminhe para humano
@@ -104,7 +104,7 @@ CASOS QUE DEVEM SER ENCAMINHADOS PARA HUMANO:
 - Problemas técnicos complexos
 - Solicitações de reembolso
 - Questões legais
-- Dúvidas sobre casos específicos que não estão no FAQ
+- Dúvidas sobre casos específicos que nêo estêo no FAQ
 ```
 
 4. **Teste o agente** fazendo perguntas como cliente
@@ -119,18 +119,18 @@ CASOS QUE DEVEM SER ENCAMINHADOS PARA HUMANO:
    - **Trigger:** "New Email" (Gmail/Outlook/etc)
    - **Filtro:** Apenas emails para suporte@suaempresa.com
 
-3. **Ação 1:** "ChatGPT - Conversation"
+3. **Açêo 1:** "ChatGPT - Conversation"
    - Cole o prompt do seu assistente
    - Adicione: "Email do cliente: {trigger.from}" e "Mensagem: {trigger.body}"
 
-4. **Ação 2:** "Send Email"
+4. **Açêo 2:** "Send Email"
    - Para: {trigger.from}
    - Assunto: Re: {trigger.subject}
    - Corpo: {ChatGPT.response}
 
 5. **Ativar o Zap!**
 
-### Passo 4: Testar em Produção (30min)
+### Passo 4: Testar em Produçêo (30min)
 
 1. **Envie um email de teste** para seu suporte
 2. **Aguarde a resposta automática**
@@ -140,7 +140,7 @@ CASOS QUE DEVEM SER ENCAMINHADOS PARA HUMANO:
 
 ---
 
-## 🔥 Versão 2: Com Código + RAG (4-6 horas)
+## 🔥 Versêo 2: Com Código + RAG (4-6 horas)
 
 ### O Que Você Precisa
 
@@ -237,19 +237,19 @@ Você é o assistente de atendimento ao cliente da [SUA EMPRESA].
 
 REGRAS:
 1. Use APENAS informações da base de conhecimento fornecida
-2. Se não souber, responda: "Vou encaminhar para um especialista"
+2. Se nêo souber, responda: "Vou encaminhar para um especialista"
 3. Seja empático e profissional
 4. Máximo 3 parágrafos
 5. Sempre termine perguntando se ajudou
 
-CASOS PARA ESCALAR (não responda, diga que vai encaminhar):
+CASOS PARA ESCALAR (nêo responda, diga que vai encaminhar):
 - Reclamações
 - Problemas técnicos complexos
 - Reembolsos
 - Questões legais
 """
 
-# 6. FUNÇÃO DE ATENDIMENTO
+# 6. FUNÇêO DE ATENDIMENTO
 def atender_cliente(mensagem_cliente, contexto_cliente=None):
     """
     Processa mensagem do cliente e retorna resposta
@@ -277,7 +277,7 @@ def atender_cliente(mensagem_cliente, contexto_cliente=None):
     fontes = resultado['source_documents']
 
     # Detecta se deve escalar para humano
-    palavras_escalar = ['encaminhar', 'especialista', 'não sei', 'complexo']
+    palavras_escalar = ['encaminhar', 'especialista', 'nêo sei', 'complexo']
     deve_escalar = any(palavra in resposta.lower() for palavra in palavras_escalar)
 
     return {
@@ -294,7 +294,7 @@ if __name__ == "__main__":
     # Teste
     teste = atender_cliente(
         "Como faço para pagar com boleto?",
-        contexto_cliente="Nome: João Silva, Cliente desde: 2023"
+        contexto_cliente="Nome: Joêo Silva, Cliente desde: 2023"
     )
 
     print(f"Resposta: {teste['resposta']}\n")
@@ -328,10 +328,10 @@ python atendimento_cliente.py
 
 | Métrica | Como Medir | Meta |
 |---------|------------|------|
-| Taxa de Resolução Automática | (Respostas automáticas / Total de mensagens) × 100 | >70% |
-| Satisfação do Cliente | Pesquisa pós-atendimento | >85% |
+| Taxa de Resoluçêo Automática | (Respostas automáticas / Total de mensagens) × 100 | >70% |
+| Satisfaçêo do Cliente | Pesquisa pós-atendimento | >85% |
 | Tempo Médio de Resposta | Timestamp entrada - Timestamp resposta | <1 min |
-| Taxa de Escalação | (Encaminhadas para humano / Total) × 100 | <30% |
+| Taxa de Escalaçêo | (Encaminhadas para humano / Total) × 100 | <30% |
 | Custo por Atendimento | Custo mensal API / Total atendimentos | <R$ 1,00 |
 
 ### Ferramentas de Monitoramento
@@ -339,7 +339,7 @@ python atendimento_cliente.py
 - **Google Analytics** para rastrear volume
 - **Zapier Dashboard** para ver execuções
 - **ChatGPT Analytics** (se usar Custom GPT)
-- **LangSmith** (para versão com código)
+- **LangSmith** (para versêo com código)
 
 ---
 
@@ -354,8 +354,8 @@ python atendimento_cliente.py
 
 2. **Tornar mais inteligente:**
    - Detectar sentimento (cliente irritado = prioridade)
-   - Personalização baseada em histórico
-   - Sugestão proativa de produtos
+   - Personalizaçêo baseada em histórico
+   - Sugestêo proativa de produtos
 
 3. **Integrar com sistemas:**
    - CRM para buscar dados do cliente
@@ -376,23 +376,23 @@ python atendimento_cliente.py
 
 > **DICA 3:** Sempre deixe claro para o cliente que é um atendimento automatizado. Transparência gera confiança.
 
-> **DICA 4:** Tenha um botão de "Falar com Humano" sempre visível.
+> **DICA 4:** Tenha um botêo de "Falar com Humano" sempre visível.
 
 ---
 
 ## ❓ FAQ Deste Caso de Uso
 
 **P: E se o agente responder errado?**
-R: Por isso monitoramos tudo nas primeiras semanas e ajustamos o prompt. A taxa de erro cai drasticamente após otimização.
+R: Por isso monitoramos tudo nas primeiras semanas e ajustamos o prompt. A taxa de erro cai drasticamente após otimizaçêo.
 
-**P: Clientes vão perceber que é IA?**
+**P: Clientes vêo perceber que é IA?**
 R: Sim, e isso é bom! Seja transparente. Clientes valorizam resposta rápida mais que resposta "humana".
 
 **P: Quanto custa realmente?**
-R: Versão sem código: ~$20-50/mês. Versão com código: ~$30-100/mês dependendo do volume. Bem menos que 1 funcionário.
+R: Versêo sem código: ~$20-50/mês. Versêo com código: ~$30-100/mês dependendo do volume. Bem menos que 1 funcionário.
 
 **P: Funciona em português?**
-R: Sim! ChatGPT e Claude são excelentes em português.
+R: Sim! ChatGPT e Claude sêo excelentes em português.
 
 ---
 

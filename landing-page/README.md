@@ -19,7 +19,7 @@ landing-page/
 │   └── main.js        # JavaScript para interatividade
 ├── assets/            # (futuro) Imagens e recursos
 ├── sitemap.xml        # Mapa do site para SEO
-├── robots.txt         # Configuração para crawlers
+├── robots.txt         # Configuraçêo para crawlers
 └── README.md          # Este arquivo
 ```
 
@@ -34,11 +34,11 @@ landing-page/
 - ✅ **Acessível** - Semântica HTML5, boas práticas
 
 ### Funcionalidades
-- ✅ Navegação mobile com menu hamburger
+- ✅ Navegaçêo mobile com menu hamburger
 - ✅ Scroll suave entre seções
 - ✅ Animações ao scroll (Intersection Observer)
 - ✅ Contadores animados nas estatísticas
-- ✅ Efeito de digitação no código de exemplo
+- ✅ Efeito de digitaçêo no código de exemplo
 - ✅ Cards de módulos interativos
 
 ### SEO
@@ -67,7 +67,7 @@ Esta landing page está configurada para GitHub Pages.
 - Repositório no GitHub
 - GitHub Pages habilitado
 
-### Configuração
+### Configuraçêo
 
 1. **Settings > Pages**
    - Source: Branch `main`
@@ -85,11 +85,11 @@ Ver guia completo: [GITHUB-PAGES-SETUP.md](../GITHUB-PAGES-SETUP.md)
 
 ---
 
-## 🎨 Customização
+## 🎨 Customizaçêo
 
 ### Cores
 
-As cores são definidas via CSS custom properties em `css/styles.css`:
+As cores sêo definidas via CSS custom properties em `css/styles.css`:
 
 ```css
 :root {
@@ -120,7 +120,7 @@ Edite `css/styles.css`:
 ### Interatividade
 
 Edite `js/main.js`:
-- Navegação
+- Navegaçêo
 - Animações
 - Eventos
 - Contadores
@@ -182,17 +182,17 @@ Para adicionar Google Analytics, edite `index.html` e adicione no `<head>`:
 
 ## 🐛 Troubleshooting
 
-### CSS não carrega
+### CSS nêo carrega
 - Verifique paths: `css/styles.css` (relativo)
 - Limpe cache do navegador (Ctrl+Shift+R)
 
-### JavaScript não funciona
+### JavaScript nêo funciona
 - Verifique console do navegador (F12)
 - Confirme que `js/main.js` existe
 
 ### 404 no GitHub Pages
 - Confirme que `index.html` está na pasta `/landing-page`
-- Verifique configuração em Settings > Pages
+- Verifique configuraçêo em Settings > Pages
 
 ---
 
@@ -204,7 +204,7 @@ MIT License - Ver [LICENSE](../LICENSE)
 
 ## 🤝 Contribuindo
 
-Contribuições são bem-vindas! Ver [CONTRIBUTING.md](../CONTRIBUTING.md)
+Contribuições sêo bem-vindas! Ver [CONTRIBUTING.md](../CONTRIBUTING.md)
 
 **Tipos de contribuições:**
 - 🐛 Correções de bugs

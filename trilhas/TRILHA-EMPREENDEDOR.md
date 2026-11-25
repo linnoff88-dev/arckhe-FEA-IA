@@ -1,4 +1,4 @@
-# 👔 Trilha Empreendedor - Aplicação Prática de IA
+# 👔 Trilha Empreendedor - Aplicaçêo Prática de IA
 
 ## 🎯 Para Quem é Esta Trilha
 
@@ -10,18 +10,18 @@ Você é um **empreendedor, fundador de startup, ou profissional liberal** que q
 ✅ Ganhar vantagem competitiva no seu mercado
 ✅ Multiplicar sua produtividade pessoal
 
-**Você NÃO precisa saber programar** (mas pode aprender o básico se quiser).
+**Você NêO precisa saber programar** (mas pode aprender o básico se quiser).
 
 ---
 
-## 📊 Visão Geral da Trilha
+## 📊 Visêo Geral da Trilha
 
 | | |
 |---|---|
-| **Duração Total** | 20-30 horas |
+| **Duraçêo Total** | 20-30 horas |
 | **Nível Técnico** | 🟢 Baixo a 🟡 Médio |
 | **Investimento** | $0-100/mês em ferramentas |
-| **Código Necessário** | Opcional (tudo tem versão no-code) |
+| **Código Necessário** | Opcional (tudo tem versêo no-code) |
 | **Resultado Esperado** | 3-5 automações funcionando no seu negócio |
 
 ---
@@ -32,7 +32,7 @@ Ao final desta trilha, você terá:
 
 ✅ **Entendimento claro** de como Agentes de IA funcionam e onde aplicar
 ✅ **3-5 automações implementadas** no seu negócio
-✅ **Redução de 20-40% do tempo** em tarefas repetitivas
+✅ **Reduçêo de 20-40% do tempo** em tarefas repetitivas
 ✅ **Ferramentas práticas** que geram ROI imediato
 ✅ **Capacidade de avaliar** soluções de IA no mercado
 ✅ **Roadmap** de próximas implementações
@@ -54,28 +54,28 @@ Esta trilha é dividida em **4 fases progressivas**:
 ### Fase 3: Sistemas Avançados (8-12h)
 **Objetivo:** Criar soluções mais complexas e customizadas
 
-### Fase 4: Escala e Otimização (4-6h)
+### Fase 4: Escala e Otimizaçêo (4-6h)
 **Objetivo:** Maximizar ROI e preparar próximos passos
 
 ---
 
 ## 📖 FASE 1: Fundamentos (4-6 horas)
 
-### Módulo 1.1: O Que São Agentes de IA (Na Prática)
+### Módulo 1.1: O Que Sêo Agentes de IA (Na Prática)
 **Tempo:** 2h | **Formato:** 🟢 Conceitual
 
 **O que você vai aprender:**
 - A diferença entre ChatGPT e um Agente de verdade
 - Como agentes "pensam" e tomam decisões
 - Casos de uso reais em diferentes indústrias
-- Quando usar (e quando NÃO usar) IA
+- Quando usar (e quando NêO usar) IA
 
 📚 **Material:**
 - [Módulo 1: Fundamentos de IA Generativa](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-01/conteudo/Modulo-01-Fundamentos-IA-Generativa.md)
   - Foque nas seções conceituais
   - Pule partes muito técnicas
-- [Módulo 5: CrewAI - Introdução](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-05/conteudo/Modulo-05-CrewAI.md)
-  - Leia a introdução sobre multi-agentes
+- [Módulo 5: CrewAI - Introduçêo](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-05/conteudo/Modulo-05-CrewAI.md)
+  - Leia a introduçêo sobre multi-agentes
 
 🎯 **Entregável:** Mindmap dos processos do seu negócio que podem ser automatizados
 
@@ -92,7 +92,7 @@ Esta trilha é dividida em **4 fases progressivas**:
 
 📚 **Material:**
 - [Módulo 2: Engenharia de Prompts Avançada](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-02/conteudo/Modulo-02-Engenharia-Prompts-Avancada.md)
-  - Seções 2.1 a 2.4 são fundamentais
+  - Seções 2.1 a 2.4 sêo fundamentais
 
 🎯 **Entregável:** 5 prompts customizados para tarefas do seu negócio
 
@@ -132,8 +132,8 @@ Vamos implementar **3 automações** que geram resultados imediatos:
 
 **O que você vai criar:**
 - Chatbot que responde 80% das perguntas frequentes
-- Integração com WhatsApp/Email
-- Escalação automática para humano quando necessário
+- Integraçêo com WhatsApp/Email
+- Escalaçêo automática para humano quando necessário
 
 📚 **Material:**
 - [Caso de Uso: Atendimento ao Cliente](https://github.com/linnoff88-dev/FEA-IA/blob/main/casos-uso/atendimento-cliente.md)
@@ -145,17 +145,17 @@ Vamos implementar **3 automações** que geram resultados imediatos:
 
 ---
 
-### Quick Win #2: Geração de Conteúdo para Marketing
+### Quick Win #2: Geraçêo de Conteúdo para Marketing
 **Tempo:** 2h | **ROI Esperado:** 10-15h/mês economizadas
 
 **O que você vai criar:**
 - Sistema que gera posts para redes sociais
-- Geração de newsletters semanais
+- Geraçêo de newsletters semanais
 - Ideias de conteúdo baseadas em tendências
 
 📚 **Material:**
 - [Módulo 2: Engenharia de Prompts](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-02/conteudo/Modulo-02-Engenharia-Prompts-Avancada.md)
-  - Seção sobre Few-Shot Prompting
+  - Seçêo sobre Few-Shot Prompting
 
 **Stack No-Code:**
 - ChatGPT + Notion + Zapier
@@ -213,18 +213,18 @@ Vamos implementar **3 automações** que geram resultados imediatos:
 
 📚 **Material:**
 - [Módulo 8: Ferramentas e Ecossistema](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-08/conteudo/Modulo-08-Ferramentas-Ecossistema.md)
-  - Seção sobre APIs e integrações
+  - Seçêo sobre APIs e integrações
 
 🎯 **Entregável:** Dashboard de inteligência de mercado
 
 ---
 
-## 💰 FASE 4: Escala e Otimização (4-6 horas)
+## 💰 FASE 4: Escala e Otimizaçêo (4-6 horas)
 
 ### Módulo 4.1: Medindo ROI Real
 **Tempo:** 2h | **Formato:** 🟡 Prático
 
-**Framework de Medição:**
+**Framework de Mediçêo:**
 
 **Antes da IA:**
 - Tempo gasto: ___ horas/mês
@@ -233,7 +233,7 @@ Vamos implementar **3 automações** que geram resultados imediatos:
 
 **Depois da IA:**
 - Tempo economizado: ___ horas/mês
-- Redução de custo: R$ ___
+- Reduçêo de custo: R$ ___
 - Melhoria de qualidade: ___ %
 
 **ROI = ((Economia - Investimento) / Investimento) × 100**
@@ -245,7 +245,7 @@ Vamos implementar **3 automações** que geram resultados imediatos:
 ### Módulo 4.2: Próximos Passos
 **Tempo:** 2-4h | **Formato:** 🟡 Planejamento
 
-**Roadmap de Expansão:**
+**Roadmap de Expansêo:**
 
 **Curto Prazo (1-3 meses):**
 - Otimizar automações existentes
@@ -264,7 +264,7 @@ Vamos implementar **3 automações** que geram resultados imediatos:
 
 ---
 
-## 🎓 Certificação de Conclusão
+## 🎓 Certificaçêo de Conclusêo
 
 Ao completar esta trilha, você terá:
 
@@ -278,15 +278,15 @@ Ao completar esta trilha, você terá:
 
 ## 📞 Próximos Passos
 
-**Opção 1: Aprofundar Tecnicamente**
+**Opçêo 1: Aprofundar Tecnicamente**
 - [Trilha Técnica Completa](./TRILHA-TECNICA.md)
 - Aprender a codificar suas próprias soluções
 
-**Opção 2: Contratar Equipe Técnica**
+**Opçêo 2: Contratar Equipe Técnica**
 - Usar conhecimento adquirido para liderar
-- Delegar implementação mais complexa
+- Delegar implementaçêo mais complexa
 
-**Opção 3: Consultoria Especializada**
+**Opçêo 3: Consultoria Especializada**
 - Escalar ainda mais rápido
 - Soluções enterprise
 
@@ -295,7 +295,7 @@ Ao completar esta trilha, você terá:
 ## 🔗 Recursos Adicionais
 
 - [Repositório Completo do Curso](https://github.com/linnoff88-dev/FEA-IA)
-- [Documentação Principal](https://github.com/linnoff88-dev/FEA-IA#readme)
+- [Documentaçêo Principal](https://github.com/linnoff88-dev/FEA-IA#readme)
 - [Discussões da Comunidade](https://github.com/linnoff88-dev/FEA-IA/discussions)
 - [Issues e Suporte](https://github.com/linnoff88-dev/FEA-IA/issues)
 
@@ -303,11 +303,11 @@ Ao completar esta trilha, você terá:
 
 ## 💡 Dicas Finais
 
-1. **Comece Pequeno:** Não tente automatizar tudo de uma vez
-2. **Meça Tudo:** Documente antes/depois de cada implementação
+1. **Comece Pequeno:** Nêo tente automatizar tudo de uma vez
+2. **Meça Tudo:** Documente antes/depois de cada implementaçêo
 3. **Itere Rápido:** Teste, aprenda, ajuste
 4. **Envolva a Equipe:** IA funciona melhor quando todos adotam
-5. **Seja Paciente:** ROI vem em 2-3 meses, não semanas
+5. **Seja Paciente:** ROI vem em 2-3 meses, nêo semanas
 
 ---
 

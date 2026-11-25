@@ -174,7 +174,7 @@ response = agent.run(
     "Analyze market trends"
 )
 
-# 🚀 Agente pronto para produção!`;
+# 🚀 Agente pronto para produçêo!`;
 
 let codeIndex = 0;
 const codeElement = document.querySelector('.card-code code');

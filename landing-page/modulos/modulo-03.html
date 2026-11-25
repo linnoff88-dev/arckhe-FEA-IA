@@ -271,12 +271,12 @@
             <div class="module-header-info">
                 <div class="info-badge">⏱️ 10 horas</div>
                 <div class="info-badge">📊 Nível: Intermediário</div>
-                <div class="info-badge">🎯 Nível: Aplicação</div>
+                <div class="info-badge">🎯 Nível: Aplicaçêo</div>
                 <div class="info-badge">📄 1.801 linhas</div>
             </div>
 
             <p class="module-quote">
-                "Não construa do zero. Orquestre o que já existe."
+                "Nêo construa do zero. Orquestre o que já existe."
             </p>
         </div>
     </section>
@@ -320,7 +320,7 @@
             </a>
             <a href="#dicas" class="topic-item">
                 <span class="topic-icon">💡</span>
-                <span class="topic-text">Dicas de Otimização</span>
+                <span class="topic-text">Dicas de Otimizaçêo</span>
             </a>
         </div>
     </div>
@@ -330,14 +330,14 @@
 
         <!-- Introduction -->
         <section class="content-section">
-            <h2>Ato 2: A Construção</h2>
+            <h2>Ato 2: A Construçêo</h2>
             <p class="module-quote">
-                "Você aprendeu a falar com a IA. Agora, você vai dar a ela mãos para agir e uma mente para lembrar. Este é o momento em que passamos de meros conversadores a verdadeiros construtores de aplicações. Com LangChain, você não está mais limitado a uma única interação; você está construindo sistemas inteligentes e persistentes."
+                "Você aprendeu a falar com a IA. Agora, você vai dar a ela mêos para agir e uma mente para lembrar. Este é o momento em que passamos de meros conversadores a verdadeiros construtores de aplicações. Com LangChain, você nêo está mais limitado a uma única interaçêo; você está construindo sistemas inteligentes e persistentes."
             </p>
 
-            <p>Bem-vindo à oficina do Engenheiro de Agentes. Se os LLMs são o motor e os prompts são o volante, <strong>LangChain é o chassi, o sistema de transmissão e todo o conjunto</strong> que transforma um motor potente em um veículo funcional.</p>
+            <p>Bem-vindo à oficina do Engenheiro de Agentes. Se os LLMs sêo o motor e os prompts sêo o volante, <strong>LangChain é o chassi, o sistema de transmissêo e todo o conjunto</strong> que transforma um motor potente em um veículo funcional.</p>
 
-            <p>Este framework de código aberto nos dá os blocos de construção para criar aplicações de IA que vão muito além de um simples chatbot. Vamos aprender a:</p>
+            <p>Este framework de código aberto nos dá os blocos de construçêo para criar aplicações de IA que vêo muito além de um simples chatbot. Vamos aprender a:</p>
             <ul>
                 <li><strong>Dar memória</strong> aos nossos agentes</li>
                 <li><strong>Conectá-los a fontes de dados externas</strong></li>
@@ -362,9 +362,9 @@
 
             <p>Sem um framework, você teria que:</p>
             <ul>
-                <li>Escrever código personalizado para cada integração</li>
+                <li>Escrever código personalizado para cada integraçêo</li>
                 <li>Gerenciar manualmente o estado e a memória</li>
-                <li>Implementar lógica complexa de orquestração</li>
+                <li>Implementar lógica complexa de orquestraçêo</li>
                 <li>Lidar com diferentes formatos de API</li>
                 <li>Debugar fluxos de dados entre componentes</li>
             </ul>
@@ -378,13 +378,13 @@
             <ol>
                 <li><strong>Modularidade:</strong> Cada componente é independente e intercambiável</li>
                 <li><strong>Composabilidade:</strong> Componentes simples se combinam para criar sistemas complexos</li>
-                <li><strong>Abstração:</strong> Interfaces unificadas para diferentes provedores e serviços</li>
+                <li><strong>Abstraçêo:</strong> Interfaces unificadas para diferentes provedores e serviços</li>
                 <li><strong>Extensibilidade:</strong> Fácil criar componentes customizados</li>
             </ol>
 
             <h3>Os 6 Pilares da Arquitetura LangChain</h3>
             <div class="diagram">┌─────────────────────────────────────────────────────┐
-│                    APLICAÇÃO                        │
+│                    APLICAÇêO                        │
 ├─────────────────────────────────────────────────────┤
 │                                                     │
 │  ┌──────────┐  ┌─────────┐  ┌────────┐  ┌────────┐│
@@ -415,7 +415,7 @@ llm_local = Ollama(model="llama3")
                 <li><strong>Chat Models:</strong> Conversacional (ChatGPT, Claude, etc.)</li>
                 <li><strong>LLMs:</strong> Completion-style (GPT-3, etc.)</li>
                 <li><strong>Text Embedding Models:</strong> Para criar vetores</li>
-                <li><strong>Multimodal Models:</strong> Visão + Texto</li>
+                <li><strong>Multimodal Models:</strong> Visêo + Texto</li>
             </ul>
 
             <h4>2. Prompts</h4>
@@ -471,7 +471,7 @@ resultado = chain.run(
             </ul>
 
             <h4>4. Agents</h4>
-            <p>LLM como motor de decisão:</p>
+            <p>LLM como motor de decisêo:</p>
             <pre><code>from langchain.agents import create_react_agent, AgentExecutor
 from langchain.tools import Tool
 
@@ -501,13 +501,13 @@ memory = ConversationBufferMemory()
 
 # Armazena automaticamente histórico
 memory.save_context(
-    {"input": "Oi, meu nome é João"},
-    {"output": "Olá João! Como posso ajudar?"}
+    {"input": "Oi, meu nome é Joêo"},
+    {"output": "Olá Joêo! Como posso ajudar?"}
 )
 
 # Recupera contexto
 memory.load_memory_variables({})
-# {'history': 'Human: Oi, meu nome é João\nAI: Olá João!...'}</code></pre>
+# {'history': 'Human: Oi, meu nome é Joêo\nAI: Olá Joêo!...'}</code></pre>
 
             <p><strong>Tipos de Memory:</strong></p>
             <ul>
@@ -518,7 +518,7 @@ memory.load_memory_variables({})
             </ul>
 
             <h4>6. Tools</h4>
-            <p>Conexão com o mundo externo:</p>
+            <p>Conexêo com o mundo externo:</p>
             <pre><code>from langchain.tools import WikipediaQueryRun
 from langchain_community.utilities import WikipediaAPIWrapper
 
@@ -542,7 +542,7 @@ resultado = wikipedia.run("Inteligência Artificial")</code></pre>
         <section id="cap-3-2" class="content-section">
             <h2>Capítulo 3.2: Chains - Construindo Pipelines Inteligentes</h2>
 
-            <h3>LLMChain: A Fundação</h3>
+            <h3>LLMChain: A Fundaçêo</h3>
             <p>A <code>LLMChain</code> é o building block mais básico:</p>
             <pre><code>from langchain_openai import ChatOpenAI
 from langchain.prompts import PromptTemplate
@@ -585,12 +585,12 @@ chain_ideia = LLMChain(
     output_key="nome_produto"
 )
 
-# Chain 2: Criar descrição
+# Chain 2: Criar descriçêo
 chain_descricao = LLMChain(
     llm=llm,
     prompt=PromptTemplate(
         input_variables=["nome_produto"],
-        template="Escreva uma descrição de marketing para: {nome_produto}"
+        template="Escreva uma descriçêo de marketing para: {nome_produto}"
     ),
     output_key="descricao"
 )
@@ -601,7 +601,7 @@ chain_slogan = LLMChain(
     prompt=PromptTemplate(
         input_variables=["nome_produto", "descricao"],
         template="""
-        Baseado no produto {nome_produto} e sua descrição:
+        Baseado no produto {nome_produto} e sua descriçêo:
         {descricao}
 
         Crie um slogan memorável (máximo 7 palavras).
@@ -622,13 +622,13 @@ pipeline_marketing = SequentialChain(
 resultado = pipeline_marketing.invoke({"categoria": "fitness wearables"})
 
 print(f"Produto: {resultado['nome_produto']}")
-print(f"Descrição: {resultado['descricao']}")
+print(f"Descriçêo: {resultado['descricao']}")
 print(f"Slogan: {resultado['slogan']}")</code></pre>
 
             <div class="info-box">
                 <strong>Saída exemplo:</strong><br>
                 Produto: FitPulse Pro<br>
-                Descrição: O FitPulse Pro é o smartwatch definitivo para atletas...<br>
+                Descriçêo: O FitPulse Pro é o smartwatch definitivo para atletas...<br>
                 Slogan: Seu batimento, sua vitória
             </div>
 
@@ -651,7 +651,7 @@ chain_descriptions = [
     },
     {
         "name": "codigo",
-        "description": "Bom para explicar código e conceitos de programação"
+        "description": "Bom para explicar código e conceitos de programaçêo"
     }
 ]
 
@@ -698,7 +698,7 @@ transform_chain = TransformChain(
             <p>LLMs têm três limitações fundamentais:</p>
             <ol>
                 <li><strong>Conhecimento Datado:</strong> Treinados até uma data de corte</li>
-                <li><strong>Sem Dados Privados:</strong> Não conhecem seus documentos internos</li>
+                <li><strong>Sem Dados Privados:</strong> Nêo conhecem seus documentos internos</li>
                 <li><strong>Alucinações:</strong> Podem inventar informações</li>
             </ol>
 
@@ -708,7 +708,7 @@ transform_chain = TransformChain(
 
             <h3>Arquitetura RAG Completa</h3>
             <div class="diagram">┌─────────────────────────────────────────────────────────┐
-│                  FASE 1: INDEXAÇÃO                      │
+│                  FASE 1: INDEXAÇêO                      │
 │  (Executada uma vez ou periodicamente)                  │
 └─────────────────────────────────────────────────────────┘
 
@@ -721,7 +721,7 @@ Documentos → Document Loader → Text Splitter → Embedding Model
                                             (Chroma, FAISS)
 
 ┌─────────────────────────────────────────────────────────┐
-│                  FASE 2: RECUPERAÇÃO                    │
+│                  FASE 2: RECUPERAÇêO                    │
 │  (Executada a cada pergunta)                            │
 └─────────────────────────────────────────────────────────┘
 
@@ -731,7 +731,7 @@ Pergunta do Usuário → Embedding Model → Busca Semântica
                                          relevantes
 
 ┌─────────────────────────────────────────────────────────┐
-│                   FASE 3: GERAÇÃO                       │
+│                   FASE 3: GERAÇêO                       │
 │  (Executada a cada pergunta)                            │
 └─────────────────────────────────────────────────────────┘
 
@@ -739,7 +739,7 @@ Pergunta + Chunks Relevantes → LLM → Resposta Final
                  ↓
         Context-aware prompt</div>
 
-            <h3>Implementação Completa: ChatPDF</h3>
+            <h3>Implementaçêo Completa: ChatPDF</h3>
 
             <h4>Passo 1: Document Loading</h4>
             <pre><code>from langchain_community.document_loaders import PyPDFLoader, TextLoader, WebBaseLoader
@@ -768,7 +768,7 @@ print(f"Carregados {len(todos_docs)} documentos")</code></pre>
             <p>Documentos precisam ser divididos em chunks para:</p>
             <ul>
                 <li>Caber no contexto do LLM</li>
-                <li>Melhorar precisão da busca semântica</li>
+                <li>Melhorar precisêo da busca semântica</li>
                 <li>Otimizar performance</li>
             </ul>
 
@@ -790,12 +790,12 @@ print(f"Exemplo de chunk:\n{chunks[0].page_content[:200]}...")</code></pre>
             <pre><code>from langchain_openai import OpenAIEmbeddings
 from langchain_community.embeddings import HuggingFaceEmbeddings
 
-# Opção 1: OpenAI (pago, alta qualidade)
+# Opçêo 1: OpenAI (pago, alta qualidade)
 embeddings_openai = OpenAIEmbeddings(
     model="text-embedding-3-small"
 )
 
-# Opção 2: Open-source (gratuito)
+# Opçêo 2: Open-source (gratuito)
 embeddings_hf = HuggingFaceEmbeddings(
     model_name="sentence-transformers/all-MiniLM-L6-v2"
 )
@@ -808,7 +808,7 @@ print(f"Primeiros valores: {vetor[:5]}")</code></pre>
             <h4>Passo 4: Vector Store</h4>
             <pre><code>from langchain_community.vectorstores import FAISS, Chroma
 
-# Opção 1: FAISS (local, rápido, sem dependências)
+# Opçêo 1: FAISS (local, rápido, sem dependências)
 vectorstore_faiss = FAISS.from_documents(
     documents=chunks,
     embedding=embeddings_openai
@@ -824,7 +824,7 @@ vectorstore_carregado = FAISS.load_local(
     allow_dangerous_deserialization=True
 )
 
-# Opção 2: Chroma (persistent, com metadados)
+# Opçêo 2: Chroma (persistent, com metadados)
 vectorstore_chroma = Chroma.from_documents(
     documents=chunks,
     embedding=embeddings_openai,
@@ -833,7 +833,7 @@ vectorstore_chroma = Chroma.from_documents(
 
             <h4>Passo 5: Retrieval</h4>
             <pre><code># Busca simples por similaridade
-query = "Qual é a política de devolução?"
+query = "Qual é a política de devoluçêo?"
 docs_relevantes = vectorstore_faiss.similarity_search(
     query,
     k=4  # Top 4 resultados mais relevantes
@@ -853,7 +853,7 @@ docs_com_score = vectorstore_faiss.similarity_search_with_score(
 for doc, score in docs_com_score:
     print(f"Score: {score:.4f} | {doc.page_content[:100]}...")</code></pre>
 
-            <h4>Passo 6: Geração com Contexto</h4>
+            <h4>Passo 6: Geraçêo com Contexto</h4>
             <pre><code>from langchain.chains import RetrievalQA
 from langchain_openai import ChatOpenAI
 
@@ -923,42 +923,42 @@ for pergunta in perguntas:
             <h2>Capítulo 3.4: Agentes LangChain - Inteligência Autônoma</h2>
 
             <h3>Do Scripted ao Autônomo</h3>
-            <p><strong>Chains</strong> são como seguir uma receita:</p>
+            <p><strong>Chains</strong> sêo como seguir uma receita:</p>
             <ul>
                 <li>Passo 1: Faça X</li>
                 <li>Passo 2: Faça Y</li>
                 <li>Passo 3: Faça Z</li>
             </ul>
 
-            <p><strong>Agents</strong> são como ter um chef que decide:</p>
+            <p><strong>Agents</strong> sêo como ter um chef que decide:</p>
             <ul>
                 <li>Qual receita seguir</li>
                 <li>Que ingredientes usar</li>
                 <li>Quando improvisar</li>
             </ul>
 
-            <h3>O Padrão ReAct (Reason + Act)</h3>
+            <h3>O Padrêo ReAct (Reason + Act)</h3>
             <div class="diagram">┌─────────────────────────────────────────────┐
 │         CICLO DO AGENTE REACT               │
 └─────────────────────────────────────────────┘
 
 1. THOUGHT (Pensamento)
-   "Preciso saber o clima atual em São Paulo"
+   "Preciso saber o clima atual em Sêo Paulo"
    ↓
-2. ACTION (Ação)
+2. ACTION (Açêo)
    Tool: weather_api
    ↓
 3. ACTION INPUT (Entrada)
-   Input: "São Paulo, Brasil"
+   Input: "Sêo Paulo, Brasil"
    ↓
-4. OBSERVATION (Observação)
+4. OBSERVATION (Observaçêo)
    Result: "25°C, ensolarado"
    ↓
 5. THOUGHT (Pensamento)
-   "Agora tenho a informação, posso responder"
+   "Agora tenho a informaçêo, posso responder"
    ↓
 6. FINAL ANSWER (Resposta Final)
-   "O clima em São Paulo está 25°C e ensolarado"</div>
+   "O clima em Sêo Paulo está 25°C e ensolarado"</div>
 
             <h3>Criando Seu Primeiro Agente</h3>
 
@@ -992,7 +992,7 @@ tool_calc = Tool(
     func=calculadora,
     description="""
     Útil para fazer cálculos matemáticos. Input deve ser uma
-    expressão matemática válida em Python (ex: '2 + 2', '10 ** 3').
+    expressêo matemática válida em Python (ex: '2 + 2', '10 ** 3').
     """
 )
 
@@ -1006,7 +1006,7 @@ tool_search = Tool(
     description="""
     Útil para buscar informações atualizadas na internet.
     Use quando precisar de notícias recentes, dados atuais,
-    ou informações que não estão na Wikipedia.
+    ou informações que nêo estêo na Wikipedia.
     """
 )
 
@@ -1029,9 +1029,9 @@ Use o seguinte formato:
 
 Question: a pergunta de entrada que você deve responder
 Thought: você deve sempre pensar sobre o que fazer
-Action: a ação a tomar, deve ser uma de [{tool_names}]
-Action Input: a entrada para a ação
-Observation: o resultado da ação
+Action: a açêo a tomar, deve ser uma de [{tool_names}]
+Action Input: a entrada para a açêo
+Observation: o resultado da açêo
 ... (este Thought/Action/Action Input/Observation pode se repetir N vezes)
 Thought: Agora eu sei a resposta final
 Final Answer: a resposta final para a pergunta original
@@ -1049,7 +1049,7 @@ agent = create_react_agent(
     prompt=react_prompt
 )
 
-# Executor (gerencia execução)
+# Executor (gerencia execuçêo)
 agent_executor = AgentExecutor(
     agent=agent,
     tools=tools,
@@ -1075,12 +1075,12 @@ print(resposta2['output'])
 resposta3 = agent_executor.invoke({
     "input": """
     O PIB do Brasil em 2023 foi de 10.9 trilhões de reais.
-    Se dividirmos isso pela população de 215 milhões,
+    Se dividirmos isso pela populaçêo de 215 milhões,
     quanto é o PIB per capita em reais?
     """
 })
 print(resposta3['output'])
-# Agente vai: buscar confirmação do PIB → calcular divisão → responder</code></pre>
+# Agente vai: buscar confirmaçêo do PIB → calcular divisêo → responder</code></pre>
 
             <div class="info-box">
                 <strong>Exemplo de saída (verbose=True):</strong><br>
@@ -1147,7 +1147,7 @@ functions_agent = create_openai_functions_agent(
 
             <h3>Criando Tools Customizadas</h3>
 
-            <h4>Tool Simples (função)</h4>
+            <h4>Tool Simples (funçêo)</h4>
             <pre><code>@tool
 def consultar_estoque(produto: str) -> str:
     """
@@ -1188,7 +1188,7 @@ def buscar_cep(cep: str) -> str:
             {data['logradouro']}, {data['bairro']}
             {data['localidade']} - {data['uf']}
             """
-    return "CEP não encontrado"</code></pre>
+    return "CEP nêo encontrado"</code></pre>
         </section>
 
         <!-- Chapter 3.5 -->
@@ -1196,10 +1196,10 @@ def buscar_cep(cep: str) -> str:
             <h2>Capítulo 3.5: Memory - Dando Memória aos Agentes</h2>
 
             <h3>Por Que Memória é Crucial</h3>
-            <p>LLMs são <strong>stateless</strong> por padrão - cada chamada é independente. Memória permite:</p>
+            <p>LLMs sêo <strong>stateless</strong> por padrêo - cada chamada é independente. Memória permite:</p>
             <ul>
                 <li>Conversas naturais multi-turn</li>
-                <li>Personalização baseada em histórico</li>
+                <li>Personalizaçêo baseada em histórico</li>
                 <li>Contexto acumulado</li>
                 <li>Aprendizado de preferências</li>
             </ul>
@@ -1241,8 +1241,8 @@ conversation = ConversationChain(
     verbose=True
 )
 
-conversation.predict(input="Oi, sou João")
-conversation.predict(input="Qual é meu nome?")  # Vai lembrar: João</code></pre>
+conversation.predict(input="Oi, sou Joêo")
+conversation.predict(input="Qual é meu nome?")  # Vai lembrar: Joêo</code></pre>
 
             <h4>2. ConversationBufferWindowMemory (Janela Deslizante)</h4>
             <pre><code>from langchain.memory import ConversationBufferWindowMemory
@@ -1266,13 +1266,13 @@ memory_window = ConversationBufferWindowMemory(k=3)
 memory_summary = ConversationSummaryMemory(llm=llm)
 
 memory_summary.save_context(
-    {"input": "Quero comprar um notebook para programação"},
+    {"input": "Quero comprar um notebook para programaçêo"},
     {"output": "Recomendo um com pelo menos 16GB RAM e SSD"}
 )
 
 memory_summary.save_context(
     {"input": "Qual processador você recomenda?"},
-    {"output": "Intel i7 ou AMD Ryzen 7 são ótimas opções"}
+    {"output": "Intel i7 ou AMD Ryzen 7 sêo ótimas opções"}
 )
 
 # Em vez de guardar tudo, cria resumo
@@ -1281,7 +1281,7 @@ print(memory_summary.load_memory_variables({}))</code></pre>
             <div class="info-box">
                 <strong>Saída:</strong><br>
                 <pre>{
-  'history': 'O usuário está interessado em comprar um notebook para programação. Recomendei especificações mínimas de 16GB RAM, SSD, e processadores Intel i7 ou AMD Ryzen 7.'
+  'history': 'O usuário está interessado em comprar um notebook para programaçêo. Recomendei especificações mínimas de 16GB RAM, SSD, e processadores Intel i7 ou AMD Ryzen 7.'
 }</pre>
             </div>
 
@@ -1301,7 +1301,7 @@ memory_hybrid = ConversationSummaryBufferMemory(
 memory_kg = ConversationKGMemory(llm=llm)
 
 memory_kg.save_context(
-    {"input": "João mora em São Paulo"},
+    {"input": "Joêo mora em Sêo Paulo"},
     {"output": "Entendi"}
 )
 
@@ -1310,8 +1310,8 @@ memory_kg.save_context(
     {"output": "Anotado"}
 )
 
-# Cria grafo: João --mora_em--> São Paulo
-#             João --trabalha_em--> Google</code></pre>
+# Cria grafo: Joêo --mora_em--> Sêo Paulo
+#             Joêo --trabalha_em--> Google</code></pre>
 
             <h3>Memory Persistente (Banco de Dados)</h3>
             <pre><code>from langchain.memory import ConversationBufferMemory
@@ -1411,10 +1411,10 @@ from langchain_community.llms import HuggingFacePipeline</code></pre>
             <h2>📝 Resumo Gráfico do Módulo 3</h2>
 
             <h3>Conceitos-Chave</h3>
-            <p><strong>LangChain = Framework de Orquestração</strong></p>
+            <p><strong>LangChain = Framework de Orquestraçêo</strong></p>
             <ul>
                 <li>Modularidade + Composabilidade</li>
-                <li>Abstração de complexidade</li>
+                <li>Abstraçêo de complexidade</li>
                 <li>Ecosystem rico</li>
             </ul>
 
@@ -1430,7 +1430,7 @@ from langchain_community.llms import HuggingFacePipeline</code></pre>
 
             <p><strong>RAG (Retrieval-Augmented Generation):</strong></p>
             <ul>
-                <li>Indexação → Embedding → VectorDB</li>
+                <li>Indexaçêo → Embedding → VectorDB</li>
                 <li>Retrieval → Busca semântica</li>
                 <li>Generation → LLM com contexto</li>
             </ul>
@@ -1449,12 +1449,12 @@ from langchain_community.llms import HuggingFacePipeline</code></pre>
 
             <h3>Desafio: ChatPDF Completo com Interface Web</h3>
 
-            <p><strong>Objetivo:</strong> Construir uma aplicação completa de RAG que permite:</p>
+            <p><strong>Objetivo:</strong> Construir uma aplicaçêo completa de RAG que permite:</p>
             <ol>
                 <li>Upload de múltiplos PDFs</li>
-                <li>Processamento e indexação automática</li>
+                <li>Processamento e indexaçêo automática</li>
                 <li>Chat conversacional com memória</li>
-                <li>Citação de fontes</li>
+                <li>Citaçêo de fontes</li>
                 <li>Interface web intuitiva</li>
             </ol>
 
@@ -1474,7 +1474,7 @@ from langchain_community.llms import HuggingFacePipeline</code></pre>
                 • Interface Streamlit completa<br>
                 • Sistema de upload e processamento de PDFs<br>
                 • RAG conversacional com memória<br>
-                • Citação de fontes com metadados<br>
+                • Citaçêo de fontes com metadados<br>
                 • requirements.txt e instruções de setup
             </div>
 
@@ -1488,13 +1488,13 @@ venv\Scripts\activate  # Windows
 # 2. Instalar dependências
 pip install -r requirements.txt
 
-# 3. Executar aplicação
+# 3. Executar aplicaçêo
 streamlit run chatpdf_app.py</code></pre>
         </section>
 
         <!-- Tips -->
         <section id="dicas" class="content-section">
-            <h2>💡 Dicas de Otimização e Debugging</h2>
+            <h2>💡 Dicas de Otimizaçêo e Debugging</h2>
 
             <h3>1. Debugging de Chains</h3>
             <pre><code># Ativar verbose
@@ -1523,7 +1523,7 @@ cached_embeddings = CacheBackedEmbeddings.from_bytes_store(
     namespace="openai_embeddings"
 )
 
-# Compressão de contexto
+# Compressêo de contexto
 from langchain.retrievers import ContextualCompressionRetriever
 from langchain.retrievers.document_compressors import LLMChainExtractor
 
@@ -1557,7 +1557,7 @@ with get_openai_callback() as cb:
             </ul>
 
             <div class="info-box">
-                <strong>No Módulo 4</strong>, exploraremos o <strong>Agno</strong>, um framework mais recente e minimalista que oferece uma perspectiva diferente sobre a construção de agentes autônomos, focando na simplicidade e elegância.
+                <strong>No Módulo 4</strong>, exploraremos o <strong>Agno</strong>, um framework mais recente e minimalista que oferece uma perspectiva diferente sobre a construçêo de agentes autônomos, focando na simplicidade e elegância.
             </div>
         </section>
 
@@ -1577,10 +1577,10 @@ with get_openai_callback() as cb:
     <footer style="background: #1e293b; color: white; padding: 3rem 0; margin-top: 4rem;">
         <div class="container" style="text-align: center;">
             <p style="margin-bottom: 1rem;">
-                <strong>FEA-IA 2.0</strong> - Formação Completa em Engenharia de Agentes IA
+                <strong>FEA-IA 2.0</strong> - Formaçêo Completa em Engenharia de Agentes IA
             </p>
             <p style="font-size: 0.875rem; opacity: 0.8;">
-                📄 1.801 linhas | 18.000+ palavras | Nível Aplicação
+                📄 1.801 linhas | 18.000+ palavras | Nível Aplicaçêo
             </p>
             <p style="font-size: 0.875rem; opacity: 0.6; margin-top: 1rem;">
                 Desenvolvido com 💜 para a comunidade de IA

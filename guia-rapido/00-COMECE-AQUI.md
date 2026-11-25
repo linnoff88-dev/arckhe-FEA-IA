@@ -10,15 +10,15 @@ Se você está lendo isso, parabéns! Você deu o primeiro passo para dominar a 
 
 Escolha seu caminho:
 
-### Opção A: "Quero ENTENDER o que são Agentes de IA"
+### Opçêo A: "Quero ENTENDER o que sêo Agentes de IA"
 👉 **Tempo:** 30 minutos
 👉 **Próximo passo:** [Módulo 1: Fundamentos de IA Generativa](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-01/conteudo/Modulo-01-Fundamentos-IA-Generativa.md)
 
-### Opção B: "Quero VER um resultado prático AGORA"
+### Opçêo B: "Quero VER um resultado prático AGORA"
 👉 **Tempo:** 2 horas
-👉 **Próximo passo:** [Caso de Uso: Automação de Atendimento](https://github.com/linnoff88-dev/FEA-IA/blob/main/casos-uso/atendimento-cliente.md)
+👉 **Próximo passo:** [Caso de Uso: Automaçêo de Atendimento](https://github.com/linnoff88-dev/FEA-IA/blob/main/casos-uso/atendimento-cliente.md)
 
-### Opção C: "Quero seguir uma trilha completa"
+### Opçêo C: "Quero seguir uma trilha completa"
 👉 **Tempo:** Variável (8-60h dependendo da trilha)
 👉 **Próximo passo:** [Escolher Trilha](https://github.com/linnoff88-dev/FEA-IA/tree/main/trilhas)
 
@@ -26,12 +26,12 @@ Escolha seu caminho:
 
 ## 🎯 Teste Rápido: Qual é o Seu Perfil?
 
-Responda SIM ou NÃO para cada afirmação:
+Responda SIM ou NêO para cada afirmaçêo:
 
 **Grupo 1:**
 - [ ] Eu sou empreendedor, CEO ou gestor
 - [ ] Quero automatizar processos no meu negócio
-- [ ] Programação não é minha praia
+- [ ] Programaçêo nêo é minha praia
 - [ ] Quero resultados rápidos
 
 **Se marcou 3-4:** Sua trilha é a [**Trilha Empreendedor**](../trilhas/TRILHA-EMPREENDEDOR.md)
@@ -41,8 +41,8 @@ Responda SIM ou NÃO para cada afirmação:
 **Grupo 2:**
 - [ ] Tomo decisões estratégicas na empresa
 - [ ] Preciso entender o impacto da IA no meu setor
-- [ ] Vou liderar uma transformação digital
-- [ ] Não preciso mexer em código
+- [ ] Vou liderar uma transformaçêo digital
+- [ ] Nêo preciso mexer em código
 
 **Se marcou 3-4:** Sua trilha é a [**Trilha Executivo**](../trilhas/TRILHA-EXECUTIVO.md)
 
@@ -52,17 +52,17 @@ Responda SIM ou NÃO para cada afirmação:
 - [ ] Gerencio equipes ou projetos
 - [ ] Vou implementar soluções de IA
 - [ ] Quero entender aspectos técnicos básicos
-- [ ] Preciso traduzir visão estratégica em execução
+- [ ] Preciso traduzir visêo estratégica em execuçêo
 
-**Se marcou 3-4:** Recomendamos a [**Trilha Empreendedor**](https://github.com/linnoff88-dev/FEA-IA/blob/main/trilhas/TRILHA-EMPREENDEDOR.md) com foco em implementação
+**Se marcou 3-4:** Recomendamos a [**Trilha Empreendedor**](https://github.com/linnoff88-dev/FEA-IA/blob/main/trilhas/TRILHA-EMPREENDEDOR.md) com foco em implementaçêo
 
 ---
 
 **Grupo 4:**
 - [ ] Sou desenvolvedor ou tenho background técnico
 - [ ] Quero dominar a stack completa
-- [ ] Preciso de profundidade, não superficialidade
-- [ ] Vou construir sistemas de IA em produção
+- [ ] Preciso de profundidade, nêo superficialidade
+- [ ] Vou construir sistemas de IA em produçêo
 
 **Se marcou 3-4:** Comece pelo [**Módulo 1**](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-01/conteudo/Modulo-01-Fundamentos-IA-Generativa.md) e siga todos os 8 módulos sequencialmente
 
@@ -78,21 +78,21 @@ Antes de começar, entenda estes 5 conceitos:
 **Exemplos:** GPT-4, Claude 3.5, Gemini, Llama
 
 ### 2. 🧠 Agente de IA
-**O que é:** Um LLM + capacidade de AGIR (não apenas responder)
-**Analogia:** Um assistente que não só responde perguntas, mas faz coisas
-**Exemplo prático:** Ler seu email, pesquisar na web, agendar reunião automaticamente
+**O que é:** Um LLM + capacidade de AGIR (nêo apenas responder)
+**Analogia:** Um assistente que nêo só responde perguntas, mas faz coisas
+**Exemplo prático:** Ler seu email, pesquisar na web, agendar reuniêo automaticamente
 
 ### 3. 🔧 Ferramenta (Tool)
-**O que é:** Uma ação específica que o agente pode executar
+**O que é:** Uma açêo específica que o agente pode executar
 **Exemplos:** Pesquisar na web, enviar email, ler arquivo, chamar API
 
 ### 4. 🔗 RAG (Retrieval-Augmented Generation)
 **O que é:** Dar "memória" ao agente sobre seus dados específicos
-**Por que importa:** ChatGPT não sabe sobre SUA empresa. RAG resolve isso.
+**Por que importa:** ChatGPT nêo sabe sobre SUA empresa. RAG resolve isso.
 **Analogia:** Um assistente que tem acesso aos arquivos da sua empresa
 
 ### 5. 🎭 Prompt
-**O que é:** A "instrução" que você dá para a IA
+**O que é:** A "instruçêo" que você dá para a IA
 **Diferença:** Prompt ruim = resultado ruim. Prompt bom = mágica.
 **Engenharia de Prompts:** A arte de escrever instruções perfeitas
 
@@ -102,9 +102,9 @@ Antes de começar, entenda estes 5 conceitos:
 
 Este curso trabalha com 3 níveis. Identifique o seu:
 
-| Nível | Símbolo | Descrição | Você é isso se... |
+| Nível | Símbolo | Descriçêo | Você é isso se... |
 |-------|---------|-----------|-------------------|
-| **Conceitual** | 🟢 | Entender sem código | Nunca programou ou não quer programar |
+| **Conceitual** | 🟢 | Entender sem código | Nunca programou ou nêo quer programar |
 | **Prático** | 🟡 | Usar ferramentas no-code/low-code | Quer implementar sem ser dev |
 | **Técnico** | 🔴 | Desenvolver com código | Quer dominar a tecnologia profundamente |
 
@@ -125,10 +125,10 @@ Quer ver resultados HOJE? Comece por este:
 
 ---
 
-## 🛠️ Preparação do Ambiente
+## 🛠️ Preparaçêo do Ambiente
 
 ### Se você escolheu Nível 🟢 Conceitual:
-**Não precisa instalar nada!** Apenas:
+**Nêo precisa instalar nada!** Apenas:
 1. Crie uma conta no [ChatGPT](https://chat.openai.com) (ou [Claude](https://claude.ai))
 2. Pronto! ✅
 
@@ -152,8 +152,8 @@ Cada módulo tem instruções específicas de setup no início.
 
 ## 📚 Materiais de Apoio
 
-### Documentação Principal
-Visão completa do curso → [README Principal](https://github.com/linnoff88-dev/FEA-IA#readme)
+### Documentaçêo Principal
+Visêo completa do curso → [README Principal](https://github.com/linnoff88-dev/FEA-IA#readme)
 
 ### Trilhas de Aprendizado
 Escolha sua trilha → [Trilha Executivo](https://github.com/linnoff88-dev/FEA-IA/blob/main/trilhas/TRILHA-EXECUTIVO.md) | [Trilha Empreendedor](https://github.com/linnoff88-dev/FEA-IA/blob/main/trilhas/TRILHA-EMPREENDEDOR.md)
@@ -169,7 +169,7 @@ Com base no que você leu, escolha AGORA seu próximo passo:
 
 <div align="center">
 
-### Escolha UMA opção e clique:
+### Escolha UMA opçêo e clique:
 
 **[🎓 Entender Conceitos - Módulo 1](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-01/conteudo/Modulo-01-Fundamentos-IA-Generativa.md)**
 
@@ -183,7 +183,7 @@ Com base no que você leu, escolha AGORA seu próximo passo:
 
 ## 💡 Dica de Ouro
 
-> **A melhor forma de aprender não é lendo tudo, é FAZENDO.**
+> **A melhor forma de aprender nêo é lendo tudo, é FAZENDO.**
 >
 > Escolha 1 caso de uso prático, implemente hoje, veja funcionar.
 > Depois volte para a teoria. Você vai aprender 10x mais rápido.

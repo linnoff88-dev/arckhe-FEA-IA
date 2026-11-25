@@ -13,7 +13,7 @@
     ['prǭticos', 'práticos'],
     ['aplicǭveis', 'aplicáveis'],
     ['indǧstria', 'indústria'],
-    ['cria��ǜo', 'criação'],
+    ['cria��ǜo', 'criaçêo'],
     ['avan��adas', 'avançadas'],
     ['vocǦ', 'você'],
     ['atǸ', 'até'],

@@ -13,7 +13,7 @@
     --color-fundamentos-light: #d1fae5;
     --color-fundamentos-dark: #047857;
 
-    /* Nível Aplicação - Roxo */
+    /* Nível Aplicaçêo - Roxo */
     --color-aplicacao: #8b5cf6;
     --color-aplicacao-light: #ede9fe;
     --color-aplicacao-dark: #6d28d9;
@@ -67,7 +67,7 @@
 }
 
 /* ========================================
-   BOTÃO DO TÓPICO
+   BOTêO DO TÓPICO
    ======================================== */
 
 .topic-button {
@@ -98,7 +98,7 @@
     transform: scale(0.98);
 }
 
-/* Botão quando tópico está lido */
+/* Botêo quando tópico está lido */
 .topic-button.topic-read {
     background-color: #f0fdf4;
     border-color: var(--color-fundamentos);
@@ -123,7 +123,7 @@
     color: white;
 }
 
-/* Ícone de expansão */
+/* Ícone de expansêo */
 .topic-icon {
     margin-left: auto;
     font-size: 0.625rem;
@@ -269,7 +269,7 @@
 }
 
 /* ========================================
-   BOTÃO DE CÓPIA DE CÓDIGO
+   BOTêO DE CÓPIA DE CÓDIGO
    ======================================== */
 
 .copy-code-btn {

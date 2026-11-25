@@ -1,4 +1,4 @@
-# 💼 Trilha Executivo - Visão Estratégica de IA
+# 💼 Trilha Executivo - Visêo Estratégica de IA
 
 ## 🎯 Para Quem é Esta Trilha
 
@@ -6,19 +6,19 @@ Você é um **CEO, executivo, diretor ou tomador de decisões estratégicas** qu
 
 ✅ Entender o impacto transformador da IA no seu setor
 ✅ Tomar decisões informadas sobre investimentos em IA
-✅ Liderar iniciativas de transformação digital
+✅ Liderar iniciativas de transformaçêo digital
 ✅ Avaliar riscos e oportunidades
-✅ Comunicar visão de IA para stakeholders e board
+✅ Comunicar visêo de IA para stakeholders e board
 
-**Você NÃO vai programar nada** nesta trilha. Foco 100% em visão estratégica e tomada de decisão.
+**Você NêO vai programar nada** nesta trilha. Foco 100% em visêo estratégica e tomada de decisêo.
 
 ---
 
-## 📊 Visão Geral da Trilha
+## 📊 Visêo Geral da Trilha
 
 | | |
 |---|---|
-| **Duração Total** | 8-12 horas |
+| **Duraçêo Total** | 8-12 horas |
 | **Nível Técnico** | 🟢 Conceitual (zero código) |
 | **Investimento** | $0 (apenas tempo) |
 | **Código Necessário** | Nenhum |
@@ -32,10 +32,10 @@ Ao final desta trilha, você será capaz de:
 
 ✅ **Avaliar** oportunidades de IA no seu negócio com critério técnico
 ✅ **Tomar decisões** informadas sobre investimentos e prioridades
-✅ **Liderar** a transformação digital com IA na organização
-✅ **Comunicar** visão e estratégia para board, investidores e equipes
+✅ **Liderar** a transformaçêo digital com IA na organizaçêo
+✅ **Comunicar** visêo e estratégia para board, investidores e equipes
 ✅ **Identificar** riscos, limitações e armadilhas comuns
-✅ **Construir** roadmap de implementação de 12-24 meses
+✅ **Construir** roadmap de implementaçêo de 12-24 meses
 
 **Meta:** Ter um plano estratégico de IA pronto para apresentar ao board/sócios.
 
@@ -43,7 +43,7 @@ Ao final desta trilha, você será capaz de:
 
 ## 📚 Jornada de Aprendizado
 
-Esta trilha é dividida em **3 fases focadas em decisão**:
+Esta trilha é dividida em **3 fases focadas em decisêo**:
 
 ### Fase 1: Entendimento (3-4h)
 **Objetivo:** Compreender a tecnologia sem tecnices
@@ -52,7 +52,7 @@ Esta trilha é dividida em **3 fases focadas em decisão**:
 **Objetivo:** Identificar oportunidades e construir roadmap
 
 ### Fase 3: Liderança (2-4h)
-**Objetivo:** Preparar execução e governança
+**Objetivo:** Preparar execuçêo e governança
 
 ---
 
@@ -64,8 +64,8 @@ Esta trilha é dividida em **3 fases focadas em decisão**:
 **O que você vai entender:**
 - Por que 2023-2025 foi diferente de "IA do passado"
 - A diferença entre IA tradicional e Agentes Autônomos
-- O que LLMs podem (e não podem) fazer
-- Casos de transformação em diferentes indústrias
+- O que LLMs podem (e nêo podem) fazer
+- Casos de transformaçêo em diferentes indústrias
 
 📚 **Material:**
 - [Módulo 1: Fundamentos de IA Generativa](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-01/conteudo/Modulo-01-Fundamentos-IA-Generativa.md)
@@ -74,9 +74,9 @@ Esta trilha é dividida em **3 fases focadas em decisão**:
 
 🎯 **Entregável:** Lista de 3-5 processos críticos do seu negócio que podem ser impactados por IA
 
-**Perguntas-Chave para Reflexão:**
+**Perguntas-Chave para Reflexêo:**
 1. Qual processo da minha empresa é mais manual e repetitivo?
-2. Onde perdemos mais tempo com trabalho que não gera valor direto?
+2. Onde perdemos mais tempo com trabalho que nêo gera valor direto?
 3. Quais decisões repetimos constantemente com base em padrões?
 4. Onde a concorrência pode nos ultrapassar se adotar IA antes?
 
@@ -93,17 +93,17 @@ Esta trilha é dividida em **3 fases focadas em decisão**:
 
 📚 **Material:**
 - [Módulo 5: CrewAI - Sistemas Multi-Agentes](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-05/conteudo/Modulo-05-CrewAI.md)
-  - Leia a introdução e seção 5.1
-  - Foque nos conceitos, não no código
+  - Leia a introduçêo e seçêo 5.1
+  - Foque nos conceitos, nêo no código
 
-🎯 **Entregável:** Classificação dos seus processos em "Chatbot suficiente" vs "Precisa de Agente"
+🎯 **Entregável:** Classificaçêo dos seus processos em "Chatbot suficiente" vs "Precisa de Agente"
 
-**Framework de Decisão:**
+**Framework de Decisêo:**
 
 | Processo | Chatbot | Agente |
 |----------|---------|--------|
 | Responder FAQs | ✅ | - |
-| Analisar dados + recomendar ação | - | ✅ |
+| Analisar dados + recomendar açêo | - | ✅ |
 | Atendimento básico | ✅ | - |
 | Pesquisa de mercado automatizada | - | ✅ |
 
@@ -114,7 +114,7 @@ Esta trilha é dividida em **3 fases focadas em decisão**:
 ### Módulo 2.1: Identificando Oportunidades
 **Tempo:** 2h | **Formato:** 🟡 Prático
 
-**Framework: Matriz de Priorização de IA**
+**Framework: Matriz de Priorizaçêo de IA**
 
 Avalie cada processo usando 4 critérios (escala 1-5):
 
@@ -151,10 +151,10 @@ Processos com score > 20 = Prioridade ALTA
 - Estabelecer governança básica
 - Documentar ROI
 
-**Fase 3: Transformação (Mês 7-12)**
-- Integração com sistemas existentes
+**Fase 3: Transformaçêo (Mês 7-12)**
+- Integraçêo com sistemas existentes
 - Customizações avançadas
-- Expansão departamental
+- Expansêo departamental
 - Centro de excelência em IA
 
 🎯 **Entregável:** Roadmap de 12 meses com milestones claros
@@ -175,30 +175,30 @@ Processos com score > 20 = Prioridade ALTA
 
 ✅ **Riscos e Segurança**
 - [ ] Plano de contingência se IA falhar
-- [ ] Revisão humana em decisões críticas
-- [ ] Proteção contra vieses
+- [ ] Revisêo humana em decisões críticas
+- [ ] Proteçêo contra vieses
 
 ✅ **Transparência**
-- [ ] Comunicação clara para stakeholders
-- [ ] Documentação de decisões tomadas por IA
+- [ ] Comunicaçêo clara para stakeholders
+- [ ] Documentaçêo de decisões tomadas por IA
 - [ ] Canais de feedback estabelecidos
 
 📚 **Material:**
-- [Módulo 7: Deploy e Produção](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-07/conteudo/Modulo-07-Deploy-Producao.md)
-  - Seção 7.6: Segurança e Compliance
+- [Módulo 7: Deploy e Produçêo](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-07/conteudo/Modulo-07-Deploy-Producao.md)
+  - Seçêo 7.6: Segurança e Compliance
 
 ---
 
-### Módulo 3.2: Comunicação com Board/Stakeholders
+### Módulo 3.2: Comunicaçêo com Board/Stakeholders
 **Tempo:** 1-2h | **Formato:** 🟡 Prático
 
-**Framework de Apresentação para Board:**
+**Framework de Apresentaçêo para Board:**
 
 **Slide 1: O Problema**
 - Processo atual e seus custos/limitações
 - Oportunidade perdida (tempo, dinheiro, competitividade)
 
-**Slide 2: A Solução com IA**
+**Slide 2: A Soluçêo com IA**
 - Como IA resolve especificamente
 - Diferencial vs alternativas
 
@@ -210,40 +210,40 @@ Processos com score > 20 = Prioridade ALTA
 **Slide 4: ROI Esperado**
 - Métricas quantificáveis (economia, receita, tempo)
 - Payback period
-- Comparação com cenário status quo
+- Comparaçêo com cenário status quo
 
-**Slide 5: Riscos e Mitigação**
+**Slide 5: Riscos e Mitigaçêo**
 - Top 3 riscos e como mitigar
 - Governança e compliance
 
-🎯 **Entregável:** Deck de apresentação pronto para board
+🎯 **Entregável:** Deck de apresentaçêo pronto para board
 
 ---
 
-## 🎓 Certificação de Conclusão
+## 🎓 Certificaçêo de Conclusêo
 
 Ao completar esta trilha, você terá:
 
 ✅ Plano estratégico de IA documentado
 ✅ Roadmap de 12 meses aprovado
-✅ Apresentação para board preparada
+✅ Apresentaçêo para board preparada
 ✅ Framework de governança definido
-✅ Primeiros passos prontos para execução
+✅ Primeiros passos prontos para execuçêo
 
 ---
 
 ## 📞 Próximos Passos
 
-**Opção 1: Implementação Prática**
+**Opçêo 1: Implementaçêo Prática**
 - Contratar/formar equipe técnica
 - Seguir roadmap definido
 - Medir e iterar
 
-**Opção 2: Aprofundamento Técnico**
+**Opçêo 2: Aprofundamento Técnico**
 - [Trilha Gestor](./TRILHA-GESTOR.md) - Próximo nível
-- Entender aspectos de implementação
+- Entender aspectos de implementaçêo
 
-**Opção 3: Consultoria Especializada**
+**Opçêo 3: Consultoria Especializada**
 - Buscar parceiros para acelerar
 - Validar estratégia com especialistas
 
@@ -252,7 +252,7 @@ Ao completar esta trilha, você terá:
 ## 🔗 Recursos Adicionais
 
 - [Repositório Completo do Curso](https://github.com/linnoff88-dev/FEA-IA)
-- [Documentação Principal](https://github.com/linnoff88-dev/FEA-IA#readme)
+- [Documentaçêo Principal](https://github.com/linnoff88-dev/FEA-IA#readme)
 - [Discussões da Comunidade](https://github.com/linnoff88-dev/FEA-IA/discussions)
 
 ---
@@ -265,7 +265,7 @@ Ao completar esta trilha, você terá:
 
 <div align="center">
 
-**Pronto para liderar a transformação com IA?**
+**Pronto para liderar a transformaçêo com IA?**
 
 [← Voltar para Trilhas](../README.md#escolha-sua-trilha) | [Começar Agora](https://github.com/linnoff88-dev/FEA-IA/blob/main/modulos/modulo-01/conteudo/Modulo-01-Fundamentos-IA-Generativa.md)
 

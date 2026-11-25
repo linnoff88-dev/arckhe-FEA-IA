@@ -2,13 +2,13 @@
 
 ## Dominando o Universo de Ferramentas para Agentes de IA
 
-> "Um artesão é tão bom quanto suas ferramentas. Um engenheiro de agentes é tão produtivo quanto seu conhecimento do ecossistema." - Princípio da Maestria em Ferramentas
+> "Um artesêo é têo bom quanto suas ferramentas. Um engenheiro de agentes é têo produtivo quanto seu conhecimento do ecossistema." - Princípio da Maestria em Ferramentas
 
 ---
 
 ## 📋 Índice
 
-1. [Introdução ao Ecossistema](#81-introdução-ao-ecossistema)
+1. [Introduçêo ao Ecossistema](#81-introduçêo-ao-ecossistema)
 2. [Ferramentas de Desenvolvimento](#82-ferramentas-de-desenvolvimento)
 3. [Bibliotecas Essenciais](#83-bibliotecas-essenciais)
 4. [Interfaces de Usuário](#84-interfaces-de-usuário)
@@ -22,7 +22,7 @@
 
 ---
 
-## 8.1 Introdução ao Ecossistema
+## 8.1 Introduçêo ao Ecossistema
 
 ### 8.1.1 O Ecossistema de Agentes de IA
 
@@ -70,7 +70,7 @@
 - LLM providers (Anthropic, OpenAI, Cohere)
 - Vector databases (Pinecone, Weaviate, ChromaDB)
 
-**3. UI e Visualização**
+**3. UI e Visualizaçêo**
 - Streamlit, Gradio, Chainlit
 - Dash, Plotly
 - Custom frontends (React, Vue)
@@ -109,7 +109,7 @@
 }
 ```
 
-**Configuração recomendada:**
+**Configuraçêo recomendada:**
 
 ```json
 // .vscode/settings.json
@@ -181,7 +181,7 @@ load_dotenv()
 logging.basicConfig(level=logging.INFO)
 
 # =============================================================================
-# CELL 2: Configuração do Agente
+# CELL 2: Configuraçêo do Agente
 # =============================================================================
 agent = Agent(
     name="Research Assistant",
@@ -195,7 +195,7 @@ agent = Agent(
 # =============================================================================
 def search_web(query: str) -> str:
     """Busca informações na web"""
-    # Implementação
+    # Implementaçêo
     pass
 
 agent.tools = [search_web]
@@ -271,7 +271,7 @@ warn_unused_configs = true
 disallow_untyped_defs = true
 ```
 
-**Makefile para automação:**
+**Makefile para automaçêo:**
 
 ```makefile
 .PHONY: install dev test lint format clean docker-build run
@@ -311,7 +311,7 @@ run:
 make dev      # Instalar dependências de desenvolvimento
 make test     # Rodar testes
 make format   # Formatar código
-make run      # Iniciar aplicação
+make run      # Iniciar aplicaçêo
 ```
 
 ---
@@ -372,9 +372,9 @@ most_similar_idx = np.argsort(similarities)[::-1][:5]  # Top 5
 print("Documentos mais similares:", most_similar_idx)
 ```
 
-### 8.3.2 Validação de Dados
+### 8.3.2 Validaçêo de Dados
 
-**Pydantic para validação robusta:**
+**Pydantic para validaçêo robusta:**
 
 ```python
 from pydantic import BaseModel, Field, validator
@@ -382,7 +382,7 @@ from typing import Optional, Literal
 from datetime import datetime
 
 class AgentRequest(BaseModel):
-    """Schema de requisição para o agente"""
+    """Schema de requisiçêo para o agente"""
 
     message: str = Field(..., min_length=1, max_length=10000)
     user_id: str = Field(..., regex=r'^[a-zA-Z0-9_-]+$')
@@ -454,7 +454,7 @@ results = asyncio.run(fetch_multiple_apis())
 
 ### 8.3.4 Cache e Performance
 
-**cachetools para memoização:**
+**cachetools para memoizaçêo:**
 
 ```python
 from cachetools import cached, TTLCache, LRUCache
@@ -464,7 +464,7 @@ import time
 @cached(cache=TTLCache(maxsize=1000, ttl=3600))
 def get_embedding(text: str):
     """Cache de embeddings por 1 hora"""
-    # Operação cara
+    # Operaçêo cara
     time.sleep(0.5)
     return generate_embedding(text)
 
@@ -492,7 +492,7 @@ def redis_cache(ttl: int = 3600):
             if cached_value:
                 return json.loads(cached_value)
 
-            # Não encontrado - executar função
+            # Nêo encontrado - executar funçêo
             result = func(*args, **kwargs)
 
             # Salvar no cache
@@ -505,13 +505,13 @@ def redis_cache(ttl: int = 3600):
 @redis_cache(ttl=7200)
 def expensive_computation(param: str):
     """Cacheado por 2 horas no Redis"""
-    # Computação cara
+    # Computaçêo cara
     pass
 ```
 
 ### 8.3.5 Utilitários Python
 
-**python-dotenv para configuração:**
+**python-dotenv para configuraçêo:**
 
 ```python
 from dotenv import load_dotenv, find_dotenv
@@ -525,7 +525,7 @@ ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "default-key")
 DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///default.db")
 DEBUG = os.getenv("DEBUG", "false").lower() == "true"
 
-# Validar que variáveis críticas estão definidas
+# Validar que variáveis críticas estêo definidas
 required_vars = ["ANTHROPIC_API_KEY", "DATABASE_URL"]
 missing = [var for var in required_vars if not os.getenv(var)]
 
@@ -539,8 +539,8 @@ if missing:
 from loguru import logger
 import sys
 
-# Configuração básica
-logger.remove()  # Remover handler padrão
+# Configuraçêo básica
+logger.remove()  # Remover handler padrêo
 
 # Console com cores
 logger.add(
@@ -549,7 +549,7 @@ logger.add(
     level="INFO"
 )
 
-# Arquivo com rotação
+# Arquivo com rotaçêo
 logger.add(
     "logs/app_{time:YYYY-MM-DD}.log",
     rotation="1 day",
@@ -687,7 +687,7 @@ with tab3:
     # Advanced settings
     pass
 
-# Expanders para organização
+# Expanders para organizaçêo
 with st.expander("Advanced Options"):
     system_prompt = st.text_area("System Prompt", height=150)
     enable_memory = st.checkbox("Enable Conversation Memory")
@@ -728,7 +728,7 @@ agent = Agent(
 )
 
 def chat(message, history):
-    """Função de chat"""
+    """Funçêo de chat"""
     # history é uma lista de tuplas (user_msg, bot_msg)
     response = agent.run(message)
     return response
@@ -831,7 +831,7 @@ from agno import Agent
 
 @cl.on_chat_start
 async def start():
-    """Inicialização quando chat começa"""
+    """Inicializaçêo quando chat começa"""
 
     # Criar agente
     agent = Agent(
@@ -839,7 +839,7 @@ async def start():
         model="claude-3-7-sonnet-20250219"
     )
 
-    # Salvar no contexto da sessão
+    # Salvar no contexto da sessêo
     cl.user_session.set("agent", agent)
 
     # Mensagem de boas-vindas
@@ -1109,7 +1109,7 @@ class APIClient:
         json_data: Optional[Dict] = None,
         data: Optional[Dict] = None
     ) -> Dict[str, Any]:
-        """Faz uma requisição HTTP"""
+        """Faz uma requisiçêo HTTP"""
 
         url = f"{self.base_url}/{endpoint.lstrip('/')}"
 
@@ -1158,15 +1158,15 @@ result = await api.get("/users", params={"limit": 10})
 import pdb
 
 def complex_agent_logic(message: str):
-    """Função com lógica complexa"""
+    """Funçêo com lógica complexa"""
 
     # Ponto de breakpoint
-    pdb.set_trace()  # Execução pausa aqui
+    pdb.set_trace()  # Execuçêo pausa aqui
 
     # Comandos úteis no pdb:
     # n (next): próxima linha
-    # s (step): entrar em função
-    # c (continue): continuar execução
+    # s (step): entrar em funçêo
+    # c (continue): continuar execuçêo
     # p variable: imprimir variável
     # l (list): mostrar código ao redor
     # q (quit): sair
@@ -1232,7 +1232,7 @@ from memory_profiler import profile
 
 @profile
 def memory_intensive_function():
-    """Função que usa muita memória"""
+    """Funçêo que usa muita memória"""
 
     # Carregar modelo grande
     large_data = load_large_model()
@@ -1403,10 +1403,10 @@ class AgentAnalytics:
         return df
 
     def cohort_analysis(self, start_date: datetime, periods: int = 12) -> pd.DataFrame:
-        """Análise de coorte (retenção)"""
+        """Análise de coorte (retençêo)"""
 
         # Agrupar usuários por mês de primeira conversa
-        # ... (implementação de cohort analysis)
+        # ... (implementaçêo de cohort analysis)
         pass
 
     def identify_churn_risk(self, threshold_days: int = 30) -> List[str]:
@@ -1461,7 +1461,7 @@ def create_analytics_dashboard(metrics_df: pd.DataFrame):
         row=1, col=2
     )
 
-    # 3. Distribuição de satisfação
+    # 3. Distribuiçêo de satisfaçêo
     fig.add_trace(
         go.Histogram(x=metrics_df['satisfaction_score'], name='Satisfaction'),
         row=2, col=1
@@ -1555,7 +1555,7 @@ for user_id in user_ids:
     else:
         response = claude_agent.run(message)
 
-    # Registrar métrica (ex: satisfação do usuário)
+    # Registrar métrica (ex: satisfaçêo do usuário)
     satisfaction = get_user_satisfaction(user_id)
     ab_test.record_metric(variant, satisfaction)
 
@@ -1602,7 +1602,7 @@ class TestAgentService:
     """Suite de testes para AgentService"""
 
     def test_initialization(self, agent_service):
-        """Testa inicialização"""
+        """Testa inicializaçêo"""
         assert agent_service.model == "claude-3-haiku-20240307"
         assert agent_service.total_cost == 0.0
 
@@ -1688,7 +1688,7 @@ pytest tests/test_agent.py::TestAgentService::test_initialization
 pytest -m "not slow"
 ```
 
-### 8.8.2 Testes de Integração
+### 8.8.2 Testes de Integraçêo
 
 ```python
 # tests/test_integration.py
@@ -1699,7 +1699,7 @@ from app.main import app
 client = TestClient(app)
 
 class TestAPIIntegration:
-    """Testes de integração da API"""
+    """Testes de integraçêo da API"""
 
     def test_health_endpoint(self):
         """Testa endpoint de health"""
@@ -1721,7 +1721,7 @@ class TestAPIIntegration:
         assert isinstance(data["response"], str)
 
     def test_chat_endpoint_unauthorized(self):
-        """Testa que endpoint requer autenticação"""
+        """Testa que endpoint requer autenticaçêo"""
         response = client.post(
             "/api/chat",
             json={"message": "Hello"}
@@ -1742,7 +1742,7 @@ class TestAPIIntegration:
         assert response.status_code == 429
 
     def test_invalid_input_validation(self):
-        """Testa validação de entrada"""
+        """Testa validaçêo de entrada"""
         response = client.post(
             "/api/chat",
             json={"message": ""},  # Mensagem vazia
@@ -1771,7 +1771,7 @@ def test_complete_user_flow(browser):
 
     page = browser.new_page()
 
-    # 1. Navegar para a aplicação
+    # 1. Navegar para a aplicaçêo
     page.goto("http://localhost:8501")  # Streamlit app
 
     # 2. Digitar mensagem
@@ -1794,7 +1794,7 @@ def test_complete_user_flow(browser):
 
 ## 8.9 Recursos da Comunidade
 
-### 8.9.1 Documentação e Tutoriais
+### 8.9.1 Documentaçêo e Tutoriais
 
 **Sites essenciais:**
 
@@ -1964,7 +1964,7 @@ async def chat(request: ChatRequest):
 
 @app.get("/api/analytics/overview")
 async def get_analytics_overview():
-    """Visão geral de analytics"""
+    """Visêo geral de analytics"""
     return analytics.get_overview()
 
 @app.get("/api/analytics/agent/{agent_id}")
@@ -2303,8 +2303,8 @@ Neste módulo final, você dominou:
 ✅ **Integrações**: GitHub, Slack, Google Calendar, APIs genéricas
 ✅ **Debugging**: pdb, profiling, LangSmith, Sentry
 ✅ **Analytics**: Métricas de negócio, dashboards, A/B testing
-✅ **Testes**: pytest, testes de integração, E2E
-✅ **Comunidade**: Recursos, documentação, open source
+✅ **Testes**: pytest, testes de integraçêo, E2E
+✅ **Comunidade**: Recursos, documentaçêo, open source
 ✅ **Projeto Prático**: Painel de controle completo
 
 ### 8.11.2 Você Completou o Curso!
@@ -2321,7 +2321,7 @@ Você completou todos os 8 módulos do curso **Engenharia de Agentes de IA 2.0**
 4. ✅ Agno - Simplicidade e Poder
 5. ✅ CrewAI - Sistemas Multi-Agente
 6. ✅ Model Context Protocol (MCP)
-7. ✅ Deploy e Produção
+7. ✅ Deploy e Produçêo
 8. ✅ Ferramentas e Ecossistema
 
 **Você agora é capaz de:**
@@ -2329,7 +2329,7 @@ Você completou todos os 8 módulos do curso **Engenharia de Agentes de IA 2.0**
 - 🎯 Projetar e implementar agentes de IA complexos
 - 🚀 Criar sistemas multi-agente orquestrados
 - 🔧 Conectar agentes a dados e ferramentas reais via MCP
-- ☁️ Fazer deploy de sistemas em produção
+- ☁️ Fazer deploy de sistemas em produçêo
 - 📊 Monitorar, otimizar e escalar aplicações
 - 💰 Gerenciar custos e performance
 - 🔒 Implementar segurança de nível enterprise
@@ -2342,7 +2342,7 @@ Você completou todos os 8 módulos do curso **Engenharia de Agentes de IA 2.0**
 Construa projetos reais:
 - Sistema de atendimento ao cliente
 - Assistente de pesquisa científica
-- Automação de processos empresariais
+- Automaçêo de processos empresariais
 - Agente de análise de dados
 - Content creation pipeline
 
@@ -2389,7 +2389,7 @@ Construa projetos reais:
 
 Você agora possui as habilidades e conhecimentos para criar sistemas de agentes de IA de nível profissional que resolvem problemas reais no mundo real.
 
-A jornada não termina aqui - ela está apenas começando. O campo de agentes de IA está evoluindo rapidamente, e você agora está equipado para evoluir junto com ele.
+A jornada nêo termina aqui - ela está apenas começando. O campo de agentes de IA está evoluindo rapidamente, e você agora está equipado para evoluir junto com ele.
 
 **Continue construindo. Continue aprendendo. Continue inovando.**
 
@@ -2403,6 +2403,6 @@ A jornada não termina aqui - ela está apenas começando. O campo de agentes de
 
 ---
 
-**Certificado de Conclusão**: Complete os exercícios e projetos práticos para receber seu certificado oficial de Engenheiro de Agentes de IA 2.0.
+**Certificado de Conclusêo**: Complete os exercícios e projetos práticos para receber seu certificado oficial de Engenheiro de Agentes de IA 2.0.
 
 **Mantenha-se conectado**: Junte-se à nossa comunidade de alumni e continue sua jornada de aprendizado!

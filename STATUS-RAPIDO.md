@@ -1,6 +1,6 @@
 # 🟢 STATUS RÁPIDO DO PROJETO
 
-Última atualização: 21/out/2025 (Curso Online com SEO)
+Última atualizaçêo: 21/out/2025 (Curso Online com SEO)
 Progresso: 75%
 
 ---
@@ -14,7 +14,7 @@ Progresso: 75%
 - Módulo 4 — Agno (~17k palavras)
 - Módulo 5 — CrewAI (~18k palavras)
 - Módulo 6 — MCP (~34k palavras)
-- Módulo 7 — Deploy e Produção (~26k palavras)
+- Módulo 7 — Deploy e Produçêo (~26k palavras)
 - Módulo 8 — Ferramentas e Ecossistema (~24k palavras)
 
 Total: ~157.000 palavras | 15.847 linhas de conteúdo técnico
@@ -60,14 +60,14 @@ Nível 3 — Comunidade
 
 ## 📝 Arquivos importantes
 
-| Arquivo | Descrição | Localização |
+| Arquivo | Descriçêo | Localizaçêo |
 |---------|-----------|-------------|
 | `PLANO-DESENVOLVIMENTO.md` | Plano completo detalhado | Raiz |
 | `STATUS-RAPIDO.md` | Status atual | Raiz |
-| `README.md` | Apresentação do curso | Raiz |
+| `README.md` | Apresentaçêo do curso | Raiz |
 | Módulo 2 expandido | Referência de qualidade | `modulos/modulo-02/conteudo/` |
 
 ---
 
-> Nota: Esta é a versão corrigida (UTF‑8). Caso alguma informação diverja, prevalece o conteúdo dos arquivos originais; use esta versão como referência limpa.
+> Nota: Esta é a versêo corrigida (UTF‑8). Caso alguma informaçêo diverja, prevalece o conteúdo dos arquivos originais; use esta versêo como referência limpa.
 

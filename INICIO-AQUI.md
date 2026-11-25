@@ -4,10 +4,10 @@
 
 ---
 
-## 📍 NAVEGAÇÃO RÁPIDA
+## 📍 NAVEGAÇêO RÁPIDA
 
 ### Se você está começando agora:
-1. 📖 Leia o **[README.md](README.md)** - Apresentação completa do curso
+1. 📖 Leia o **[README.md](README.md)** - Apresentaçêo completa do curso
 
 ### Se você está retomando o desenvolvimento:
 1. ⚡ Veja o **[STATUS-RAPIDO.md](STATUS-RAPIDO.md)** - Status atual em 30 segundos
@@ -47,7 +47,7 @@ FEA-IA/
 ├── 📋 PLANO-DESENVOLVIMENTO.md       ⭐ Plano completo
 ├── ⚡ STATUS-RAPIDO.md               ⭐ Status atual
 ├── 🚀 INICIO-AQUI.md                 ⭐ Este arquivo
-├── 📖 README.md                      ⭐ Apresentação
+├── 📖 README.md                      ⭐ Apresentaçêo
 │
 ├── 📂 docs/                          (Arquivos originais)
 │   ├── Engenharia de Agentes de IA 2.0.md
@@ -64,7 +64,7 @@ FEA-IA/
 │   ├── modulo-03/ a modulo-08/       ⏳ PENDENTE
 │
 ├── 📂 landing-page/                  (Site do curso)
-├── 📂 certificados/                  (Sistema de certificação)
+├── 📂 certificados/                  (Sistema de certificaçêo)
 └── 📂 imagens-conceituais/           (Diagramas e ilustrações)
 ```
 
@@ -83,7 +83,7 @@ FEA-IA/
 
 ## 🔄 WORKFLOW RECOMENDADO
 
-### Quando iniciar uma sessão de trabalho:
+### Quando iniciar uma sessêo de trabalho:
 
 1. **Abra:** `STATUS-RAPIDO.md`
    - Veja o que foi feito
@@ -94,8 +94,8 @@ FEA-IA/
    - Referências e recursos
 
 3. **Use como referência:** `modulos/modulo-02/`
-   - Padrão de qualidade
-   - Estrutura e formatação
+   - Padrêo de qualidade
+   - Estrutura e formataçêo
 
 4. **Ao finalizar:**
    - Atualize `STATUS-RAPIDO.md`
@@ -106,7 +106,7 @@ FEA-IA/
 
 ## 💾 SALVAR O PROGRESSO (GIT)
 
-### Se o projeto ainda não é um repositório Git:
+### Se o projeto ainda nêo é um repositório Git:
 
 ```bash
 git init
@@ -140,11 +140,11 @@ git push --tags
 
 | Preciso de... | Vá para... |
 |---------------|-----------|
-| **Visão geral do projeto** | `README.md` |
+| **Visêo geral do projeto** | `README.md` |
 | **Status atual rápido** | `STATUS-RAPIDO.md` |
 | **Plano completo detalhado** | `PLANO-DESENVOLVIMENTO.md` |
 | **Exemplo de módulo pronto** | `modulos/modulo-02/conteudo/` |
-| **Cronograma** | `PLANO-DESENVOLVIMENTO.md` seção "Cronograma Sugerido" |
+| **Cronograma** | `PLANO-DESENVOLVIMENTO.md` seçêo "Cronograma Sugerido" |
 | **Próxima tarefa** | `STATUS-RAPIDO.md` ou `PLANO-DESENVOLVIMENTO.md` final |
 
 ---

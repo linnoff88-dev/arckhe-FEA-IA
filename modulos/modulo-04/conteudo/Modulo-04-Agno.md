@@ -1,25 +1,25 @@
 # Módulo 4: Agentes Autônomos com Agno
 
-**Duração:** 5 horas | **Nível:** Intermediário
+**Duraçêo:** 5 horas | **Nível:** Intermediário
 
-> **Frase-guia:** "Simplicidade é a sofisticação máxima." - Leonardo da Vinci
+> **Frase-guia:** "Simplicidade é a sofisticaçêo máxima." - Leonardo da Vinci
 
 ---
 
 ![Capa do Módulo 4](../../../imagens-conceituais/modulo4_agno_agents.png)
 
-## Ato 2: A Construção (Perspectiva Alternativa)
+## Ato 2: A Construçêo (Perspectiva Alternativa)
 
-> "Você dominou a complexidade da orquestração com LangChain. Agora, vamos explorar a elegância da simplicidade. Agno nos convida a pensar de forma diferente sobre a construção de agentes, focando em um design minimalista e em um fluxo de trabalho intuitivo. É a prova de que o poder não precisa vir da complexidade."
+> "Você dominou a complexidade da orquestraçêo com LangChain. Agora, vamos explorar a elegância da simplicidade. Agno nos convida a pensar de forma diferente sobre a construçêo de agentes, focando em um design minimalista e em um fluxo de trabalho intuitivo. É a prova de que o poder nêo precisa vir da complexidade."
 
-Depois de mergulhar na vastidão de opções do LangChain, **Agno surge como um contraponto refrescante**. Criado com a filosofia de ser "**painfully simple**" (dolorosamente simples), este framework open-source foca em fazer uma coisa e fazê-la excepcionalmente bem: **criar agentes de IA autônomos**.
+Depois de mergulhar na vastidêo de opções do LangChain, **Agno surge como um contraponto refrescante**. Criado com a filosofia de ser "**painfully simple**" (dolorosamente simples), este framework open-source foca em fazer uma coisa e fazê-la excepcionalmente bem: **criar agentes de IA autônomos**.
 
 Neste módulo, vamos aprender:
 - A filosofia e princípios de design do Agno
 - Como criar agentes com código minimalista
 - Padrões avançados (RAG, Memory, Multi-Agent)
 - Quando escolher Agno vs LangChain
-- Best practices para produção
+- Best practices para produçêo
 
 ---
 
@@ -33,7 +33,7 @@ Após trabalhar com LangChain, você pode ter experimentado:
 - 🤯 **Curva de aprendizado íngreme:** Dezenas de classes e abstrações
 - 🍝 **"Spaghetti code":** Chains aninhadas difíceis de debugar
 - 🐛 **Debugging complexo:** Rastrear erros através de múltiplas camadas
-- 📚 **Documentação fragmentada:** Muitas opções, pouca clareza
+- 📚 **Documentaçêo fragmentada:** Muitas opções, pouca clareza
 - ⏰ **Time to hello world:** Horas para entender o básico
 
 **Exemplo de complexidade LangChain:**
@@ -52,7 +52,7 @@ memory = ConversationBufferMemory(
 
 llm = ChatOpenAI(temperature=0)
 
-tools = [Tool(...), Tool(...)]  # Configuração verbose
+tools = [Tool(...), Tool(...)]  # Configuraçêo verbose
 
 agent = initialize_agent(
     tools=tools,
@@ -67,7 +67,7 @@ agent = initialize_agent(
 agent.run("Pergunta")
 ```
 
-### A Solução Agno
+### A Soluçêo Agno
 
 Agno foi criado para resolver exatamente esses pontos de dor:
 
@@ -77,7 +77,7 @@ from agno import Agent
 
 @tool
 def my_tool(input: str) -> str:
-    """Descrição da ferramenta"""
+    """Descriçêo da ferramenta"""
     return result
 
 agent = Agent(tools=[my_tool])
@@ -91,7 +91,7 @@ agent.run("Pergunta")  # Pronto!
 #### 1. Simplicidade Extrema
 
 ```
-PRINCÍPIO: Se você precisa consultar a documentação
+PRINCÍPIO: Se você precisa consultar a documentaçêo
 para fazer algo básico, o design falhou.
 ```
 
@@ -103,7 +103,7 @@ para fazer algo básico, o design falhou.
 
 **Exemplo:**
 ```python
-# LangChain: Configuração de memoria
+# LangChain: Configuraçêo de memoria
 from langchain.memory import ConversationBufferMemory
 memory = ConversationBufferMemory(
     memory_key="chat_history",
@@ -122,7 +122,7 @@ PRINCÍPIO: Agno faz UMA coisa excepcional bem:
 Agentes autônomos com ferramentas.
 ```
 
-**Não tenta ser:**
+**Nêo tenta ser:**
 - ❌ Framework genérico de LLM
 - ❌ Processador de documentos
 - ❌ Pipeline de dados
@@ -147,13 +147,13 @@ está pensando em cada etapa.
 [Agent] Action: search_web
 [Agent] Action Input: "Python programming language"
 [Agent] Observation: Python is a high-level...
-[Agent] Thinking: Agora tenho a informação
+[Agent] Thinking: Agora tenho a informaçêo
 [Agent] Final Answer: Python is...
 ```
 
 Sem mistérios. Sem caixas-pretas.
 
-### Comparação Direta: Agno vs LangChain
+### Comparaçêo Direta: Agno vs LangChain
 
 | Aspecto | LangChain | Agno |
 |---------|-----------|------|
@@ -162,7 +162,7 @@ Sem mistérios. Sem caixas-pretas.
 | **Linhas de Código** | Muitas (~50-100 para agente) | Poucas (~10-20) |
 | **Debugging** | Complexo, múltiplas camadas | Simples, linear |
 | **Flexibilidade** | Muito alta | Moderada |
-| **Casos de Uso** | Qualquer aplicação LLM | Principalmente agentes |
+| **Casos de Uso** | Qualquer aplicaçêo LLM | Principalmente agentes |
 | **Integrações** | 100+ | Essenciais |
 | **Performance** | Boa | Excelente (menos overhead) |
 | **Manutenibilidade** | Desafiadora | Fácil |
@@ -172,29 +172,29 @@ Sem mistérios. Sem caixas-pretas.
 **Use LangChain quando:**
 - Precisa de integrações com tudo
 - Projeto complexo de processamento de dados
-- Pipelines avançados de transformação
+- Pipelines avançados de transformaçêo
 - Time grande com tempo para aprender
 
 **Use Agno quando:**
 - Foco principal é agentes autônomos
 - Protot ipagem rápida
-- Clareza e manutenibilidade são prioridades
+- Clareza e manutenibilidade sêo prioridades
 - Time pequeno ou solo developer
 - Deadline apertado
 
 **Use ambos quando:**
 - Sistema híbrido (RAG com LangChain + Agentes com Agno)
-- Migração gradual
+- Migraçêo gradual
 - Diferentes partes do sistema têm necessidades diferentes
 
 ---
 
 ## Capítulo 4.2: Setup e Primeiros Passos
 
-### Instalação
+### Instalaçêo
 
 ```bash
-# Instalação básica
+# Instalaçêo básica
 pip install agno
 
 # Com OpenAI
@@ -207,22 +207,22 @@ pip install "agno[anthropic]"
 pip install "agno[all]"
 ```
 
-### Configuração de API Keys
+### Configuraçêo de API Keys
 
 ```python
 import os
 
-# Opção 1: Variável de ambiente
+# Opçêo 1: Variável de ambiente
 os.environ["OPENAI_API_KEY"] = "sk-..."
 
-# Opção 2: .env file (recomendado)
+# Opçêo 2: .env file (recomendado)
 # Criar arquivo .env:
 # OPENAI_API_KEY=sk-...
 
 from dotenv import load_dotenv
 load_dotenv()
 
-# Opção 3: Diretamente no código (não recomendado para produção)
+# Opçêo 3: Diretamente no código (nêo recomendado para produçêo)
 from agno import Agent
 agent = Agent(api_key="sk-...")
 ```
@@ -240,7 +240,7 @@ def get_weather(city: str) -> str:
     Args:
         city: Nome da cidade
     """
-    # Simulação (na prática, chamar API de clima)
+    # Simulaçêo (na prática, chamar API de clima)
     return f"O clima em {city} está ensolarado, 25°C"
 
 # Criar agente
@@ -251,38 +251,38 @@ agent = Agent(
 )
 
 # Executar
-result = agent.run("Como está o tempo em São Paulo?")
+result = agent.run("Como está o tempo em Sêo Paulo?")
 print(result)
 ```
 
 **Saída:**
 ```
-[Agent] Thinking: Preciso verificar o clima em São Paulo
+[Agent] Thinking: Preciso verificar o clima em Sêo Paulo
 [Agent] Action: get_weather
-[Agent] Action Input: São Paulo
-[Agent] Observation: O clima em São Paulo está ensolarado, 25°C
-[Agent] Thinking: Tenho a informação necessária
-[Agent] Final Answer: O clima em São Paulo está ensolarado com 25°C.
+[Agent] Action Input: Sêo Paulo
+[Agent] Observation: O clima em Sêo Paulo está ensolarado, 25°C
+[Agent] Thinking: Tenho a informaçêo necessária
+[Agent] Final Answer: O clima em Sêo Paulo está ensolarado com 25°C.
 ```
 
 ### Anatomia de um Tool
 
 ```python
 @tool  # Decorator obrigatório
-def nome_da_funcao(parametro: tipo) -> tipo:  # Type hints são importantes!
+def nome_da_funcao(parametro: tipo) -> tipo:  # Type hints sêo importantes!
     """
-    Descrição clara e concisa do que a ferramenta faz.
+    Descriçêo clara e concisa do que a ferramenta faz.
 
-    O LLM usa esta descrição para decidir quando usar a tool.
+    O LLM usa esta descriçêo para decidir quando usar a tool.
     Seja específico e objetivo.
 
     Args:
-        parametro: Descrição do parâmetro
+        parametro: Descriçêo do parâmetro
 
     Returns:
-        Descrição do retorno
+        Descriçêo do retorno
     """
-    # Implementação
+    # Implementaçêo
     return resultado
 ```
 
@@ -308,7 +308,7 @@ def calculator(expression: str) -> str:
     Calcula expressões matemáticas.
 
     Args:
-        expression: Expressão matemática (ex: "2 + 2", "10 * 5")
+        expression: Expressêo matemática (ex: "2 + 2", "10 * 5")
     """
     try:
         result = eval(expression)
@@ -328,10 +328,10 @@ def search_web(query: str) -> str:
     Args:
         query: Termo de busca
     """
-    # Em produção, usar API real (SerpAPI, Google, etc.)
+    # Em produçêo, usar API real (SerpAPI, Google, etc.)
     mock_results = {
-        "python": "Python é uma linguagem de programação de alto nível...",
-        "ia": "Inteligência Artificial é o campo da ciência da computação..."
+        "python": "Python é uma linguagem de programaçêo de alto nível...",
+        "ia": "Inteligência Artificial é o campo da ciência da computaçêo..."
     }
 
     for keyword, content in mock_results.items():
@@ -381,7 +381,7 @@ def add_task(task: str) -> str:
     Adiciona uma nova tarefa à lista.
 
     Args:
-        task: Descrição da tarefa a adicionar
+        task: Descriçêo da tarefa a adicionar
     """
     TASKS_DB.append(task)
     return f"✓ Tarefa adicionada: '{task}'. Total: {len(TASKS_DB)} tarefas."
@@ -409,7 +409,7 @@ def remove_task(task_number: int) -> str:
         task = TASKS_DB.pop(task_number - 1)
         return f"✓ Tarefa removida: '{task}'"
     except IndexError:
-        return f"Erro: Tarefa #{task_number} não existe."
+        return f"Erro: Tarefa #{task_number} nêo existe."
 ```
 
 #### 5. Tool com Arquivos
@@ -446,7 +446,7 @@ def read_from_file(filename: str) -> str:
             content = f.read()
         return content
     except FileNotFoundError:
-        return f"Arquivo '{filename}' não encontrado."
+        return f"Arquivo '{filename}' nêo encontrado."
     except Exception as e:
         return f"Erro ao ler: {str(e)}"
 ```
@@ -502,8 +502,8 @@ agent = Agent(
 )
 
 # Conversa com contexto
-agent.run("Meu nome é João")
-agent.run("Qual é meu nome?")  # Lembra: "Seu nome é João"
+agent.run("Meu nome é Joêo")
+agent.run("Qual é meu nome?")  # Lembra: "Seu nome é Joêo"
 agent.run("Adicione 'estudar Python' nas minhas tarefas")
 agent.run("O que eu pedi para adicionar?")  # Lembra a tarefa
 ```
@@ -590,10 +590,10 @@ model = SentenceTransformer('all-MiniLM-L6-v2')
 
 # Documentos de exemplo
 documents = [
-    "Python é uma linguagem de programação de alto nível.",
+    "Python é uma linguagem de programaçêo de alto nível.",
     "JavaScript é usado para desenvolvimento web.",
     "SQL é usado para consultar bancos de dados.",
-    "Docker facilita a containerização de aplicações."
+    "Docker facilita a containerizaçêo de aplicações."
 ]
 
 # Criar embeddings
@@ -640,8 +640,8 @@ print(response)
 [Agent] Thinking: Preciso buscar informações sobre Docker
 [Agent] Action: search_knowledge_base
 [Agent] Action Input: Docker
-[Agent] Observation: Docker facilita a containerização de aplicações.
-[Agent] Final Answer: Docker é uma ferramenta que facilita a containerização de aplicações, permitindo que você empacote software em containers padronizados.
+[Agent] Observation: Docker facilita a containerizaçêo de aplicações.
+[Agent] Final Answer: Docker é uma ferramenta que facilita a containerizaçêo de aplicações, permitindo que você empacote software em containers padronizados.
 ```
 
 ### Abordagem 2: RAG com Documentos Reais
@@ -667,7 +667,7 @@ chunks = text_splitter.split_documents(documents)
 embeddings = OpenAIEmbeddings()
 vectorstore = FAISS.from_documents(chunks, embeddings)
 
-# Salvar para reutilização
+# Salvar para reutilizaçêo
 vectorstore.save_local("vectorstore_agno")
 
 # Agora criar a tool
@@ -717,13 +717,13 @@ O poder real vem de combinar RAG com outras capacidades:
 @tool
 def search_support_tickets(query: str) -> str:
     """Busca tickets de suporte similares"""
-    # Implementação...
+    # Implementaçêo...
     pass
 
 @tool
 def create_support_ticket(issue: str) -> str:
     """Cria novo ticket de suporte"""
-    # Implementação...
+    # Implementaçêo...
     pass
 
 support_agent = Agent(
@@ -731,11 +731,11 @@ support_agent = Agent(
     tools=[
         query_product_manual,  # RAG do manual
         search_support_tickets,  # Busca histórico
-        create_support_ticket  # Ação
+        create_support_ticket  # Açêo
     ],
     instructions="""
     1. Primeiro, busque no manual do produto
-    2. Se não encontrar, busque tickets similares
+    2. Se nêo encontrar, busque tickets similares
     3. Se ainda precisar, crie um novo ticket
     4. Sempre seja prestativo e preciso
     """
@@ -746,7 +746,7 @@ support_agent = Agent(
 
 ## Capítulo 4.6: Sistemas Multi-Agentes
 
-### Padrão 1: Agente como Tool
+### Padrêo 1: Agente como Tool
 
 A abordagem mais simples: um agente pode usar outro agente como tool.
 
@@ -796,7 +796,7 @@ manager = Agent(
     tools=[research, write_article],
     model="gpt-4",
     instructions="""
-    Você coordena a criação de conteúdo:
+    Você coordena a criaçêo de conteúdo:
     1. Use 'research' para coletar informações
     2. Use 'write_article' para criar o artigo
     3. Sempre siga essa ordem
@@ -807,7 +807,7 @@ manager = Agent(
 result = manager.run("Crie um artigo sobre Inteligência Artificial")
 ```
 
-### Padrão 2: Pipeline de Agentes
+### Padrêo 2: Pipeline de Agentes
 
 ```python
 class AgentPipeline:
@@ -852,7 +852,7 @@ pipeline = AgentPipeline([
 final_result = pipeline.run("Pesquise sobre IA e calcule quantos artigos foram publicados em 2023")
 ```
 
-### Padrão 3: Collaborative Agents
+### Padrêo 3: Collaborative Agents
 
 ```python
 class CollaborativeAgents:
@@ -919,7 +919,7 @@ print(final_analysis)
 
 ---
 
-## Capítulo 4.7: Configurações e Customização
+## Capítulo 4.7: Configurações e Customizaçêo
 
 ### Configurando o Agente
 
@@ -929,16 +929,16 @@ from agno import Agent
 agent = Agent(
     # Identidade
     name="Assistente Executivo",
-    description="Especialista em produtividade e gestão",
+    description="Especialista em produtividade e gestêo",
 
     # Comportamento
     instructions="""
     Você é um assistente executivo altamente organizado.
 
     Suas prioridades:
-    1. Precisão sobre velocidade
+    1. Precisêo sobre velocidade
     2. Proatividade
-    3. Comunicação clara e profissional
+    3. Comunicaçêo clara e profissional
 
     Sempre:
     - Confirme entendimento antes de agir
@@ -974,7 +974,7 @@ agent = Agent(
     instructions="""
     # IDENTIDADE
     Você é Alex, um assistente de pesquisa acadêmica especializado
-    em Ciência da Computação e Inteligência Artificial.
+    em Ciência da Computaçêo e Inteligência Artificial.
 
     # CAPACIDADES
     - Buscar papers científicos
@@ -991,7 +991,7 @@ agent = Agent(
 
     # RESTRIÇÕES
     - NUNCA invente citações ou referências
-    - SEMPRE indique quando informação é incerta
+    - SEMPRE indique quando informaçêo é incerta
     - Admita limitações quando apropriado
     - Priorize qualidade sobre quantidade
 
@@ -1212,9 +1212,9 @@ def test_researcher_uses_tools(researcher, mocker):
 
 def test_researcher_memory(researcher):
     """Testa memória do agente"""
-    researcher.run("Meu nome é João")
+    researcher.run("Meu nome é Joêo")
     result = researcher.run("Qual é meu nome?")
-    assert "João" in result
+    assert "Joêo" in result
 ```
 
 ---
@@ -1225,7 +1225,7 @@ def test_researcher_memory(researcher):
 
 **Filosofia Agno:**
 - Simplicidade > Complexidade
-- Foco > Generalização
+- Foco > Generalizaçêo
 - Transparência > Caixa-preta
 
 **Componentes:**
@@ -1295,7 +1295,7 @@ def add_task(task: str, priority: str = "medium") -> str:
     Adiciona uma nova tarefa.
 
     Args:
-        task: Descrição da tarefa
+        task: Descriçêo da tarefa
         priority: Prioridade (low, medium, high)
     """
     data = load_data()
@@ -1353,7 +1353,7 @@ def complete_task(task_id: int) -> str:
             task["completed_at"] = datetime.now().isoformat()
             save_data(data)
             return f"✓ Tarefa #{task_id} concluída: '{task['description']}'"
-    return f"Tarefa #{task_id} não encontrada."
+    return f"Tarefa #{task_id} nêo encontrada."
 
 @tool
 def delete_task(task_id: int) -> str:
@@ -1370,7 +1370,7 @@ def delete_task(task_id: int) -> str:
     if len(data["tasks"]) < original_count:
         save_data(data)
         return f"✓ Tarefa #{task_id} removida."
-    return f"Tarefa #{task_id} não encontrada."
+    return f"Tarefa #{task_id} nêo encontrada."
 
 # ============== NOTES TOOLS ==============
 
@@ -1422,7 +1422,7 @@ def read_note(note_id: int) -> str:
     for note in data["notes"]:
         if note["id"] == note_id:
             return f"**{note['title']}**\n\n{note['content']}"
-    return f"Nota #{note_id} não encontrada."
+    return f"Nota #{note_id} nêo encontrada."
 
 # ============== REMINDER TOOLS ==============
 
@@ -1470,7 +1470,7 @@ def calculator(expression: str) -> str:
     Calcula expressões matemáticas.
 
     Args:
-        expression: Expressão matemática
+        expression: Expressêo matemática
     """
     try:
         result = eval(expression)
@@ -1488,7 +1488,7 @@ def convert_currency(amount: float, from_currency: str, to_currency: str) -> str
         from_currency: Moeda de origem (USD, EUR, BRL)
         to_currency: Moeda de destino
     """
-    # Taxas simplificadas (usar API real em produção)
+    # Taxas simplificadas (usar API real em produçêo)
     rates = {
         ("USD", "BRL"): 5.0,
         ("USD", "EUR"): 0.9,
@@ -1503,7 +1503,7 @@ def convert_currency(amount: float, from_currency: str, to_currency: str) -> str
         result = amount * rates[key]
         return f"{amount} {from_currency} = {result:.2f} {to_currency}"
 
-    return f"Conversão {from_currency} → {to_currency} não disponível."
+    return f"Conversêo {from_currency} → {to_currency} nêo disponível."
 
 # ============== CREATE AGENT ==============
 
@@ -1522,7 +1522,7 @@ assistant = Agent(
     - Converter moedas
 
     COMPORTAMENTO:
-    - Seja proativo: sugira organização e priorização
+    - Seja proativo: sugira organizaçêo e priorizaçêo
     - Confirme ações antes de executar (ex: "Vou adicionar a tarefa X, ok?")
     - Forneça resumos quando listar itens
     - Use emojis para tornar respostas mais amigáveis
@@ -1531,7 +1531,7 @@ assistant = Agent(
     - "Adicione 'comprar leite' às tarefas" → use add_task
     - "O que tenho que fazer hoje?" → use list_tasks(filter_by="pending")
     - "Marque a tarefa 3 como feita" → use complete_task(3)
-    - "Lembre-me de ligar para João amanhã" → use set_reminder
+    - "Lembre-me de ligar para Joêo amanhê" → use set_reminder
     """,
 
     tools=[
@@ -1640,7 +1640,7 @@ Você: Crie uma nota chamada "Ideias" com o conteúdo "Criar app de produtividad
 
 ---
 
-Você: Lembre-me de fazer exercícios amanhã às 7h
+Você: Lembre-me de fazer exercícios amanhê às 7h
 
 🤖 Assistente: ✓ Lembrete definido: 'fazer exercícios' para tomorrow 7am
 ```
@@ -1680,7 +1680,7 @@ Você: Lembre-me de fazer exercícios amanhã às 7h
 
 ---
 
-**No Módulo 5**, vamos explorar **CrewAI**, o framework especializado em orquestrar **equipes de agentes** que colaboram como uma tripulação profissional, cada um com papel e expertise específicos, trabalhando juntos para resolver problemas complexos de forma coordenada.
+**No Módulo 5**, vamos explorar **CrewAI**, o framework especializado em orquestrar **equipes de agentes** que colaboram como uma tripulaçêo profissional, cada um com papel e expertise específicos, trabalhando juntos para resolver problemas complexos de forma coordenada.
 
 ---
 

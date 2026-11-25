@@ -1,4 +1,4 @@
-# 🤝 Guia de Contribuição
+# 🤝 Guia de Contribuiçêo
 
 Obrigado por considerar contribuir com o projeto **Engenharia de Agentes de IA 2.0**! Este é um projeto da comunidade, para a comunidade, e toda ajuda é muito bem-vinda.
 
@@ -7,7 +7,7 @@ Obrigado por considerar contribuir com o projeto **Engenharia de Agentes de IA 2
 ## 📋 Índice
 
 - [Como Posso Contribuir?](#como-posso-contribuir)
-- [Processo de Contribuição](#processo-de-contribuição)
+- [Processo de Contribuiçêo](#processo-de-contribuiçêo)
 - [Padrões e Boas Práticas](#padrões-e-boas-práticas)
 - [Reportando Bugs](#reportando-bugs)
 - [Sugerindo Melhorias](#sugerindo-melhorias)
@@ -19,7 +19,7 @@ Obrigado por considerar contribuir com o projeto **Engenharia de Agentes de IA 2
 
 Existem diversas formas de contribuir, independentemente do seu nível técnico:
 
-### 1. 📝 Melhorar a Documentação
+### 1. 📝 Melhorar a Documentaçêo
 
 - Corrigir erros de ortografia ou gramática
 - Adicionar exemplos práticos
@@ -31,22 +31,22 @@ Existem diversas formas de contribuir, independentemente do seu nível técnico:
 
 - Adicionar novos exemplos de código
 - Melhorar projetos práticos existentes
-- Criar novos projetos de demonstração
+- Criar novos projetos de demonstraçêo
 - Otimizar código existente
 - Adicionar testes
 
 ### 3. 🐛 Reportar Problemas
 
 - Bugs no código
-- Erros na documentação
+- Erros na documentaçêo
 - Links quebrados
-- Problemas de formatação
+- Problemas de formataçêo
 
 ### 4. 💡 Sugerir Melhorias
 
 - Novos casos de uso
 - Ferramentas e bibliotecas relevantes
-- Tópicos não cobertos
+- Tópicos nêo cobertos
 - Melhorias de estrutura
 
 ### 5. ⭐ Promover o Projeto
@@ -58,7 +58,7 @@ Existem diversas formas de contribuir, independentemente do seu nível técnico:
 
 ---
 
-## 🔄 Processo de Contribuição
+## 🔄 Processo de Contribuiçêo
 
 ### 1. Fork do Repositório
 
@@ -84,17 +84,17 @@ git checkout -b fix/corrige-typo-modulo-3
 # Para novos recursos
 git checkout -b feat/adiciona-exemplo-langchain
 
-# Para melhorias na documentação
+# Para melhorias na documentaçêo
 git checkout -b docs/melhora-readme-modulo-5
 ```
 
-**Convenção de nomes:**
+**Convençêo de nomes:**
 - `feat/` - Novos recursos
 - `fix/` - Correções
-- `docs/` - Documentação
-- `refactor/` - Refatoração de código
-- `test/` - Adição de testes
-- `style/` - Formatação
+- `docs/` - Documentaçêo
+- `refactor/` - Refatoraçêo de código
+- `test/` - Adiçêo de testes
+- `style/` - Formataçêo
 
 ### 3. Faça suas Mudanças
 
@@ -110,24 +110,24 @@ git add .
 git commit -m "docs: adiciona exemplo de RAG no Módulo 3"
 ```
 
-**Padrão de commits:**
+**Padrêo de commits:**
 
 ```
-tipo(escopo): descrição curta
+tipo(escopo): descriçêo curta
 
-Descrição mais detalhada se necessário.
+Descriçêo mais detalhada se necessário.
 
 Resolves #123
 ```
 
 **Tipos:**
 - `feat`: Nova feature
-- `fix`: Correção de bug
-- `docs`: Documentação
-- `style`: Formatação
-- `refactor`: Refatoração de código
+- `fix`: Correçêo de bug
+- `docs`: Documentaçêo
+- `style`: Formataçêo
+- `refactor`: Refatoraçêo de código
 - `test`: Testes
-- `chore`: Manutenção
+- `chore`: Manutençêo
 
 ### 4. Push e Pull Request
 
@@ -139,7 +139,7 @@ git push origin sua-branch
 ```
 
 **No Pull Request, inclua:**
-- Descrição clara do que foi alterado
+- Descriçêo clara do que foi alterado
 - Por que a mudança é necessária
 - Screenshots se aplicável
 - Referência a issues relacionadas
@@ -148,16 +148,16 @@ git push origin sua-branch
 
 ## 📏 Padrões e Boas Práticas
 
-### Documentação (Markdown)
+### Documentaçêo (Markdown)
 
 #### Estrutura de Arquivos
 
 ```markdown
 # Título Principal (H1)
 
-## Seção (H2)
+## Seçêo (H2)
 
-### Subseção (H3)
+### Subseçêo (H3)
 
 Texto do conteúdo...
 
@@ -170,13 +170,13 @@ def exemplo():
 **Dica:** Sempre com espaço em branco antes do código para melhor legibilidade.
 ```
 
-#### Formatação
+#### Formataçêo
 
 - Use **negrito** para ênfase importante
 - Use *itálico* para ênfase leve
 - Use `código inline` para nomes de variáveis, funções, etc.
 - Use listas numeradas para passos sequenciais
-- Use listas com marcadores para itens não ordenados
+- Use listas com marcadores para itens nêo ordenados
 
 #### Links
 
@@ -207,20 +207,20 @@ def calculate_embedding(text: str, model: str = "text-embedding-3-small") -> lis
     Returns:
         Lista de floats representando o embedding
     """
-    # Implementação
+    # Implementaçêo
     pass
 
 
 # ❌ RUIM
 def calc_emb(t,m="text-embedding-3-small"):
-    # sem docstring, nomes não descritivos
+    # sem docstring, nomes nêo descritivos
     pass
 ```
 
 #### Comentários
 
 ```python
-# Comentários explicam O POR QUÊ, não o O QUÊ
+# Comentários explicam O POR QUÊ, nêo o O QUÊ
 
 # ✅ BOM
 # Usar temperature=0 para garantir respostas determinísticas
@@ -240,7 +240,7 @@ Todo exemplo de código deve ser **executável**:
 from agno import Agent
 import os
 
-# Configuração
+# Configuraçêo
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
 
 # Criar agente
@@ -265,9 +265,9 @@ response = agent.run("Olá!")
 Cada projeto prático deve incluir:
 
 1. **README.md** com:
-   - Descrição do projeto
+   - Descriçêo do projeto
    - Pré-requisitos
-   - Instalação
+   - Instalaçêo
    - Como executar
    - Estrutura de arquivos
    - Próximos passos
@@ -293,13 +293,13 @@ DATABASE_URL=sqlite:///app.db
 
 ## 🐛 Reportando Bugs
 
-Antes de reportar um bug, verifique se já não existe uma [issue aberta](https://github.com/linnoff88-dev/FEA-IA/issues) sobre o mesmo problema.
+Antes de reportar um bug, verifique se já nêo existe uma [issue aberta](https://github.com/linnoff88-dev/FEA-IA/issues) sobre o mesmo problema.
 
 ### Template de Bug Report
 
 ```markdown
-**Descrição do Bug**
-Descrição clara e concisa do bug.
+**Descriçêo do Bug**
+Descriçêo clara e concisa do bug.
 
 **Como Reproduzir**
 Passos para reproduzir o comportamento:
@@ -316,10 +316,10 @@ Se aplicável, adicione screenshots.
 **Ambiente:**
  - OS: [ex: Windows 11]
  - Python: [ex: 3.11]
- - Versão do projeto: [ex: commit abc123]
+ - Versêo do projeto: [ex: commit abc123]
 
 **Contexto Adicional**
-Qualquer outra informação relevante.
+Qualquer outra informaçêo relevante.
 ```
 
 ---
@@ -332,8 +332,8 @@ Qualquer outra informação relevante.
 **Problema Relacionado**
 Descreva o problema que esta feature resolveria.
 
-**Solução Proposta**
-Descrição clara da solução que você gostaria de ver.
+**Soluçêo Proposta**
+Descriçêo clara da soluçêo que você gostaria de ver.
 
 **Alternativas Consideradas**
 Outras soluções que você considerou.
@@ -344,7 +344,7 @@ Screenshots, mockups, links relevantes, etc.
 
 ---
 
-## 📐 Revisão de Pull Requests
+## 📐 Revisêo de Pull Requests
 
 Quando você submeter um PR:
 
@@ -353,13 +353,13 @@ Quando você submeter um PR:
 3. **Mantenha o PR focado** - Um PR = Uma mudança/feature
 4. **Atualize se necessário** - Pode ser pedido mudanças
 
-### O que os revisores vão verificar:
+### O que os revisores vêo verificar:
 
 - ✅ O código funciona?
 - ✅ Segue os padrões do projeto?
-- ✅ A documentação foi atualizada?
-- ✅ Os exemplos são claros?
-- ✅ Não quebra funcionalidades existentes?
+- ✅ A documentaçêo foi atualizada?
+- ✅ Os exemplos sêo claros?
+- ✅ Nêo quebra funcionalidades existentes?
 
 ---
 
@@ -371,7 +371,7 @@ Use emojis para melhorar a legibilidade:
 
 ```markdown
 ✅ Tarefa completa
-⚠️ Atenção
+⚠️ Atençêo
 📝 Nota importante
 💡 Dica
 🔥 Destaque
@@ -385,7 +385,7 @@ Use blockquotes para destacar informações:
 ```markdown
 > **💡 Dica:** Use temperature=0 para respostas mais consistentes.
 
-> **⚠️ Atenção:** Esta operação pode ser custosa.
+> **⚠️ Atençêo:** Esta operaçêo pode ser custosa.
 
 > **✅ Melhor Prática:** Sempre valide as entradas do usuário.
 ```
@@ -424,7 +424,7 @@ Todo contribuidor é adicionado automaticamente à nossa [lista de contribuidore
 
 <div align="center">
 
-### 🌟 Não esqueça de dar uma estrela no projeto!
+### 🌟 Nêo esqueça de dar uma estrela no projeto!
 
 [![Star History Chart](https://api.star-history.com/svg?repos=linnoff88-dev/FEA-IA&type=Date)](https://star-history.com/#linnoff88-dev/FEA-IA&Date)
 

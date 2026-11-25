@@ -16,7 +16,7 @@
     <priority>0.9</priority>
   </url>
 
-  <!-- Documentação Principal -->
+  <!-- Documentaçêo Principal -->
   <url>
     <loc>https://github.com/linnoff88-dev/FEA-IA#readme</loc>
     <lastmod>2025-10-21</lastmod>
@@ -24,7 +24,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Guias e Documentação -->
+  <!-- Guias e Documentaçêo -->
   <url>
     <loc>https://github.com/linnoff88-dev/FEA-IA/blob/main/CONTRIBUTING.md</loc>
     <lastmod>2025-10-21</lastmod>

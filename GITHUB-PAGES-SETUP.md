@@ -1,4 +1,4 @@
-# 🚀 Configuração do GitHub Pages
+# 🚀 Configuraçêo do GitHub Pages
 
 Este guia explica como configurar o GitHub Pages para hospedar a landing page do curso gratuitamente.
 
@@ -38,7 +38,7 @@ Acesse: `https://linnoff88-dev.github.io/
 
 ---
 
-## 🔧 Configuração Avançada (Opcional)
+## 🔧 Configuraçêo Avançada (Opcional)
 
 ### Usando Domínio Personalizado
 
@@ -66,9 +66,9 @@ www  →  linnoff88-dev.github.io
 1. Em **Settings** > **Pages**
 2. Em **Custom domain**, digite seu domínio
 3. Clique em **Save**
-4. Marque a opção **Enforce HTTPS**
+4. Marque a opçêo **Enforce HTTPS**
 
-Aguarde a verificação do DNS (pode levar até 24h).
+Aguarde a verificaçêo do DNS (pode levar até 24h).
 
 ---
 
@@ -97,7 +97,7 @@ FEA-IA/
 Edite `landing-page/index.html` e atualize:
 
 ```html
-<!-- Exemplo de atualização -->
+<!-- Exemplo de atualizaçêo -->
 <a href="https://github.com/linnoff88-dev/FEA-IA">
 ```
 
@@ -146,18 +146,18 @@ git push origin main
 
 ## 🐛 Troubleshooting
 
-### Problema: Site não carrega
+### Problema: Site nêo carrega
 
-**Solução:**
+**Soluçêo:**
 - Verifique se a pasta está configurada corretamente em Settings > Pages
 - Aguarde alguns minutos após o primeiro deploy
 - Limpe o cache do navegador (Ctrl+Shift+R)
 
-### Problema: CSS não está sendo aplicado
+### Problema: CSS nêo está sendo aplicado
 
-**Solução:**
+**Soluçêo:**
 - Verifique os caminhos nos links CSS no `index.html`
-- Use caminhos relativos: `css/styles.css` (não `/css/styles.css`)
+- Use caminhos relativos: `css/styles.css` (nêo `/css/styles.css`)
 
 ```html
 <!-- ✅ CORRETO -->
@@ -169,13 +169,13 @@ git push origin main
 
 ### Problema: 404 Not Found
 
-**Solução:**
+**Soluçêo:**
 - Certifique-se que `index.html` existe em `landing-page/`
 - Verifique se o branch correto está selecionado em Settings > Pages
 
 ### Problema: Deploy falhou
 
-**Solução:**
+**Soluçêo:**
 1. Vá em **Actions** no repositório
 2. Veja o log de erro
 3. Corrija o problema e faça novo commit
@@ -190,7 +190,7 @@ git push origin main
 - [ ] JavaScript está funcionando
 - [ ] Responsivo (teste em mobile)
 - [ ] Sem erros no console do navegador
-- [ ] Links para GitHub estão corretos
+- [ ] Links para GitHub estêo corretos
 - [ ] Meta tags configuradas
 
 ---
@@ -203,13 +203,13 @@ Após configurar GitHub Pages:
 2. **Adicione ao README** do projeto
 3. **Configure analytics** para monitorar visitantes
 4. **Otimize SEO** com meta tags apropriadas
-5. **Adicione sitemap.xml** para melhorar indexação
+5. **Adicione sitemap.xml** para melhorar indexaçêo
 
 ---
 
 ## 📚 Recursos Adicionais
 
-- [Documentação GitHub Pages](https://docs.github.com/pt/pages)
+- [Documentaçêo GitHub Pages](https://docs.github.com/pt/pages)
 - [Configurar domínio personalizado](https://docs.github.com/pt/pages/configuring-a-custom-domain-for-your-github-pages-site)
 - [Jekyll (gerador estático)](https://jekyllrb.com/)
 - [Verificar status do deploy](https://github.com/linnoff88-dev/FEA-IA/deployments)
@@ -220,7 +220,7 @@ Após configurar GitHub Pages:
 
 ### Cache Busting
 
-Se você atualizar CSS/JS e usuários ainda veem versão antiga, adicione versão:
+Se você atualizar CSS/JS e usuários ainda veem versêo antiga, adicione versêo:
 
 ```html
 <link rel="stylesheet" href="css/styles.css?v=1.1">

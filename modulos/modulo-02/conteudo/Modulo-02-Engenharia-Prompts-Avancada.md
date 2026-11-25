@@ -1,16 +1,16 @@
 # Módulo 2: Engenharia de Prompts Avançada
 
-**Duração:** 6 horas | **Nível:** Iniciante-Intermediário
+**Duraçêo:** 6 horas | **Nível:** Iniciante-Intermediário
 
-> **Frase-guia:** "Palavras são código. Aprenda a programar com linguagem natural."
+> **Frase-guia:** "Palavras sêo código. Aprenda a programar com linguagem natural."
 
 ---
 
 ![Capa do Módulo 2](../../../imagens-conceituais/modulo2_prompt_engineering.png)
 
-## Ato 1: O Despertar (Continuação)
+## Ato 1: O Despertar (Continuaçêo)
 
-> "Você entendeu a máquina. Agora, você vai aprender a sua linguagem. Não a linguagem de programação, mas a linguagem do pensamento. A engenharia de prompts é a arte de esculpir a intenção em palavras, guiando a vasta inteligência da IA para um propósito específico."
+> "Você entendeu a máquina. Agora, você vai aprender a sua linguagem. Nêo a linguagem de programaçêo, mas a linguagem do pensamento. A engenharia de prompts é a arte de esculpir a intençêo em palavras, guiando a vasta inteligência da IA para um propósito específico."
 
 Se o Módulo 1 foi sobre entender o motor, este módulo é sobre aprender a dirigir. Um LLM, por mais poderoso que seja, é um instrumento. A qualidade da música que ele produz depende inteiramente da habilidade do maestro. Aqui, você se tornará esse maestro. Vamos transformar a maneira como você interage com a IA, passando de simples perguntas para instruções complexas e estratégicas que extraem o máximo potencial desses modelos.
 
@@ -18,20 +18,20 @@ Se o Módulo 1 foi sobre entender o motor, este módulo é sobre aprender a diri
 
 ## Capítulo 2.1: Fundamentos de Prompting
 
-### A Nova Arte da Comunicação
+### A Nova Arte da Comunicaçêo
 
 Engenharia de Prompts é mais do que simplesmente "fazer perguntas à IA". É uma disciplina emergente que combina:
 
 - **Psicologia Cognitiva:** Compreender como estruturar informações para melhor processamento
-- **Design de Interação:** Criar interfaces conversacionais eficazes
-- **Programação Declarativa:** Especificar "o que" você quer, não "como" fazer
-- **Retórica e Persuasão:** Usar linguagem estratégica para guiar o raciocínio
+- **Design de Interaçêo:** Criar interfaces conversacionais eficazes
+- **Programaçêo Declarativa:** Especificar "o que" você quer, nêo "como" fazer
+- **Retórica e Persuasêo:** Usar linguagem estratégica para guiar o raciocínio
 
-A diferença entre um prompt medíocre e um excelente pode significar a diferença entre uma resposta genérica e uma solução transformadora.
+A diferença entre um prompt medíocre e um excelente pode significar a diferença entre uma resposta genérica e uma soluçêo transformadora.
 
 ### A Anatomia de um Prompt Perfeito
 
-Um prompt não é apenas uma pergunta; é um conjunto de instruções, contexto e exemplos que guiam o modelo para a saída desejada. A clareza e a estrutura do seu prompt são os fatores mais importantes para o sucesso.
+Um prompt nêo é apenas uma pergunta; é um conjunto de instruções, contexto e exemplos que guiam o modelo para a saída desejada. A clareza e a estrutura do seu prompt sêo os fatores mais importantes para o sucesso.
 
 Um prompt eficaz geralmente contém **quatro componentes principais**:
 
@@ -40,7 +40,7 @@ Defina quem o LLM deve ser. A persona estabelece:
 - Tom de voz (formal, casual, técnico)
 - Nível de expertise
 - Perspectiva e valores
-- Estilo de comunicação
+- Estilo de comunicaçêo
 
 **Exemplos:**
 ```
@@ -51,7 +51,7 @@ Defina quem o LLM deve ser. A persona estabelece:
 
 #### 2. **Contexto (Context)**
 Forneça as informações de fundo necessárias para a tarefa. Inclua:
-- Situação atual ou problema
+- Situaçêo atual ou problema
 - Dados relevantes
 - Restrições e limitações
 - Público-alvo
@@ -65,19 +65,19 @@ queremos atingir millennials conscientes ambientalmente."
 ```
 
 #### 3. **Tarefa (Task)**
-Descreva clara e inequivocamente o que você quer que o modelo faça. Use verbos de ação específicos:
+Descreva clara e inequivocamente o que você quer que o modelo faça. Use verbos de açêo específicos:
 
 - **Análise:** "Analise", "Avalie", "Compare", "Identifique"
-- **Criação:** "Crie", "Desenvolva", "Gere", "Escreva"
-- **Transformação:** "Traduza", "Resuma", "Simplifique", "Reformule"
-- **Solução:** "Resolva", "Proponha", "Recomende", "Otimize"
+- **Criaçêo:** "Crie", "Desenvolva", "Gere", "Escreva"
+- **Transformaçêo:** "Traduza", "Resuma", "Simplifique", "Reformule"
+- **Soluçêo:** "Resolva", "Proponha", "Recomende", "Otimize"
 
 #### 4. **Formato (Format)**
 Especifique como a saída deve ser estruturada:
 
 ```
 "Retorne a resposta em formato JSON"
-"Crie uma tabela com 3 colunas: Problema, Causa, Solução"
+"Crie uma tabela com 3 colunas: Problema, Causa, Soluçêo"
 "Escreva em um tom amigável e profissional, máximo 200 palavras"
 "Liste 5 pontos principais usando bullet points"
 ```
@@ -91,13 +91,13 @@ em análise de comportamento do consumidor.
 
 **CONTEXTO:**
 Nossa loja online vendeu 10.000 unidades no último trimestre.
-- Taxa de conversão: 2.5%
+- Taxa de conversêo: 2.5%
 - Taxa de abandono de carrinho: 68%
 - Ticket médio: $45
 - Principal fonte de tráfego: Instagram Ads
 
 **TAREFA:**
-Analise esses dados e identifique os 3 principais problemas que estão
+Analise esses dados e identifique os 3 principais problemas que estêo
 limitando nosso crescimento. Para cada problema, sugira 2 ações concretas
 que possamos implementar.
 
@@ -105,8 +105,8 @@ que possamos implementar.
 Estruture sua resposta como:
 1. Problema identificado
    - Métrica afetada
-   - Ação 1: [descrição]
-   - Ação 2: [descrição]
+   - Açêo 1: [descriçêo]
+   - Açêo 2: [descriçêo]
 ```
 
 ### Zero-Shot vs. Few-Shot vs. Many-Shot Prompting
@@ -118,8 +118,8 @@ Você pede ao modelo para realizar uma tarefa **sem fornecer nenhum exemplo**.
 
 **Quando usar:**
 - Tarefas gerais e bem conhecidas
-- Quando você não tem exemplos disponíveis
-- Para exploração inicial de capacidades
+- Quando você nêo tem exemplos disponíveis
+- Para exploraçêo inicial de capacidades
 
 **Exemplo:**
 ```
@@ -130,7 +130,7 @@ Positivo ou Negativo?
 
 **Limitações:**
 - Pode falhar em tarefas de nicho
-- Interpretação pode variar
+- Interpretaçêo pode variar
 - Formato de saída imprevisível
 
 #### **Few-Shot Prompting**
@@ -159,9 +159,9 @@ Sentimento:
 ```
 
 **Vantagens:**
-- Precisão significativamente maior
+- Precisêo significativamente maior
 - Controle sobre formato de saída
-- Não requer fine-tuning do modelo
+- Nêo requer fine-tuning do modelo
 
 #### **Many-Shot Prompting**
 Com modelos de contexto longo (como Claude com 200K tokens), você pode fornecer **dezenas ou centenas** de exemplos.
@@ -172,19 +172,19 @@ Com modelos de contexto longo (como Claude com 200K tokens), você pode fornecer
 - Substituir fine-tuning sem retreinar o modelo
 
 **Casos de uso:**
-- Tradução de jargão técnico específico
-- Classificação de tickets de suporte
+- Traduçêo de jargêo técnico específico
+- Classificaçêo de tickets de suporte
 - Análise de contratos legais
 
-> **💡 INSIGHT:** O Few-Shot Prompting é uma das técnicas mais poderosas para melhorar a precisão e a confiabilidade de um LLM sem a necessidade de fine-tuning (re-treinamento), que é um processo muito mais caro e complexo. É como dar ao modelo um "mini-treinamento" dentro do próprio prompt.
+> **💡 INSIGHT:** O Few-Shot Prompting é uma das técnicas mais poderosas para melhorar a precisêo e a confiabilidade de um LLM sem a necessidade de fine-tuning (re-treinamento), que é um processo muito mais caro e complexo. É como dar ao modelo um "mini-treinamento" dentro do próprio prompt.
 
-### Técnicas de Formatação Avançada
+### Técnicas de Formataçêo Avançada
 
 #### Delimitadores Claros
 Use marcadores visuais para separar diferentes partes do prompt:
 
 ```
-###INSTRUÇÃO###
+###INSTRUÇêO###
 Resuma o seguinte artigo
 
 ###ARTIGO###
@@ -215,9 +215,9 @@ Texto: [...]
 
 ## Capítulo 2.2: Técnicas Avançadas de Raciocínio
 
-Para tarefas que exigem lógica, matemática ou planejamento em várias etapas, um prompt simples não é suficiente. Precisamos ensinar o modelo a **"pensar passo a passo"**.
+Para tarefas que exigem lógica, matemática ou planejamento em várias etapas, um prompt simples nêo é suficiente. Precisamos ensinar o modelo a **"pensar passo a passo"**.
 
-### Chain of Thought (CoT) - A Revolução do Raciocínio
+### Chain of Thought (CoT) - A Revoluçêo do Raciocínio
 
 A técnica de **Cadeia de Pensamento (Chain of Thought)** é uma das descobertas mais importantes em engenharia de prompts. Publicada por pesquisadores do Google em 2022, ela demonstrou que modelos de linguagem podem melhorar drasticamente em tarefas de raciocínio complexo simplesmente sendo instruídos a externalizar seu processo de pensamento.
 
@@ -234,29 +234,29 @@ Você força o modelo a:
 3. **Validar** a lógica em cada etapa
 4. **Sintetizar** a resposta final
 
-#### Comparação Prática
+#### Comparaçêo Prática
 
 **❌ Sem CoT:**
 ```
-Prompt: "João tem 5 maçãs. Ele compra mais 2 caixas de maçãs,
-cada uma com 6 maçãs. Quantas maçãs ele tem agora?"
+Prompt: "Joêo tem 5 maçês. Ele compra mais 2 caixas de maçês,
+cada uma com 6 maçês. Quantas maçês ele tem agora?"
 
-Resposta: 11 maçãs (INCORRETO!)
+Resposta: 11 maçês (INCORRETO!)
 ```
 
 **✅ Com CoT:**
 ```
-Prompt: "João tem 5 maçãs. Ele compra mais 2 caixas de maçãs,
-cada uma com 6 maçãs. Quantas maçãs ele tem agora?
+Prompt: "Joêo tem 5 maçês. Ele compra mais 2 caixas de maçês,
+cada uma com 6 maçês. Quantas maçês ele tem agora?
 Pense passo a passo."
 
 Resposta:
-1. Primeiro, vamos calcular quantas maçãs João comprou nas caixas
-2. São 2 caixas com 6 maçãs cada, então 2 × 6 = 12 maçãs
-3. João já tinha 5 maçãs
-4. Somando: 5 + 12 = 17 maçãs
+1. Primeiro, vamos calcular quantas maçês Joêo comprou nas caixas
+2. Sêo 2 caixas com 6 maçês cada, entêo 2 × 6 = 12 maçês
+3. Joêo já tinha 5 maçês
+4. Somando: 5 + 12 = 17 maçês
 
-Resposta Final: João tem 17 maçãs. (CORRETO!)
+Resposta Final: Joêo tem 17 maçês. (CORRETO!)
 ```
 
 #### Aplicações Reais do CoT
@@ -266,7 +266,7 @@ Resposta Final: João tem 17 maçãs. (CORRETO!)
 Analise se devemos expandir para o mercado B.
 Pense passo a passo sobre:
 1. Tamanho do mercado
-2. Competição existente
+2. Competiçêo existente
 3. Custos de entrada
 4. ROI esperado
 5. Riscos principais
@@ -282,17 +282,17 @@ O seguinte código tem um bug. Identifique-o pensando passo a passo:
 5. Como corrigir?
 ```
 
-**3. Tomada de Decisão:**
+**3. Tomada de Decisêo:**
 ```
 Devo aceitar esta oferta de emprego? Analise passo a passo:
 1. Alinhamento com objetivos de carreira
-2. Compensação total vs. mercado
+2. Compensaçêo total vs. mercado
 3. Cultura e valores da empresa
 4. Oportunidades de crescimento
 5. Impacto no work-life balance
 ```
 
-### Self-Consistency: Votação de Múltiplos Caminhos
+### Self-Consistency: Votaçêo de Múltiplos Caminhos
 
 Esta técnica leva o CoT um passo adiante. Em vez de gerar uma única cadeia de pensamento, você gera **múltiplas cadeias** e escolhe a resposta que aparece com mais frequência.
 
@@ -308,7 +308,7 @@ def self_consistency(prompt, num_samples=5):
         response = openai.ChatCompletion.create(
             model="gpt-4",
             messages=[{"role": "user", "content": prompt}],
-            temperature=0.7  # Maior variação
+            temperature=0.7  # Maior variaçêo
         )
         responses.append(response.choices[0].message.content)
 
@@ -346,13 +346,13 @@ def self_consistency(prompt, num_samples=5):
 O modelo pode:
 - **Explorar** múltiplos caminhos simultaneamente
 - **Avaliar** a qualidade de cada estado intermediário
-- **Retroceder (backtrack)** se um caminho não parece promissor
-- **Escolher** o caminho mais lógico para a solução
+- **Retroceder (backtrack)** se um caminho nêo parece promissor
+- **Escolher** o caminho mais lógico para a soluçêo
 
-#### Implementação Prática
+#### Implementaçêo Prática
 
 ```
-Problema: Planejar uma viagem de 7 dias para o Japão com orçamento limitado.
+Problema: Planejar uma viagem de 7 dias para o Japêo com orçamento limitado.
 
 Pense em árvore:
 
@@ -372,26 +372,26 @@ Pense em árvore:
    - etc.
 
 4. VALIDAR: Verifique se está dentro do orçamento em cada etapa.
-   Se não, retroceda e tente segunda melhor opção.
+   Se nêo, retroceda e tente segunda melhor opçêo.
 ```
 
 **Aplicações:**
 - Planejamento estratégico
 - Design de sistemas complexos
-- Resolução de puzzles
-- Otimização de processos
+- Resoluçêo de puzzles
+- Otimizaçêo de processos
 
 ### ReAct: Reasoning + Acting
 
-**ReAct** combina **raciocínio** (pensamento) com **ação** (uso de ferramentas).
+**ReAct** combina **raciocínio** (pensamento) com **açêo** (uso de ferramentas).
 
-#### Padrão ReAct
+#### Padrêo ReAct
 
 ```
 Thought: [O que preciso fazer?]
 Action: [Que ferramenta usar?]
 Action Input: [Parâmetros da ferramenta]
-Observation: [Resultado da ação]
+Observation: [Resultado da açêo]
 ... (repita até resolver)
 Thought: [Agora sei a resposta final]
 Final Answer: [Resposta]
@@ -402,27 +402,27 @@ Final Answer: [Resposta]
 ```
 Pergunta: Qual é a temperatura atual em Tóquio?
 
-Thought: Preciso de informação em tempo real sobre clima
+Thought: Preciso de informaçêo em tempo real sobre clima
 Action: search_weather
 Action Input: "Tokyo current temperature"
 Observation: 18°C, partly cloudy
 
-Thought: Tenho a informação necessária
+Thought: Tenho a informaçêo necessária
 Final Answer: A temperatura atual em Tóquio é 18°C com
 céu parcialmente nublado.
 ```
 
-Este padrão é a base de **agentes autônomos** que veremos nos próximos módulos.
+Este padrêo é a base de **agentes autônomos** que veremos nos próximos módulos.
 
 ---
 
 ## Capítulo 2.3: Prompt Engineering para Agentes de IA
 
-Quando passamos de simples prompts para a criação de agentes autônomos, a engenharia de prompts se torna a base da "personalidade" e do comportamento do agente.
+Quando passamos de simples prompts para a criaçêo de agentes autônomos, a engenharia de prompts se torna a base da "personalidade" e do comportamento do agente.
 
-### O System Prompt: A Constituição do Agente
+### O System Prompt: A Constituiçêo do Agente
 
-O **System Prompt** é a instrução de mais alto nível que governa todas as interações futuras do agente. É como a "programação" do agente, definindo:
+O **System Prompt** é a instruçêo de mais alto nível que governa todas as interações futuras do agente. É como a "programaçêo" do agente, definindo:
 
 - **Quem ele é** (identidade)
 - **O que ele faz** (capacidades)
@@ -433,23 +433,23 @@ O **System Prompt** é a instrução de mais alto nível que governa todas as in
 
 ```markdown
 # IDENTIDADE
-Você é [NOME], um [FUNÇÃO] especializado em [DOMÍNIO].
-Suas principais características são: [TRAÇOS DE PERSONALIDADE].
+Você é [NOME], um [FUNÇêO] especializado em [DOMÍNIO].
+Suas principais características sêo: [TRAÇOS DE PERSONALIDADE].
 
-# MISSÃO
+# MISSêO
 Seu objetivo principal é [OBJETIVO PRINCIPAL].
 Você deve sempre priorizar [VALORES/PRIORIDADES].
 
 # CAPACIDADES
 Você tem acesso às seguintes ferramentas:
-- [FERRAMENTA 1]: [Descrição e quando usar]
-- [FERRAMENTA 2]: [Descrição e quando usar]
-- [FERRAMENTA 3]: [Descrição e quando usar]
+- [FERRAMENTA 1]: [Descriçêo e quando usar]
+- [FERRAMENTA 2]: [Descriçêo e quando usar]
+- [FERRAMENTA 3]: [Descriçêo e quando usar]
 
 # PROCESSO DE RACIOCÍNIO
 Para cada tarefa, você deve:
-1. Analisar a solicitação do usuário
-2. Identificar qual informação você precisa
+1. Analisar a solicitaçêo do usuário
+2. Identificar qual informaçêo você precisa
 3. Decidir qual ferramenta usar
 4. Executar ações necessárias
 5. Validar resultados
@@ -457,9 +457,9 @@ Para cada tarefa, você deve:
 
 # RESTRIÇÕES
 NUNCA:
-- [Ação proibida 1]
-- [Ação proibida 2]
-- [Ação proibida 3]
+- [Açêo proibida 1]
+- [Açêo proibida 2]
+- [Açêo proibida 3]
 
 SEMPRE:
 - [Comportamento obrigatório 1]
@@ -481,7 +481,7 @@ experiências personalizadas e sustentáveis. Você é entusiasta,
 detalhista e genuinamente apaixonada por conectar pessoas a
 culturas autênticas.
 
-# MISSÃO
+# MISSêO
 Seu objetivo é criar itinerários de viagem inesquecíveis que
 equilibrem perfeitamente: experiência cultural autêntica,
 sustentabilidade, segurança e orçamento do viajante.
@@ -490,12 +490,12 @@ sustentabilidade, segurança e orçamento do viajante.
 Você tem acesso a:
 - search_flights(origem, destino, data): Buscar voos disponíveis
 - search_hotels(cidade, check_in, check_out, budget): Buscar acomodações
-- get_weather(cidade, data): Verificar previsão do tempo
+- get_weather(cidade, data): Verificar previsêo do tempo
 - find_attractions(cidade, interesses): Descobrir atrações locais
 - calculate_budget(itinerario): Estimar custo total da viagem
 
 # PROCESSO DE RACIOCÍNIO (ReAct)
-Para cada solicitação de viagem:
+Para cada solicitaçêo de viagem:
 
 1. ENTENDER: Faça perguntas para entender:
    - Orçamento total disponível
@@ -510,11 +510,11 @@ Para cada solicitação de viagem:
    - Identificar atrações alinhadas com interesses
 
 3. OTIMIZAR: Crie 2-3 opções de itinerário diferentes:
-   - Opção econômica
-   - Opção equilibrada (melhor recomendação)
-   - Opção premium (se orçamento permitir)
+   - Opçêo econômica
+   - Opçêo equilibrada (melhor recomendaçêo)
+   - Opçêo premium (se orçamento permitir)
 
-4. APRESENTAR: Para cada opção, mostre:
+4. APRESENTAR: Para cada opçêo, mostre:
    - Custo total detalhado
    - Dia a dia do itinerário
    - Dicas locais e insights culturais
@@ -527,18 +527,18 @@ NUNCA:
 - Recomende destinos ou atividades perigosas
 - Exceda o orçamento declarado pelo viajante
 - Ignore restrições alimentares ou de saúde
-- Sugira atividades que não respeitem culturas locais
+- Sugira atividades que nêo respeitem culturas locais
 
 SEMPRE:
 - Priorize segurança do viajante
 - Inclua opções sustentáveis e que beneficiem comunidades locais
-- Verifique requisitos de visto e vacinação
+- Verifique requisitos de visto e vacinaçêo
 - Forneça contatos de emergência locais
 
 # TOM E ESTILO
 - Use linguagem entusiasta mas profissional
 - Seja proativa em sugerir experiências únicas
-- Explique o "porquê" por trás de cada recomendação
+- Explique o "porquê" por trás de cada recomendaçêo
 - Use emojis ocasionalmente para tornar a conversa mais amigável ✈️🌍
 - Compartilhe fatos culturais interessantes
 ```
@@ -549,32 +549,32 @@ SEMPRE:
 
 ```markdown
 REGRAS DE SEGURANÇA:
-Antes de executar QUALQUER ação, verifique:
-✓ A ação está dentro do escopo da tarefa?
-✓ A ação não viola privacidade do usuário?
-✓ A ação não tem riscos de segurança?
-✓ O usuário forneceu consentimento explícito para esta ação?
+Antes de executar QUALQUER açêo, verifique:
+✓ A açêo está dentro do escopo da tarefa?
+✓ A açêo nêo viola privacidade do usuário?
+✓ A açêo nêo tem riscos de segurança?
+✓ O usuário forneceu consentimento explícito para esta açêo?
 
-Se qualquer resposta for "NÃO", PARE e peça esclarecimento ao usuário.
+Se qualquer resposta for "NêO", PARE e peça esclarecimento ao usuário.
 ```
 
-#### 2. **Prompt de Validação**
+#### 2. **Prompt de Validaçêo**
 
 ```markdown
 Após completar a tarefa, SEMPRE:
 1. Revise sua resposta quanto a:
-   - Precisão factual
-   - Clareza da comunicação
+   - Precisêo factual
+   - Clareza da comunicaçêo
    - Alinhamento com objetivo do usuário
 2. Se encontrar problemas, corrija antes de enviar
-3. Se não tiver certeza, indique explicitamente
+3. Se nêo tiver certeza, indique explicitamente
 ```
 
 #### 3. **Handling de Ambiguidade**
 
 ```markdown
-Se a solicitação do usuário for ambígua:
-1. NÃO faça suposições
+Se a solicitaçêo do usuário for ambígua:
+1. NêO faça suposições
 2. Identifique especificamente o que precisa ser esclarecido
 3. Faça perguntas direcionadas
 4. Ofereça opções quando apropriado
@@ -582,10 +582,10 @@ Se a solicitação do usuário for ambígua:
 Exemplo:
 Usuário: "Encontre um bom restaurante"
 Você: "Ficarei feliz em ajudar! Para encontrar o restaurante perfeito, preciso saber:
-- Qual cidade/região?
+- Qual cidade/regiêo?
 - Tipo de culinária preferida?
 - Faixa de preço?
-- Alguma restrição alimentar?"
+- Alguma restriçêo alimentar?"
 ```
 
 ### Meta-Prompting: Prompts que Geram Prompts
@@ -595,7 +595,7 @@ Uma técnica poderosa é usar IA para criar prompts melhores.
 ```markdown
 Você é um especialista em engenharia de prompts.
 
-Dada a seguinte tarefa: [DESCRIÇÃO DA TAREFA]
+Dada a seguinte tarefa: [DESCRIÇêO DA TAREFA]
 
 Crie um prompt otimizado que:
 1. Defina claramente a persona apropriada
@@ -611,26 +611,26 @@ Retorne o prompt otimizado em um bloco de código markdown.
 
 ## Capítulo 2.4: Prompting Multimodal
 
-Com modelos como GPT-4 Vision, Claude com visão e DALL-E, podemos criar prompts que trabalham com múltiplas modalidades.
+Com modelos como GPT-4 Vision, Claude com visêo e DALL-E, podemos criar prompts que trabalham com múltiplas modalidades.
 
-### Prompts para Geração de Imagens
+### Prompts para Geraçêo de Imagens
 
 #### Anatomia de um Prompt de Imagem Eficaz
 
 ```
-[SUJEITO PRINCIPAL] + [AÇÃO/POSE] + [CONTEXTO/AMBIENTE] +
-[ESTILO ARTÍSTICO] + [ILUMINAÇÃO] + [PERSPECTIVA/ÂNGULO] +
+[SUJEITO PRINCIPAL] + [AÇêO/POSE] + [CONTEXTO/AMBIENTE] +
+[ESTILO ARTÍSTICO] + [ILUMINAÇêO] + [PERSPECTIVA/ÂNGULO] +
 [QUALIDADE/DETALHES]
 ```
 
 **Exemplo:**
 ```
 Um astronauta solitário [SUJEITO]
-contemplando uma paisagem marciana [AÇÃO]
+contemplando uma paisagem marciana [AÇêO]
 ao pôr do sol, com dois sóis no horizonte [CONTEXTO]
 estilo arte conceitual cARCKHÉtográfica [ESTILO]
-iluminação dramática dourada e laranja [ILUMINAÇÃO]
-ângulo amplo, composição rule of thirds [PERSPECTIVA]
+iluminaçêo dramática dourada e laranja [ILUMINAÇêO]
+ângulo amplo, composiçêo rule of thirds [PERSPECTIVA]
 4K, altamente detalhado, fotorrealista [QUALIDADE]
 ```
 
@@ -639,26 +639,26 @@ iluminação dramática dourada e laranja [ILUMINAÇÃO]
 ```markdown
 Analise a imagem fornecida e retorne:
 
-1. DESCRIÇÃO GERAL:
+1. DESCRIÇêO GERAL:
    - O que você vê?
    - Qual é o contexto/cenário?
 
 2. ELEMENTOS PRINCIPAIS:
    - Liste objetos principais
-   - Identifique pessoas (sem identificação facial)
+   - Identifique pessoas (sem identificaçêo facial)
    - Descreva cores dominantes
 
 3. ANÁLISE TÉCNICA:
    - Qualidade da imagem
-   - Composição
-   - Iluminação
+   - Composiçêo
+   - Iluminaçêo
 
 4. TEXTO EXTRAÍDO:
    - Transcreva qualquer texto visível
 
 5. INSIGHTS:
    - Qual parece ser o propósito desta imagem?
-   - Que emoção/mensagem ela transmite?
+   - Que emoçêo/mensagem ela transmite?
 ```
 
 ### Prompts para Áudio
@@ -666,14 +666,14 @@ Analise a imagem fornecida e retorne:
 ```markdown
 Transcreva o áudio fornecido e:
 
-1. TRANSCRIÇÃO:
-   [Texto completo com pontuação]
+1. TRANSCRIÇêO:
+   [Texto completo com pontuaçêo]
 
 2. ANÁLISE:
    - Língua detectada
    - Número de falantes
-   - Tom/emoção dominante
-   - Contexto (reunião, apresentação, conversa, etc.)
+   - Tom/emoçêo dominante
+   - Contexto (reuniêo, apresentaçêo, conversa, etc.)
 
 3. RESUMO:
    - Principais pontos discutidos
@@ -686,7 +686,7 @@ Transcreva o áudio fornecido e:
 
 ---
 
-## Capítulo 2.5: Debugging e Otimização de Prompts
+## Capítulo 2.5: Debugging e Otimizaçêo de Prompts
 
 ### Estratégias de Debugging
 
@@ -715,9 +715,9 @@ Qual prompt você usaria para gerar consistentemente
 respostas desta qualidade e formato?
 ```
 
-#### 3. **Decomposição de Problemas**
+#### 3. **Decomposiçêo de Problemas**
 
-Se um prompt complexo não funciona, divida em etapas:
+Se um prompt complexo nêo funciona, divida em etapas:
 
 ```
 ❌ Prompt único complexo:
@@ -727,7 +727,7 @@ e faça recomendações"
 ✅ Sequência de prompts:
 1. "Descreva a estrutura deste dataset"
 2. "Identifique 3 padrões mais interessantes"
-3. "Para cada padrão, sugira uma visualização apropriada"
+3. "Para cada padrêo, sugira uma visualizaçêo apropriada"
 4. "Baseado nos padrões, liste 5 recomendações acionáveis"
 ```
 
@@ -736,9 +736,9 @@ e faça recomendações"
 Como avaliar se seu prompt é bom?
 
 1. **Consistência:** Gera resultados similares com inputs similares?
-2. **Precisão:** As respostas são factualmente corretas?
+2. **Precisêo:** As respostas sêo factualmente corretas?
 3. **Relevância:** A saída está alinhada com o objetivo?
-4. **Completude:** Todas as partes da tarefa são abordadas?
+4. **Completude:** Todas as partes da tarefa sêo abordadas?
 5. **Eficiência:** O prompt é o mais conciso possível mantendo qualidade?
 
 ### Prompt Library: Construindo seu Arsenal
@@ -773,15 +773,15 @@ prompts/
 
 **Anatomia do Prompt:**
 - ✓ Persona (Quem)
-- ✓ Contexto (Situação)
+- ✓ Contexto (Situaçêo)
 - ✓ Tarefa (O que fazer)
 - ✓ Formato (Como entregar)
 
 **Técnicas de Raciocínio:**
 - **CoT:** Pensamento passo a passo
 - **Self-Consistency:** Múltiplos caminhos
-- **ToT:** Exploração em árvore
-- **ReAct:** Raciocínio + Ação
+- **ToT:** Exploraçêo em árvore
+- **ReAct:** Raciocínio + Açêo
 
 **System Prompts:**
 - Define comportamento de agentes
@@ -851,14 +851,14 @@ SYSTEM_PROMPT = """
 Você é um especialista em análise de sentimento com profundo
 entendimento de nuances linguísticas, sarcasmo e contexto.
 
-Para cada avaliação, você deve:
+Para cada avaliaçêo, você deve:
 
 1. LER cuidadosamente todo o texto
 2. IDENTIFICAR aspectos mencionados (produto, entrega, atendimento, etc.)
 3. ANALISAR sentimento de cada aspecto separadamente
 4. DETECTAR sinais de sarcasmo ou ironia
 5. AVALIAR intensidade emocional
-6. CONSOLIDAR em classificação final
+6. CONSOLIDAR em classificaçêo final
 7. EXPLICAR seu raciocínio
 
 FORMATO DE RESPOSTA:
@@ -872,13 +872,13 @@ FORMATO DE RESPOSTA:
       "evidencia": "trecho do texto"
     }
   ],
-  "raciocinio": "Explicação passo a passo da análise",
+  "raciocinio": "Explicaçêo passo a passo da análise",
   "flags": ["sarcasmo", "ambiguidade", etc.]
 }
 """
 ```
 
-**4. Implementação Base:**
+**4. Implementaçêo Base:**
 
 ```python
 import openai
@@ -931,7 +931,7 @@ for review in test_reviews:
 - [ ] Adicionar análise de tendências temporais
 - [ ] Integrar com reviews reais (API do Amazon, etc.)
 
-#### Critérios de Avaliação
+#### Critérios de Avaliaçêo
 
 ✅ **Excelente** (90-100 pontos):
 - Detecta corretamente todos os casos de teste
@@ -947,7 +947,7 @@ for review in test_reviews:
 ✅ **Satisfatório** (50-69 pontos):
 - Funciona em casos simples
 - Falha em ambiguidades
-- Implementação básica
+- Implementaçêo básica
 
 ---
 
@@ -955,16 +955,16 @@ for review in test_reviews:
 
 ### Princípios Fundamentais de Prompt Engineering
 
-1. **Clareza > Concisão**
+1. **Clareza > Concisêo**
    - Um prompt mais longo e claro é melhor que um curto e ambíguo
 
 2. **Exemplos Falam Mais que Instruções**
-   - Um bom exemplo vale mil palavras de explicação
+   - Um bom exemplo vale mil palavras de explicaçêo
 
 3. **Estrutura Cria Consistência**
    - Formatos bem definidos geram saídas previsíveis
 
-4. **Iteração é Essencial**
+4. **Iteraçêo é Essencial**
    - Raramente o primeiro prompt é o melhor
 
 5. **Contexto é Rei**
@@ -1006,7 +1006,7 @@ Você agora domina a arte de se comunicar com IA de forma eficaz e estratégica.
 ✓ Como estruturar prompts profissionais
 ✓ Técnicas avançadas de raciocínio (CoT, ToT, ReAct)
 ✓ Criar System Prompts para agentes
-✓ Debugging e otimização de prompts
+✓ Debugging e otimizaçêo de prompts
 
 **Mas para construir aplicações verdadeiramente poderosas, precisamos ir além de prompts isolados.**
 
@@ -1017,7 +1017,7 @@ No **Módulo 3**, entraremos no mundo dos **frameworks de desenvolvimento** com 
 - Criar **cadeias de raciocínio** complexas
 - Construir **aplicações de IA completas**
 
-A engenharia de prompts é sua fundação. Agora vamos construir o edifício.
+A engenharia de prompts é sua fundaçêo. Agora vamos construir o edifício.
 
 ---
 

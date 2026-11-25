@@ -1,20 +1,20 @@
 # Módulo 3: Frameworks de Desenvolvimento - LangChain
 
-**Duração:** 10 horas | **Nível:** Intermediário
+**Duraçêo:** 10 horas | **Nível:** Intermediário
 
-> **Frase-guia:** "Não construa do zero. Orquestre o que já existe."
+> **Frase-guia:** "Nêo construa do zero. Orquestre o que já existe."
 
 ---
 
 ![Capa do Módulo 3](../../../imagens-conceituais/modulo3_langchain.png)
 
-## Ato 2: A Construção
+## Ato 2: A Construçêo
 
-> "Você aprendeu a falar com a IA. Agora, você vai dar a ela mãos para agir e uma mente para lembrar. Este é o momento em que passamos de meros conversadores a verdadeiros construtores de aplicações. Com LangChain, você não está mais limitado a uma única interação; você está construindo sistemas inteligentes e persistentes."
+> "Você aprendeu a falar com a IA. Agora, você vai dar a ela mêos para agir e uma mente para lembrar. Este é o momento em que passamos de meros conversadores a verdadeiros construtores de aplicações. Com LangChain, você nêo está mais limitado a uma única interaçêo; você está construindo sistemas inteligentes e persistentes."
 
-Bem-vindo à oficina do Engenheiro de Agentes. Se os LLMs são o motor e os prompts são o volante, **LangChain é o chassi, o sistema de transmissão e todo o conjunto** que transforma um motor potente em um veículo funcional.
+Bem-vindo à oficina do Engenheiro de Agentes. Se os LLMs sêo o motor e os prompts sêo o volante, **LangChain é o chassi, o sistema de transmissêo e todo o conjunto** que transforma um motor potente em um veículo funcional.
 
-Este framework de código aberto nos dá os blocos de construção para criar aplicações de IA que vão muito além de um simples chatbot. Vamos aprender a:
+Este framework de código aberto nos dá os blocos de construçêo para criar aplicações de IA que vêo muito além de um simples chatbot. Vamos aprender a:
 - **Dar memória** aos nossos agentes
 - **Conectá-los a fontes de dados externas**
 - **Criar cadeias de raciocínio complexas**
@@ -34,9 +34,9 @@ Imagine que você precisa construir um assistente de IA que:
 5. Envia emails automaticamente
 
 Sem um framework, você teria que:
-- Escrever código personalizado para cada integração
+- Escrever código personalizado para cada integraçêo
 - Gerenciar manualmente o estado e a memória
-- Implementar lógica complexa de orquestração
+- Implementar lógica complexa de orquestraçêo
 - Lidar com diferentes formatos de API
 - Debugar fluxos de dados entre componentes
 
@@ -48,14 +48,14 @@ LangChain segue princípios fundamentais:
 
 1. **Modularidade:** Cada componente é independente e intercambiável
 2. **Composabilidade:** Componentes simples se combinam para criar sistemas complexos
-3. **Abstração:** Interfaces unificadas para diferentes provedores e serviços
+3. **Abstraçêo:** Interfaces unificadas para diferentes provedores e serviços
 4. **Extensibilidade:** Fácil criar componentes customizados
 
 ### Os 6 Pilares da Arquitetura LangChain
 
 ```
 ┌─────────────────────────────────────────────────────┐
-│                    APLICAÇÃO                        │
+│                    APLICAÇêO                        │
 ├─────────────────────────────────────────────────────┤
 │                                                     │
 │  ┌──────────┐  ┌─────────┐  ┌────────┐  ┌────────┐│
@@ -89,7 +89,7 @@ llm_local = Ollama(model="llama3")
 - **Chat Models:** Conversacional (ChatGPT, Claude, etc.)
 - **LLMs:** Completion-style (GPT-3, etc.)
 - **Text Embedding Models:** Para criar vetores
-- **Multimodal Models:** Visão + Texto
+- **Multimodal Models:** Visêo + Texto
 
 #### 2. **Prompts**
 Gerenciamento avançado de prompts:
@@ -146,7 +146,7 @@ resultado = chain.run(
 - `MapReduceChain`: Processa documentos em paralelo
 
 #### 4. **Agents**
-LLM como motor de decisão:
+LLM como motor de decisêo:
 
 ```python
 from langchain.agents import create_react_agent, AgentExecutor
@@ -181,13 +181,13 @@ memory = ConversationBufferMemory()
 
 # Armazena automaticamente histórico
 memory.save_context(
-    {"input": "Oi, meu nome é João"},
-    {"output": "Olá João! Como posso ajudar?"}
+    {"input": "Oi, meu nome é Joêo"},
+    {"output": "Olá Joêo! Como posso ajudar?"}
 )
 
 # Recupera contexto
 memory.load_memory_variables({})
-# {'history': 'Human: Oi, meu nome é João\nAI: Olá João!...'}
+# {'history': 'Human: Oi, meu nome é Joêo\nAI: Olá Joêo!...'}
 ```
 
 **Tipos de Memory:**
@@ -197,7 +197,7 @@ memory.load_memory_variables({})
 - `ConversationKGMemory`: Extrai knowledge graph
 
 #### 6. **Tools**
-Conexão com o mundo externo:
+Conexêo com o mundo externo:
 
 ```python
 from langchain.tools import WikipediaQueryRun
@@ -221,7 +221,7 @@ resultado = wikipedia.run("Inteligência Artificial")
 
 ## Capítulo 3.2: Chains - Construindo Pipelines Inteligentes
 
-### LLMChain: A Fundação
+### LLMChain: A Fundaçêo
 
 A `LLMChain` é o building block mais básico:
 
@@ -271,12 +271,12 @@ chain_ideia = LLMChain(
     output_key="nome_produto"
 )
 
-# Chain 2: Criar descrição
+# Chain 2: Criar descriçêo
 chain_descricao = LLMChain(
     llm=llm,
     prompt=PromptTemplate(
         input_variables=["nome_produto"],
-        template="Escreva uma descrição de marketing para: {nome_produto}"
+        template="Escreva uma descriçêo de marketing para: {nome_produto}"
     ),
     output_key="descricao"
 )
@@ -287,7 +287,7 @@ chain_slogan = LLMChain(
     prompt=PromptTemplate(
         input_variables=["nome_produto", "descricao"],
         template="""
-        Baseado no produto {nome_produto} e sua descrição:
+        Baseado no produto {nome_produto} e sua descriçêo:
         {descricao}
 
         Crie um slogan memorável (máximo 7 palavras).
@@ -308,14 +308,14 @@ pipeline_marketing = SequentialChain(
 resultado = pipeline_marketing.invoke({"categoria": "fitness wearables"})
 
 print(f"Produto: {resultado['nome_produto']}")
-print(f"Descrição: {resultado['descricao']}")
+print(f"Descriçêo: {resultado['descricao']}")
 print(f"Slogan: {resultado['slogan']}")
 ```
 
 **Saída exemplo:**
 ```
 Produto: FitPulse Pro
-Descrição: O FitPulse Pro é o smartwatch definitivo para atletas...
+Descriçêo: O FitPulse Pro é o smartwatch definitivo para atletas...
 Slogan: Seu batimento, sua vitória
 ```
 
@@ -361,7 +361,7 @@ chain_descriptions = [
     },
     {
         "name": "codigo",
-        "description": "Bom para explicar código e conceitos de programação"
+        "description": "Bom para explicar código e conceitos de programaçêo"
     },
     {
         "name": "geral",
@@ -423,7 +423,7 @@ resultado = transform_chain.invoke({
 LLMs têm três limitações fundamentais:
 
 1. **Conhecimento Datado:** Treinados até uma data de corte
-2. **Sem Dados Privados:** Não conhecem seus documentos internos
+2. **Sem Dados Privados:** Nêo conhecem seus documentos internos
 3. **Alucinações:** Podem inventar informações
 
 **RAG resolve todos esses problemas.**
@@ -432,7 +432,7 @@ LLMs têm três limitações fundamentais:
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                  FASE 1: INDEXAÇÃO                      │
+│                  FASE 1: INDEXAÇêO                      │
 │  (Executada uma vez ou periodicamente)                  │
 └─────────────────────────────────────────────────────────┘
 
@@ -445,7 +445,7 @@ Documentos → Document Loader → Text Splitter → Embedding Model
                                             (Chroma, FAISS)
 
 ┌─────────────────────────────────────────────────────────┐
-│                  FASE 2: RECUPERAÇÃO                    │
+│                  FASE 2: RECUPERAÇêO                    │
 │  (Executada a cada pergunta)                            │
 └─────────────────────────────────────────────────────────┘
 
@@ -455,7 +455,7 @@ Pergunta do Usuário → Embedding Model → Busca Semântica
                                          relevantes
 
 ┌─────────────────────────────────────────────────────────┐
-│                   FASE 3: GERAÇÃO                       │
+│                   FASE 3: GERAÇêO                       │
 │  (Executada a cada pergunta)                            │
 └─────────────────────────────────────────────────────────┘
 
@@ -464,7 +464,7 @@ Pergunta + Chunks Relevantes → LLM → Resposta Final
         Context-aware prompt
 ```
 
-### Implementação Completa: ChatPDF
+### Implementaçêo Completa: ChatPDF
 
 #### Passo 1: Document Loading
 
@@ -496,7 +496,7 @@ print(f"Carregados {len(todos_docs)} documentos")
 
 Documentos precisam ser divididos em chunks para:
 - Caber no contexto do LLM
-- Melhorar precisão da busca semântica
+- Melhorar precisêo da busca semântica
 - Otimizar performance
 
 ```python
@@ -550,12 +550,12 @@ semantic_splitter = SemanticChunker(
 from langchain_openai import OpenAIEmbeddings
 from langchain_community.embeddings import HuggingFaceEmbeddings
 
-# Opção 1: OpenAI (pago, alta qualidade)
+# Opçêo 1: OpenAI (pago, alta qualidade)
 embeddings_openai = OpenAIEmbeddings(
     model="text-embedding-3-small"
 )
 
-# Opção 2: Open-source (gratuito)
+# Opçêo 2: Open-source (gratuito)
 embeddings_hf = HuggingFaceEmbeddings(
     model_name="sentence-transformers/all-MiniLM-L6-v2"
 )
@@ -571,7 +571,7 @@ print(f"Primeiros valores: {vetor[:5]}")
 ```python
 from langchain_community.vectorstores import FAISS, Chroma
 
-# Opção 1: FAISS (local, rápido, sem dependências)
+# Opçêo 1: FAISS (local, rápido, sem dependências)
 vectorstore_faiss = FAISS.from_documents(
     documents=chunks,
     embedding=embeddings_openai
@@ -587,14 +587,14 @@ vectorstore_carregado = FAISS.load_local(
     allow_dangerous_deserialization=True
 )
 
-# Opção 2: Chroma (persistent, com metadados)
+# Opçêo 2: Chroma (persistent, com metadados)
 vectorstore_chroma = Chroma.from_documents(
     documents=chunks,
     embedding=embeddings_openai,
     persist_directory="./chroma_db"
 )
 
-# Opção 3: Pinecone (cloud, escalável)
+# Opçêo 3: Pinecone (cloud, escalável)
 # from langchain_community.vectorstores import Pinecone
 # import pinecone
 #
@@ -608,7 +608,7 @@ vectorstore_chroma = Chroma.from_documents(
 
 ```python
 # Busca simples por similaridade
-query = "Qual é a política de devolução?"
+query = "Qual é a política de devoluçêo?"
 docs_relevantes = vectorstore_faiss.similarity_search(
     query,
     k=4  # Top 4 resultados mais relevantes
@@ -657,7 +657,7 @@ retriever = vectorstore_faiss.as_retriever(
 )
 ```
 
-#### Passo 6: Geração com Contexto
+#### Passo 6: Geraçêo com Contexto
 
 ```python
 from langchain.chains import RetrievalQA
@@ -757,17 +757,17 @@ for pergunta in perguntas:
 
 ### Do Scripted ao Autônomo
 
-**Chains** são como seguir uma receita:
+**Chains** sêo como seguir uma receita:
 - Passo 1: Faça X
 - Passo 2: Faça Y
 - Passo 3: Faça Z
 
-**Agents** são como ter um chef que decide:
+**Agents** sêo como ter um chef que decide:
 - Qual receita seguir
 - Que ingredientes usar
 - Quando improvisar
 
-### O Padrão ReAct (Reason + Act)
+### O Padrêo ReAct (Reason + Act)
 
 ```
 ┌─────────────────────────────────────────────┐
@@ -775,22 +775,22 @@ for pergunta in perguntas:
 └─────────────────────────────────────────────┘
 
 1. THOUGHT (Pensamento)
-   "Preciso saber o clima atual em São Paulo"
+   "Preciso saber o clima atual em Sêo Paulo"
    ↓
-2. ACTION (Ação)
+2. ACTION (Açêo)
    Tool: weather_api
    ↓
 3. ACTION INPUT (Entrada)
-   Input: "São Paulo, Brasil"
+   Input: "Sêo Paulo, Brasil"
    ↓
-4. OBSERVATION (Observação)
+4. OBSERVATION (Observaçêo)
    Result: "25°C, ensolarado"
    ↓
 5. THOUGHT (Pensamento)
-   "Agora tenho a informação, posso responder"
+   "Agora tenho a informaçêo, posso responder"
    ↓
 6. FINAL ANSWER (Resposta Final)
-   "O clima em São Paulo está 25°C e ensolarado"
+   "O clima em Sêo Paulo está 25°C e ensolarado"
 ```
 
 ### Criando Seu Primeiro Agente
@@ -827,7 +827,7 @@ tool_calc = Tool(
     func=calculadora,
     description="""
     Útil para fazer cálculos matemáticos. Input deve ser uma
-    expressão matemática válida em Python (ex: '2 + 2', '10 ** 3').
+    expressêo matemática válida em Python (ex: '2 + 2', '10 ** 3').
     """
 )
 
@@ -841,7 +841,7 @@ tool_search = Tool(
     description="""
     Útil para buscar informações atualizadas na internet.
     Use quando precisar de notícias recentes, dados atuais,
-    ou informações que não estão na Wikipedia.
+    ou informações que nêo estêo na Wikipedia.
     """
 )
 
@@ -867,9 +867,9 @@ Use o seguinte formato:
 
 Question: a pergunta de entrada que você deve responder
 Thought: você deve sempre pensar sobre o que fazer
-Action: a ação a tomar, deve ser uma de [{tool_names}]
-Action Input: a entrada para a ação
-Observation: o resultado da ação
+Action: a açêo a tomar, deve ser uma de [{tool_names}]
+Action Input: a entrada para a açêo
+Observation: o resultado da açêo
 ... (este Thought/Action/Action Input/Observation pode se repetir N vezes)
 Thought: Agora eu sei a resposta final
 Final Answer: a resposta final para a pergunta original
@@ -887,7 +887,7 @@ agent = create_react_agent(
     prompt=react_prompt
 )
 
-# Executor (gerencia execução)
+# Executor (gerencia execuçêo)
 agent_executor = AgentExecutor(
     agent=agent,
     tools=tools,
@@ -916,12 +916,12 @@ print(resposta2['output'])
 resposta3 = agent_executor.invoke({
     "input": """
     O PIB do Brasil em 2023 foi de 10.9 trilhões de reais.
-    Se dividirmos isso pela população de 215 milhões,
+    Se dividirmos isso pela populaçêo de 215 milhões,
     quanto é o PIB per capita em reais?
     """
 })
 print(resposta3['output'])
-# Agente vai: buscar confirmação do PIB → calcular divisão → responder
+# Agente vai: buscar confirmaçêo do PIB → calcular divisêo → responder
 ```
 
 **Exemplo de saída (verbose=True):**
@@ -1006,16 +1006,16 @@ from pydantic import BaseModel, Field
 class CalculatorInput(BaseModel):
     a: float = Field(description="Primeiro número")
     b: float = Field(description="Segundo número")
-    operation: str = Field(description="Operação: add, sub, mul, div")
+    operation: str = Field(description="Operaçêo: add, sub, mul, div")
 
 def structured_calculator(a: float, b: float, operation: str) -> str:
     ops = {
         "add": a + b,
         "sub": a - b,
         "mul": a * b,
-        "div": a / b if b != 0 else "Erro: divisão por zero"
+        "div": a / b if b != 0 else "Erro: divisêo por zero"
     }
-    return str(ops.get(operation, "Operação inválida"))
+    return str(ops.get(operation, "Operaçêo inválida"))
 
 structured_tool = StructuredTool.from_function(
     func=structured_calculator,
@@ -1029,7 +1029,7 @@ structured_tool = StructuredTool.from_function(
 
 ### Criando Tools Customizadas
 
-#### Tool Simples (função)
+#### Tool Simples (funçêo)
 
 ```python
 @tool
@@ -1075,7 +1075,7 @@ def buscar_cep(cep: str) -> str:
             {data['logradouro']}, {data['bairro']}
             {data['localidade']} - {data['uf']}
             """
-    return "CEP não encontrado"
+    return "CEP nêo encontrado"
 ```
 
 #### Tool com Banco de Dados
@@ -1129,7 +1129,7 @@ super_agent = initialize_agent(
     agent=AgentType.OPENAI_FUNCTIONS,
     verbose=True,
     max_iterations=15,
-    early_stopping_method="generate"  # Para se não progrediu
+    early_stopping_method="generate"  # Para se nêo progrediu
 )
 
 # Teste complexo
@@ -1151,9 +1151,9 @@ resposta = super_agent.invoke({
 
 ### Por Que Memória é Crucial
 
-LLMs são **stateless** por padrão - cada chamada é independente. Memória permite:
+LLMs sêo **stateless** por padrêo - cada chamada é independente. Memória permite:
 - Conversas naturais multi-turn
-- Personalização baseada em histórico
+- Personalizaçêo baseada em histórico
 - Contexto acumulado
 - Aprendizado de preferências
 
@@ -1199,8 +1199,8 @@ conversation = ConversationChain(
     verbose=True
 )
 
-conversation.predict(input="Oi, sou João")
-conversation.predict(input="Qual é meu nome?")  # Vai lembrar: João
+conversation.predict(input="Oi, sou Joêo")
+conversation.predict(input="Qual é meu nome?")  # Vai lembrar: Joêo
 ```
 
 #### 2. ConversationBufferWindowMemory (Janela Deslizante)
@@ -1228,13 +1228,13 @@ from langchain.memory import ConversationSummaryMemory
 memory_summary = ConversationSummaryMemory(llm=llm)
 
 memory_summary.save_context(
-    {"input": "Quero comprar um notebook para programação"},
+    {"input": "Quero comprar um notebook para programaçêo"},
     {"output": "Recomendo um com pelo menos 16GB RAM e SSD"}
 )
 
 memory_summary.save_context(
     {"input": "Qual processador você recomenda?"},
-    {"output": "Intel i7 ou AMD Ryzen 7 são ótimas opções"}
+    {"output": "Intel i7 ou AMD Ryzen 7 sêo ótimas opções"}
 )
 
 # Em vez de guardar tudo, cria resumo
@@ -1244,7 +1244,7 @@ print(memory_summary.load_memory_variables({}))
 **Saída:**
 ```
 {
-  'history': 'O usuário está interessado em comprar um notebook para programação. Recomendei especificações mínimas de 16GB RAM, SSD, e processadores Intel i7 ou AMD Ryzen 7.'
+  'history': 'O usuário está interessado em comprar um notebook para programaçêo. Recomendei especificações mínimas de 16GB RAM, SSD, e processadores Intel i7 ou AMD Ryzen 7.'
 }
 ```
 
@@ -1269,7 +1269,7 @@ from langchain.memory import ConversationKGMemory
 memory_kg = ConversationKGMemory(llm=llm)
 
 memory_kg.save_context(
-    {"input": "João mora em São Paulo"},
+    {"input": "Joêo mora em Sêo Paulo"},
     {"output": "Entendi"}
 )
 
@@ -1278,8 +1278,8 @@ memory_kg.save_context(
     {"output": "Anotado"}
 )
 
-# Cria grafo: João --mora_em--> São Paulo
-#             João --trabalha_em--> Google
+# Cria grafo: Joêo --mora_em--> Sêo Paulo
+#             Joêo --trabalha_em--> Google
 ```
 
 ### Memory Persistente (Banco de Dados)
@@ -1394,9 +1394,9 @@ from langchain_community.llms import HuggingFacePipeline
 
 ### Conceitos-Chave
 
-**LangChain = Framework de Orquestração**
+**LangChain = Framework de Orquestraçêo**
 - Modularidade + Composabilidade
-- Abstração de complexidade
+- Abstraçêo de complexidade
 - Ecosystem rico
 
 **6 Pilares:**
@@ -1408,7 +1408,7 @@ from langchain_community.llms import HuggingFacePipeline
 6. Tools (Conexões externas)
 
 **RAG (Retrieval-Augmented Generation):**
-- Indexação → Embedding → VectorDB
+- Indexaçêo → Embedding → VectorDB
 - Retrieval → Busca semântica
 - Generation → LLM com contexto
 
@@ -1423,11 +1423,11 @@ from langchain_community.llms import HuggingFacePipeline
 
 ### Desafio: ChatPDF Completo com Interface Web
 
-**Objetivo:** Construir uma aplicação completa de RAG que permite:
+**Objetivo:** Construir uma aplicaçêo completa de RAG que permite:
 1. Upload de múltiplos PDFs
-2. Processamento e indexação automática
+2. Processamento e indexaçêo automática
 3. Chat conversacional com memória
-4. Citação de fontes
+4. Citaçêo de fontes
 5. Interface web intuitiva
 
 #### Especificações Técnicas
@@ -1439,7 +1439,7 @@ from langchain_community.llms import HuggingFacePipeline
 - Streamlit para interface web
 - Python 3.10+
 
-#### Implementação Completa
+#### Implementaçêo Completa
 
 **Arquivo: `chatpdf_app.py`**
 
@@ -1454,7 +1454,7 @@ from langchain.memory import ConversationBufferMemory
 import tempfile
 import os
 
-# Configuração da página
+# Configuraçêo da página
 st.set_page_config(
     page_title="ChatPDF - Converse com seus documentos",
     page_icon="📄",
@@ -1496,7 +1496,7 @@ if "vectorstore" not in st.session_state:
 if "conversation_chain" not in st.session_state:
     st.session_state.conversation_chain = None
 
-# Função para processar PDFs
+# Funçêo para processar PDFs
 def process_pdfs(files, api_key):
     """Processa PDFs e cria vector store"""
 
@@ -1535,9 +1535,9 @@ def process_pdfs(files, api_key):
 
     return vectorstore
 
-# Função para criar chain conversacional
+# Funçêo para criar chain conversacional
 def create_conversation_chain(vectorstore, api_key):
-    """Cria chain de conversação com memória"""
+    """Cria chain de conversaçêo com memória"""
 
     llm = ChatOpenAI(
         model="gpt-4",
@@ -1561,7 +1561,7 @@ def create_conversation_chain(vectorstore, api_key):
 
     return chain
 
-# Processar documentos quando botão for clicado
+# Processar documentos quando botêo for clicado
 if process_button and uploaded_files and openai_api_key:
     st.session_state.vectorstore = process_pdfs(uploaded_files, openai_api_key)
     st.session_state.conversation_chain = create_conversation_chain(
@@ -1676,13 +1676,13 @@ venv\Scripts\activate  # Windows
 # 2. Instalar dependências
 pip install -r requirements.txt
 
-# 3. Executar aplicação
+# 3. Executar aplicaçêo
 streamlit run chatpdf_app.py
 ```
 
 #### Recursos Adicionais do Projeto
 
-**1. Adicionar opção de salvar/carregar vectorstore:**
+**1. Adicionar opçêo de salvar/carregar vectorstore:**
 
 ```python
 import pickle
@@ -1725,7 +1725,7 @@ if st.button("💾 Baixar histórico"):
 
 ---
 
-## 💡 Dicas de Otimização e Debugging
+## 💡 Dicas de Otimizaçêo e Debugging
 
 ### 1. Debugging de Chains
 
@@ -1759,7 +1759,7 @@ cached_embeddings = CacheBackedEmbeddings.from_bytes_store(
     namespace="openai_embeddings"
 )
 
-# Compressão de contexto
+# Compressêo de contexto
 from langchain.retrievers import ContextualCompressionRetriever
 from langchain.retrievers.document_compressors import LLMChainExtractor
 
@@ -1794,7 +1794,7 @@ Você dominou LangChain! Agora sabe como:
 ✓ Integrar ferramentas externas
 ✓ Deploy de aplicações reais
 
-**No Módulo 4**, exploraremos o **Agno**, um framework mais recente e minimalista que oferece uma perspectiva diferente sobre a construção de agentes autônomos, focando na simplicidade e elegância.
+**No Módulo 4**, exploraremos o **Agno**, um framework mais recente e minimalista que oferece uma perspectiva diferente sobre a construçêo de agentes autônomos, focando na simplicidade e elegância.
 
 ---
 

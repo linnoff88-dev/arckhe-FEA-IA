@@ -1,37 +1,37 @@
-# Módulo 7: Deploy e Produção
+# Módulo 7: Deploy e Produçêo
 
 ## Levando Agentes de IA para o Mundo Real
 
-> "Em desenvolvimento, tudo funciona. Em produção, tudo o que pode dar errado, dará errado. Prepare-se." - Lei de Murphy aplicada a sistemas de produção
+> "Em desenvolvimento, tudo funciona. Em produçêo, tudo o que pode dar errado, dará errado. Prepare-se." - Lei de Murphy aplicada a sistemas de produçêo
 
 ---
 
 ## 📋 Índice
 
-1. [Introdução ao Deploy em Produção](#71-introdução-ao-deploy-em-produção)
-2. [Arquitetura para Produção](#72-arquitetura-para-produção)
-3. [Containerização com Docker](#73-containerização-com-docker)
-4. [Orquestração com Kubernetes](#74-orquestração-com-kubernetes)
+1. [Introduçêo ao Deploy em Produçêo](#71-introduçêo-ao-deploy-em-produçêo)
+2. [Arquitetura para Produçêo](#72-arquitetura-para-produçêo)
+3. [Containerizaçêo com Docker](#73-containerizaçêo-com-docker)
+4. [Orquestraçêo com Kubernetes](#74-orquestraçêo-com-kubernetes)
 5. [Deploy em Cloud Providers](#75-deploy-em-cloud-providers)
 6. [Monitoramento e Observabilidade](#76-monitoramento-e-observabilidade)
-7. [Performance e Otimização](#77-performance-e-otimização)
-8. [Custos e Otimização Financeira](#78-custos-e-otimização-financeira)
-9. [Segurança em Produção](#79-segurança-em-produção)
+7. [Performance e Otimizaçêo](#77-performance-e-otimizaçêo)
+8. [Custos e Otimizaçêo Financeira](#78-custos-e-otimizaçêo-financeira)
+9. [Segurança em Produçêo](#79-segurança-em-produçêo)
 10. [CI/CD para Sistemas de Agentes](#710-cicd-para-sistemas-de-agentes)
 11. [Projeto Prático: Deploy Completo](#711-projeto-prático)
 12. [Resumo e Próximos Passos](#712-resumo-e-próximos-passos)
 
 ---
 
-## 7.1 Introdução ao Deploy em Produção
+## 7.1 Introduçêo ao Deploy em Produçêo
 
-### 7.1.1 O Que Significa "Produção"?
+### 7.1.1 O Que Significa "Produçêo"?
 
-**Produção** é o ambiente onde seu sistema de agentes atende usuários reais, processando dados reais, com consequências reais.
+**Produçêo** é o ambiente onde seu sistema de agentes atende usuários reais, processando dados reais, com consequências reais.
 
 **Diferenças fundamentais:**
 
-| Aspecto | Desenvolvimento | Produção |
+| Aspecto | Desenvolvimento | Produçêo |
 |---------|----------------|----------|
 | **Escala** | 1-10 requisições/dia | 1.000-1.000.000+ req/dia |
 | **Disponibilidade** | Pode cair sem problema | 99.9%+ uptime necessário |
@@ -39,11 +39,11 @@
 | **Custos** | Mínimos | Podem ser significativos |
 | **Segurança** | Básica | Crítica |
 | **Monitoramento** | Opcional | Essencial |
-| **Recuperação** | Manual | Automática |
+| **Recuperaçêo** | Manual | Automática |
 
-### 7.1.2 Desafios Únicos de Agentes de IA em Produção
+### 7.1.2 Desafios Únicos de Agentes de IA em Produçêo
 
-**1. Não-determinismo**
+**1. Nêo-determinismo**
 
 ```python
 # ❌ PROBLEMA: Mesmo input pode gerar outputs diferentes
@@ -51,7 +51,7 @@ response1 = agent.run("Analise este relatório")
 response2 = agent.run("Analise este relatório")
 # response1 != response2 (em alguns casos isso é problemático)
 
-# ✅ SOLUÇÃO: Use temperature=0 para tarefas que precisam de consistência
+# ✅ SOLUÇêO: Use temperature=0 para tarefas que precisam de consistência
 agent = Agent(
     model="claude-3-7-sonnet-20250219",
     temperature=0  # Máxima determinismo
@@ -98,31 +98,31 @@ agent = Agent(
 - Fallback strategies
 ```
 
-### 7.1.3 Checklist de Produção
+### 7.1.3 Checklist de Produçêo
 
 Antes de fazer deploy, garanta que você tem:
 
 **Funcional:**
 - [ ] Testes unitários passando (>80% coverage)
-- [ ] Testes de integração passando
+- [ ] Testes de integraçêo passando
 - [ ] Testes de carga realizados
 - [ ] Tratamento de erros robusto
 - [ ] Logging estruturado
 - [ ] Métricas instrumentadas
 
 **Infraestrutura:**
-- [ ] Containerização (Docker)
-- [ ] Orquestração (Kubernetes/ECS/Cloud Run)
+- [ ] Containerizaçêo (Docker)
+- [ ] Orquestraçêo (Kubernetes/ECS/Cloud Run)
 - [ ] Load balancer configurado
 - [ ] Auto-scaling configurado
 - [ ] Health checks implementados
 
 **Segurança:**
-- [ ] Autenticação e autorização
-- [ ] Secrets em variáveis de ambiente (não hardcoded)
+- [ ] Autenticaçêo e autorizaçêo
+- [ ] Secrets em variáveis de ambiente (nêo hardcoded)
 - [ ] HTTPS configurado
 - [ ] Rate limiting implementado
-- [ ] Validação de inputs
+- [ ] Validaçêo de inputs
 
 **Observabilidade:**
 - [ ] Logs centralizados
@@ -140,7 +140,7 @@ Antes de fazer deploy, garanta que você tem:
 
 ---
 
-## 7.2 Arquitetura para Produção
+## 7.2 Arquitetura para Produçêo
 
 ### 7.2.1 Arquitetura de Referência
 
@@ -199,7 +199,7 @@ Antes de fazer deploy, garanta que você tem:
 
 ### 7.2.2 Padrões Arquiteturais
 
-**1. Padrão: API Gateway + Workers**
+**1. Padrêo: API Gateway + Workers**
 
 ```python
 # API Gateway (FastAPI) - recebe requisições HTTP
@@ -252,12 +252,12 @@ def analyze_document(file_url: str):
 ```
 
 **Vantagens:**
-- API responde rapidamente (não espera processamento)
+- API responde rapidamente (nêo espera processamento)
 - Workers podem escalar independentemente
-- Tarefas longas não bloqueiam API
+- Tarefas longas nêo bloqueiam API
 - Retry automático de tarefas falhas
 
-**2. Padrão: Event-Driven Architecture**
+**2. Padrêo: Event-Driven Architecture**
 
 ```python
 # Publisher - publica eventos
@@ -302,7 +302,7 @@ for message in consumer:
 - Replay de eventos para debugging
 - Escalabilidade horizontal
 
-**3. Padrão: Circuit Breaker**
+**3. Padrêo: Circuit Breaker**
 
 ```python
 from pybreaker import CircuitBreaker
@@ -315,7 +315,7 @@ llm_breaker = CircuitBreaker(
 
 @llm_breaker
 def call_llm(prompt: str):
-    """Chama LLM com proteção de circuit breaker"""
+    """Chama LLM com proteçêo de circuit breaker"""
     response = anthropic.messages.create(
         model="claude-3-7-sonnet-20250219",
         messages=[{"role": "user", "content": prompt}]
@@ -353,14 +353,14 @@ async def chat(message: str, session_id: str):
 
 **Vantagens:**
 - Fácil escalar horizontalmente
-- Qualquer pod pode atender qualquer requisição
+- Qualquer pod pode atender qualquer requisiçêo
 - Load balancer pode distribuir livremente
 - Simples fazer rolling updates
 
 **Stateful (Quando necessário):**
 
 ```python
-# Agente com estado interno (sessão WebSocket)
+# Agente com estado interno (sessêo WebSocket)
 class StatefulAgent:
     def __init__(self):
         self.conversation_history = []
@@ -376,7 +376,7 @@ class StatefulAgent:
 
 ---
 
-## 7.3 Containerização com Docker
+## 7.3 Containerizaçêo com Docker
 
 ### 7.3.1 Dockerfile para Agente de IA
 
@@ -406,10 +406,10 @@ COPY requirements.txt .
 # Instalar dependências Python
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copiar código da aplicação
+# Copiar código da aplicaçêo
 COPY . .
 
-# Criar usuário não-root
+# Criar usuário nêo-root
 RUN useradd -m -u 1000 appuser && \
     chown -R appuser:appuser /app
 USER appuser
@@ -468,7 +468,7 @@ ENV PATH="/opt/venv/bin:$PATH"
 # Copiar código
 COPY . .
 
-# Usuário não-root
+# Usuário nêo-root
 RUN useradd -m -u 1000 appuser && chown -R appuser:appuser /app
 USER appuser
 
@@ -635,13 +635,13 @@ COPY . .
 # ❌ RUIM
 FROM python:latest
 
-# ✅ BOM - versão específica
+# ✅ BOM - versêo específica
 FROM python:3.11.7-slim
 ```
 
 ---
 
-## 7.4 Orquestração com Kubernetes
+## 7.4 Orquestraçêo com Kubernetes
 
 ### 7.4.1 Manifesto Kubernetes Básico
 
@@ -887,7 +887,7 @@ kubectl delete -f deployment.yaml
 
 ### 7.5.1 AWS (Amazon Web Services)
 
-**Opção 1: AWS ECS (Elastic Container Service)**
+**Opçêo 1: AWS ECS (Elastic Container Service)**
 
 ```bash
 # 1. Build e push para ECR
@@ -952,7 +952,7 @@ aws ecs create-service \
   --network-configuration "awsvpcConfiguration={subnets=[subnet-xxx],securityGroups=[sg-xxx],assignPublicIp=ENABLED}"
 ```
 
-**Opção 2: AWS Lambda (para cargas menores)**
+**Opçêo 2: AWS Lambda (para cargas menores)**
 
 ```python
 # lambda_handler.py
@@ -996,7 +996,7 @@ cp lambda_handler.py package/
 cd package
 zip -r ../lambda-package.zip .
 
-# 2. Criar função Lambda
+# 2. Criar funçêo Lambda
 aws lambda create-function \
   --function-name agent-api \
   --runtime python3.11 \
@@ -1133,7 +1133,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         )
 ```
 
-### 7.5.4 Comparação de Cloud Providers
+### 7.5.4 Comparaçêo de Cloud Providers
 
 | Critério | AWS | GCP | Azure |
 |----------|-----|-----|-------|
@@ -1144,10 +1144,10 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 | **Free Tier** | Limitado | Generoso | Limitado |
 | **Melhor para** | Enterprise | Startups/Desenvolvedores | Empresas Microsoft |
 
-**Recomendação:**
+**Recomendaçêo:**
 - **Iniciantes**: GCP Cloud Run (mais simples)
 - **Enterprise**: AWS ECS/EKS (mais maduro)
-- **Microsoft Shop**: Azure (integração)
+- **Microsoft Shop**: Azure (integraçêo)
 
 ---
 
@@ -1156,12 +1156,12 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
 ### 7.6.1 Os Três Pilares da Observabilidade
 
 **1. Logs** - O que aconteceu
-**2. Métricas** - Quão bem está funcionando
+**2. Métricas** - Quêo bem está funcionando
 **3. Traces** - Como as requisições fluem
 
 ### 7.6.2 Logging Estruturado
 
-**Implementação:**
+**Implementaçêo:**
 
 ```python
 import logging
@@ -1209,7 +1209,7 @@ logger.info(
 }
 ```
 
-**Centralização de Logs:**
+**Centralizaçêo de Logs:**
 
 ```yaml
 # Fluentd config para enviar logs para Elasticsearch
@@ -1229,7 +1229,7 @@ logger.info(
 
 ### 7.6.3 Métricas com Prometheus
 
-**Instrumentação:**
+**Instrumentaçêo:**
 
 ```python
 from prometheus_client import Counter, Histogram, Gauge, start_http_server
@@ -1244,7 +1244,7 @@ agent_requests_total = Counter(
 
 agent_request_duration_seconds = Histogram(
     'agent_request_duration_seconds',
-    'Duração das requisições ao agente',
+    'Duraçêo das requisições ao agente',
     ['agent_name']
 )
 
@@ -1281,7 +1281,7 @@ def process_with_agent(agent, message):
             status='success'
         ).inc()
 
-        # Duração
+        # Duraçêo
         duration = time.time() - start_time
         agent_request_duration_seconds.labels(
             agent_name=agent.name
@@ -1380,7 +1380,7 @@ def process_user_request(user_id, message):
     return response
 ```
 
-**Visualização no Jaeger:**
+**Visualizaçêo no Jaeger:**
 
 ```
 User Request [1234ms]
@@ -1476,7 +1476,7 @@ groups:
         labels:
           severity: critical
         annotations:
-          summary: "Projeção de custo acima de $1000/mês"
+          summary: "Projeçêo de custo acima de $1000/mês"
           description: "Taxa de gasto atual: ${{ $value }}/mês"
 
       # Sem requisições (possível outage)
@@ -1486,12 +1486,12 @@ groups:
         labels:
           severity: critical
         annotations:
-          summary: "Nenhuma requisição nos últimos 5 minutos"
+          summary: "Nenhuma requisiçêo nos últimos 5 minutos"
 ```
 
 ---
 
-## 7.7 Performance e Otimização
+## 7.7 Performance e Otimizaçêo
 
 ### 7.7.1 Estratégias de Cache
 
@@ -1515,7 +1515,7 @@ def get_cached_or_compute(prompt: str, agent, ttl: int = 3600):
     if cached:
         return json.loads(cached)
 
-    # Não encontrado - processar
+    # Nêo encontrado - processar
     response = agent.run(prompt)
 
     # Salvar no cache
@@ -1536,7 +1536,7 @@ from functools import lru_cache
 @lru_cache(maxsize=10000)
 def get_embedding(text: str):
     """Cache de embeddings em memória"""
-    # Gerar embedding (operação cara)
+    # Gerar embedding (operaçêo cara)
     embedding = model.encode(text)
     return embedding
 ```
@@ -1555,7 +1555,7 @@ for query in common_queries:
     get_cached_or_compute(query, agent)
 ```
 
-### 7.7.2 Otimização de Prompts
+### 7.7.2 Otimizaçêo de Prompts
 
 **Antes (ineficiente):**
 
@@ -1563,8 +1563,8 @@ for query in common_queries:
 # Prompt verboso desnecessário
 prompt = """
 Por favor, analise cuidadosamente o seguinte documento em detalhes.
-Leia cada linha com atenção e extraia as informações principais.
-Certifique-se de não perder nenhum detalhe importante.
+Leia cada linha com atençêo e extraia as informações principais.
+Certifique-se de nêo perder nenhum detalhe importante.
 
 Documento: {document}
 
@@ -1616,7 +1616,7 @@ async def chat_stream(message: str):
 
 **Vantagens:**
 - Usuário vê progresso imediatamente
-- Percepção de latência menor
+- Percepçêo de latência menor
 - Pode interromper se necessário
 
 ### 7.7.4 Batching
@@ -1663,7 +1663,7 @@ def get_users_with_tasks():
 
 ---
 
-## 7.8 Custos e Otimização Financeira
+## 7.8 Custos e Otimizaçêo Financeira
 
 ### 7.8.1 Modelo de Custos
 
@@ -1744,7 +1744,7 @@ print(projection)
 # }
 ```
 
-### 7.8.3 Estratégias de Redução de Custos
+### 7.8.3 Estratégias de Reduçêo de Custos
 
 **1. Modelo Tiering (usar modelo mais barato quando possível)**
 
@@ -1911,7 +1911,7 @@ def enable_economy_mode():
 
 ---
 
-## 7.9 Segurança em Produção
+## 7.9 Segurança em Produçêo
 
 ### 7.9.1 Hardening de Segurança
 
@@ -2347,7 +2347,7 @@ spec:
 **Comandos:**
 
 ```bash
-# Deploy nova versão
+# Deploy nova versêo
 kubectl set image deployment/agent-api api=myregistry/agent-api:v2.0.0
 
 # Monitorar rollout
@@ -2360,10 +2360,10 @@ kubectl rollout undo deployment/agent-api
 **Blue-Green com dois deployments:**
 
 ```bash
-# Blue (versão antiga) está servindo produção
+# Blue (versêo antiga) está servindo produçêo
 kubectl apply -f deployment-blue.yaml
 
-# Deploy Green (nova versão)
+# Deploy Green (nova versêo)
 kubectl apply -f deployment-green.yaml
 
 # Testar Green
@@ -2381,9 +2381,9 @@ kubectl delete -f deployment-blue.yaml
 
 ## 7.11 Projeto Prático: Deploy Completo
 
-Vamos fazer o deploy completo de um sistema de agentes em produção, do zero ao ar.
+Vamos fazer o deploy completo de um sistema de agentes em produçêo, do zero ao ar.
 
-### 7.11.1 Aplicação Exemplo
+### 7.11.1 Aplicaçêo Exemplo
 
 **app/main.py:**
 
@@ -2432,7 +2432,7 @@ async def readiness_check():
     """Readiness check - verifica se pode receber tráfego"""
     # Verificar dependências
     try:
-        # Testar conexão com banco, etc.
+        # Testar conexêo com banco, etc.
         return {"status": "ready"}
     except Exception as e:
         raise HTTPException(status_code=503, detail="Not ready")
@@ -2556,7 +2556,7 @@ kubectl port-forward svc/prometheus-grafana 3000:80 -n monitoring
 # Acessar http://localhost:3000 (admin/prom-operator)
 ```
 
-**Passo 7: Smoke tests em produção**
+**Passo 7: Smoke tests em produçêo**
 
 ```bash
 # Health check
@@ -2590,11 +2590,11 @@ spec:
         summary: "High error rate detected"
 ```
 
-### 7.11.3 Checklist de Produção
+### 7.11.3 Checklist de Produçêo
 
 Antes de considerar concluído:
 
-- [x] Aplicação containerizada
+- [x] Aplicaçêo containerizada
 - [x] Deploy em cluster Kubernetes
 - [x] HTTPS configurado
 - [x] Secrets gerenciados com segurança
@@ -2606,7 +2606,7 @@ Antes de considerar concluído:
 - [x] Logs centralizados
 - [x] CI/CD pipeline funcionando
 - [x] Smoke tests passando
-- [x] Documentação atualizada
+- [x] Documentaçêo atualizada
 - [x] Runbooks criados
 - [x] On-call definido
 
@@ -2618,13 +2618,13 @@ Antes de considerar concluído:
 
 Neste módulo, você dominou:
 
-✅ **Arquitetura de Produção**: Padrões e best practices
-✅ **Containerização**: Docker e multi-stage builds
-✅ **Orquestração**: Kubernetes, HPA, StatefulSets
+✅ **Arquitetura de Produçêo**: Padrões e best practices
+✅ **Containerizaçêo**: Docker e multi-stage builds
+✅ **Orquestraçêo**: Kubernetes, HPA, StatefulSets
 ✅ **Cloud Deployment**: AWS, GCP, Azure
 ✅ **Observabilidade**: Logs, métricas, traces
 ✅ **Performance**: Cache, streaming, batching
-✅ **Custos**: Cálculo, otimização, monitoramento
+✅ **Custos**: Cálculo, otimizaçêo, monitoramento
 ✅ **Segurança**: Hardening, secrets, compliance
 ✅ **CI/CD**: Pipelines automatizados, testes, deploy
 ✅ **Projeto Prático**: Deploy completo end-to-end
@@ -2646,10 +2646,10 @@ No **Módulo 8: Ferramentas e Ecossistema**, você explorará:
 
 **Parabéns! 🎉**
 
-Você completou o módulo mais técnico e operacional do curso. Agora você tem as habilidades para levar qualquer sistema de agentes de IA do desenvolvimento para produção com confiança!
+Você completou o módulo mais técnico e operacional do curso. Agora você tem as habilidades para levar qualquer sistema de agentes de IA do desenvolvimento para produçêo com confiança!
 
 **→ Próximo: [Módulo 8 - Ferramentas e Ecossistema](../modulo-08/conteudo/Modulo-08-Ferramentas-Ecossistema.md)**
 
 ---
 
-*"Deploy não é o fim, é apenas o começo. A verdadeira jornada começa quando usuários reais começam a interagir com seu sistema."*
+*"Deploy nêo é o fim, é apenas o começo. A verdadeira jornada começa quando usuários reais começam a interagir com seu sistema."*

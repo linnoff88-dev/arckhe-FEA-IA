@@ -55,7 +55,7 @@ def main():
     parser.add_argument("--pdf", nargs="*", help="Caminhos para PDFs (um ou mais)")
     parser.add_argument("--query", required=True, help="Pergunta a ser respondida")
     parser.add_argument("--persist", default=".chroma", help="Diretório de persistência do índice")
-    parser.add_argument("--reuse", action="store_true", help="Reutiliza índice existente, não reprocessa PDFs")
+    parser.add_argument("--reuse", action="store_true", help="Reutiliza índice existente, nêo reprocessa PDFs")
     parser.add_argument("--k", type=int, default=4, help="Número de documentos recuperados")
     parser.add_argument("--model", default="gpt-4o-mini", help="Modelo OpenAI para respostas")
     parser.add_argument("--embed", default="text-embedding-3-small", help="Modelo de embedding")
@@ -76,7 +76,7 @@ def main():
         paths = [Path(p) for p in args.pdf]
         for p in paths:
             if not p.exists():
-                raise SystemExit(f"Arquivo não encontrado: {p}")
+                raise SystemExit(f"Arquivo nêo encontrado: {p}")
         docs = load_pdfs(paths)
         chunks = split_docs(docs)
         vs = build_vector_store(chunks, str(persist_dir), args.embed)

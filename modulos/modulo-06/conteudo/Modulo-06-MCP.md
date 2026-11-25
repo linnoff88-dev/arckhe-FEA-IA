@@ -2,46 +2,46 @@
 
 ## Conectando Agentes ao Mundo Real
 
-> "A verdadeira inteligência não vem apenas do modelo, mas das conexões que ele pode fazer com o mundo." - Princípio fundamental do MCP
+> "A verdadeira inteligência nêo vem apenas do modelo, mas das conexões que ele pode fazer com o mundo." - Princípio fundamental do MCP
 
 ---
 
 ## 📋 Índice
 
-1. [Introdução ao MCP](#61-introdução-ao-mcp)
+1. [Introduçêo ao MCP](#61-introduçêo-ao-mcp)
 2. [Arquitetura do MCP](#62-arquitetura-do-mcp)
 3. [Criando Servidores MCP](#63-criando-servidores-mcp)
 4. [Criando Clientes MCP](#64-criando-clientes-mcp)
 5. [Recursos e Prompts](#65-recursos-e-prompts)
 6. [Tools no MCP](#66-tools-no-mcp)
-7. [Integração com Agentes](#67-integração-com-agentes)
-8. [Segurança e Autenticação](#68-segurança-e-autenticação)
-9. [Projeto Prático: Sistema de Gestão de Projetos com MCP](#69-projeto-prático)
+7. [Integraçêo com Agentes](#67-integraçêo-com-agentes)
+8. [Segurança e Autenticaçêo](#68-segurança-e-autenticaçêo)
+9. [Projeto Prático: Sistema de Gestêo de Projetos com MCP](#69-projeto-prático)
 10. [Resumo e Próximos Passos](#610-resumo-e-próximos-passos)
 
 ---
 
-## 6.1 Introdução ao MCP
+## 6.1 Introduçêo ao MCP
 
 ### 6.1.1 O Que É o Model Context Protocol?
 
 O **Model Context Protocol (MCP)** é um protocolo aberto desenvolvido pela Anthropic que define uma maneira padronizada para que aplicações de IA se conectem a fontes de dados e ferramentas externas.
 
-**Analogia:** Se os LLMs são "cérebros", o MCP é o "sistema nervoso" que conecta esse cérebro aos "órgãos sensoriais" e "membros" - permitindo que o agente veja (dados) e aja (ferramentas) no mundo real.
+**Analogia:** Se os LLMs sêo "cérebros", o MCP é o "sistema nervoso" que conecta esse cérebro aos "órgêos sensoriais" e "membros" - permitindo que o agente veja (dados) e aja (ferramentas) no mundo real.
 
 ### 6.1.2 Por Que MCP É Importante?
 
 **Problema antes do MCP:**
 
 ```python
-# Cada ferramenta tinha sua própria integração
+# Cada ferramenta tinha sua própria integraçêo
 chatbot.add_tool(custom_database_connector())
 chatbot.add_tool(custom_api_wrapper())
 chatbot.add_tool(custom_file_reader())
 # Resultado: código fragmentado, difícil de manter
 ```
 
-**Solução com MCP:**
+**Soluçêo com MCP:**
 
 ```python
 # Protocolo unificado
@@ -56,16 +56,16 @@ mcp_client.connect_to_server("file://~/documents")
 1. **Acesso a Dados Empresariais**
    - Conectar agentes a bancos de dados corporativos
    - Acessar sistemas CRM, ERP
-   - Integração com data warehouses
+   - Integraçêo com data warehouses
 
-2. **Automação de Ferramentas**
+2. **Automaçêo de Ferramentas**
    - Executar comandos no sistema operacional
    - Gerenciar serviços em nuvem
    - Controlar APIs de terceiros
 
 3. **Sistemas de Conhecimento**
    - RAG com fontes de dados dinâmicas
-   - Acesso a documentação técnica atualizada
+   - Acesso a documentaçêo técnica atualizada
    - Bases de conhecimento corporativas
 
 4. **Agentes Autônomos**
@@ -99,17 +99,17 @@ mcp_client.connect_to_server("file://~/documents")
 
 ### 6.1.5 Principais Vantagens
 
-✅ **Padronização**: Uma interface única para todos os tipos de integrações
-✅ **Reutilização**: Servidores MCP podem ser usados por múltiplas aplicações
-✅ **Segurança**: Controle granular de permissões e autenticação
+✅ **Padronizaçêo**: Uma interface única para todos os tipos de integrações
+✅ **Reutilizaçêo**: Servidores MCP podem ser usados por múltiplas aplicações
+✅ **Segurança**: Controle granular de permissões e autenticaçêo
 ✅ **Escalabilidade**: Fácil adicionar novas fontes de dados
-✅ **Manutenibilidade**: Separação clara entre cliente e servidor
+✅ **Manutenibilidade**: Separaçêo clara entre cliente e servidor
 
 ---
 
 ## 6.2 Arquitetura do MCP
 
-### 6.2.1 Visão Geral da Arquitetura
+### 6.2.1 Visêo Geral da Arquitetura
 
 O MCP segue uma arquitetura **cliente-servidor** baseada em **JSON-RPC 2.0**.
 
@@ -148,7 +148,7 @@ O MCP segue uma arquitetura **cliente-servidor** baseada em **JSON-RPC 2.0**.
 
 #### Resources (Recursos)
 
-Resources são **dados** que o servidor expõe ao cliente.
+Resources sêo **dados** que o servidor expõe ao cliente.
 
 ```python
 # Exemplo conceitual de um resource
@@ -168,7 +168,7 @@ Resources são **dados** que o servidor expõe ao cliente.
 
 #### Tools (Ferramentas)
 
-Tools são **ações** que o servidor pode executar.
+Tools sêo **ações** que o servidor pode executar.
 
 ```python
 # Exemplo conceitual de uma tool
@@ -194,7 +194,7 @@ Tools são **ações** que o servidor pode executar.
 
 #### Prompts (Prompts Pré-configurados)
 
-Prompts são **templates** reutilizáveis que o servidor oferece.
+Prompts sêo **templates** reutilizáveis que o servidor oferece.
 
 ```python
 # Exemplo conceitual de um prompt
@@ -213,11 +213,11 @@ Prompts são **templates** reutilizáveis que o servidor oferece.
 - Reutilizáveis entre aplicações
 - Podem ter parâmetros dinâmicos
 
-### 6.2.3 Protocolo de Comunicação
+### 6.2.3 Protocolo de Comunicaçêo
 
 O MCP usa **JSON-RPC 2.0** sobre transporte **stdio** ou **HTTP/SSE**.
 
-**Exemplo de mensagem de requisição:**
+**Exemplo de mensagem de requisiçêo:**
 
 ```json
 {
@@ -227,7 +227,7 @@ O MCP usa **JSON-RPC 2.0** sobre transporte **stdio** ou **HTTP/SSE**.
   "params": {
     "name": "create_task",
     "arguments": {
-      "title": "Implementar autenticação",
+      "title": "Implementar autenticaçêo",
       "priority": "high"
     }
   }
@@ -251,7 +251,7 @@ O MCP usa **JSON-RPC 2.0** sobre transporte **stdio** ou **HTTP/SSE**.
 }
 ```
 
-### 6.2.4 Ciclo de Vida de uma Conexão
+### 6.2.4 Ciclo de Vida de uma Conexêo
 
 ```
 1. INITIALIZE
@@ -260,7 +260,7 @@ O MCP usa **JSON-RPC 2.0** sobre transporte **stdio** ou **HTTP/SSE**.
 
 2. INITIALIZED
    Server ──────► Client
-   (Confirmação, recursos disponíveis)
+   (Confirmaçêo, recursos disponíveis)
 
 3. OPERATION PHASE
    Client ◄────► Server
@@ -292,7 +292,7 @@ server_process = subprocess.Popen(
 - Ideal para processos locais
 
 **Desvantagens:**
-- Não funciona através de rede
+- Nêo funciona através de rede
 - Um cliente por servidor
 
 **2. HTTP + Server-Sent Events (SSE)**
@@ -325,7 +325,7 @@ response = requests.post(
 
 Vamos criar um servidor MCP do zero usando Python.
 
-**Instalação:**
+**Instalaçêo:**
 
 ```bash
 pip install mcp anthropic-mcp
@@ -373,7 +373,7 @@ async def list_tools() -> list[Tool]:
     return [
         Tool(
             name="create_task",
-            description="Cria uma nova tarefa no sistema de gestão de projetos",
+            description="Cria uma nova tarefa no sistema de gestêo de projetos",
             inputSchema={
                 "type": "object",
                 "properties": {
@@ -383,7 +383,7 @@ async def list_tools() -> list[Tool]:
                     },
                     "description": {
                         "type": "string",
-                        "description": "Descrição detalhada da tarefa"
+                        "description": "Descriçêo detalhada da tarefa"
                     },
                     "priority": {
                         "type": "string",
@@ -432,7 +432,7 @@ async def list_tools() -> list[Tool]:
                     },
                     "notes": {
                         "type": "string",
-                        "description": "Notas sobre a atualização"
+                        "description": "Notas sobre a atualizaçêo"
                     }
                 },
                 "required": ["task_id"]
@@ -487,7 +487,7 @@ async def call_tool(name: str, arguments: dict) -> list[TextContent]:
             task_list.append(
                 f"[{task['id']}] {task['title']}\n"
                 f"  Status: {task['status']} | Prioridade: {task['priority']}\n"
-                f"  Responsável: {task.get('assignee', 'Não atribuído')}"
+                f"  Responsável: {task.get('assignee', 'Nêo atribuído')}"
             )
 
         return [
@@ -503,7 +503,7 @@ async def call_tool(name: str, arguments: dict) -> list[TextContent]:
         task = get_task_by_id(task_id)
 
         if not task:
-            return [TextContent(type="text", text=f"❌ Tarefa {task_id} não encontrada.")]
+            return [TextContent(type="text", text=f"❌ Tarefa {task_id} nêo encontrada.")]
 
         # Atualizar campos
         if "status" in arguments:
@@ -536,7 +536,7 @@ async def list_resources() -> list[Resource]:
             uri="project://dashboard",
             name="Project Dashboard",
             mimeType="application/json",
-            description="Visão geral do projeto com estatísticas"
+            description="Visêo geral do projeto com estatísticas"
         ),
         Resource(
             uri="project://tasks/all",
@@ -576,7 +576,7 @@ async def read_resource(uri: str) -> str:
         return json.dumps(team, indent=2)
 
     else:
-        raise ValueError(f"Resource não encontrado: {uri}")
+        raise ValueError(f"Resource nêo encontrado: {uri}")
 
 # ============================================================================
 # PROMPTS
@@ -630,7 +630,7 @@ async def get_prompt(name: str, arguments: dict) -> str:
 """
         in_progress = [t for t in tasks if t["status"] == "in_progress"]
         for task in in_progress:
-            prompt += f"\n- [{task['id']}] {task['title']} ({task.get('assignee', 'Não atribuído')})"
+            prompt += f"\n- [{task['id']}] {task['title']} ({task.get('assignee', 'Nêo atribuído')})"
 
         prompt += "\n\n## Tarefas Completadas Recentemente\n"
         completed = [t for t in tasks if t["status"] == "completed"][:5]
@@ -641,7 +641,7 @@ async def get_prompt(name: str, arguments: dict) -> str:
         blocked = [t for t in tasks if t["status"] == "blocked"]
         if blocked:
             for task in blocked:
-                prompt += f"\n- [{task['id']}] {task['title']} - {task.get('block_reason', 'Motivo não especificado')}"
+                prompt += f"\n- [{task['id']}] {task['title']} - {task.get('block_reason', 'Motivo nêo especificado')}"
         else:
             prompt += "\nNenhum bloqueio identificado."
 
@@ -671,13 +671,13 @@ async def get_prompt(name: str, arguments: dict) -> str:
         return prompt
 
     else:
-        raise ValueError(f"Prompt não encontrado: {name}")
+        raise ValueError(f"Prompt nêo encontrado: {name}")
 
 # ============================================================================
-# FUNÇÕES AUXILIARES (Simulação de Banco de Dados)
+# FUNÇÕES AUXILIARES (Simulaçêo de Banco de Dados)
 # ============================================================================
 
-# Banco de dados em memória (em produção, use um DB real)
+# Banco de dados em memória (em produçêo, use um DB real)
 TASKS_DB = []
 TEAM_DB = [
     {"name": "Alice", "role": "Developer", "capacity_hours": 40},
@@ -765,7 +765,7 @@ import subprocess
 import json
 
 def send_request(process, request):
-    """Envia requisição JSON-RPC para o servidor"""
+    """Envia requisiçêo JSON-RPC para o servidor"""
     request_json = json.dumps(request) + "\n"
     process.stdin.write(request_json.encode())
     process.stdin.flush()
@@ -819,7 +819,7 @@ call_request = {
     "params": {
         "name": "create_task",
         "arguments": {
-            "title": "Implementar autenticação OAuth",
+            "title": "Implementar autenticaçêo OAuth",
             "priority": "high",
             "assignee": "Alice"
         }
@@ -835,7 +835,7 @@ server.terminate()
 
 ### 6.3.4 Boas Práticas para Servidores
 
-**1. Validação de Entrada**
+**1. Validaçêo de Entrada**
 
 ```python
 def validate_task_input(arguments: dict):
@@ -867,7 +867,7 @@ async def call_tool(name: str, arguments: dict):
         return [
             TextContent(
                 type="text",
-                text=f"❌ Erro de validação: {str(e)}"
+                text=f"❌ Erro de validaçêo: {str(e)}"
             )
         ]
     except Exception as e:
@@ -876,7 +876,7 @@ async def call_tool(name: str, arguments: dict):
         return [
             TextContent(
                 type="text",
-                text=f"❌ Erro interno ao executar a operação. Tente novamente."
+                text=f"❌ Erro interno ao executar a operaçêo. Tente novamente."
             )
         ]
 ```
@@ -894,7 +894,7 @@ async def call_tool(name: str, arguments: dict):
     logger.info(f"Tool chamada: {name} com argumentos: {arguments}")
 
     start_time = time.time()
-    result = # ... execução
+    result = # ... execuçêo
     duration = time.time() - start_time
 
     logger.info(f"Tool {name} executada em {duration:.2f}s")
@@ -982,11 +982,11 @@ if __name__ == "__main__":
     asyncio.run(main())
 ```
 
-### 6.4.2 Integração com Claude Desktop
+### 6.4.2 Integraçêo com Claude Desktop
 
-O Claude Desktop pode se conectar a servidores MCP através de configuração.
+O Claude Desktop pode se conectar a servidores MCP através de configuraçêo.
 
-**Arquivo de configuração (claude_desktop_config.json):**
+**Arquivo de configuraçêo (claude_desktop_config.json):**
 
 ```json
 {
@@ -1017,12 +1017,12 @@ O Claude Desktop pode se conectar a servidores MCP através de configuração.
 4. Agora você pode usar as tools do servidor MCP diretamente:
 
 ```
-Usuário: "Crie uma tarefa de alta prioridade para implementar autenticação"
+Usuário: "Crie uma tarefa de alta prioridade para implementar autenticaçêo"
 
 Claude: [Usa automaticamente a tool create_task do MCP server]
 ✓ Tarefa criada com sucesso!
 ID: a3f2b8c1
-Título: Implementar autenticação
+Título: Implementar autenticaçêo
 Prioridade: high
 Status: pending
 ```
@@ -1094,7 +1094,7 @@ print(result)
 
 ### 6.4.4 Cliente com Retry e Circuit Breaker
 
-Para produção, implemente resiliência:
+Para produçêo, implemente resiliência:
 
 ```python
 import asyncio
@@ -1175,7 +1175,7 @@ async def read_resource(uri: str) -> str:
     elif uri.startswith("project://tasks/"):
         return get_tasks_v1(uri)  # Legacy
     else:
-        raise ValueError(f"URI não reconhecida: {uri}")
+        raise ValueError(f"URI nêo reconhecida: {uri}")
 ```
 
 3. **Metadados Ricos**
@@ -1450,11 +1450,11 @@ async def call_tool(name: str, arguments: dict):
                 text=f"Tarefa já existe: {existing['id']}"
             )]
 
-        # Criar apenas se não existir
+        # Criar apenas se nêo existir
         return create_new_task(arguments)
 ```
 
-3. **Validação Rigorosa**
+3. **Validaçêo Rigorosa**
 
 ```python
 def validate_email(email: str):
@@ -1483,7 +1483,7 @@ async def call_tool(name: str, arguments: dict):
 
         sprint_id = arguments["sprint_id"]
 
-        # 1. Marcar todas as tarefas não concluídas como "rollover"
+        # 1. Marcar todas as tarefas nêo concluídas como "rollover"
         incomplete_tasks = get_tasks(sprint=sprint_id, status="in_progress")
         for task in incomplete_tasks:
             update_task_status(task["id"], "rollover")
@@ -1515,12 +1515,12 @@ async def call_tool(name: str, arguments: dict):
         ]
 ```
 
-### 6.6.3 Tools com Confirmação
+### 6.6.3 Tools com Confirmaçêo
 
-Para operações destrutivas, implemente confirmação:
+Para operações destrutivas, implemente confirmaçêo:
 
 ```python
-# Primeira chamada: solicitar confirmação
+# Primeira chamada: solicitar confirmaçêo
 Tool(
     name="delete_project",
     description="[DESTRUTIVO] Deleta um projeto permanentemente",
@@ -1530,7 +1530,7 @@ Tool(
             "project_id": {"type": "string"},
             "confirm": {
                 "type": "boolean",
-                "description": "Deve ser true para confirmar a deleção"
+                "description": "Deve ser true para confirmar a deleçêo"
             }
         },
         "required": ["project_id", "confirm"]
@@ -1548,21 +1548,21 @@ async def call_tool(name: str, arguments: dict):
             return [
                 TextContent(
                     type="text",
-                    text=f"""⚠️ ATENÇÃO: Você está prestes a deletar o projeto:
+                    text=f"""⚠️ ATENÇêO: Você está prestes a deletar o projeto:
 
 📁 {project['name']}
 - {project['task_count']} tarefas
 - {project['member_count']} membros
 - Criado em: {project['created_at']}
 
-Esta ação é IRREVERSÍVEL!
+Esta açêo é IRREVERSÍVEL!
 
 Para confirmar, chame novamente com confirm=true
 """
                 )
             ]
 
-        # Confirmado - executar deleção
+        # Confirmado - executar deleçêo
         delete_project_permanently(project_id)
 
         return [
@@ -1596,14 +1596,14 @@ async def call_tool(name: str, arguments: dict):
                 task = create_task(task_data)
                 imported.append(task)
 
-                # Simular progresso (em produção, use websocket ou SSE)
+                # Simular progresso (em produçêo, use websocket ou SSE)
                 if (i + 1) % 10 == 0:
                     print(f"Progress: {i+1}/{total}", file=sys.stderr)
 
             except Exception as e:
                 failed.append({"data": task_data, "error": str(e)})
 
-        result_text = f"""✓ Importação concluída!
+        result_text = f"""✓ Importaçêo concluída!
 
 📊 Resultados:
 - Total: {total}
@@ -1654,7 +1654,7 @@ async def call_tool(name: str, arguments: dict):
                 type="text",
                 text=f"""✓ Deploy concluído!
 
-📦 Versão: {version}
+📦 Versêo: {version}
 🌍 Ambiente: {environment}
 ⏰ Timestamp: {deploy_result['timestamp']}
 
@@ -1669,7 +1669,7 @@ Side effects executados:
 
 ---
 
-## 6.7 Integração com Agentes
+## 6.7 Integraçêo com Agentes
 
 ### 6.7.1 Agno + MCP
 
@@ -1708,11 +1708,11 @@ async def create_agno_agent_with_mcp():
             # Criar agente Agno com as ferramentas MCP
             assistant = Agent(
                 name="Project Manager Assistant",
-                role="Assistente de Gestão de Projetos",
+                role="Assistente de Gestêo de Projetos",
                 model="claude-3-7-sonnet-20250219",
                 tools=[create_task_via_mcp, list_tasks_via_mcp],
                 instructions="""
-                Você é um assistente especializado em gestão de projetos.
+                Você é um assistente especializado em gestêo de projetos.
                 Use as ferramentas disponíveis para ajudar o usuário a gerenciar tarefas.
                 Sempre confirme as ações antes de executá-las.
                 """,
@@ -1721,7 +1721,7 @@ async def create_agno_agent_with_mcp():
 
             # Usar o agente
             response = await assistant.async_run(
-                "Crie uma tarefa de alta prioridade para implementar autenticação OAuth"
+                "Crie uma tarefa de alta prioridade para implementar autenticaçêo OAuth"
             )
 
             print(response)
@@ -1755,7 +1755,7 @@ async def create_langchain_agent_with_mcp():
             langchain_tools = []
 
             for mcp_tool in mcp_tools_list:
-                # Criar uma função wrapper para cada tool MCP
+                # Criar uma funçêo wrapper para cada tool MCP
                 async def tool_wrapper(tool_name=mcp_tool.name):
                     async def func(**kwargs):
                         result = await mcp_client.call_tool(
@@ -1788,7 +1788,7 @@ async def create_langchain_agent_with_mcp():
             # Usar o agente
             result = agent.run(
                 "Liste todas as tarefas em progresso e crie uma nova tarefa "
-                "de alta prioridade para revisar o código do módulo de autenticação"
+                "de alta prioridade para revisar o código do módulo de autenticaçêo"
             )
 
             print(result)
@@ -1894,7 +1894,7 @@ async def create_crewai_with_mcp():
 asyncio.run(create_crewai_with_mcp())
 ```
 
-### 6.7.4 Padrão: MCP como Camada de Abstração
+### 6.7.4 Padrêo: MCP como Camada de Abstraçêo
 
 ```
 ┌───────────────────────────────────────────────────────────┐
@@ -1927,23 +1927,23 @@ asyncio.run(create_crewai_with_mcp())
 └───────────────────────────────────────────────────────────┘
 ```
 
-**Vantagens deste padrão:**
+**Vantagens deste padrêo:**
 
-✅ **Desacoplamento**: Agentes não dependem de implementações específicas
-✅ **Reutilização**: Mesmo servidor MCP serve múltiplos agentes
+✅ **Desacoplamento**: Agentes nêo dependem de implementações específicas
+✅ **Reutilizaçêo**: Mesmo servidor MCP serve múltiplos agentes
 ✅ **Manutenibilidade**: Mudanças em fontes de dados ficam isoladas
 ✅ **Testabilidade**: Fácil mockar o servidor MCP para testes
 
 ---
 
-## 6.8 Segurança e Autenticação
+## 6.8 Segurança e Autenticaçêo
 
 ### 6.8.1 Princípios de Segurança
 
 **1. Princípio do Menor Privilégio**
 
 ```python
-# Definir níveis de permissão
+# Definir níveis de permissêo
 PERMISSION_LEVELS = {
     "read_only": ["list_tasks", "read_resource"],
     "developer": ["list_tasks", "read_resource", "create_task", "update_task"],
@@ -1951,7 +1951,7 @@ PERMISSION_LEVELS = {
 }
 
 def check_permission(user_role: str, tool_name: str) -> bool:
-    """Verifica se o usuário tem permissão para usar a tool"""
+    """Verifica se o usuário tem permissêo para usar a tool"""
     allowed_tools = PERMISSION_LEVELS.get(user_role, [])
 
     if "*" in allowed_tools:
@@ -1966,13 +1966,13 @@ async def call_tool(name: str, arguments: dict, context: dict):
 
     if not check_permission(user_role, name):
         raise PermissionError(
-            f"Usuário com papel '{user_role}' não tem permissão para usar '{name}'"
+            f"Usuário com papel '{user_role}' nêo tem permissêo para usar '{name}'"
         )
 
     # Executar tool...
 ```
 
-**2. Validação de Entrada**
+**2. Validaçêo de Entrada**
 
 ```python
 import re
@@ -1990,7 +1990,7 @@ def sanitize_input(value: str) -> str:
 
     for pattern in dangerous_patterns:
         if re.search(pattern, value, re.IGNORECASE):
-            raise ValueError(f"Entrada contém padrão suspeito: {pattern}")
+            raise ValueError(f"Entrada contém padrêo suspeito: {pattern}")
 
     return value.strip()
 
@@ -2015,7 +2015,7 @@ class RateLimiter:
         self.calls = defaultdict(list)
 
     def check_limit(self, user_id: str, max_calls: int = 100, window: int = 3600):
-        """Verifica se usuário excedeu o rate limit (padrão: 100 calls/hora)"""
+        """Verifica se usuário excedeu o rate limit (padrêo: 100 calls/hora)"""
         now = time.time()
 
         # Remover chamadas antigas
@@ -2044,15 +2044,15 @@ async def call_tool(name: str, arguments: dict, context: dict):
     # Executar tool...
 ```
 
-### 6.8.2 Autenticação com Tokens
+### 6.8.2 Autenticaçêo com Tokens
 
-**server.py com autenticação:**
+**server.py com autenticaçêo:**
 
 ```python
 import jwt
 from datetime import datetime, timedelta
 
-SECRET_KEY = "your-secret-key-here"  # Em produção, use variável de ambiente
+SECRET_KEY = "your-secret-key-here"  # Em produçêo, use variável de ambiente
 
 def create_token(user_id: str, role: str) -> str:
     """Cria um JWT token"""
@@ -2073,14 +2073,14 @@ def verify_token(token: str) -> dict:
     except jwt.InvalidTokenError:
         raise Exception("Token inválido")
 
-# Adicionar middleware de autenticação
+# Adicionar middleware de autenticaçêo
 @app.before_request()
 async def authenticate_request(request):
-    """Verifica token antes de processar requisição"""
+    """Verifica token antes de processar requisiçêo"""
     auth_header = request.headers.get("Authorization")
 
     if not auth_header or not auth_header.startswith("Bearer "):
-        raise Exception("Token de autenticação não fornecido")
+        raise Exception("Token de autenticaçêo nêo fornecido")
 
     token = auth_header.replace("Bearer ", "")
 
@@ -2089,13 +2089,13 @@ async def authenticate_request(request):
         request.context["user_id"] = payload["user_id"]
         request.context["user_role"] = payload["role"]
     except Exception as e:
-        raise Exception(f"Autenticação falhou: {e}")
+        raise Exception(f"Autenticaçêo falhou: {e}")
 ```
 
-**Cliente com autenticação:**
+**Cliente com autenticaçêo:**
 
 ```python
-# Cliente envia token em cada requisição
+# Cliente envia token em cada requisiçêo
 class AuthenticatedMCPClient:
     def __init__(self, server_url, token):
         self.server_url = server_url
@@ -2153,7 +2153,7 @@ class AuditLogger:
         self.db = db_connection
 
     def log_action(self, user_id: str, action: str, resource: str, details: dict):
-        """Registra uma ação no log de auditoria"""
+        """Registra uma açêo no log de auditoria"""
         audit_entry = {
             "timestamp": datetime.utcnow().isoformat(),
             "user_id": user_id,
@@ -2175,7 +2175,7 @@ async def call_tool(name: str, arguments: dict, context: dict):
     user_id = context.get("user_id", "anonymous")
 
     if name == "delete_task":
-        # Ação crítica - auditar
+        # Açêo crítica - auditar
         task_id = arguments["task_id"]
         task = get_task(task_id)
 
@@ -2189,13 +2189,13 @@ async def call_tool(name: str, arguments: dict, context: dict):
             }
         )
 
-        # Executar deleção
+        # Executar deleçêo
         delete_task(task_id)
 
         return [TextContent(type="text", text=f"Tarefa {task_id} deletada")]
 ```
 
-### 6.8.4 Proteção contra Injeções
+### 6.8.4 Proteçêo contra Injeções
 
 **SQL Injection Protection:**
 
@@ -2222,11 +2222,11 @@ def run_command_unsafe(filename: str):
 
 # ✅ SEGURO
 def run_command_safe(filename: str):
-    # Validar que o filename não contém caracteres perigosos
+    # Validar que o filename nêo contém caracteres perigosos
     if not filename.replace("_", "").replace("-", "").replace(".", "").isalnum():
         raise ValueError("Filename inválido")
 
-    # Usar subprocess com lista de argumentos (não string)
+    # Usar subprocess com lista de argumentos (nêo string)
     import subprocess
     subprocess.run(["cat", filename], check=True)
 ```
@@ -2240,7 +2240,7 @@ from pathlib import Path
 ALLOWED_BASE_PATH = "/var/mcp/data"
 
 def read_file_safe(filepath: str) -> str:
-    """Lê arquivo com proteção contra path traversal"""
+    """Lê arquivo com proteçêo contra path traversal"""
     # Resolver path absoluto
     requested_path = Path(filepath).resolve()
     base_path = Path(ALLOWED_BASE_PATH).resolve()
@@ -2255,7 +2255,7 @@ def read_file_safe(filepath: str) -> str:
 
     # Verificar que o arquivo existe
     if not requested_path.exists():
-        raise FileNotFoundError(f"Arquivo não encontrado: {filepath}")
+        raise FileNotFoundError(f"Arquivo nêo encontrado: {filepath}")
 
     # Ler arquivo com segurança
     with open(requested_path, 'r') as f:
@@ -2264,17 +2264,17 @@ def read_file_safe(filepath: str) -> str:
 
 ---
 
-## 6.9 Projeto Prático: Sistema de Gestão de Projetos com MCP
+## 6.9 Projeto Prático: Sistema de Gestêo de Projetos com MCP
 
-### 6.9.1 Visão Geral do Projeto
+### 6.9.1 Visêo Geral do Projeto
 
-Vamos construir um **sistema completo de gestão de projetos** usando MCP, integrando:
+Vamos construir um **sistema completo de gestêo de projetos** usando MCP, integrando:
 
 - Servidor MCP com tools, resources e prompts
 - Cliente Agno que usa o servidor
 - Banco de dados SQLite para persistência
 - Interface de linha de comando (CLI)
-- Autenticação e autorização
+- Autenticaçêo e autorizaçêo
 - Logging e auditoria
 
 **Arquitetura:**
@@ -2319,18 +2319,18 @@ project_manager_mcp/
 ├── mcp_server.py           # Servidor MCP principal
 ├── database.py             # Gerenciamento do banco de dados
 ├── models.py               # Modelos de dados (User, Project, Task)
-├── auth.py                 # Autenticação e autorização
-├── tools_impl.py           # Implementação das tools
-├── resources_impl.py       # Implementação dos resources
-├── prompts_impl.py         # Implementação dos prompts
-├── agent_config.py         # Configuração do agente Agno
+├── auth.py                 # Autenticaçêo e autorizaçêo
+├── tools_impl.py           # Implementaçêo das tools
+├── resources_impl.py       # Implementaçêo dos resources
+├── prompts_impl.py         # Implementaçêo dos prompts
+├── agent_config.py         # Configuraçêo do agente Agno
 ├── project_manager_cli.py  # Interface CLI
 ├── config.py               # Configurações gerais
 ├── requirements.txt
 └── README.md
 ```
 
-### 6.9.3 Implementação Completa
+### 6.9.3 Implementaçêo Completa
 
 **requirements.txt:**
 
@@ -2515,11 +2515,11 @@ class Database:
         conn.commit()
         conn.close()
 
-        # Criar usuários padrão se não existirem
+        # Criar usuários padrêo se nêo existirem
         self._create_default_users()
 
     def _create_default_users(self):
-        """Cria usuários padrão para teste"""
+        """Cria usuários padrêo para teste"""
         default_users = [
             User(
                 id=str(uuid.uuid4()),
@@ -2773,7 +2773,7 @@ def verify_access_token(token: str) -> dict:
         raise ValueError("Token inválido")
 
 def check_permission(user_role: str, required_permission: str) -> bool:
-    """Verifica se o usuário tem a permissão necessária"""
+    """Verifica se o usuário tem a permissêo necessária"""
     permissions = {
         "admin": ["*"],
         "developer": [
@@ -2831,7 +2831,7 @@ def create_project_tool(name: str, description: str, user_id: str) -> List[TextC
 
 📁 **{project.name}**
 ID: {project.id}
-Descrição: {project.description}
+Descriçêo: {project.description}
 """
     )]
 
@@ -2877,7 +2877,7 @@ def create_task_tool(
         timestamp=datetime.utcnow()
     ))
 
-    assignee_text = f"Responsável: {assignee_username}" if assignee_username else "Não atribuída"
+    assignee_text = f"Responsável: {assignee_username}" if assignee_username else "Nêo atribuída"
 
     return [TextContent(
         type="text",
@@ -2949,7 +2949,7 @@ def update_task_tool(
     if not task:
         return [TextContent(
             type="text",
-            text=f"❌ Tarefa {task_id} não encontrada."
+            text=f"❌ Tarefa {task_id} nêo encontrada."
         )]
 
     # Atualizar campos
@@ -2992,7 +2992,7 @@ Prioridade: {task.priority.value}
     )]
 ```
 
-**(Continuação do código no próximo bloco...)**
+**(Continuaçêo do código no próximo bloco...)**
 
 **mcp_server.py** (servidor MCP principal):
 
@@ -3016,10 +3016,10 @@ import config
 app = Server(config.MCP_SERVER_NAME)
 
 # ============================================================================
-# MIDDLEWARE DE AUTENTICAÇÃO
+# MIDDLEWARE DE AUTENTICAÇêO
 # ============================================================================
 
-# Armazenar contexto da requisição atual
+# Armazenar contexto da requisiçêo atual
 current_context = {}
 
 # ============================================================================
@@ -3036,7 +3036,7 @@ async def list_tools() -> list[Tool]:
                 "type": "object",
                 "properties": {
                     "name": {"type": "string", "description": "Nome do projeto"},
-                    "description": {"type": "string", "description": "Descrição do projeto"}
+                    "description": {"type": "string", "description": "Descriçêo do projeto"}
                 },
                 "required": ["name"]
             }
@@ -3098,15 +3098,15 @@ async def list_tools() -> list[Tool]:
 
 @app.call_tool()
 async def call_tool(name: str, arguments: dict) -> list[TextContent]:
-    # Obter user_id do contexto (em produção, viria do token JWT)
+    # Obter user_id do contexto (em produçêo, viria do token JWT)
     user_id = current_context.get("user_id", "admin")  # Default para teste
 
-    # Verificar permissão
+    # Verificar permissêo
     user_role = current_context.get("user_role", "admin")
     if not check_permission(user_role, name):
         return [TextContent(
             type="text",
-            text=f"❌ Você não tem permissão para executar '{name}'"
+            text=f"❌ Você nêo tem permissêo para executar '{name}'"
         )]
 
     # Executar tool
@@ -3161,7 +3161,7 @@ async def list_resources() -> list[Resource]:
             uri="project://dashboard",
             name="Dashboard",
             mimeType="application/json",
-            description="Visão geral de todos os projetos e tarefas"
+            description="Visêo geral de todos os projetos e tarefas"
         ),
         Resource(
             uri="project://projects",
@@ -3202,7 +3202,7 @@ async def read_resource(uri: str) -> str:
         } for p in projects], indent=2)
 
     else:
-        raise ValueError(f"Resource não encontrado: {uri}")
+        raise ValueError(f"Resource nêo encontrado: {uri}")
 
 # ============================================================================
 # PROMPTS
@@ -3229,7 +3229,7 @@ async def get_prompt(name: str, arguments: dict) -> str:
         project = next((p for p in projects if p.id == project_id), None)
 
         if not project:
-            return f"Projeto {project_id} não encontrado."
+            return f"Projeto {project_id} nêo encontrado."
 
         tasks = db.get_tasks(project_id=project_id)
 
@@ -3237,7 +3237,7 @@ async def get_prompt(name: str, arguments: dict) -> str:
 
 ## Informações Gerais
 - **ID**: {project.id}
-- **Descrição**: {project.description}
+- **Descriçêo**: {project.description}
 - **Criado em**: {project.created_at.strftime("%d/%m/%Y")}
 
 ## Estatísticas de Tarefas
@@ -3258,7 +3258,7 @@ async def get_prompt(name: str, arguments: dict) -> str:
         return prompt
 
     else:
-        raise ValueError(f"Prompt não encontrado: {name}")
+        raise ValueError(f"Prompt nêo encontrado: {name}")
 
 # ============================================================================
 # MAIN
@@ -3266,7 +3266,7 @@ async def get_prompt(name: str, arguments: dict) -> str:
 
 async def main():
     """Inicia o servidor MCP via stdio"""
-    # Definir contexto padrão (em produção, seria extraído do token)
+    # Definir contexto padrêo (em produçêo, seria extraído do token)
     current_context["user_id"] = "admin"
     current_context["user_role"] = "admin"
 
@@ -3343,17 +3343,17 @@ Neste módulo, você dominou:
 ✅ **Fundamentos do MCP**: Arquitetura cliente-servidor, JSON-RPC, transporte
 ✅ **Servidores MCP**: Como criar servers com tools, resources e prompts
 ✅ **Clientes MCP**: Como conectar aplicações aos servidores
-✅ **Integração com Agentes**: Agno, LangChain, CrewAI + MCP
-✅ **Segurança**: Autenticação, autorização, validação, auditoria
-✅ **Projeto Prático**: Sistema completo de gestão de projetos
+✅ **Integraçêo com Agentes**: Agno, LangChain, CrewAI + MCP
+✅ **Segurança**: Autenticaçêo, autorizaçêo, validaçêo, auditoria
+✅ **Projeto Prático**: Sistema completo de gestêo de projetos
 
 ### 6.10.2 Melhores Práticas - Resumo
 
 1. **Design de Tools**
    - Uma responsabilidade por tool
-   - Validação rigorosa de entradas
+   - Validaçêo rigorosa de entradas
    - Idempotência quando possível
-   - Confirmação para operações destrutivas
+   - Confirmaçêo para operações destrutivas
 
 2. **Design de Resources**
    - URIs hierárquicas e descritivas
@@ -3376,7 +3376,7 @@ Neste módulo, você dominou:
 
 ### 6.10.3 Recursos Adicionais
 
-**Documentação Oficial:**
+**Documentaçêo Oficial:**
 - [MCP Specification](https://spec.modelcontextprotocol.io/)
 - [MCP Python SDK](https://github.com/anthropics/mcp-python-sdk)
 - [MCP Servers Collection](https://github.com/anthropics/mcp-servers)
@@ -3384,7 +3384,7 @@ Neste módulo, você dominou:
 **Servidores MCP Prontos:**
 - `mcp-server-sqlite`: Acesso a bancos SQLite
 - `mcp-server-filesystem`: Operações em arquivos
-- `mcp-server-github`: Integração com GitHub
+- `mcp-server-github`: Integraçêo com GitHub
 - `mcp-server-google-drive`: Acesso ao Google Drive
 
 **Ferramentas:**
@@ -3393,14 +3393,14 @@ Neste módulo, você dominou:
 
 ### 6.10.4 Próximo Módulo
 
-No **Módulo 7: Deploy e Produção**, você aprenderá:
+No **Módulo 7: Deploy e Produçêo**, você aprenderá:
 
-🚀 Como fazer deploy de agentes em produção
+🚀 Como fazer deploy de agentes em produçêo
 📊 Monitoramento e observabilidade avançados
-⚡ Otimização de performance e custos
-🔒 Hardening de segurança para produção
+⚡ Otimizaçêo de performance e custos
+🔒 Hardening de segurança para produçêo
 ☁️ Deploy em diferentes plataformas (AWS, GCP, Azure, etc.)
-🐳 Containerização com Docker e Kubernetes
+🐳 Containerizaçêo com Docker e Kubernetes
 🔄 CI/CD para sistemas de agentes
 
 ### 6.10.5 Exercícios Práticos
@@ -3408,7 +3408,7 @@ No **Módulo 7: Deploy e Produção**, você aprenderá:
 **Nível 1 - Básico:**
 1. Crie um servidor MCP simples com 3 tools personalizadas
 2. Conecte um cliente Agno ao seu servidor
-3. Implemente autenticação básica com tokens
+3. Implemente autenticaçêo básica com tokens
 
 **Nível 2 - Intermediário:**
 4. Crie um resource que retorna dados em tempo real
@@ -3434,12 +3434,12 @@ No **Módulo 7: Deploy e Produção**, você aprenderá:
 
 **Parabéns! 🎉**
 
-Você completou o Módulo 6 e agora é capaz de criar sistemas robustos de agentes conectados ao mundo real usando o Model Context Protocol. Você aprendeu não apenas a teoria, mas também implementou um projeto completo de produção.
+Você completou o Módulo 6 e agora é capaz de criar sistemas robustos de agentes conectados ao mundo real usando o Model Context Protocol. Você aprendeu nêo apenas a teoria, mas também implementou um projeto completo de produçêo.
 
-**No próximo módulo**, vamos levar seus agentes para produção com deploy profissional, monitoramento e otimizações avançadas!
+**No próximo módulo**, vamos levar seus agentes para produçêo com deploy profissional, monitoramento e otimizações avançadas!
 
 ---
 
-*"A verdadeira inteligência de um agente não vem apenas do LLM, mas das conexões que ele pode fazer com o mundo real. O MCP é a ponte que torna isso possível."*
+*"A verdadeira inteligência de um agente nêo vem apenas do LLM, mas das conexões que ele pode fazer com o mundo real. O MCP é a ponte que torna isso possível."*
 
-**→ Próximo: [Módulo 7 - Deploy e Produção](../modulo-07/conteudo/Modulo-07-Deploy-Producao.md)**
+**→ Próximo: [Módulo 7 - Deploy e Produçêo](../modulo-07/conteudo/Modulo-07-Deploy-Producao.md)**

@@ -1,6 +1,6 @@
 # Módulo 5: Sistemas Multi-Agentes com CrewAI
 
-**Duração:** 12 horas | **Nível:** Avançado
+**Duraçêo:** 12 horas | **Nível:** Avançado
 
 > **Frase-guia:** "Sozinho você vai rápido. Em equipe, você vai longe." - Provérbio Africano
 
@@ -10,9 +10,9 @@
 
 ## Ato 3: A Maestria
 
-> "Você evoluiu de um conversador para um construtor, e de um construtor para um arquiteto. Agora, você se tornará um orquestrador. Este é o ápice da engenharia de agentes: a criação de sistemas onde múltiplos especialistas de IA colaboram, delegam e resolvem problemas que nenhum agente conseguiria sozinho. Com CrewAI, você não está mais apenas dando ordens; você está montando uma equipe de elite."
+> "Você evoluiu de um conversador para um construtor, e de um construtor para um arquiteto. Agora, você se tornará um orquestrador. Este é o ápice da engenharia de agentes: a criaçêo de sistemas onde múltiplos especialistas de IA colaboram, delegam e resolvem problemas que nenhum agente conseguiria sozinho. Com CrewAI, você nêo está mais apenas dando ordens; você está montando uma equipe de elite."
 
-Bem-vindo à **sala de comando**. Até agora, trabalhamos com agentes agindo de forma isolada ou em sequências simples. **CrewAI eleva o jogo** ao introduzir um framework robusto para a colaboração entre agentes.
+Bem-vindo à **sala de comando**. Até agora, trabalhamos com agentes agindo de forma isolada ou em sequências simples. **CrewAI eleva o jogo** ao introduzir um framework robusto para a colaboraçêo entre agentes.
 
 Inspirado em **equipes humanas eficazes**, ele nos permite:
 - Definir **papéis claros**
@@ -20,15 +20,15 @@ Inspirado em **equipes humanas eficazes**, ele nos permite:
 - Orquestrar **processos colaborativos**
 - Resolver **problemas complexos**
 
-Prepare-se para pensar como um **gerente de projetos de IA**, montando a "tripulação" (crew) perfeita para qualquer missão.
+Prepare-se para pensar como um **gerente de projetos de IA**, montando a "tripulaçêo" (crew) perfeita para qualquer missêo.
 
 ---
 
 ## Capítulo 5.1: Conceitos de Multi-Agent Systems (MAS)
 
-### O Que São Sistemas Multi-Agentes?
+### O Que Sêo Sistemas Multi-Agentes?
 
-Um **Sistema Multi-Agentes (MAS)** é uma coleção de agentes autônomos que:
+Um **Sistema Multi-Agentes (MAS)** é uma coleçêo de agentes autônomos que:
 - Interagem entre si
 - Compartilham informações
 - Colaboram em objetivos comuns
@@ -36,7 +36,7 @@ Um **Sistema Multi-Agentes (MAS)** é uma coleção de agentes autônomos que:
 
 **Analogia:** Pense em uma **equipe de desenvolvimento de software**:
 - **Product Owner:** Define o que construir
-- **Arquiteto:** Planeja a solução técnica
+- **Arquiteto:** Planeja a soluçêo técnica
 - **Desenvolvedores:** Implementam código
 - **QA:** Testa e valida
 - **DevOps:** Faz deploy
@@ -45,7 +45,7 @@ Cada membro tem expertise específica. Juntos, entregam o que nenhum conseguiria
 
 ### Por Que Múltiplos Agentes?
 
-#### 1. **Especialização**
+#### 1. **Especializaçêo**
 
 ```
 Agente Generalista:
@@ -56,7 +56,7 @@ Agente Generalista:
 vs.
 
 Equipe de Especialistas:
-- Pesquisador: 95% de precisão em pesquisa
+- Pesquisador: 95% de precisêo em pesquisa
 - Escritor: Qualidade editorial profissional
 - Analista: Insights profundos de dados
 ```
@@ -72,7 +72,7 @@ Tempo total: 40 minutos
 
 Paralelo (4 agentes):
 Tarefa A ┐
-Tarefa B ├→ Combinação final
+Tarefa B ├→ Combinaçêo final
 Tarefa C ┤
 Tarefa D ┘
 Tempo total: 12 minutos
@@ -81,9 +81,9 @@ Tempo total: 12 minutos
 #### 3. **Robustez**
 
 Se um agente falha:
-- Outro pode assumir a função
+- Outro pode assumir a funçêo
 - Sistema continua operacional
-- Degradação graceful
+- Degradaçêo graceful
 
 #### 4. **Modularidade**
 
@@ -104,7 +104,7 @@ Se um agente falha:
 
 **1. Agência de Marketing Digital**
 - **Estrategista:** Análise de mercado
-- **Copywriter:** Criação de textos
+- **Copywriter:** Criaçêo de textos
 - **Designer:** Assets visuais
 - **Analista:** Métricas e ROI
 
@@ -147,14 +147,14 @@ Se um agente falha:
 
 #### 1. **Agents (Agentes)**
 
-São os **especialistas** da sua equipe.
+Sêo os **especialistas** da sua equipe.
 
-**Definição:**
+**Definiçêo:**
 ```python
 from crewai import Agent
 
 agent = Agent(
-    role="",           # Papel/função
+    role="",           # Papel/funçêo
     goal="",           # Objetivo principal
     backstory="",      # História e contexto
     tools=[],          # Ferramentas disponíveis
@@ -181,7 +181,7 @@ agent = Agent(
   ```python
   backstory="""
   Você é um analista de dados sênior com 10 anos de experiência
-  em análise preditiva e visualização de dados. Você trabalhou
+  em análise preditiva e visualizaçêo de dados. Você trabalhou
   em Fortune 500 companies e é conhecido por transformar dados
   brutos em insights estratégicos que impulsionam decisões de
   negócio.
@@ -195,9 +195,9 @@ agent = Agent(
 
 #### 2. **Tasks (Tarefas)**
 
-São as **unidades de trabalho** específicas.
+Sêo as **unidades de trabalho** específicas.
 
-**Definição:**
+**Definiçêo:**
 ```python
 from crewai import Task
 
@@ -207,7 +207,7 @@ task = Task(
     expected_output="",    # Resultado esperado
     context=[],            # Tarefas de contexto
     output_file="",        # Salvar resultado
-    callback=None          # Função após conclusão
+    callback=None          # Funçêo após conclusêo
 )
 ```
 
@@ -224,7 +224,7 @@ task = Task(
   """
   ```
 
-- **`expected_output`:** Especificação do resultado
+- **`expected_output`:** Especificaçêo do resultado
   ```python
   expected_output="""
   Relatório em formato Markdown com:
@@ -259,15 +259,15 @@ from crewai_tools import tool
 @tool
 def analyze_sentiment(text: str) -> str:
     """Analisa sentimento de um texto"""
-    # Implementação...
+    # Implementaçêo...
     return sentiment_score
 ```
 
 #### 4. **Process (Processo)**
 
-Define **como** as tasks são executadas.
+Define **como** as tasks sêo executadas.
 
-**Opção 1: Sequential (Sequencial)**
+**Opçêo 1: Sequential (Sequencial)**
 ```python
 from crewai import Crew, Process
 
@@ -287,7 +287,7 @@ Task 1 (Agent 1) → Task 2 (Agent 2) → Task 3 (Agent 3)
                                       Resultado Final
 ```
 
-**Opção 2: Hierarchical (Hierárquico)**
+**Opçêo 2: Hierarchical (Hierárquico)**
 ```python
 crew = Crew(
     agents=[agent1, agent2, agent3],
@@ -318,7 +318,7 @@ Manager decide:
 - Quando delegar
 - Como combinar resultados
 
-#### 5. **Crew (Tripulação)**
+#### 5. **Crew (Tripulaçêo)**
 
 A **equipe completa** montada.
 
@@ -385,7 +385,7 @@ pela USP e 12 anos de experiência em análise preditiva.
 
 EXPERTISE:
 - Machine Learning e Estatística Avançada
-- Visualização de dados (Matplotlib, Plotly, Tableau)
+- Visualizaçêo de dados (Matplotlib, Plotly, Tableau)
 - SQL, Python, R
 - Storytelling com dados
 
@@ -393,7 +393,7 @@ PERSONALIDADE:
 - Meticulosa e orientada a detalhes
 - Cética - só confia em dados validados
 - Comunicadora clara - transforma complexidade em simplicidade
-- Proativa em identificar insights não óbvios
+- Proativa em identificar insights nêo óbvios
 
 ABORDAGEM:
 1. Sempre valida qualidade dos dados primeiro
@@ -401,7 +401,7 @@ ABORDAGEM:
 3. Contextualiza números com impacto de negócio
 4. Questiona suposições e vieses
 
-ESTILO DE COMUNICAÇÃO:
+ESTILO DE COMUNICAÇêO:
 - Objetiva e direta
 - Usa analogias para explicar conceitos técnicos
 - Sempre inclui nível de confiança em suas conclusões
@@ -422,11 +422,11 @@ garantindo que:
 - Insights sejam baseados em dados verificados
 - Recomendações tenham ROI estimado
 - Análise seja concluída em <10 minutos
-- Relatório seja compreensível para não-técnicos
+- Relatório seja compreensível para nêo-técnicos
 """
 ```
 
-### Templates de Agentes por Função
+### Templates de Agentes por Funçêo
 
 #### Agente Pesquisador
 
@@ -453,25 +453,25 @@ researcher = Agent(
     ESPECIALIDADES:
     - Pesquisa primária e secundária
     - Análise competitiva
-    - Identificação de tendências emergentes
-    - Validação de fontes
+    - Identificaçêo de tendências emergentes
+    - Validaçêo de fontes
 
     METODOLOGIA:
-    1. Triangulação de fontes (mínimo 3 fontes independentes)
-    2. Priorização de dados recentes (<6 meses)
-    3. Verificação de credibilidade de fontes
-    4. Documentação de todas as referências
+    1. Triangulaçêo de fontes (mínimo 3 fontes independentes)
+    2. Priorizaçêo de dados recentes (<6 meses)
+    3. Verificaçêo de credibilidade de fontes
+    4. Documentaçêo de todas as referências
 
     PERSONALIDADE:
     - Cético e rigoroso
     - Curiosidade intelectual
-    - Atenção obsessiva a detalhes
-    - Compromisso com precisão factual
+    - Atençêo obsessiva a detalhes
+    - Compromisso com precisêo factual
     """,
 
     tools=[search_tool, scrape_tool],
     verbose=True,
-    allow_delegation=False  # Pesquisador não delega
+    allow_delegation=False  # Pesquisador nêo delega
 )
 ```
 
@@ -494,16 +494,16 @@ writer = Agent(
     - Artigos publicados em TechCrunch, Wired, The Verge
     - 3x vencedora do prêmio de Content Marketing Institute
     - Especialista em storytelling B2B e B2C
-    - Taxa de conversão média: 8% (indústria: 2%)
+    - Taxa de conversêo média: 8% (indústria: 2%)
 
     EXPERTISE:
     - Copywriting persuasivo
     - SEO content optimization
     - Storytelling narrativo
-    - Adaptação de tom para diferentes audiências
+    - Adaptaçêo de tom para diferentes audiências
 
     PRINCÍPIOS:
-    - Headline que captura atenção em <3 segundos
+    - Headline que captura atençêo em <3 segundos
     - Primeiro parágrafo responde "por que devo ler isso?"
     - Estrutura clara: Intro → Desenvolvimento → Call-to-Action
     - Cada parágrafo tem um objetivo claro
@@ -517,7 +517,7 @@ writer = Agent(
     - Equilíbrio entre profissionalismo e acessibilidade
     """,
 
-    tools=[],  # Escritor geralmente não precisa de tools externas
+    tools=[],  # Escritor geralmente nêo precisa de tools externas
     verbose=True,
     allow_delegation=False
 )
@@ -531,7 +531,7 @@ editor = Agent(
 
     goal="""
     Garantir que todo conteúdo publicado seja impecável em
-    qualidade, precisão, estilo e alinhamento com brand guidelines
+    qualidade, precisêo, estilo e alinhamento com brand guidelines
     """,
 
     backstory="""
@@ -541,18 +541,18 @@ editor = Agent(
     BACKGROUND:
     - Ex-editor da Folha de S.Paulo
     - Graduado em Jornalismo e Letras
-    - Especialização em edição de conteúdo digital
-    - Membro da Associação Brasileira de Editores
+    - Especializaçêo em ediçêo de conteúdo digital
+    - Membro da Associaçêo Brasileira de Editores
 
     RESPONSABILIDADES:
     - Fact-checking rigoroso
-    - Verificação de gramática e ortografia
+    - Verificaçêo de gramática e ortografia
     - Consistência de tom e voz
     - Estrutura e flow narrativo
-    - SEO e otimização de performance
+    - SEO e otimizaçêo de performance
     - Compliance com guidelines editoriais
 
-    CHECKLIST DE EDIÇÃO:
+    CHECKLIST DE EDIÇêO:
     □ Headline clara e atraente?
     □ Lead responde quem, o quê, quando, onde, por quê?
     □ Estrutura lógica e fácil de seguir?
@@ -561,7 +561,7 @@ editor = Agent(
     □ Zero erros gramaticais/ortográficos?
     □ Tom consistente com brand voice?
     □ Call-to-action claro?
-    □ Formatação (títulos, listas, negrito) otimizada?
+    □ Formataçêo (títulos, listas, negrito) otimizada?
     □ Length apropriado para o formato?
 
     PERSONALIDADE:
@@ -644,7 +644,7 @@ research_task = Task(
     4. MAPEAR desafios:
        - Barreiras regulatórias (LGPD, etc.)
        - Desafios técnicos (infraestrutura, custos)
-       - Percepção do mercado
+       - Percepçêo do mercado
 
     **REQUISITOS:**
     - Priorize fontes de 2024 (últimos 6 meses)
@@ -653,8 +653,8 @@ research_task = Task(
     - Destaque dados quantitativos com unidades claras
 
     **RESTRIÇÕES:**
-    - Não especule - apenas dados verificáveis
-    - Se não encontrar dado específico, indique claramente
+    - Nêo especule - apenas dados verificáveis
+    - Se nêo encontrar dado específico, indique claramente
     - Máximo 30 minutos de pesquisa
     """,
 
@@ -671,7 +671,7 @@ research_task = Task(
     ## 2. Tamanho e Crescimento do Mercado
     - Valor atual: R$ X bilhões
     - CAGR 2024-2028: X%
-    - Segmentação B2B/B2C: percentuais
+    - Segmentaçêo B2B/B2C: percentuais
 
     ## 3. Análise Competitiva
     ### Player 1: [Nome]
@@ -684,7 +684,7 @@ research_task = Task(
 
     ## 4. Tendências Emergentes
     1. Tendência 1
-       - Descrição
+       - Descriçêo
        - Evidências
        - Fonte: [URL]
 
@@ -703,12 +703,12 @@ research_task = Task(
 )
 ```
 
-### Context: Passando Informação Entre Tasks
+### Context: Passando Informaçêo Entre Tasks
 
 ```python
 # Task 1: Pesquisar
 task_research = Task(
-    description="Pesquise sobre IA em educação",
+    description="Pesquise sobre IA em educaçêo",
     agent=researcher,
     expected_output="Resumo de pesquisa em 3 parágrafos"
 )
@@ -764,7 +764,7 @@ content_crew = Crew(
 result = content_crew.kickoff()
 ```
 
-**Execução:**
+**Execuçêo:**
 ```
 ┌──────────────────────────────────────────┐
 │ 1. RESEARCH (Researcher)                 │
@@ -791,11 +791,11 @@ result = content_crew.kickoff()
 **Quando usar:**
 - Workflow linear claro
 - Dependências sequenciais
-- Ordem de execução crítica
+- Ordem de execuçêo crítica
 
 ### Process.hierarchical
 
-**Manager AI** decide ordem, delegação e coordenação.
+**Manager AI** decide ordem, delegaçêo e coordenaçêo.
 
 ```python
 content_crew = Crew(
@@ -809,14 +809,14 @@ content_crew = Crew(
 result = content_crew.kickoff()
 ```
 
-**Execução:**
+**Execuçêo:**
 ```
 ┌─────────────────────────────────────┐
 │     AI MANAGER (GPT-4)              │
 │  "Analisar objetivo e planejar..."  │
 └─────────────────────────────────────┘
          │
-         ├─ Decisão: "Pesquisa primeiro é essencial"
+         ├─ Decisêo: "Pesquisa primeiro é essencial"
          ↓
 ┌─────────────────┐
 │   Researcher    │ → Executa pesquisa
@@ -825,11 +825,11 @@ result = content_crew.kickoff()
 ┌─────────────────────────────────────┐
 │     AI MANAGER                      │
 │  "Pesquisa concluída. Avaliar se   │
-│   dados são suficientes ou se      │
+│   dados sêo suficientes ou se      │
 │   precisa fact-checking adicional" │
 └─────────────────────────────────────┘
          │
-         ├─ Decisão: "Dados OK, seguir para escrita"
+         ├─ Decisêo: "Dados OK, seguir para escrita"
          ↓
 ┌─────────────────┐
 │     Writer      │ → Escreve artigo
@@ -855,13 +855,13 @@ result = content_crew.kickoff()
 
 **Vantagens:**
 - **Flexibilidade:** Adapta-se a situações inesperadas
-- **Otimização:** Pode executar tasks em paralelo quando possível
+- **Otimizaçêo:** Pode executar tasks em paralelo quando possível
 - **Inteligência:** Decide baseado em contexto e resultados
 - **Recovery:** Pode requisitar re-trabalho se necessário
 
 **Quando usar:**
-- Problemas complexos e não-lineares
-- Quando ordem ideal não é clara antecipadamente
+- Problemas complexos e nêo-lineares
+- Quando ordem ideal nêo é clara antecipadamente
 - Quando tasks podem ser paralelizadas
 - Projetos que podem precisar de pivots
 
@@ -885,7 +885,7 @@ from crewai_tools import (
     DirectorySearchTool,  # Buscar em diretório
 
     # Código
-    CodeDocsSearchTool,   # Busca em documentação
+    CodeDocsSearchTool,   # Busca em documentaçêo
     GithubSearchTool,     # Busca no GitHub
 
     # Dados
@@ -929,7 +929,7 @@ def analyze_competitors(company_name: str) -> str:
     Args:
         company_name: Nome da empresa a analisar
     """
-    # Implementação...
+    # Implementaçêo...
     return analysis_report
 
 # 4. Atribuir tools a agentes
@@ -957,7 +957,7 @@ def query_sales_database(query: str) -> str:
     """
     # Segurança: permitir apenas SELECT
     if not query.strip().upper().startswith("SELECT"):
-        return "Erro: Apenas queries SELECT são permitidas"
+        return "Erro: Apenas queries SELECT sêo permitidas"
 
     try:
         conn = sqlite3.connect("sales.db")
@@ -987,10 +987,10 @@ def query_sales_database(query: str) -> str:
 @tool
 def get_stock_price(ticker: str) -> str:
     """
-    Retorna preço atual de uma ação.
+    Retorna preço atual de uma açêo.
 
     Args:
-        ticker: Símbolo da ação (ex: AAPL, GOOGL)
+        ticker: Símbolo da açêo (ex: AAPL, GOOGL)
     """
     import requests
 
@@ -1010,9 +1010,9 @@ def get_stock_price(ticker: str) -> str:
 
 ### Tipos de Memory no CrewAI
 
-#### 1. Short-Term Memory (Padrão)
+#### 1. Short-Term Memory (Padrêo)
 
-Memória da execução atual.
+Memória da execuçêo atual.
 
 ```python
 crew = Crew(
@@ -1023,7 +1023,7 @@ crew = Crew(
 ```
 
 Agentes lembram:
-- Conversas anteriores na mesma execução
+- Conversas anteriores na mesma execuçêo
 - Resultados de tasks anteriores
 - Decisões tomadas
 
@@ -1084,12 +1084,12 @@ editor = Agent(tools=[kb_tool])
 
 ### Por Que Observabilidade?
 
-Sistemas multi-agentes são **caixas-pretas complexas**. Você precisa saber:
+Sistemas multi-agentes sêo **caixas-pretas complexas**. Você precisa saber:
 - Qual agente está trabalhando?
 - Quanto tempo cada task leva?
 - Quantos tokens foram usados?
 - Quanto $$ você está gastando?
-- Por que um agente tomou uma decisão?
+- Por que um agente tomou uma decisêo?
 - Onde está o bottleneck?
 
 **AgentOps** resolve isso.
@@ -1112,7 +1112,7 @@ agentops.init(api_key="sua-agentops-key")
 crew = Crew(...)
 result = crew.kickoff()
 
-# 5. Encerrar sessão
+# 5. Encerrar sessêo
 agentops.end_session("Success")
 ```
 
@@ -1200,8 +1200,8 @@ except Exception as e:
 ### Conceitos-Chave
 
 **Multi-Agent Systems:**
-- Especialização > Generalização
-- Colaboração > Isolamento
+- Especializaçêo > Generalizaçêo
+- Colaboraçêo > Isolamento
 - Inteligência coletiva
 
 **Arquitetura CrewAI:**
@@ -1224,7 +1224,7 @@ Crew = Agents + Tasks + Process + Tools + Memory
 
 ---
 
-## 🚀 Projeto Prático: Agência de Criação de Conteúdo
+## 🚀 Projeto Prático: Agência de Criaçêo de Conteúdo
 
 ### Objetivo
 
@@ -1239,10 +1239,10 @@ Criar uma **crew completa** que produz artigos de blog de alta qualidade de form
 1. **Pesquisar** → Dados e referências
 2. **Planejar** → Estrutura do artigo
 3. **Escrever** → Rascunho completo
-4. **Editar** → Revisão e polimento
+4. **Editar** → Revisêo e polimento
 5. **Otimizar SEO** → Keywords e meta
 
-### Implementação Completa
+### Implementaçêo Completa
 
 **Arquivo: `content_agency.py`**
 
@@ -1252,7 +1252,7 @@ from crewai import Agent, Task, Crew, Process
 from crewai_tools import SerperDevTool, ScrapeWebsiteTool
 import agentops
 
-# ============== CONFIGURAÇÃO ==============
+# ============== CONFIGURAÇêO ==============
 
 os.environ["OPENAI_API_KEY"] = "sk-..."
 os.environ["SERPER_API_KEY"] = "..."
@@ -1284,13 +1284,13 @@ researcher = Agent(
     - Sempre valida informações em múltiplas fontes
     - Prioriza fontes primárias e dados recentes
     - Documenta todas as referências meticulosamente
-    - Identifica tendências e insights não-óbvios
+    - Identifica tendências e insights nêo-óbvios
 
     EXPERTISE:
     - Pesquisa acadêmica e de mercado
     - Análise de dados e estatísticas
-    - Verificação de fontes e credibilidade
-    - Identificação de vieses e falácias
+    - Verificaçêo de fontes e credibilidade
+    - Identificaçêo de vieses e falácias
     """,
 
     tools=[search_tool, scrape_tool],
@@ -1303,7 +1303,7 @@ planner = Agent(
 
     goal="""
     Criar estruturas de artigos estratégicas e envolventes que
-    maximizam engajamento, SEO e conversão.
+    maximizam engajamento, SEO e conversêo.
     """,
 
     backstory="""
@@ -1311,7 +1311,7 @@ planner = Agent(
     e 12 anos de experiência em content strategy para marcas B2B e B2C.
 
     ESPECIALIDADES:
-    - Arquitetura de informação
+    - Arquitetura de informaçêo
     - User journey e intent matching
     - SEO content strategy
     - Storytelling frameworks
@@ -1349,7 +1349,7 @@ writer = Agent(
     CONQUISTAS:
     - 5x Content Marketing Award winner
     - Artigos com média de 15min de time-on-page
-    - Taxa de conversão 3x acima da média da indústria
+    - Taxa de conversêo 3x acima da média da indústria
 
     ESTILO:
     - Voz ativa e dinâmica
@@ -1361,7 +1361,7 @@ writer = Agent(
     PRINCÍPIOS:
     - Headline que para o scroll
     - Primeiro parágrafo que prende
-    - Cada seção entrega valor
+    - Cada seçêo entrega valor
     - Flow natural de leitura
     - CTA irresistível
     """,
@@ -1375,8 +1375,8 @@ editor = Agent(
     role="Editor-Chefe de Conteúdo",
 
     goal="""
-    Garantir excelência editorial através de revisão rigorosa,
-    fact-checking, otimização de SEO e alinhamento com brand voice.
+    Garantir excelência editorial através de revisêo rigorosa,
+    fact-checking, otimizaçêo de SEO e alinhamento com brand voice.
     """,
 
     backstory="""
@@ -1384,9 +1384,9 @@ editor = Agent(
     incluindo passagens por The Economist e The Atlantic.
 
     EXPERTISE:
-    - Edição de conteúdo longo e curto
+    - Ediçêo de conteúdo longo e curto
     - SEO on-page optimization
-    - Fact-checking e verificação
+    - Fact-checking e verificaçêo
     - Brand voice consistency
     - Performance optimization
 
@@ -1399,7 +1399,7 @@ editor = Agent(
     □ Headlines e subheadlines otimizadas
     □ Meta description atraente (<160 chars)
     □ Links internos e externos relevantes
-    □ Formatação (bold, listas, quotes) estratégica
+    □ Formataçêo (bold, listas, quotes) estratégica
     □ CTA claro e persuasivo
     □ Scanability otimizada
 
@@ -1420,7 +1420,7 @@ task_research = Task(
     description="""
     **TÓPICO:** {topic}
 
-    **MISSÃO:**
+    **MISSêO:**
     Conduzir pesquisa aprofundada sobre o tópico para coletar:
     - Dados e estatísticas recentes (priorize 2024)
     - Tendências e insights do mercado
@@ -1461,13 +1461,13 @@ task_research = Task(
 
     ## Tendências
     1. Tendência 1
-       - Descrição
+       - Descriçêo
        - Evidências
        - Fonte
 
     ## Casos de Uso
-    - Exemplo 1: [descrição]
-    - Exemplo 2: [descrição]
+    - Exemplo 1: [descriçêo]
+    - Exemplo 2: [descriçêo]
 
     ## Referências
     1. [Título] - [URL]
@@ -1481,7 +1481,7 @@ task_plan = Task(
     **PESQUISA DISPONÍVEL:**
     {task_research.output}
 
-    **MISSÃO:**
+    **MISSêO:**
     Criar estrutura estratégica para artigo de blog otimizado
     para SEO e engajamento.
 
@@ -1497,7 +1497,7 @@ task_plan = Task(
     - Intro que hook o leitor
     - Seções lógicas e progressivas
     - Exemplos e dados posicionados estrategicamente
-    - Conclusão com CTA forte
+    - Conclusêo com CTA forte
 
     **DELIVERABLE:**
     Outline detalhado do artigo
@@ -1511,29 +1511,29 @@ task_plan = Task(
     # Outline: [Título Working]
 
     ## Headline Options
-    1. [Opção 1]
-    2. [Opção 2]
-    3. [Opção 3]
+    1. [Opçêo 1]
+    2. [Opçêo 2]
+    3. [Opçêo 3]
 
     ## Meta Description
     [150-160 caracteres]
 
     ## Estrutura
 
-    ### 1. Introdução (150 palavras)
+    ### 1. Introduçêo (150 palavras)
     - Hook: [como começar]
     - Promise: [o que o leitor vai aprender]
     - Relevância: [por que isso importa]
 
-    ### 2. [Seção 1 - Título]
+    ### 2. [Seçêo 1 - Título]
     - Ponto principal:
     - Dados/exemplos:
     - Takeaway:
 
-    ### 3. [Seção 2 - Título]
+    ### 3. [Seçêo 2 - Título]
     [...]
 
-    ### Conclusão
+    ### Conclusêo
     - Resumo:
     - CTA:
 
@@ -1554,7 +1554,7 @@ task_write = Task(
     **PESQUISA:**
     {task_research.output}
 
-    **MISSÃO:**
+    **MISSêO:**
     Escrever artigo excepcional seguindo o outline, incorporando
     dados da pesquisa e mantendo voz de marca profissional mas acessível.
 
@@ -1584,10 +1584,10 @@ task_write = Task(
     Artigo completo em Markdown com:
     - Headline final
     - Meta description
-    - Introdução compelling
+    - Introduçêo compelling
     - Corpo bem estruturado
-    - Conclusão com CTA
-    - Formatação adequada (headings, listas, bold)
+    - Conclusêo com CTA
+    - Formataçêo adequada (headings, listas, bold)
     """
 )
 
@@ -1596,7 +1596,7 @@ task_edit = Task(
     **ARTIGO PARA EDITAR:**
     {task_write.output}
 
-    **MISSÃO:**
+    **MISSêO:**
     Revisar e polir o artigo aplicando checklist editorial completo.
 
     **CHECKLIST:**
@@ -1660,17 +1660,17 @@ content_crew = Crew(
     cache=True,  # Cache de resultados
 )
 
-# ============== EXECUÇÃO ==============
+# ============== EXECUÇêO ==============
 
 if __name__ == "__main__":
     print("="*60)
-    print("🚀 AGÊNCIA DE CRIAÇÃO DE CONTEÚDO")
+    print("🚀 AGÊNCIA DE CRIAÇêO DE CONTEÚDO")
     print("="*60)
 
     topic = input("\n📝 Digite o tópico do artigo: ")
 
     print(f"\n🎯 Tópico: {topic}")
-    print("\n⏳ Iniciando produção do artigo...\n")
+    print("\n⏳ Iniciando produçêo do artigo...\n")
 
     try:
         result = content_crew.kickoff(inputs={"topic": topic})
@@ -1711,13 +1711,13 @@ python content_agency.py
 ### Exemplo de Uso
 
 ```
-🚀 AGÊNCIA DE CRIAÇÃO DE CONTEÚDO
+🚀 AGÊNCIA DE CRIAÇêO DE CONTEÚDO
 
-📝 Digite o tópico do artigo: Impacto da IA Generativa na Educação
+📝 Digite o tópico do artigo: Impacto da IA Generativa na Educaçêo
 
-🎯 Tópico: Impacto da IA Generativa na Educação
+🎯 Tópico: Impacto da IA Generativa na Educaçêo
 
-⏳ Iniciando produção do artigo...
+⏳ Iniciando produçêo do artigo...
 
 [Researcher] Iniciando pesquisa sobre: Impacto da IA...
 [Researcher] Usando: search_tool
@@ -1730,15 +1730,15 @@ python content_agency.py
 [Planner] ✓ Outline criado
 
 [Writer] Escrevendo artigo baseado no outline...
-[Writer] Seção 1 completa...
-[Writer] Seção 2 completa...
+[Writer] Seçêo 1 completa...
+[Writer] Seçêo 2 completa...
 [Writer] ✓ Artigo escrito (1.342 palavras)
 
 [Editor] Revisando artigo...
 [Editor] Fact-checking: OK
 [Editor] Grammar: 3 correções aplicadas
 [Editor] SEO: Keywords bem posicionadas
-[Editor] ✓ Edição concluída
+[Editor] ✓ Ediçêo concluída
 
 ✅ ARTIGO CONCLUÍDO!
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -1750,14 +1750,14 @@ python content_agency.py
 
 ---
 
-## 💡 Conclusão e Próximos Passos
+## 💡 Conclusêo e Próximos Passos
 
 ### O que você dominou:
 
 ✓ **Conceitos de Multi-Agent Systems**
 ✓ **Arquitetura completa do CrewAI**
 ✓ **Design de agentes especializados**
-✓ **Criação de tasks eficazes**
+✓ **Criaçêo de tasks eficazes**
 ✓ **Processos Sequential e Hierarchical**
 ✓ **Tools e integrações**
 ✓ **Memory compartilhada**
@@ -1774,7 +1774,7 @@ python content_agency.py
 
 ---
 
-**No Módulo 6**, exploraremos o **Model Context Protocol (MCP)**, um padrão revolucionário que universaliza como agentes acessam ferramentas, permitindo que sua crew se conecte a **QUALQUER sistema** de forma padronizada.
+**No Módulo 6**, exploraremos o **Model Context Protocol (MCP)**, um padrêo revolucionário que universaliza como agentes acessam ferramentas, permitindo que sua crew se conecte a **QUALQUER sistema** de forma padronizada.
 
 ---
 
